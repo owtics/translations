@@ -64,8 +64,9 @@ See [TRANSLATION_GUIDE.md](TRANSLATION_GUIDE.md) for detailed namespace descript
 1. **Open an issue** using the [New Locale Request](https://github.com/owtics/translations/issues/new?template=new-locale.yml) template
 2. Once approved, create a new directory: `locales/<locale-code>/`
 3. Copy all 5 files from `en-US/` into your new directory
-4. Translate the values
-5. Open a Pull Request
+4. Add your language name to `languages.json` (e.g., `"fr-FR": "Français"`)
+5. Translate the values
+6. Open a Pull Request
 
 ### Locale code format
 

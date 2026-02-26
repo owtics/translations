@@ -11,5 +11,19 @@
         "cacheHint": "브라우저 캐시가 오래된 경우 이런 문제가 발생할 수 있습니다. 아래 버튼을 눌러 캐시를 비우고 새로고침해보세요.",
         "clearCacheAndRefresh": "캐시 비우고 새로고침",
         "backToHome": "홈으로 돌아가기"
+    },
+    "esports": {
+        "competition-not-found": {
+            "title": "대회를 찾을 수 없습니다",
+            "description": "요청하신 대회가 존재하지 않거나 삭제되었습니다."
+        },
+        "team-not-found": {
+            "title": "팀을 찾을 수 없습니다",
+            "description": "요청하신 팀이 존재하지 않거나 삭제되었습니다."
+        },
+        "match-not-found": {
+            "title": "경기를 찾을 수 없습니다",
+            "description": "요청하신 경기가 존재하지 않거나 삭제되었습니다."
+        }
     }
 }

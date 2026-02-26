@@ -18,11 +18,13 @@ import { parse, TYPE } from "@formatjs/icu-messageformat-parser";
 import type { MessageFormatElement } from "@formatjs/icu-messageformat-parser";
 import { readdir } from "node:fs/promises";
 
-const LOCALES_DIR = `${import.meta.dir}/../locales`;
+const ROOT_DIR = `${import.meta.dir}/..`;
+const LOCALES_DIR = `${ROOT_DIR}/locales`;
 const SOURCE_LOCALE = "en-US";
 const NAMESPACES = ["game", "site", "pages", "error", "faq"] as const;
 
 const isCI = !!process.env.GITHUB_ACTIONS;
+const shouldUpdateReadme = process.argv.includes("--update-readme");
 
 // ── Terminal colors ──────────────────────────────────────────────
 
@@ -104,21 +106,29 @@ function collectPlaceholders(nodes: MessageFormatElement[], out: Set<string>) {
     }
 }
 
+/** Collect self-closing tags like `<brand/>` which ICU treats as literal text. */
+function collectSelfClosingTags(message: string, out: Set<string>) {
+    for (const m of message.matchAll(/<(\w+)\s*\/>/g)) {
+        out.add(`<${m[1]}/>`);
+    }
+}
+
 /** Extract ICU placeholder names from a message string. */
 function extractPlaceholders(message: string): Set<string> {
     const out = new Set<string>();
     try {
-        collectPlaceholders(parse(message, { ignoreTag: true }), out);
+        collectPlaceholders(parse(message), out);
     } catch {
         // parse errors are reported separately
     }
+    collectSelfClosingTags(message, out);
     return out;
 }
 
 /** Validate ICU syntax. Returns error message or null. */
 function validateICU(message: string): string | null {
     try {
-        parse(message, { ignoreTag: true });
+        parse(message);
         return null;
     } catch (e) {
         return (e as Error).message;
@@ -149,11 +159,66 @@ function ghAnnotate(level: "error" | "warning", file: string, message: string) {
     }
 }
 
+// ── README auto-update ───────────────────────────────────────────
+
+const README_START = "<!-- TRANSLATION_STATUS:START -->";
+const README_END = "<!-- TRANSLATION_STATUS:END -->";
+
+async function loadLanguages(): Promise<Record<string, string>> {
+    try {
+        return JSON.parse(await Bun.file(`${ROOT_DIR}/languages.json`).text());
+    } catch {
+        return {};
+    }
+}
+
+async function updateReadme(
+    coverage: Map<string, { total: number; translated: number }>,
+    languages: Record<string, string>,
+) {
+    const readmePath = `${ROOT_DIR}/README.md`;
+    const readme = await Bun.file(readmePath).text();
+
+    const pattern = new RegExp(
+        `${README_START.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${README_END.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`,
+    );
+
+    if (!pattern.test(readme)) {
+        console.error(red("README.md: status markers not found, skipping update"));
+        return;
+    }
+
+    const rows = [
+        "| Locale | Language | Coverage |",
+        "|--------|----------|----------|",
+        `| \`${SOURCE_LOCALE}\` | ${languages[SOURCE_LOCALE] ?? SOURCE_LOCALE} | Source |`,
+    ];
+
+    for (const [locale, { total, translated }] of coverage) {
+        const pct = total > 0 ? Math.round((translated / total) * 100) : 0;
+        const lang = languages[locale] ?? locale;
+        rows.push(`| \`${locale}\` | ${lang} | ${translated}/${total} (${pct}%) |`);
+    }
+
+    rows.push("| | [Add your language!](CONTRIBUTING.md#adding-a-new-locale) | |");
+
+    const table = rows.join("\n");
+    const updated = readme.replace(pattern, `${README_START}\n${table}\n${README_END}`);
+
+    if (updated !== readme) {
+        await Bun.write(readmePath, updated);
+        console.log(green("  README.md status table updated.\n"));
+    } else {
+        console.log(dim("  README.md already up to date.\n"));
+    }
+}
+
 // ── Main ─────────────────────────────────────────────────────────
 
 async function main() {
     const issues: Issue[] = [];
     const coverage = new Map<string, { total: number; translated: number }>();
+    const languages = await loadLanguages();
 
     // ── Load & validate source locale ────────────────────────────
     const sourceData = new Map<string, Map<string, string>>();
@@ -350,6 +415,20 @@ async function main() {
 
     if (errors.length === 0) {
         console.log(green(bold("\n  All checks passed.\n")));
+    }
+
+    // ── Warn about missing languages.json entries ─────────────────
+    for (const locale of locales) {
+        if (!languages[locale]) {
+            console.log(
+                yellow(`  Warning: ${locale} has no entry in languages.json\n`),
+            );
+        }
+    }
+
+    // ── Update README if requested ────────────────────────────────
+    if (shouldUpdateReadme) {
+        await updateReadme(coverage, languages);
     }
 
     process.exit(errors.length > 0 ? 1 : 0);
