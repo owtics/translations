@@ -22,7 +22,7 @@ jobs:
       - name: Checkout frontend
         uses: actions/checkout@v4
         with:
-          repository: funcpp/owtics-frontend
+          repository: owtics/owtics-frontend
           token: ${{ secrets.FRONTEND_SYNC_PAT }}
           path: _frontend
 
@@ -77,25 +77,25 @@ jobs:
           git push origin "$BRANCH"
 
           # Build PR body
-          BODY="Automated sync from [owtics/translations](https://github.com/owtics/translations).
-
-          ### Changed files
-          \`\`\`
-          ${CHANGED}
-          \`\`\`"
-
-          if [ -n "$NEW_LOCALES" ]; then
-            BODY="${BODY}
-
-          ### ⚠️ New locale(s) detected:${NEW_LOCALES}
-
-          Manual steps required before merging:
-          1. Create \`index.ts\` barrel file for each new locale
-          2. Add import to \`locales/index.ts\`
-          3. Update \`config.ts\` with locale metadata (label, flag, alias)"
-          fi
+          {
+            echo "Automated sync from [owtics/translations](https://github.com/owtics/translations)."
+            echo ""
+            echo "### Changed files"
+            echo '```'
+            echo "$CHANGED"
+            echo '```'
+            if [ -n "$NEW_LOCALES" ]; then
+              echo ""
+              echo "### New locale(s) detected:${NEW_LOCALES}"
+              echo ""
+              echo "Manual steps required before merging:"
+              echo "1. Create \`index.ts\` barrel file for each new locale"
+              echo "2. Add import to \`locales/index.ts\`"
+              echo "3. Update \`config.ts\` with locale metadata (label, flag, alias)"
+            fi
+          } > /tmp/pr-body.md
 
           gh pr create \
             --title "chore: sync community translations" \
-            --body "$BODY" \
+            --body-file /tmp/pr-body.md \
             --base main
