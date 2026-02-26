@@ -98,4 +98,4 @@ jobs:
           gh pr create \
             --title "chore: sync community translations" \
             --body-file /tmp/pr-body.md \
-            --base main
+            --base master
