@@ -1,0 +1,376 @@
+{
+    "home": {
+        "meta": {
+            "title": "Home | OWtics.GG - オーバーウォッチ分析、統計、eスポーツ",
+            "description": "オーバーウォッチ2ヒーロー統計：勝率、ピック率、メタ分析。全ティア（ブロンズ〜チャンピオン）、全リージョン（アジア、ヨーロッパ、アメリカ）のデータ。毎日更新。ICHIインデックスでTop500プレイヤーの選好ヒーローを確認。",
+            "keywords": "オーバーウォッチ2, OWtics, OWtics.GG, オーバーウォッチ2 ヒーローティアリスト, オーバーウォッチ2 eスポーツ, オーバーウォッチ 統計, オーバーウォッチ2 統計"
+        },
+        "match-center": {
+            "title": "マッチセンター",
+            "results": "結果",
+            "schedule": "日程",
+            "today": "今日",
+            "tomorrow": "明日",
+            "empty-results": "最近の試合結果はありません",
+            "empty-schedule": "予定されている試合はありません",
+            "go-results": "最近の結果{count}件を見る",
+            "go-schedule": "日程{count}件を見る",
+            "pulse-today": "今日",
+            "view-all": "カレンダー",
+            "show-more": "あと{count}試合を表示"
+        },
+        "notable-heroes-strip": {
+            "title": "{season} 注目ヒーロー",
+            "view-detail": "全ヒーロー統計",
+            "see-all": "全ヒーロー統計を見る"
+        }
+    },
+    "hero-statistics": {
+        "name": "ヒーロー統計",
+        "meta": {
+            "title": "ヒーロー統計 | OWtics.GG - オーバーウォッチ2統計",
+            "description": "オーバーウォッチ2全45+ヒーロー比較：勝率、ピック率、バン率、KDA。ティア別（ブロンズ〜チャンピオン）、リージョン別、シーズン別フィルター。ツリーマップ可視化。毎日更新。",
+            "keywords": "オーバーウォッチ2, OWtics, OWtics.GG, オーバーウォッチ2 ヒーローティアリスト, オーバーウォッチ2 eスポーツ, オーバーウォッチ 統計, オーバーウォッチ2 統計"
+        }
+    },
+    "hero-details": {
+        "meta": {
+            "title": "{hero}統計 | OWtics.GG - オーバーウォッチ2統計",
+            "description": "{hero}（{role}）オーバーウォッチ2勝率、ピック率、バン率、KDA。ティア別（ブロンズ〜チャンピオン）、リージョン別統計。{hero}のベスト/ワーストマップ。ICHIインデックス推移チャート。毎日更新。",
+            "keywords": "オーバーウォッチ2, {hero}, {role}, OWtics, OWtics.GG, オーバーウォッチ2 ヒーローティアリスト, オーバーウォッチ2 eスポーツ, オーバーウォッチ 統計, オーバーウォッチ2 統計"
+        }
+    },
+    "matches": {
+        "name": "試合分析"
+    },
+    "ichi-rating": {
+        "name": "ICHIインデックス",
+        "page-title": "ICHI Rating 時系列",
+        "view-full": "全期間を表示",
+        "mobile-note": "ブラシズーム、ツールチップなどのインタラクティブ機能はデスクトップをご利用ください。",
+        "reset-zoom": "ズームリセット",
+        "selector": {
+            "selected": "{total}件中{count}件選択",
+            "clear": "クリア",
+            "empty-chart": "ヒーローを選択してICHI Rating推移を比較"
+        },
+        "meta": {
+            "title": "ICHIインデックス | OWtics.GG - オーバーウォッチ2統計",
+            "description": "ICHIインデックス：Top500リーダーボードデータに基づくオーバーウォッチ2メタ分析。エリートプレイヤーが最も選ぶヒーローを確認。リージョンフィルター付き時系列チャート。シーズン別メタ変化を追跡。OWtics.GG独占。",
+            "keywords": "オーバーウォッチ2, ICHIインデックス, OWtics, OWtics.GG, オーバーウォッチ2 ヒーロー統計, オーバーウォッチ2 eスポーツ"
+        }
+    },
+    "contributors": {
+        "title": "Contributors",
+        "subtitle": "<brand/>のeスポーツデータを管理してくださる方々です",
+        "meta": {
+            "title": "Contributors | OWtics.GG",
+            "description": "OWTICSのeスポーツデータをキュレーションするコントリビューターをご紹介します。"
+        },
+        "join": {
+            "title": "Contributor募集中",
+            "description": "オーバーウォッチeスポーツデータの管理に興味がありますか？Discordでご連絡ください！",
+            "button": "Discordに参加"
+        },
+        "banner": {
+            "text": "Contributorsが管理",
+            "link": "Contributorsを見る"
+        }
+    },
+    "notable-heroes": {
+        "title": "{patch} 注目ヒーロー",
+        "card": {
+            "notable-point": "注目ポイント",
+            "navigate-to-detail": "ヒーロー詳細"
+        }
+    },
+    "hero-treemap": {
+        "title": "ICHI Ratingの変化"
+    },
+    "all-heroes-list": {
+        "title": "ヒーロー一覧",
+        "search-placeholder": "ヒーローを検索...",
+        "tab-all": "全て",
+        "no-results": "ヒーローが見つかりません"
+    },
+    "hero-stats-table": {
+        "title": "ヒーロー統計",
+        "description": "オーバーウォッチ公式データ · 毎日更新",
+        "columns": {
+            "hero": "ヒーロー"
+        },
+        "summary": {
+            "title": "{role, select, Tank {タンク} Damage {ダメージ} Support {サポート} other {}} トップヒーロー",
+            "explore-more": "全ヒーロー統計表を表示"
+        },
+        "toolbar": {
+            "hero-count": "ヒーロー{count}体",
+            "top-pick": "最高ピック率",
+            "top-wr": "最高勝率",
+            "top-ban": "最高BAN率",
+            "scatter": "散布図"
+        },
+        "fixedAxis": {
+            "label": "比較",
+            "ariaLabel": "比較モードの切り替え（軸範囲固定）",
+            "tooltip": "軸範囲を固定してフィルター変更時にヒーローの位置を比較できます"
+        },
+        "error": {
+            "no-data": "選択したフィルターに対応するデータがありません。\nフィルターを変更するか、後でもう一度お試しください。"
+        }
+    },
+    "hero-stats-by-tier": {
+        "title": "{hero} ティア別統計",
+        "description": "オーバーウォッチ公式データ · 毎日更新",
+        "filters": {
+            "season": "シーズン",
+            "game-mode": "ゲームモード",
+            "skill-tier": "スキルティア"
+        },
+        "error": {
+            "no-data": "選択したフィルターに対応するデータがありません。\nフィルターを変更するか、後でもう一度お試しください。"
+        }
+    },
+    "ichi-rating-single-hero": {
+        "title": "{hero} ICHI 指数推移",
+        "view-full": "全期間を表示"
+    },
+    "hero-summary": {
+        "minor-perks": "マイナー",
+        "major-perks": "メジャー"
+    },
+    "hero-map-stats": {
+        "title": "{hero} マップ別統計",
+        "description": "グランドマスター+試合データ · シーズン進行に伴い標本増加",
+        "best-maps": "得意マップ",
+        "worst-maps": "苦手マップ",
+        "mode": "モード",
+        "table": {
+            "expand": "+{count}マップを表示",
+            "collapse": "折りたたむ"
+        },
+        "insights": {
+            "overrated": "過大評価",
+            "hidden-gem": "隠れた強マップ",
+            "sensitivity": "マップ依存度",
+            "sensitivity-high": "マップによる差が大きい (σ {sigma}%)",
+            "sensitivity-low": "マップに関係なく安定 (σ {sigma}%)",
+            "win-rate-by-mode": "モード別勝率"
+        }
+    },
+    "esports": {
+        "name": "E-Sports",
+        "esports-hub-title": "eスポーツ",
+        "recent-tournaments": "最近の大会",
+        "upcoming-tournaments": "予定の大会",
+        "view-all": "すべて見る",
+        "view-results": "結果を見る",
+        "progress": "進捗",
+        "teams": "チーム",
+        "past-events": "過去の大会",
+        "more-tournaments": "その他の大会",
+        "also-coming": "予定の大会",
+        "no-recent-tournaments": "最近の大会情報がありません",
+        "browse-all-tournaments": "すべての大会を見る",
+        "featured-teams": "注目チーム",
+        "no-featured-teams": "注目チームがありません",
+        "browse-all-teams": "すべてのチームを見る",
+        "tournament-list": {
+            "title": "大会",
+            "ongoing": "進行中の大会",
+            "empty": "大会が見つかりません",
+            "meta": {
+                "title": "オーバーウォッチ2 eスポーツ大会 | OWtics.GG",
+                "description": "オーバーウォッチ2 eスポーツ大会：OWCS、OWLなど。ライブスケジュール、試合結果、チーム順位、ヒーローBAN統計。アジア、EMEA、北米リージョンをカバー。",
+                "keywords": "オーバーウォッチ2 eスポーツ, OWL, オーバーウォッチ チャンピオンズ シリーズ, OWCS, オーバーウォッチ2 大会"
+            }
+        },
+        "calendar": {
+            "title": "マッチカレンダー",
+            "empty": "今月の試合はありません",
+            "empty-day": "この日の試合はありません",
+            "today": "今日",
+            "more": "+{count}件",
+            "match-count": "{count}試合",
+            "close": "閉じる",
+            "filter": {
+                "all-competitions": "全大会"
+            },
+            "meta": {
+                "title": "マッチカレンダー | OWtics.GG - オーバーウォッチ2 eスポーツ",
+                "description": "オーバーウォッチ2 eスポーツ試合の月間カレンダー。全大会・全リージョンのスケジュールを一覧で確認。",
+                "keywords": "オーバーウォッチ2 eスポーツ, 試合スケジュール, カレンダー"
+            }
+        },
+        "tournament-detail": {
+            "tabs": {
+                "schedule": "スケジュール",
+                "teams": "参加チーム",
+                "stats": "統計",
+                "players": "選手",
+                "staff": "スタッフ"
+            },
+            "expand-all": "すべて展開",
+            "collapse-all": "すべて折りたたむ",
+            "organized-by": "{organizer} 主催",
+            "not-found": "大会が見つかりません",
+            "empty-schedule": "試合が見つかりません",
+            "empty-teams": "チームが見つかりません",
+            "statistics": {
+                "empty": "統計データがありません",
+                "empty-description": "この大会の統計データはまだ収集されていません。",
+                "potm": {
+                    "title": "POTM統計",
+                    "by-role": "ロール別POTM",
+                    "by-player": "選手別POTM",
+                    "total": "合計{count}回受賞",
+                    "total-label": "合計POTM"
+                },
+                "hero-bans": {
+                    "title": "ヒーローBAN統計",
+                    "by-role": "ロール別BAN",
+                    "by-hero": "ヒーロー別BAN",
+                    "total": "合計{count}回BAN",
+                    "total-label": "合計BAN"
+                },
+                "maps": {
+                    "title": "マップ統計",
+                    "by-mode": "モード別試合",
+                    "by-map": "マップ別試合",
+                    "total": "合計{count}試合",
+                    "total-label": "合計試合"
+                }
+            },
+            "meta": {
+                "title": "{tournament} | OWtics.GG - オーバーウォッチ2 eスポーツ",
+                "description": "{tournament} - オーバーウォッチ2 eスポーツ大会。試合スケジュール、結果、チーム順位、ヒーローBAN統計、POTM受賞者。フルブラケットとマップ統計。",
+                "keywords": "オーバーウォッチ2 eスポーツ, {tournament}, オーバーウォッチ2 大会"
+            }
+        },
+        "team-list": {
+            "title": "チーム",
+            "featured": "注目チーム",
+            "search-placeholder": "チームを検索...",
+            "all-regions": "全リージョン",
+            "active-only": "アクティブ",
+            "disbanded-only": "解散済",
+            "all-teams": "すべて",
+            "empty": "チームが見つかりません",
+            "meta": {
+                "title": "オーバーウォッチ2 eスポーツチーム | OWtics.GG",
+                "description": "オーバーウォッチ2プロチームデータベース。現在のロスター、選手ロール、勝敗記録、最近のロスター変更。リージョン別フィルター：アジア、EMEA、北米、パシフィック。",
+                "keywords": "オーバーウォッチ2 eスポーツチーム, OWLチーム, OWCSチーム"
+            }
+        },
+        "team-detail": {
+            "roster": "ロスター",
+            "statistics": "統計",
+            "recent-matches": "最近の試合",
+            "upcoming-matches": "今後の試合",
+            "competitions": "参加大会",
+            "founded": "設立",
+            "location": "所在地",
+            "overall-record": "総合成績",
+            "wins": "勝",
+            "losses": "敗",
+            "draws": "引",
+            "win-rate": "勝率",
+            "win-rate-by-mode": "モード別勝率",
+            "inactive": "解散済",
+            "not-found": "チームが見つかりません",
+            "roster-changes": "最近のロスター変更",
+            "join": "加入",
+            "leave": "退団",
+            "from": "from",
+            "to": "to",
+            "from-fa": "FA",
+            "to-fa": "FA",
+            "role-change": "ロール",
+            "retired": "引退",
+            "recent-changes": "最近の変更",
+            "show-all-changes": "すべて表示 ({count})",
+            "show-less": "閉じる",
+            "match-record": "マッチ戦績",
+            "map-record": "マップ戦績",
+            "top-banned-heroes": "最多バン英雄",
+            "most-banned-against": "最多被バン英雄",
+            "ban-count": "{count, plural, one {# ban} other {# bans}}",
+            "meta": {
+                "title": "{team} | OWtics.GG - オーバーウォッチ2 eスポーツ",
+                "description": "{team} - オーバーウォッチ2 eスポーツチーム。現在のロスターと選手ロール、総合勝率、最近の試合結果、今後の試合、大会参加履歴。",
+                "keywords": "オーバーウォッチ2 eスポーツ, {team}, オーバーウォッチ2 チーム"
+            }
+        },
+        "player-detail": {
+            "career-stats": "キャリア統計",
+            "teams": "チーム",
+            "potm-awards": "POTM受賞",
+            "status": "ステータス",
+            "active": "現役",
+            "retired": "引退",
+            "free-agent": "FA",
+            "team-history": "チーム履歴",
+            "potm-matches": "POTM試合",
+            "player-povs": "選手視点",
+            "not-found": "選手が見つかりません",
+            "join": "加入",
+            "leave": "退団",
+            "role-change": "ロール変更",
+            "nationality": "国籍",
+            "age": "年齢",
+            "current-team": "チーム",
+            "present": "現在",
+            "tenure": "在籍期間",
+            "meta": {
+                "title": "{player} | OWtics.GG - オーバーウォッチ2 eスポーツ",
+                "description": "{player} - オーバーウォッチ2 eスポーツ選手プロフィール。キャリア統計、チーム履歴、POTM受賞、選手視点配信。"
+            }
+        },
+        "match-detail": {
+            "broadcasts": {
+                "watch-live": "ライブ視聴",
+                "watch-replay": "リプレイを見る",
+                "live-stream": "ライブ配信",
+                "player-pov": "選手視点 ({count})",
+                "role-other": "その他"
+            },
+            "map-results": "マップ結果",
+            "hero-bans": "ヒーローBAN",
+            "vod": "VODを見る",
+            "no-map-results": "マップ結果がありません",
+            "map-sequence": "マップ {sequence}",
+            "map-unknown": "不明なマップ",
+            "not-found": "試合が見つかりません",
+            "copy-replay-code": "リプレイコードをコピー",
+            "potm": "Player of the Match",
+            "preview": {
+                "countdown": "試合開始まで",
+                "countdown-started": "試合進行中",
+                "countdown-days": "日",
+                "countdown-hours": "時",
+                "countdown-minutes": "分",
+                "countdown-seconds": "秒",
+                "rosters": "ロスター",
+                "rosters-empty": "ロスター情報がありません",
+                "stats": "チーム比較",
+                "stats-record": "{wins}勝 {losses}敗 {draws}引",
+                "stats-games": "{count}試合",
+                "stats-no-data": "試合データがありません",
+                "overall": "総合",
+                "win-rate": "勝率",
+                "recent-form": "最近の戦績",
+                "recent-form-empty": "最近の試合がありません",
+                "win": "勝",
+                "loss": "敗",
+                "draw": "引",
+                "tbd-notice": "まだ確定していないチームがあります。",
+                "loading": "チームデータを読み込み中..."
+            },
+            "meta": {
+                "title": "{team1} vs {team2} | OWtics.GG - オーバーウォッチ2 eスポーツ",
+                "description": "{team1} vs {team2} 試合結果。マップ別スコア、ヒーローBAN、POTM、リプレイコード。オーバーウォッチ2 eスポーツ試合詳細分析。",
+                "keywords": "オーバーウォッチ2 eスポーツ, {team1}, {team2}, 試合詳細"
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+name: Validate Translations
+
+on:
+  pull_request:
+    paths:
+      - "locales/**"
+  push:
+    branches: [main]
+    paths:
+      - "locales/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install --frozen-lockfile
+
+      - name: Run validation
+        run: bun run validate
+
+      - name: Comment coverage on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { execSync } = require('child_process');
+            const output = execSync('bun run validate 2>&1 || true', { encoding: 'utf-8' });
+
+            // Extract coverage section
+            const lines = output.split('\n');
+            const coverageStart = lines.findIndex(l => l.includes('Translation Coverage'));
+            const coverageEnd = lines.findIndex((l, i) => i > coverageStart + 2 && l.trim() === '');
+            const coverage = coverageStart >= 0
+              ? lines.slice(coverageStart, coverageEnd > 0 ? coverageEnd : undefined).join('\n')
+              : 'Coverage data unavailable';
+
+            const body = `## Translation Validation\n\n\`\`\`\n${coverage}\n\`\`\`\n\n<sub>Updated by CI</sub>`;
+
+            // Find existing bot comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('Translation Validation')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }

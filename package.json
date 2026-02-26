@@ -1,0 +1,12 @@
+{
+    "name": "@owtics/translations",
+    "version": "1.0.0",
+    "description": "Community translations for OWTICS.GG",
+    "license": "CC-BY-4.0",
+    "scripts": {
+        "validate": "bun scripts/validate.ts"
+    },
+    "devDependencies": {
+        "@formatjs/icu-messageformat-parser": "^2.9.0"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "heroNotFound": {
+        "title": "Hero Not Found",
+        "description": "The hero page you're looking for doesn't exist. Please check the URL or browse the full hero list.",
+        "backToList": "View All Heroes"
+    },
+    "general": {
+        "title": "Something Went Wrong",
+        "description": "An error occurred while loading this page. Please try again in a moment.",
+        "tryThis": "Try this",
+        "cacheHint": "This can happen when browser cache is outdated. Click the button below to clear the cache and refresh.",
+        "clearCacheAndRefresh": "Clear Cache & Refresh",
+        "backToHome": "Back to Home"
+    },
+    "esports": {
+        "competition-not-found": {
+            "title": "Competition Not Found",
+            "description": "The competition you're looking for doesn't exist or has been removed."
+        },
+        "team-not-found": {
+            "title": "Team Not Found",
+            "description": "The team you're looking for doesn't exist or has been removed."
+        },
+        "match-not-found": {
+            "title": "Match Not Found",
+            "description": "The match you're looking for doesn't exist or has been removed."
+        }
+    }
+}

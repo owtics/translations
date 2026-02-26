@@ -1,0 +1,29 @@
+name: New Locale Request
+description: Request or volunteer to add a new language
+labels: ["new-locale"]
+body:
+  - type: input
+    id: locale-code
+    attributes:
+      label: Locale Code
+      description: "BCP 47 locale code"
+      placeholder: "zh-CN, fr-FR, de-DE, pt-BR, etc."
+    validations:
+      required: true
+
+  - type: input
+    id: language-name
+    attributes:
+      label: Language Name
+      description: "Name in English and native script"
+      placeholder: "Chinese (Simplified) / 简体中文"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: volunteer
+    attributes:
+      label: Contribution
+      options:
+        - label: I can contribute translations for this locale
+        - label: I can review translations for this locale

@@ -1,0 +1,39 @@
+name: Translation Fix
+description: Report an incorrect or awkward translation
+labels: ["fix"]
+body:
+  - type: input
+    id: locale
+    attributes:
+      label: Locale
+      placeholder: "ko-KR"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: "Namespace and key, or the page URL on owtics.gg"
+      placeholder: "game.json → hero.Kiriko, or https://owtics.gg/ko-KR/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current translation
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested translation
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Why is the current translation incorrect?

@@ -1,0 +1,376 @@
+{
+    "home": {
+        "meta": {
+            "title": "홈 | OWtics.GG - 오버워치 분석, 통계, 이스포츠",
+            "description": "오버워치 영웅 통계: 승률, 픽률, 메타 분석. 전 티어(브론즈~챔피언), 전 지역(아시아, 유럽, 미주) 데이터 제공. 매일 업데이트. 아이치 레이팅으로 Top 500 선호 영웅 확인.",
+            "keywords": "옵틱스, 옵틱스지지, 오버워치, OWtics, OWtics.GG, 아이치, 오버워치 영웅 티어리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+        },
+        "match-center": {
+            "title": "매치 센터",
+            "results": "결과",
+            "schedule": "일정",
+            "today": "오늘",
+            "tomorrow": "내일",
+            "empty-results": "최근 경기 결과가 없습니다",
+            "empty-schedule": "예정된 경기가 없습니다",
+            "go-results": "최근 결과 {count}건 보기",
+            "go-schedule": "일정 {count}건 보기",
+            "pulse-today": "오늘",
+            "view-all": "캘린더",
+            "show-more": "{count}개 경기 더 보기"
+        },
+        "notable-heroes-strip": {
+            "title": "{season} 주목할 영웅",
+            "view-detail": "전체 영웅 통계",
+            "see-all": "전체 영웅 통계 보기"
+        }
+    },
+    "hero-statistics": {
+        "name": "영웅 통계",
+        "meta": {
+            "title": "영웅 통계 | OWtics.GG - 오버워치 분석, 통계, 이스포츠",
+            "description": "오버워치 전체 45+ 영웅 비교: 승률, 픽률, 밴률, KDA. 티어별(브론즈~챔피언), 지역별, 시즌별 필터. 트리맵 시각화 제공. 매일 업데이트.",
+            "keywords": "오버워치, OWtics, OWtics.GG, 오버워치 영웅 티어 리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+        }
+    },
+    "hero-details": {
+        "meta": {
+            "title": "오버워치 {hero} 공식 통계 | OWtics.GG - 오버워치 분석, 통계, 이스포츠",
+            "description": "{hero}({role}) 오버워치 승률, 픽률, 밴률, KDA. 티어별(브론즈~챔피언), 지역별 통계. {hero} 최고/최악 맵. 아이치 레이팅 추이 차트. 매일 업데이트.",
+            "keywords": "오버워치, {hero}, {role}, OWtics, OWtics.GG, 오버워치 영웅 티어 리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+        }
+    },
+    "matches": {
+        "name": "경기 분석"
+    },
+    "ichi-rating": {
+        "name": "아이치 레이팅",
+        "page-title": "아이치 레이팅 시계열",
+        "view-full": "전체 기록 보기",
+        "mobile-note": "브러시 줌, 툴팁 등의 인터랙티브 기능은 데스크톱에서 사용해 주세요.",
+        "reset-zoom": "줌 초기화",
+        "selector": {
+            "selected": "{total}개 중 {count}개 선택",
+            "clear": "초기화",
+            "empty-chart": "영웅을 선택하여 아이치 레이팅 추이를 비교하세요"
+        },
+        "meta": {
+            "title": "아이치 레이팅 | OWtics.GG - 오버워치 분석, 통계, 이스포츠",
+            "description": "아이치 레이팅: Top 500 리더보드 기반 오버워치 메타 분석. 엘리트 플레이어가 가장 많이 픽하는 영웅 확인. 지역 필터 지원 시계열 차트. 시즌별 메타 변화 추적. OWtics.GG 독점.",
+            "keywords": "오버워치, 아이치 레이팅, OWtics, OWtics.GG, 오버워치 영웅 통계, 오버워치 e스포츠"
+        }
+    },
+    "contributors": {
+        "title": "Contributors",
+        "subtitle": "<brand/> e스포츠 데이터를 관리해주시는 분들입니다",
+        "meta": {
+            "title": "Contributors | OWtics.GG",
+            "description": "OWTICS e스포츠 데이터를 관리하는 컨트리뷰터를 소개합니다."
+        },
+        "join": {
+            "title": "Contributor 모집",
+            "description": "오버워치 e스포츠 데이터 관리에 관심이 있으시다면 디스코드로 연락해주세요!",
+            "button": "디스코드 참여하기"
+        },
+        "banner": {
+            "text": "Contributors가 관리합니다",
+            "link": "Contributors 보기"
+        }
+    },
+    "notable-heroes": {
+        "title": "{patch} 주목해야 할 영웅",
+        "card": {
+            "notable-point": "주요 포인트",
+            "navigate-to-detail": "영웅 상세정보"
+        }
+    },
+    "hero-treemap": {
+        "title": "최근 밸런스 패치 아이치 레이팅 변화"
+    },
+    "all-heroes-list": {
+        "title": "영웅 목록",
+        "search-placeholder": "영웅 검색...",
+        "tab-all": "전체",
+        "no-results": "영웅을 찾을 수 없습니다"
+    },
+    "hero-stats-table": {
+        "title": "영웅 통계",
+        "description": "공식 오버워치 데이터 기반 · 매일 갱신",
+        "columns": {
+            "hero": "영웅"
+        },
+        "summary": {
+            "title": "{role, select, Tank {돌격군} Damage {공격군} Support {지원군} other {}} 상위 영웅들",
+            "explore-more": "전체 영웅 통계 테이블 보기"
+        },
+        "toolbar": {
+            "hero-count": "영웅 {count}명",
+            "top-pick": "최고 픽률",
+            "top-wr": "최고 승률",
+            "top-ban": "최고 밴률",
+            "scatter": "산점도"
+        },
+        "fixedAxis": {
+            "label": "비교",
+            "ariaLabel": "비교 모드 토글 (축 범위 고정)",
+            "tooltip": "축 범위를 고정하여 필터 변경 시 영웅 위치를 비교할 수 있습니다"
+        },
+        "error": {
+            "no-data": "선택한 필터에 대한 데이터가 없습니다.\n필터를 변경하거나 나중에 다시 확인해 주세요."
+        }
+    },
+    "hero-stats-by-tier": {
+        "title": "{hero} 티어별 통계",
+        "description": "공식 오버워치 데이터 기반 · 매일 갱신",
+        "filters": {
+            "season": "시즌",
+            "game-mode": "모드",
+            "skill-tier": "티어"
+        },
+        "error": {
+            "no-data": "선택한 필터에 대한 데이터가 없습니다.\n필터를 변경하거나 나중에 다시 확인해 주세요."
+        }
+    },
+    "ichi-rating-single-hero": {
+        "title": "{hero} 아이치 레이팅 추이",
+        "view-full": "전체 기록 보기"
+    },
+    "hero-summary": {
+        "minor-perks": "마이너",
+        "major-perks": "메이저"
+    },
+    "hero-map-stats": {
+        "title": "{hero} 맵별 통계",
+        "description": "그랜드마스터+ 경기 데이터 · 시즌 진행에 따라 표본 증가",
+        "best-maps": "강한 맵",
+        "worst-maps": "약한 맵",
+        "mode": "모드",
+        "table": {
+            "expand": "+{count}개 맵 더 보기",
+            "collapse": "접기"
+        },
+        "insights": {
+            "overrated": "과대평가",
+            "hidden-gem": "숨은 강맵",
+            "sensitivity": "맵 의존도",
+            "sensitivity-high": "맵에 따라 성능 편차가 큼 (σ {sigma}%)",
+            "sensitivity-low": "맵에 상관없이 안정적 (σ {sigma}%)",
+            "win-rate-by-mode": "모드별 승률"
+        }
+    },
+    "esports": {
+        "name": "E-Sports",
+        "esports-hub-title": "E-Sports",
+        "recent-tournaments": "최근 대회",
+        "upcoming-tournaments": "예정 대회",
+        "view-all": "전체보기",
+        "view-results": "결과 보기",
+        "progress": "진행률",
+        "teams": "팀",
+        "past-events": "지난 대회",
+        "more-tournaments": "더 많은 대회",
+        "also-coming": "예정된 대회",
+        "no-recent-tournaments": "최근 대회 정보가 없습니다",
+        "browse-all-tournaments": "전체 대회 보기",
+        "featured-teams": "주목할 팀",
+        "no-featured-teams": "주목할 팀 정보가 없습니다",
+        "browse-all-teams": "전체 팀 보기",
+        "tournament-list": {
+            "title": "대회",
+            "ongoing": "진행 중인 대회",
+            "empty": "대회를 찾을 수 없습니다",
+            "meta": {
+                "title": "오버워치 e스포츠 대회 | OWtics.GG",
+                "description": "오버워치 e스포츠 대회: OWCS, OWL 등. 실시간 일정, 경기 결과, 팀 순위, 영웅 밴 통계. 아시아, EMEA, 북미 지역 커버.",
+                "keywords": "오버워치 e스포츠, OWL, 오버워치 챔피언스 시리즈, OWCS, 오버워치 대회"
+            }
+        },
+        "calendar": {
+            "title": "경기 캘린더",
+            "empty": "이번 달 경기가 없습니다",
+            "empty-day": "이 날은 경기가 없습니다",
+            "today": "오늘",
+            "more": "+{count}개 더보기",
+            "match-count": "{count}경기",
+            "close": "닫기",
+            "filter": {
+                "all-competitions": "전체 대회"
+            },
+            "meta": {
+                "title": "경기 캘린더 | OWtics.GG - 오버워치 e스포츠",
+                "description": "오버워치 e스포츠 경기 월간 캘린더. 모든 대회와 지역의 일정을 한눈에 확인하세요.",
+                "keywords": "오버워치 e스포츠, 경기 일정, 캘린더"
+            }
+        },
+        "tournament-detail": {
+            "tabs": {
+                "schedule": "일정",
+                "teams": "참가팀",
+                "stats": "통계",
+                "players": "선수",
+                "staff": "스태프"
+            },
+            "expand-all": "모두 펼치기",
+            "collapse-all": "모두 접기",
+            "organized-by": "{organizer} 주최",
+            "not-found": "대회를 찾을 수 없습니다",
+            "empty-schedule": "경기를 찾을 수 없습니다",
+            "empty-teams": "팀을 찾을 수 없습니다",
+            "statistics": {
+                "empty": "통계 데이터가 없습니다",
+                "empty-description": "이 대회의 통계 데이터가 아직 수집되지 않았습니다.",
+                "potm": {
+                    "title": "POTM 통계",
+                    "by-role": "역할별 POTM",
+                    "by-player": "선수별 POTM",
+                    "total": "총 {count}회 수상",
+                    "total-label": "총 POTM"
+                },
+                "hero-bans": {
+                    "title": "영웅 밴 통계",
+                    "by-role": "역할별 밴",
+                    "by-hero": "영웅별 밴",
+                    "total": "총 {count}회 밴",
+                    "total-label": "총 밴"
+                },
+                "maps": {
+                    "title": "맵 통계",
+                    "by-mode": "모드별 경기",
+                    "by-map": "맵별 경기",
+                    "total": "총 {count}경기",
+                    "total-label": "총 경기"
+                }
+            },
+            "meta": {
+                "title": "{tournament} | OWtics.GG - 오버워치 e스포츠",
+                "description": "{tournament} - 오버워치 e스포츠 대회. 경기 일정, 결과, 팀 순위, 영웅 밴 통계, POTM 수상 내역. 전체 대진표 및 맵 통계.",
+                "keywords": "오버워치 e스포츠, {tournament}, 오버워치 대회"
+            }
+        },
+        "team-list": {
+            "title": "팀",
+            "featured": "주요 팀",
+            "search-placeholder": "팀 검색...",
+            "all-regions": "전체 지역",
+            "active-only": "활동중",
+            "disbanded-only": "해체됨",
+            "all-teams": "전체",
+            "empty": "팀을 찾을 수 없습니다",
+            "meta": {
+                "title": "오버워치 e스포츠 팀 | OWtics.GG",
+                "description": "오버워치 프로팀 데이터베이스. 현재 로스터, 선수 역할, 승패 기록, 최근 로스터 변동. 지역별 필터: 아시아, EMEA, 북미, 태평양.",
+                "keywords": "오버워치 e스포츠 팀, OWL 팀, OWCS 팀"
+            }
+        },
+        "team-detail": {
+            "roster": "로스터",
+            "statistics": "통계",
+            "recent-matches": "최근 경기",
+            "upcoming-matches": "예정 경기",
+            "competitions": "참가 대회",
+            "founded": "창단일",
+            "location": "위치",
+            "overall-record": "전체 전적",
+            "wins": "승",
+            "losses": "패",
+            "draws": "무",
+            "win-rate": "승률",
+            "win-rate-by-mode": "모드별 승률",
+            "inactive": "해체됨",
+            "not-found": "팀을 찾을 수 없습니다",
+            "roster-changes": "최근 로스터 변동",
+            "join": "영입",
+            "leave": "방출",
+            "from": "from",
+            "to": "to",
+            "from-fa": "FA",
+            "to-fa": "FA",
+            "role-change": "역할",
+            "retired": "은퇴",
+            "recent-changes": "최근 변동",
+            "show-all-changes": "전체 보기 ({count})",
+            "show-less": "접기",
+            "match-record": "매치 전적",
+            "map-record": "맵 전적",
+            "top-banned-heroes": "가장 많이 밴한 영웅",
+            "most-banned-against": "가장 많이 밴 당한 영웅",
+            "ban-count": "{count, plural, one {# ban} other {# bans}}",
+            "meta": {
+                "title": "{team} | OWtics.GG - 오버워치 e스포츠",
+                "description": "{team} - 오버워치 e스포츠 팀. 현재 로스터와 선수 역할, 전체 승률, 최근 경기 결과, 예정 경기, 대회 참가 이력.",
+                "keywords": "오버워치 e스포츠, {team}, 오버워치 팀"
+            }
+        },
+        "player-detail": {
+            "career-stats": "커리어 통계",
+            "teams": "팀",
+            "potm-awards": "POTM 수상",
+            "status": "상태",
+            "active": "활동중",
+            "retired": "은퇴",
+            "free-agent": "FA",
+            "team-history": "팀 이력",
+            "potm-matches": "POTM 경기",
+            "player-povs": "선수 시점",
+            "not-found": "선수를 찾을 수 없습니다",
+            "join": "영입",
+            "leave": "이적",
+            "role-change": "역할 변경",
+            "nationality": "국적",
+            "age": "나이",
+            "current-team": "팀",
+            "present": "현재",
+            "tenure": "소속 기간",
+            "meta": {
+                "title": "{player} | OWtics.GG - 오버워치 e스포츠",
+                "description": "{player} - 오버워치 e스포츠 선수 프로필. 커리어 통계, 팀 이력, POTM 수상, 선수 시점 방송."
+            }
+        },
+        "match-detail": {
+            "broadcasts": {
+                "watch-live": "라이브 시청",
+                "watch-replay": "다시 보기",
+                "live-stream": "라이브 방송",
+                "player-pov": "선수 시점 ({count})",
+                "role-other": "기타"
+            },
+            "map-results": "맵 결과",
+            "hero-bans": "영웅 밴",
+            "vod": "VOD 보기",
+            "no-map-results": "맵 결과를 찾을 수 없습니다",
+            "map-sequence": "맵 {sequence}",
+            "map-unknown": "알 수 없는 맵",
+            "not-found": "경기를 찾을 수 없습니다",
+            "copy-replay-code": "리플레이 코드 복사",
+            "potm": "Player of the Match",
+            "preview": {
+                "countdown": "경기 시작까지",
+                "countdown-started": "경기 진행 중",
+                "countdown-days": "일",
+                "countdown-hours": "시간",
+                "countdown-minutes": "분",
+                "countdown-seconds": "초",
+                "rosters": "로스터",
+                "rosters-empty": "로스터 정보를 찾을 수 없습니다",
+                "stats": "팀 비교",
+                "stats-record": "{wins}승 {losses}패 {draws}무",
+                "stats-games": "{count}경기",
+                "stats-no-data": "경기 데이터가 없습니다",
+                "overall": "전체",
+                "win-rate": "승률",
+                "recent-form": "최근 전적",
+                "recent-form-empty": "최근 경기가 없습니다",
+                "win": "승",
+                "loss": "패",
+                "draw": "무",
+                "tbd-notice": "아직 확정되지 않은 팀이 있습니다.",
+                "loading": "팀 데이터 로딩 중..."
+            },
+            "meta": {
+                "title": "{team1} vs {team2} | OWtics.GG - 오버워치 e스포츠",
+                "description": "{team1} vs {team2} 경기 결과. 맵별 스코어, 영웅 밴, POTM, 리플레이 코드. 오버워치 e스포츠 경기 상세 분석.",
+                "keywords": "오버워치 e스포츠, {team1}, {team2}, 경기 상세"
+            }
+        }
+    }
+}

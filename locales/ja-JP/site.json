@@ -1,0 +1,120 @@
+{
+    "nav": {
+        "hero-statistics": "ヒーロー統計",
+        "hero-stats": "ヒーローステータス",
+        "esports": "E-Sports",
+        "tournaments": "大会",
+        "calendar": "カレンダー",
+        "teams": "チーム",
+        "stats-labs": "統計ラボ",
+        "ichi-rating": "ICHIインデックス",
+        "meta-analysis": "メタ分析",
+        "soon": "準備中"
+    },
+    "filter": {
+        "region": "リージョン",
+        "mode": "モード",
+        "season": "シーズン",
+        "series": "シリーズ",
+        "status": "ステータス",
+        "tier": "ティア",
+        "role": "ロール",
+        "subRole": "サブロール",
+        "year": "年"
+    },
+    "pagination": {
+        "previous": "前へ",
+        "next": "次へ",
+        "page": "{page} ページ",
+        "nav-label": "ページネーション"
+    },
+    "empty": {
+        "no-results": "結果が見つかりません",
+        "try-adjusting-filters": "フィルターを調整してみてください"
+    },
+    "actions": {
+        "copied": "コピーしました！"
+    },
+    "labels": {
+        "progress": "進行状況",
+        "inactive": "解散済",
+        "unknown": "不明"
+    },
+    "units": {
+        "teams": "{count}チーム",
+        "matches": "{count}試合",
+        "maps": "{count}マップ"
+    },
+    "preview": {
+        "message": "このページは現在開発中です。一部の機能が不完全な場合があります。"
+    },
+    "data-delay": {
+        "message": "シーズン20リーダーボード更新中 — データ精度向上のため公開を延期しています。"
+    },
+    "filter-toggle": {
+        "expand": "詳細",
+        "collapse": "閉じる"
+    },
+    "esports": {
+        "broadcast": {
+            "live": "LIVE",
+            "open-external": "{name} (新しいタブで開く)"
+        },
+        "status": {
+            "UPCOMING": "予定",
+            "ONGOING": "進行中",
+            "COMPLETED": "終了",
+            "PENDING": "結果待ち"
+        },
+        "phase": {
+            "REGULAR_SEASON": "レギュラーシーズン",
+            "PLAYOFFS": "プレイオフ",
+            "PLAYOFFS_SD": "プレイオフ (シード決定戦)",
+            "LCQ": "LCQ"
+        },
+        "format": {
+            "FT2": "2本先取",
+            "FT3": "3本先取",
+            "FT4": "4本先取"
+        },
+        "series": {
+            "OWCS": "OWCS",
+            "OWCC": "OWCC",
+            "OWL": "OWL",
+            "OWWC": "OWWC"
+        },
+        "region": {
+            "GLOBAL": "グローバル",
+            "ASIA": "アジア",
+            "EMEA": "EMEA",
+            "SAUDI_ARABIA": "サウジアラビア",
+            "NORTH_AMERICA": "北米",
+            "PACIFIC": "パシフィック",
+            "JAPAN": "日本",
+            "CHINA": "中国",
+            "KOREA": "韓国"
+        },
+        "filter": {
+            "all-regions": "全リージョン",
+            "all-tiers": "全ティア",
+            "all-series": "全シリーズ",
+            "all-statuses": "すべて",
+            "all-years": "全年",
+            "all-phases": "全フェーズ",
+            "all-teams": "全チーム"
+        },
+        "competition-tier": {
+            "S": "S-Tier",
+            "A": "A-Tier",
+            "QUALIFIER": "Qualifier"
+        },
+        "view-results": "結果を見る",
+        "record": {
+            "recent": "直近",
+            "wins-short": "{count}勝",
+            "losses-short": "{count}敗",
+            "draws-short": "{count}分",
+            "win-rate-short": "{rate}% 勝率"
+        }
+    }
+}

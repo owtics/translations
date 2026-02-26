@@ -1,0 +1,69 @@
+name: Sync to Frontend
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "locales/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    name: Sync translations to frontend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout translations
+        uses: actions/checkout@v4
+
+      - name: Checkout frontend
+        uses: actions/checkout@v4
+        with:
+          repository: funcpp/owtics-frontend
+          token: ${{ secrets.FRONTEND_SYNC_PAT }}
+          path: _frontend
+
+      - name: Copy locale files
+        run: |
+          for locale_dir in locales/*/; do
+            locale=$(basename "$locale_dir")
+            target="_frontend/src/shared/i18n/locales/$locale"
+            mkdir -p "$target"
+            cp "$locale_dir"*.json "$target/"
+          done
+
+      - name: Create PR if changed
+        working-directory: _frontend
+        env:
+          GH_TOKEN: ${{ secrets.FRONTEND_SYNC_PAT }}
+        run: |
+          git config user.name "owtics-bot"
+          git config user.email "bot@owtics.gg"
+
+          BRANCH="translations/sync-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+
+          git commit -m "chore: sync community translations
+
+          Source: https://github.com/owtics/translations"
+
+          git push origin "$BRANCH"
+
+          gh pr create \
+            --title "chore: sync community translations" \
+            --body "$(cat <<'EOF'
+          Automated sync from [owtics/translations](https://github.com/owtics/translations).
+
+          Review the translation changes and merge when ready.
+          EOF
+          )" \
+            --base main

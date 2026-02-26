@@ -1,0 +1,120 @@
+{
+    "nav": {
+        "hero-statistics": "Hero Statistics",
+        "hero-stats": "Hero Stats",
+        "esports": "E-Sports",
+        "tournaments": "Tournaments",
+        "calendar": "Calendar",
+        "teams": "Teams",
+        "stats-labs": "Stats Labs",
+        "ichi-rating": "ICHI Rating",
+        "meta-analysis": "Meta Analysis",
+        "soon": "Soon"
+    },
+    "filter": {
+        "region": "Region",
+        "mode": "Mode",
+        "season": "Season",
+        "series": "Series",
+        "status": "Status",
+        "tier": "Tier",
+        "role": "Role",
+        "subRole": "Sub-Role",
+        "year": "Year"
+    },
+    "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page {page}",
+        "nav-label": "Pagination"
+    },
+    "empty": {
+        "no-results": "No results found",
+        "try-adjusting-filters": "Try adjusting your filters"
+    },
+    "actions": {
+        "copied": "Copied!"
+    },
+    "labels": {
+        "progress": "Progress",
+        "inactive": "Disbanded",
+        "unknown": "Unknown"
+    },
+    "units": {
+        "teams": "{count, plural, one {# team} other {# teams}}",
+        "matches": "{count, plural, one {# match} other {# matches}}",
+        "maps": "{count, plural, one {# map} other {# maps}}"
+    },
+    "preview": {
+        "message": "This page is currently under development. Some features may be incomplete."
+    },
+    "data-delay": {
+        "message": "Season 20 leaderboard update in progress — Data release delayed to ensure accuracy."
+    },
+    "filter-toggle": {
+        "expand": "More",
+        "collapse": "Less"
+    },
+    "esports": {
+        "broadcast": {
+            "live": "LIVE",
+            "open-external": "{name} (opens in new tab)"
+        },
+        "status": {
+            "UPCOMING": "Upcoming",
+            "ONGOING": "Ongoing",
+            "COMPLETED": "Completed",
+            "PENDING": "Pending"
+        },
+        "phase": {
+            "REGULAR_SEASON": "Regular Season",
+            "PLAYOFFS": "Playoffs",
+            "PLAYOFFS_SD": "Playoffs (Seeding Decider)",
+            "LCQ": "LCQ"
+        },
+        "format": {
+            "FT2": "First to 2",
+            "FT3": "First to 3",
+            "FT4": "First to 4"
+        },
+        "series": {
+            "OWCS": "OWCS",
+            "OWCC": "OWCC",
+            "OWL": "OWL",
+            "OWWC": "OWWC"
+        },
+        "region": {
+            "GLOBAL": "Global",
+            "ASIA": "Asia",
+            "EMEA": "EMEA",
+            "SAUDI_ARABIA": "Saudi Arabia",
+            "NORTH_AMERICA": "North America",
+            "PACIFIC": "Pacific",
+            "JAPAN": "Japan",
+            "CHINA": "China",
+            "KOREA": "Korea"
+        },
+        "filter": {
+            "all-regions": "All Regions",
+            "all-tiers": "All Tiers",
+            "all-series": "All Series",
+            "all-statuses": "All",
+            "all-years": "All Years",
+            "all-phases": "All Phases",
+            "all-teams": "All Teams"
+        },
+        "competition-tier": {
+            "S": "S-Tier",
+            "A": "A-Tier",
+            "QUALIFIER": "Qualifier"
+        },
+        "view-results": "View Results",
+        "record": {
+            "recent": "Recent",
+            "wins-short": "{count}W",
+            "losses-short": "{count}L",
+            "draws-short": "{count}D",
+            "win-rate-short": "{rate}% WR"
+        }
+    }
+}

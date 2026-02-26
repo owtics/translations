@@ -1,0 +1,23 @@
+{
+    "ichi-rating": {
+        "title": "About ICHI Rating",
+        "items": [
+            {
+                "q": "What is ICHI Rating?",
+                "a": "ICHI Rating is a hero evaluation index that measures how frequently each hero is played among the top 500 players on the competitive leaderboard. It reflects the most-played heroes of Challenger-tier players in each region."
+            },
+            {
+                "q": "How is ICHI Rating calculated?",
+                "a": "The system crawls the Top 500 leaderboard and checks each player's three most-played heroes. The 1st most-played hero receives 3 points, the 2nd receives 2 points, and the 3rd receives 1 point. These scores are summed across all Top 500 players in each region to produce the final ICHI Rating."
+            },
+            {
+                "q": "When is the data updated?",
+                "a": "ICHI Rating data is collected and updated daily. Each data point on the chart represents one day's snapshot of the Top 500 leaderboard."
+            },
+            {
+                "q": "How should I interpret the chart?",
+                "a": "A higher ICHI Rating means the hero is played more frequently by Challenger-tier players. Sudden spikes often correspond to balance patches or meta shifts. Comparing heroes across regions reveals how the meta differs between Asia, Europe, and the Americas."
+            }
+        ]
+    }
+}
