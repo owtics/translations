@@ -1,0 +1,376 @@
+{
+    "home": {
+        "meta": {
+            "title": "首页 | OWtics.GG - 守望先锋数据分析与电竞",
+            "description": "守望先锋英雄数据：胜率、选取率与版本分析。覆盖全段位（青铜至冠军）与全地区（亚洲、欧洲、美洲）。每日更新。ICHI指数追踪Top 500玩家英雄偏好。",
+            "keywords": "守望先锋, OWtics, OWtics.GG, 守望先锋英雄梯队, 守望先锋电竞, 守望先锋数据, 守望先锋统计"
+        },
+        "match-center": {
+            "title": "赛事中心",
+            "results": "赛果",
+            "schedule": "赛程",
+            "today": "今天",
+            "tomorrow": "明天",
+            "empty-results": "暂无近期赛果",
+            "empty-schedule": "暂无预定比赛",
+            "go-results": "查看{count}条近期赛果",
+            "go-schedule": "查看{count}场预定比赛",
+            "pulse-today": "今天",
+            "view-all": "日历",
+            "show-more": "还有{count}场比赛"
+        },
+        "notable-heroes-strip": {
+            "title": "{season}赛季焦点英雄",
+            "view-detail": "全部英雄数据",
+            "see-all": "查看全部英雄数据"
+        }
+    },
+    "hero-statistics": {
+        "name": "英雄数据",
+        "meta": {
+            "title": "英雄数据 | OWtics.GG - 守望先锋数据分析与电竞",
+            "description": "比较守望先锋全部45+英雄：胜率、选取率、禁用率、KDA。按段位（青铜至冠军）、地区、赛季筛选。交互式树图可视化。每日更新。",
+            "keywords": "守望先锋, OWtics, OWtics.GG, 守望先锋英雄梯队, 守望先锋电竞, 守望先锋数据, 守望先锋统计"
+        }
+    },
+    "hero-details": {
+        "meta": {
+            "title": "{hero}数据 | OWtics.GG - 守望先锋数据分析与电竞",
+            "description": "{hero}（{role}）守望先锋胜率、选取率、禁用率、KDA。按段位（青铜至冠军）与地区统计。{hero}最佳/最差地图。ICHI指数趋势图。每日更新。",
+            "keywords": "守望先锋, {hero}, {role}, OWtics, OWtics.GG, 守望先锋英雄梯队, 守望先锋电竞, 守望先锋数据, 守望先锋统计"
+        }
+    },
+    "matches": {
+        "name": "比赛分析"
+    },
+    "ichi-rating": {
+        "name": "ICHI Rating",
+        "page-title": "ICHI Rating 时间序列",
+        "view-full": "查看完整历史",
+        "mobile-note": "如需使用框选缩放、悬浮提示等交互功能，请在桌面端访问。",
+        "reset-zoom": "重置缩放",
+        "selector": {
+            "selected": "已选择{count}/{total}",
+            "clear": "清除",
+            "empty-chart": "选择英雄以比较ICHI Rating趋势"
+        },
+        "meta": {
+            "title": "ICHI Rating | OWtics.GG - 守望先锋数据分析与电竞",
+            "description": "ICHI Rating：基于Top 500排行榜数据的守望先锋版本分析。查看顶尖玩家最常选取的英雄。支持地区筛选的交互式时间序列图表。追踪跨赛季版本变化。OWtics.GG独家。",
+            "keywords": "守望先锋, ICHI Rating, OWtics, OWtics.GG, 守望先锋英雄数据, 守望先锋电竞"
+        }
+    },
+    "contributors": {
+        "title": "贡献者",
+        "subtitle": "认识为<brand/>管理电竞数据的贡献者们",
+        "meta": {
+            "title": "贡献者 | OWtics.GG",
+            "description": "认识为OWTICS策划电竞数据的贡献者们。"
+        },
+        "join": {
+            "title": "成为贡献者",
+            "description": "有兴趣帮助管理守望先锋电竞数据吗？请通过Discord联系我们！",
+            "button": "加入Discord"
+        },
+        "banner": {
+            "text": "由贡献者团队维护",
+            "link": "认识贡献者"
+        }
+    },
+    "notable-heroes": {
+        "title": "{patch}版本焦点英雄",
+        "card": {
+            "notable-point": "关注要点",
+            "navigate-to-detail": "查看详情"
+        }
+    },
+    "hero-treemap": {
+        "title": "最新版本ICHI Rating变化"
+    },
+    "all-heroes-list": {
+        "title": "英雄列表",
+        "search-placeholder": "搜索英雄...",
+        "tab-all": "全部",
+        "no-results": "未找到英雄"
+    },
+    "hero-stats-table": {
+        "title": "英雄数据",
+        "description": "守望先锋官方数据 · 每日更新",
+        "columns": {
+            "hero": "英雄"
+        },
+        "summary": {
+            "title": "{role, select, Tank {重装} Damage {输出} Support {辅助} other {}}热门英雄",
+            "explore-more": "查看完整英雄数据表"
+        },
+        "toolbar": {
+            "hero-count": "{count}位英雄",
+            "top-pick": "最高选取率",
+            "top-wr": "最高胜率",
+            "top-ban": "最高禁用率",
+            "scatter": "散点图"
+        },
+        "fixedAxis": {
+            "label": "对比",
+            "ariaLabel": "切换对比模式以固定坐标轴范围",
+            "tooltip": "锁定坐标轴范围，以便在不同筛选条件下对比英雄位置"
+        },
+        "error": {
+            "no-data": "所选筛选条件下暂无数据。\n请尝试更改筛选条件或稍后再来查看。"
+        }
+    },
+    "hero-stats-by-tier": {
+        "title": "{hero}段位数据",
+        "description": "守望先锋官方数据 · 每日更新",
+        "filters": {
+            "season": "赛季",
+            "game-mode": "游戏模式",
+            "skill-tier": "段位"
+        },
+        "error": {
+            "no-data": "所选筛选条件下暂无数据。\n请尝试更改筛选条件或稍后再来查看。"
+        }
+    },
+    "ichi-rating-single-hero": {
+        "title": "{hero} ICHI Rating历史",
+        "view-full": "查看完整历史"
+    },
+    "hero-summary": {
+        "minor-perks": "次要",
+        "major-perks": "主要"
+    },
+    "hero-map-stats": {
+        "title": "{hero}地图数据",
+        "description": "宗师+段位比赛数据 · 样本量随赛季增长",
+        "best-maps": "优势地图",
+        "worst-maps": "劣势地图",
+        "mode": "模式",
+        "table": {
+            "expand": "还有{count}张地图",
+            "collapse": "收起"
+        },
+        "insights": {
+            "overrated": "被高估",
+            "hidden-gem": "隐藏强图",
+            "sensitivity": "地图敏感度",
+            "sensitivity-high": "不同地图间差异较大 (σ {sigma}%)",
+            "sensitivity-low": "各地图表现稳定 (σ {sigma}%)",
+            "win-rate-by-mode": "分模式胜率"
+        }
+    },
+    "esports": {
+        "name": "E-Sports",
+        "esports-hub-title": "E-Sports",
+        "recent-tournaments": "近期赛事",
+        "upcoming-tournaments": "即将开始",
+        "view-all": "查看全部",
+        "view-results": "查看赛果",
+        "progress": "进度",
+        "teams": "队伍",
+        "past-events": "往期赛事",
+        "more-tournaments": "更多赛事",
+        "also-coming": "其他预定赛事",
+        "no-recent-tournaments": "暂无近期赛事",
+        "browse-all-tournaments": "浏览全部赛事",
+        "featured-teams": "焦点战队",
+        "no-featured-teams": "暂无焦点战队",
+        "browse-all-teams": "浏览全部战队",
+        "tournament-list": {
+            "title": "赛事",
+            "ongoing": "进行中的赛事",
+            "empty": "未找到赛事",
+            "meta": {
+                "title": "守望先锋电竞赛事 | OWtics.GG",
+                "description": "守望先锋电竞赛事：OWCS、OWL等。实时赛程、比赛结果、战队排名与英雄禁用统计。覆盖亚洲、EMEA与北美赛区。",
+                "keywords": "守望先锋电竞, OWL, 守望先锋冠军系列赛, OWCS, 守望先锋赛事"
+            }
+        },
+        "calendar": {
+            "title": "赛程日历",
+            "empty": "本月暂无比赛",
+            "empty-day": "当日暂无比赛",
+            "today": "今天",
+            "more": "还有{count}场",
+            "match-count": "{count}场比赛",
+            "close": "关闭",
+            "filter": {
+                "all-competitions": "全部赛事"
+            },
+            "meta": {
+                "title": "赛程日历 | OWtics.GG - 守望先锋电竞",
+                "description": "守望先锋电竞比赛月历视图。浏览所有赛事与赛区的赛程安排。",
+                "keywords": "守望先锋电竞, 赛程安排, 日历"
+            }
+        },
+        "tournament-detail": {
+            "tabs": {
+                "schedule": "赛程",
+                "teams": "参赛队伍",
+                "stats": "数据",
+                "players": "选手",
+                "staff": "工作人员"
+            },
+            "expand-all": "全部展开",
+            "collapse-all": "全部收起",
+            "organized-by": "由{organizer}主办",
+            "not-found": "未找到赛事",
+            "empty-schedule": "未找到比赛",
+            "empty-teams": "未找到队伍",
+            "statistics": {
+                "empty": "暂无统计数据",
+                "empty-description": "该赛事的统计数据尚未收集。",
+                "potm": {
+                    "title": "POTM统计",
+                    "by-role": "按位置统计POTM",
+                    "by-player": "按选手统计POTM",
+                    "total": "共{count}次获奖",
+                    "total-label": "POTM总计"
+                },
+                "hero-bans": {
+                    "title": "英雄禁用统计",
+                    "by-role": "按位置统计禁用",
+                    "by-hero": "按英雄统计禁用",
+                    "total": "共{count}次禁用",
+                    "total-label": "禁用总计"
+                },
+                "maps": {
+                    "title": "地图统计",
+                    "by-mode": "按模式统计",
+                    "by-map": "按地图统计",
+                    "total": "共{count}场比赛",
+                    "total-label": "比赛总计"
+                }
+            },
+            "meta": {
+                "title": "{tournament} | OWtics.GG - 守望先锋电竞",
+                "description": "{tournament} - 守望先锋电竞赛事。赛程安排、比赛结果、战队排名、英雄禁用统计与POTM获奖信息。完整对阵表与地图统计。",
+                "keywords": "守望先锋电竞, {tournament}, 守望先锋赛事"
+            }
+        },
+        "team-list": {
+            "title": "战队",
+            "featured": "焦点战队",
+            "search-placeholder": "搜索战队...",
+            "all-regions": "全部赛区",
+            "active-only": "活跃",
+            "disbanded-only": "已解散",
+            "all-teams": "全部",
+            "empty": "未找到战队",
+            "meta": {
+                "title": "守望先锋电竞战队 | OWtics.GG",
+                "description": "守望先锋职业战队数据库。当前阵容、选手位置、胜负记录与近期阵容变动。按赛区筛选：亚洲、EMEA、北美、太平洋。",
+                "keywords": "守望先锋电竞战队, OWL战队, OWCS战队"
+            }
+        },
+        "team-detail": {
+            "roster": "阵容",
+            "statistics": "数据",
+            "recent-matches": "近期比赛",
+            "upcoming-matches": "即将比赛",
+            "competitions": "参赛经历",
+            "founded": "成立时间",
+            "location": "所在地",
+            "overall-record": "总战绩",
+            "wins": "胜",
+            "losses": "负",
+            "draws": "平",
+            "win-rate": "胜率",
+            "win-rate-by-mode": "分模式胜率",
+            "inactive": "已解散",
+            "not-found": "未找到战队",
+            "roster-changes": "近期阵容变动",
+            "join": "加入",
+            "leave": "离队",
+            "from": "来自",
+            "to": "前往",
+            "from-fa": "FA",
+            "to-fa": "FA",
+            "role-change": "位置",
+            "retired": "退役",
+            "recent-changes": "近期变动",
+            "show-all-changes": "查看全部 ({count})",
+            "show-less": "收起",
+            "match-record": "比赛战绩",
+            "map-record": "地图战绩",
+            "top-banned-heroes": "最常禁用英雄",
+            "most-banned-against": "最常被针对禁用",
+            "ban-count": "{count}次禁用",
+            "meta": {
+                "title": "{team} | OWtics.GG - 守望先锋电竞",
+                "description": "{team} - 守望先锋电竞战队。当前阵容与选手位置、总胜率、近期比赛结果、即将到来的比赛与赛事历史。",
+                "keywords": "守望先锋电竞, {team}, 守望先锋战队"
+            }
+        },
+        "player-detail": {
+            "career-stats": "生涯数据",
+            "teams": "战队",
+            "potm-awards": "POTM获奖",
+            "status": "状态",
+            "active": "现役",
+            "retired": "退役",
+            "free-agent": "自由人",
+            "team-history": "战队经历",
+            "potm-matches": "POTM比赛",
+            "player-povs": "选手视角",
+            "not-found": "未找到选手",
+            "join": "加入",
+            "leave": "离队",
+            "role-change": "位置变更",
+            "nationality": "国籍",
+            "age": "年龄",
+            "current-team": "战队",
+            "present": "至今",
+            "tenure": "效力时间",
+            "meta": {
+                "title": "{player} | OWtics.GG - 守望先锋电竞",
+                "description": "{player} - 守望先锋电竞选手档案。生涯数据、战队经历、POTM获奖与选手视角直播。"
+            }
+        },
+        "match-detail": {
+            "broadcasts": {
+                "watch-live": "观看直播",
+                "watch-replay": "观看回放",
+                "live-stream": "直播",
+                "player-pov": "选手视角 ({count})",
+                "role-other": "其他"
+            },
+            "map-results": "地图结果",
+            "hero-bans": "英雄禁用",
+            "vod": "观看VOD",
+            "no-map-results": "暂无地图结果",
+            "map-sequence": "第{sequence}张地图",
+            "map-unknown": "未知地图",
+            "not-found": "未找到比赛",
+            "copy-replay-code": "复制回放代码",
+            "potm": "本场最佳选手",
+            "preview": {
+                "countdown": "距比赛开始",
+                "countdown-started": "比赛进行中",
+                "countdown-days": "天",
+                "countdown-hours": "时",
+                "countdown-minutes": "分",
+                "countdown-seconds": "秒",
+                "rosters": "阵容",
+                "rosters-empty": "暂无阵容信息",
+                "stats": "战队对比",
+                "stats-record": "{wins}胜 {losses}负 {draws}平",
+                "stats-games": "已进行{count}场",
+                "stats-no-data": "暂无比赛数据",
+                "overall": "总计",
+                "win-rate": "胜率",
+                "recent-form": "近期表现",
+                "recent-form-empty": "暂无近期比赛",
+                "win": "胜",
+                "loss": "负",
+                "draw": "平",
+                "tbd-notice": "一方或双方队伍尚未确定。",
+                "loading": "正在加载战队数据..."
+            },
+            "meta": {
+                "title": "{team1} vs {team2} | OWtics.GG - 守望先锋电竞",
+                "description": "{team1} vs {team2}比赛结果。逐图比分、英雄禁用、本场最佳选手与回放代码。守望先锋电竞比赛详细分析。",
+                "keywords": "守望先锋电竞, {team1}, {team2}, 比赛详情"
+            }
+        }
+    }
+}

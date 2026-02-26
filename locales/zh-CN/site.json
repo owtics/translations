@@ -1,0 +1,120 @@
+{
+    "nav": {
+        "hero-statistics": "英雄数据",
+        "hero-stats": "英雄数据",
+        "esports": "电竞赛事",
+        "tournaments": "赛事",
+        "calendar": "赛程表",
+        "teams": "战队",
+        "stats-labs": "数据实验室",
+        "ichi-rating": "ICHI 评分",
+        "meta-analysis": "版本分析",
+        "soon": "即将上线"
+    },
+    "filter": {
+        "region": "地区",
+        "mode": "模式",
+        "season": "赛季",
+        "series": "系列赛",
+        "status": "状态",
+        "tier": "段位",
+        "role": "定位",
+        "subRole": "子定位",
+        "year": "年份"
+    },
+    "pagination": {
+        "previous": "上一页",
+        "next": "下一页",
+        "page": "第 {page} 页",
+        "nav-label": "分页导航"
+    },
+    "empty": {
+        "no-results": "未找到结果",
+        "try-adjusting-filters": "请尝试调整筛选条件"
+    },
+    "actions": {
+        "copied": "已复制！"
+    },
+    "labels": {
+        "progress": "进行中",
+        "inactive": "已解散",
+        "unknown": "未知"
+    },
+    "units": {
+        "teams": "{count}支战队",
+        "matches": "{count}场比赛",
+        "maps": "{count}张地图"
+    },
+    "preview": {
+        "message": "此页面正在开发中，部分功能可能尚未完善。"
+    },
+    "data-delay": {
+        "message": "第20赛季排行榜更新中——为确保数据准确性，发布时间有所延迟。"
+    },
+    "filter-toggle": {
+        "expand": "更多",
+        "collapse": "收起"
+    },
+    "esports": {
+        "broadcast": {
+            "live": "直播中",
+            "open-external": "{name}（在新标签页中打开）"
+        },
+        "status": {
+            "UPCOMING": "即将开始",
+            "ONGOING": "进行中",
+            "COMPLETED": "已结束",
+            "PENDING": "待定"
+        },
+        "phase": {
+            "REGULAR_SEASON": "常规赛",
+            "PLAYOFFS": "季后赛",
+            "PLAYOFFS_SD": "季后赛（种子排位赛）",
+            "LCQ": "LCQ"
+        },
+        "format": {
+            "FT2": "先胜2局",
+            "FT3": "先胜3局",
+            "FT4": "先胜4局"
+        },
+        "series": {
+            "OWCS": "OWCS",
+            "OWCC": "OWCC",
+            "OWL": "OWL",
+            "OWWC": "OWWC"
+        },
+        "region": {
+            "GLOBAL": "全球",
+            "ASIA": "亚洲",
+            "EMEA": "EMEA",
+            "SAUDI_ARABIA": "沙特阿拉伯",
+            "NORTH_AMERICA": "北美",
+            "PACIFIC": "太平洋赛区",
+            "JAPAN": "日本",
+            "CHINA": "中国",
+            "KOREA": "韩国"
+        },
+        "filter": {
+            "all-regions": "所有地区",
+            "all-tiers": "所有级别",
+            "all-series": "所有系列赛",
+            "all-statuses": "全部",
+            "all-years": "所有年份",
+            "all-phases": "所有阶段",
+            "all-teams": "所有战队"
+        },
+        "competition-tier": {
+            "S": "S-Tier",
+            "A": "A-Tier",
+            "QUALIFIER": "Qualifier"
+        },
+        "view-results": "查看赛果",
+        "record": {
+            "recent": "近期",
+            "wins-short": "{count}胜",
+            "losses-short": "{count}负",
+            "draws-short": "{count}平",
+            "win-rate-short": "{rate}% 胜率"
+        }
+    }
+}
