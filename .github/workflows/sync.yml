@@ -35,7 +35,7 @@ jobs:
             cp "$locale_dir"*.json "$target/"
           done
 
-      - name: Create PR if changed
+      - name: Check for changes and create PR
         working-directory: _frontend
         env:
           GH_TOKEN: ${{ secrets.FRONTEND_SYNC_PAT }}
@@ -43,8 +43,6 @@ jobs:
           git config user.name "owtics-bot"
           git config user.email "bot@owtics.gg"
 
-          BRANCH="translations/sync-$(date +%Y%m%d-%H%M%S)"
-          git checkout -b "$BRANCH"
           git add -A
 
           if git diff --cached --quiet; then
@@ -52,18 +50,52 @@ jobs:
             exit 0
           fi
 
+          # Detect new locales (directories with JSON but no index.ts barrel)
+          NEW_LOCALES=""
+          for dir in src/shared/i18n/locales/*/; do
+            locale=$(basename "$dir")
+            if [ -f "$dir/game.json" ] && [ ! -f "$dir/index.ts" ]; then
+              NEW_LOCALES="$NEW_LOCALES \`$locale\`"
+            fi
+          done
+
+          # Summarize changed files
+          CHANGED=$(git diff --cached --name-only | head -20)
+
+          # Close existing open sync PRs to avoid duplicates
+          EXISTING=$(gh pr list --head "translations/" --state open --json number --jq '.[].number' 2>/dev/null || true)
+          for pr in $EXISTING; do
+            gh pr close "$pr" --comment "Superseded by a newer sync." --delete-branch || true
+          done
+
+          BRANCH="translations/sync-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
           git commit -m "chore: sync community translations
 
           Source: https://github.com/owtics/translations"
 
           git push origin "$BRANCH"
 
+          # Build PR body
+          BODY="Automated sync from [owtics/translations](https://github.com/owtics/translations).
+
+          ### Changed files
+          \`\`\`
+          ${CHANGED}
+          \`\`\`"
+
+          if [ -n "$NEW_LOCALES" ]; then
+            BODY="${BODY}
+
+          ### ⚠️ New locale(s) detected:${NEW_LOCALES}
+
+          Manual steps required before merging:
+          1. Create \`index.ts\` barrel file for each new locale
+          2. Add import to \`locales/index.ts\`
+          3. Update \`config.ts\` with locale metadata (label, flag, alias)"
+          fi
+
           gh pr create \
             --title "chore: sync community translations" \
-            --body "$(cat <<'EOF'
-          Automated sync from [owtics/translations](https://github.com/owtics/translations).
-
-          Review the translation changes and merge when ready.
-          EOF
-          )" \
+            --body "$BODY" \
             --base main
