@@ -1,0 +1,376 @@
+{
+    "home": {
+        "meta": {
+            "title": "首頁 | OWtics.GG - 鬥陣特攻數據分析與電競",
+            "description": "鬥陣特攻英雄數據：勝率、選取率與版本分析。涵蓋全段位（青銅至冠軍）與全地區（亞洲、歐洲、美洲）。每日更新。ICHI指數追蹤Top 500玩家英雄偏好。",
+            "keywords": "鬥陣特攻, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
+        },
+        "match-center": {
+            "title": "賽事中心",
+            "results": "賽果",
+            "schedule": "賽程",
+            "today": "今天",
+            "tomorrow": "明天",
+            "empty-results": "暫無近期賽果",
+            "empty-schedule": "暫無預定比賽",
+            "go-results": "查看{count}條近期賽果",
+            "go-schedule": "查看{count}場預定比賽",
+            "pulse-today": "今天",
+            "view-all": "日曆",
+            "show-more": "還有{count}場比賽"
+        },
+        "notable-heroes-strip": {
+            "title": "{season}賽季焦點英雄",
+            "view-detail": "全部英雄數據",
+            "see-all": "查看全部英雄數據"
+        }
+    },
+    "hero-statistics": {
+        "name": "英雄數據",
+        "meta": {
+            "title": "英雄數據 | OWtics.GG - 鬥陣特攻數據分析與電競",
+            "description": "比較鬥陣特攻全部45+英雄：勝率、選取率、禁用率、KDA。按段位（青銅至冠軍）、地區、賽季篩選。互動式樹狀圖視覺化。每日更新。",
+            "keywords": "鬥陣特攻, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
+        }
+    },
+    "hero-details": {
+        "meta": {
+            "title": "{hero}數據 | OWtics.GG - 鬥陣特攻數據分析與電競",
+            "description": "{hero}（{role}）鬥陣特攻勝率、選取率、禁用率、KDA。按段位（青銅至冠軍）與地區統計。{hero}最佳/最差地圖。ICHI指數趨勢圖。每日更新。",
+            "keywords": "鬥陣特攻, {hero}, {role}, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
+        }
+    },
+    "matches": {
+        "name": "比賽分析"
+    },
+    "ichi-rating": {
+        "name": "ICHI Rating",
+        "page-title": "ICHI Rating 時間序列",
+        "view-full": "查看完整歷史",
+        "mobile-note": "如需使用框選縮放、懸浮提示等互動功能，請在桌面端瀏覽。",
+        "reset-zoom": "重設縮放",
+        "selector": {
+            "selected": "已選擇{count}/{total}",
+            "clear": "清除",
+            "empty-chart": "選擇英雄以比較ICHI Rating趨勢"
+        },
+        "meta": {
+            "title": "ICHI Rating | OWtics.GG - 鬥陣特攻數據分析與電競",
+            "description": "ICHI Rating：基於Top 500排行榜數據的鬥陣特攻版本分析。查看頂尖玩家最常選取的英雄。支援地區篩選的互動式時間序列圖表。追蹤跨賽季版本變化。OWtics.GG獨家。",
+            "keywords": "鬥陣特攻, ICHI Rating, OWtics, OWtics.GG, 鬥陣特攻英雄數據, 鬥陣特攻電競"
+        }
+    },
+    "contributors": {
+        "title": "貢獻者",
+        "subtitle": "認識為<brand/>管理電競數據的貢獻者們",
+        "meta": {
+            "title": "貢獻者 | OWtics.GG",
+            "description": "認識為OWTICS策劃電競數據的貢獻者們。"
+        },
+        "join": {
+            "title": "成為貢獻者",
+            "description": "有興趣幫助管理鬥陣特攻電競數據嗎？請透過Discord聯繫我們！",
+            "button": "加入Discord"
+        },
+        "banner": {
+            "text": "由貢獻者團隊維護",
+            "link": "認識貢獻者"
+        }
+    },
+    "notable-heroes": {
+        "title": "{patch}版本焦點英雄",
+        "card": {
+            "notable-point": "關注要點",
+            "navigate-to-detail": "查看詳情"
+        }
+    },
+    "hero-treemap": {
+        "title": "最新版本ICHI Rating變化"
+    },
+    "all-heroes-list": {
+        "title": "英雄列表",
+        "search-placeholder": "搜尋英雄...",
+        "tab-all": "全部",
+        "no-results": "未找到英雄"
+    },
+    "hero-stats-table": {
+        "title": "英雄數據",
+        "description": "鬥陣特攻官方數據 · 每日更新",
+        "columns": {
+            "hero": "英雄"
+        },
+        "summary": {
+            "title": "{role, select, Tank {重裝} Damage {輸出} Support {輔助} other {}}熱門英雄",
+            "explore-more": "查看完整英雄數據表"
+        },
+        "toolbar": {
+            "hero-count": "{count}位英雄",
+            "top-pick": "最高選取率",
+            "top-wr": "最高勝率",
+            "top-ban": "最高禁用率",
+            "scatter": "散佈圖"
+        },
+        "fixedAxis": {
+            "label": "對比",
+            "ariaLabel": "切換對比模式以固定座標軸範圍",
+            "tooltip": "鎖定座標軸範圍，以便在不同篩選條件下對比英雄位置"
+        },
+        "error": {
+            "no-data": "所選篩選條件下暫無數據。\n請嘗試更改篩選條件或稍後再來查看。"
+        }
+    },
+    "hero-stats-by-tier": {
+        "title": "{hero}段位數據",
+        "description": "鬥陣特攻官方數據 · 每日更新",
+        "filters": {
+            "season": "賽季",
+            "game-mode": "遊戲模式",
+            "skill-tier": "段位"
+        },
+        "error": {
+            "no-data": "所選篩選條件下暫無數據。\n請嘗試更改篩選條件或稍後再來查看。"
+        }
+    },
+    "ichi-rating-single-hero": {
+        "title": "{hero} ICHI Rating歷史",
+        "view-full": "查看完整歷史"
+    },
+    "hero-summary": {
+        "minor-perks": "次要",
+        "major-perks": "主要"
+    },
+    "hero-map-stats": {
+        "title": "{hero}地圖數據",
+        "description": "宗師+段位比賽數據 · 樣本量隨賽季增長",
+        "best-maps": "優勢地圖",
+        "worst-maps": "劣勢地圖",
+        "mode": "模式",
+        "table": {
+            "expand": "還有{count}張地圖",
+            "collapse": "收起"
+        },
+        "insights": {
+            "overrated": "被高估",
+            "hidden-gem": "隱藏強圖",
+            "sensitivity": "地圖敏感度",
+            "sensitivity-high": "不同地圖間差異較大 (σ {sigma}%)",
+            "sensitivity-low": "各地圖表現穩定 (σ {sigma}%)",
+            "win-rate-by-mode": "分模式勝率"
+        }
+    },
+    "esports": {
+        "name": "E-Sports",
+        "esports-hub-title": "E-Sports",
+        "recent-tournaments": "近期賽事",
+        "upcoming-tournaments": "即將開始",
+        "view-all": "查看全部",
+        "view-results": "查看賽果",
+        "progress": "進度",
+        "teams": "隊伍",
+        "past-events": "往期賽事",
+        "more-tournaments": "更多賽事",
+        "also-coming": "其他預定賽事",
+        "no-recent-tournaments": "暫無近期賽事",
+        "browse-all-tournaments": "瀏覽全部賽事",
+        "featured-teams": "焦點戰隊",
+        "no-featured-teams": "暫無焦點戰隊",
+        "browse-all-teams": "瀏覽全部戰隊",
+        "tournament-list": {
+            "title": "賽事",
+            "ongoing": "進行中的賽事",
+            "empty": "未找到賽事",
+            "meta": {
+                "title": "鬥陣特攻電競賽事 | OWtics.GG",
+                "description": "鬥陣特攻電競賽事：OWCS、OWL等。即時賽程、比賽結果、戰隊排名與英雄禁用統計。涵蓋亞洲、EMEA與北美賽區。",
+                "keywords": "鬥陣特攻電競, OWL, 鬥陣特攻冠軍系列賽, OWCS, 鬥陣特攻賽事"
+            }
+        },
+        "calendar": {
+            "title": "賽程日曆",
+            "empty": "本月暫無比賽",
+            "empty-day": "當日暫無比賽",
+            "today": "今天",
+            "more": "還有{count}場",
+            "match-count": "{count}場比賽",
+            "close": "關閉",
+            "filter": {
+                "all-competitions": "全部賽事"
+            },
+            "meta": {
+                "title": "賽程日曆 | OWtics.GG - 鬥陣特攻電競",
+                "description": "鬥陣特攻電競比賽月曆檢視。瀏覽所有賽事與賽區的賽程安排。",
+                "keywords": "鬥陣特攻電競, 賽程安排, 日曆"
+            }
+        },
+        "tournament-detail": {
+            "tabs": {
+                "schedule": "賽程",
+                "teams": "參賽隊伍",
+                "stats": "數據",
+                "players": "選手",
+                "staff": "工作人員"
+            },
+            "expand-all": "全部展開",
+            "collapse-all": "全部收起",
+            "organized-by": "由{organizer}主辦",
+            "not-found": "未找到賽事",
+            "empty-schedule": "未找到比賽",
+            "empty-teams": "未找到隊伍",
+            "statistics": {
+                "empty": "暫無統計數據",
+                "empty-description": "該賽事的統計數據尚未收集。",
+                "potm": {
+                    "title": "POTM統計",
+                    "by-role": "按位置統計POTM",
+                    "by-player": "按選手統計POTM",
+                    "total": "共{count}次獲獎",
+                    "total-label": "POTM總計"
+                },
+                "hero-bans": {
+                    "title": "英雄禁用統計",
+                    "by-role": "按位置統計禁用",
+                    "by-hero": "按英雄統計禁用",
+                    "total": "共{count}次禁用",
+                    "total-label": "禁用總計"
+                },
+                "maps": {
+                    "title": "地圖統計",
+                    "by-mode": "按模式統計",
+                    "by-map": "按地圖統計",
+                    "total": "共{count}場比賽",
+                    "total-label": "比賽總計"
+                }
+            },
+            "meta": {
+                "title": "{tournament} | OWtics.GG - 鬥陣特攻電競",
+                "description": "{tournament} - 鬥陣特攻電競賽事。賽程安排、比賽結果、戰隊排名、英雄禁用統計與POTM獲獎資訊。完整對戰表與地圖統計。",
+                "keywords": "鬥陣特攻電競, {tournament}, 鬥陣特攻賽事"
+            }
+        },
+        "team-list": {
+            "title": "戰隊",
+            "featured": "焦點戰隊",
+            "search-placeholder": "搜尋戰隊...",
+            "all-regions": "全部賽區",
+            "active-only": "活躍",
+            "disbanded-only": "已解散",
+            "all-teams": "全部",
+            "empty": "未找到戰隊",
+            "meta": {
+                "title": "鬥陣特攻電競戰隊 | OWtics.GG",
+                "description": "鬥陣特攻職業戰隊資料庫。目前陣容、選手位置、勝負紀錄與近期陣容變動。按賽區篩選：亞洲、EMEA、北美、太平洋。",
+                "keywords": "鬥陣特攻電競戰隊, OWL戰隊, OWCS戰隊"
+            }
+        },
+        "team-detail": {
+            "roster": "陣容",
+            "statistics": "數據",
+            "recent-matches": "近期比賽",
+            "upcoming-matches": "即將比賽",
+            "competitions": "參賽經歷",
+            "founded": "成立時間",
+            "location": "所在地",
+            "overall-record": "總戰績",
+            "wins": "勝",
+            "losses": "負",
+            "draws": "平",
+            "win-rate": "勝率",
+            "win-rate-by-mode": "分模式勝率",
+            "inactive": "已解散",
+            "not-found": "未找到戰隊",
+            "roster-changes": "近期陣容變動",
+            "join": "加入",
+            "leave": "離隊",
+            "from": "來自",
+            "to": "前往",
+            "from-fa": "FA",
+            "to-fa": "FA",
+            "role-change": "位置",
+            "retired": "退役",
+            "recent-changes": "近期變動",
+            "show-all-changes": "查看全部 ({count})",
+            "show-less": "收起",
+            "match-record": "比賽戰績",
+            "map-record": "地圖戰績",
+            "top-banned-heroes": "最常禁用英雄",
+            "most-banned-against": "最常被針對禁用",
+            "ban-count": "{count}次禁用",
+            "meta": {
+                "title": "{team} | OWtics.GG - 鬥陣特攻電競",
+                "description": "{team} - 鬥陣特攻電競戰隊。目前陣容與選手位置、總勝率、近期比賽結果、即將到來的比賽與賽事歷史。",
+                "keywords": "鬥陣特攻電競, {team}, 鬥陣特攻戰隊"
+            }
+        },
+        "player-detail": {
+            "career-stats": "生涯數據",
+            "teams": "戰隊",
+            "potm-awards": "POTM獲獎",
+            "status": "狀態",
+            "active": "現役",
+            "retired": "退役",
+            "free-agent": "自由選手",
+            "team-history": "戰隊經歷",
+            "potm-matches": "POTM比賽",
+            "player-povs": "選手視角",
+            "not-found": "未找到選手",
+            "join": "加入",
+            "leave": "離隊",
+            "role-change": "位置變更",
+            "nationality": "國籍",
+            "age": "年齡",
+            "current-team": "戰隊",
+            "present": "至今",
+            "tenure": "效力時間",
+            "meta": {
+                "title": "{player} | OWtics.GG - 鬥陣特攻電競",
+                "description": "{player} - 鬥陣特攻電競選手檔案。生涯數據、戰隊經歷、POTM獲獎與選手視角直播。"
+            }
+        },
+        "match-detail": {
+            "broadcasts": {
+                "watch-live": "觀看直播",
+                "watch-replay": "觀看重播",
+                "live-stream": "直播",
+                "player-pov": "選手視角 ({count})",
+                "role-other": "其他"
+            },
+            "map-results": "地圖結果",
+            "hero-bans": "英雄禁用",
+            "vod": "觀看VOD",
+            "no-map-results": "暫無地圖結果",
+            "map-sequence": "第{sequence}張地圖",
+            "map-unknown": "未知地圖",
+            "not-found": "未找到比賽",
+            "copy-replay-code": "複製重播代碼",
+            "potm": "本場最佳選手",
+            "preview": {
+                "countdown": "距比賽開始",
+                "countdown-started": "比賽進行中",
+                "countdown-days": "天",
+                "countdown-hours": "時",
+                "countdown-minutes": "分",
+                "countdown-seconds": "秒",
+                "rosters": "陣容",
+                "rosters-empty": "暫無陣容資訊",
+                "stats": "戰隊對比",
+                "stats-record": "{wins}勝 {losses}負 {draws}平",
+                "stats-games": "已進行{count}場",
+                "stats-no-data": "暫無比賽數據",
+                "overall": "總計",
+                "win-rate": "勝率",
+                "recent-form": "近期表現",
+                "recent-form-empty": "暫無近期比賽",
+                "win": "勝",
+                "loss": "負",
+                "draw": "平",
+                "tbd-notice": "一方或雙方隊伍尚未確定。",
+                "loading": "正在載入戰隊數據..."
+            },
+            "meta": {
+                "title": "{team1} vs {team2} | OWtics.GG - 鬥陣特攻電競",
+                "description": "{team1} vs {team2}比賽結果。逐圖比分、英雄禁用、本場最佳選手與重播代碼。鬥陣特攻電競比賽詳細分析。",
+                "keywords": "鬥陣特攻電競, {team1}, {team2}, 比賽詳情"
+            }
+        }
+    }
+}
