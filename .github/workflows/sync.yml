@@ -97,6 +97,10 @@ jobs:
               echo ""
               echo "**Backend (owtics-api-server):**"
               echo "4. Add to \`LanguageTag\` enum in \`src/shared/language-tags.ts\`"
+              echo ""
+              echo "**Codegen:**"
+              echo "5. Run \`bun run gql-codegen\` in backend"
+              echo "6. Run \`bun run codegen\` in frontend (requires backend running)"
             fi
           } > /tmp/pr-body.md
 
