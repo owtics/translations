@@ -1,0 +1,29 @@
+{
+    "heroNotFound": {
+        "title": "未找到英雄",
+        "description": "您尋找的英雄頁面不存在。請檢查網址或瀏覽完整的英雄列表。",
+        "backToList": "查看所有英雄"
+    },
+    "general": {
+        "title": "發生了一些問題",
+        "description": "載入此頁面時發生錯誤，請稍後重試。",
+        "tryThis": "試試這個",
+        "cacheHint": "這可能是因為瀏覽器快取已過期。點擊下方按鈕清除快取並重新整理頁面。",
+        "clearCacheAndRefresh": "清除快取並重新整理",
+        "backToHome": "返回首頁"
+    },
+    "esports": {
+        "competition-not-found": {
+            "title": "未找到賽事",
+            "description": "您尋找的賽事不存在或已被移除。"
+        },
+        "team-not-found": {
+            "title": "未找到戰隊",
+            "description": "您尋找的戰隊不存在或已被移除。"
+        },
+        "match-not-found": {
+            "title": "未找到比賽",
+            "description": "您尋找的比賽不存在或已被移除。"
+        }
+    }
+}
