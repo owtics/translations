@@ -96,9 +96,7 @@ jobs:
               echo "3. Update \`config.ts\` with locale metadata (label, flag, alias)"
               echo ""
               echo "**Backend (owtics-api-server):**"
-              echo "4. Add to \`Locale\` enum in \`locale.graphql\`"
-              echo "5. Run \`bun run gql-codegen\` and fix exhaustive matches"
-              echo "6. Run \`bun run codegen\` in frontend to sync GraphQL types"
+              echo "4. Add to \`LanguageTag\` enum in \`src/shared/language-tags.ts\`"
             fi
           } > /tmp/pr-body.md
 
