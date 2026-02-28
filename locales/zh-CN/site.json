@@ -92,7 +92,8 @@
             "PACIFIC": "太平洋赛区",
             "JAPAN": "日本",
             "CHINA": "中国",
-            "KOREA": "韩国"
+            "KOREA": "韩国",
+            "AMERICAS": "美洲"
         },
         "filter": {
             "all-regions": "所有地区",

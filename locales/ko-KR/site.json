@@ -92,7 +92,8 @@
             "PACIFIC": "태평양",
             "JAPAN": "일본",
             "CHINA": "중국",
-            "KOREA": "한국"
+            "KOREA": "한국",
+            "AMERICAS": "아메리카"
         },
         "filter": {
             "all-regions": "전체 지역",
