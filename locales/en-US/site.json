@@ -9,7 +9,9 @@
         "stats-labs": "Stats Labs",
         "ichi-rating": "ICHI Rating",
         "meta-analysis": "Meta Analysis",
-        "soon": "Soon"
+        "soon": "Soon",
+        "close-menu": "Close menu",
+        "open-menu": "Open menu"
     },
     "filter": {
         "region": "Region",
@@ -117,5 +119,16 @@
             "draws-short": "{count}D",
             "win-rate-short": "{rate}% WR"
         }
+    },
+    "search": {
+        "placeholder": "Search heroes, players, teams...",
+        "no-results": "No results found",
+        "heroes": "Heroes",
+        "players": "Players",
+        "teams": "Teams",
+        "competitions": "Competitions",
+        "hint-navigate": "to navigate",
+        "hint-select": "to select",
+        "hint-close": "to close"
     }
 }

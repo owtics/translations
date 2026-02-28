@@ -9,7 +9,9 @@
         "stats-labs": "統計ラボ",
         "ichi-rating": "ICHIインデックス",
         "meta-analysis": "メタ分析",
-        "soon": "準備中"
+        "soon": "準備中",
+        "close-menu": "メニューを閉じる",
+        "open-menu": "メニューを開く"
     },
     "filter": {
         "region": "リージョン",
@@ -117,5 +119,16 @@
             "draws-short": "{count}分",
             "win-rate-short": "{rate}% 勝率"
         }
+    },
+    "search": {
+        "placeholder": "ヒーロー、選手、チームを検索...",
+        "no-results": "検索結果がありません",
+        "heroes": "ヒーロー",
+        "players": "選手",
+        "teams": "チーム",
+        "competitions": "大会",
+        "hint-navigate": "移動",
+        "hint-select": "選択",
+        "hint-close": "閉じる"
     }
 }

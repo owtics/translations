@@ -9,7 +9,9 @@
         "stats-labs": "통계 연구소",
         "ichi-rating": "아이치 레이팅",
         "meta-analysis": "메타 분석",
-        "soon": "준비중"
+        "soon": "준비중",
+        "close-menu": "메뉴 닫기",
+        "open-menu": "메뉴 열기"
     },
     "filter": {
         "region": "지역",
@@ -117,5 +119,16 @@
             "draws-short": "{count}무",
             "win-rate-short": "{rate}% 승률"
         }
+    },
+    "search": {
+        "placeholder": "영웅, 선수, 팀 검색...",
+        "no-results": "검색 결과가 없습니다",
+        "heroes": "영웅",
+        "players": "선수",
+        "teams": "팀",
+        "competitions": "대회",
+        "hint-navigate": "이동",
+        "hint-select": "선택",
+        "hint-close": "닫기"
     }
 }

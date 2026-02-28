@@ -9,7 +9,9 @@
         "stats-labs": "數據實驗室",
         "ichi-rating": "ICHI 評分",
         "meta-analysis": "版本分析",
-        "soon": "即將上線"
+        "soon": "即將上線",
+        "close-menu": "關閉選單",
+        "open-menu": "開啟選單"
     },
     "filter": {
         "region": "地區",
@@ -117,5 +119,16 @@
             "draws-short": "{count}平",
             "win-rate-short": "{rate}% 勝率"
         }
+    },
+    "search": {
+        "placeholder": "搜尋英雄、選手、戰隊...",
+        "no-results": "未找到搜尋結果",
+        "heroes": "英雄",
+        "players": "選手",
+        "teams": "戰隊",
+        "competitions": "賽事",
+        "hint-navigate": "導航",
+        "hint-select": "選擇",
+        "hint-close": "關閉"
     }
 }
