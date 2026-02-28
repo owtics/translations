@@ -63,7 +63,9 @@
         "PERFORMANCE_COACH": "Performance Coach",
         "STREAMER": "Streamer",
         "STAFF": "Staff",
-        "MANAGER": "Manager"
+        "MANAGER": "Manager",
+        "GENERAL_MANAGER": "General Manager",
+        "ANALYST": "Analyst"
     },
     "subRole": {
         "ALL": "All Sub-Roles",

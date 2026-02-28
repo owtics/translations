@@ -63,7 +63,9 @@
         "PERFORMANCE_COACH": "パフォーマンスコーチ",
         "STREAMER": "ストリーマー",
         "STAFF": "スタッフ",
-        "MANAGER": "マネージャー"
+        "MANAGER": "マネージャー",
+        "GENERAL_MANAGER": "ゼネラルマネージャー",
+        "ANALYST": "アナリスト"
     },
     "subRole": {
         "ALL": "すべてのサブロール",
