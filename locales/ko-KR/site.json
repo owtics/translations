@@ -129,6 +129,7 @@
         "competitions": "대회",
         "hint-navigate": "이동",
         "hint-select": "선택",
-        "hint-close": "닫기"
+        "hint-close": "닫기",
+        "cancel": "취소"
     }
 }

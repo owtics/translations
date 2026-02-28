@@ -129,6 +129,7 @@
         "competitions": "赛事",
         "hint-navigate": "导航",
         "hint-select": "选择",
-        "hint-close": "关闭"
+        "hint-close": "关闭",
+        "cancel": "取消"
     }
 }

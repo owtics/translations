@@ -129,6 +129,7 @@
         "competitions": "大会",
         "hint-navigate": "移動",
         "hint-select": "選択",
-        "hint-close": "閉じる"
+        "hint-close": "閉じる",
+        "cancel": "キャンセル"
     }
 }
