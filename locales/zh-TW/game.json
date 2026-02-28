@@ -63,7 +63,9 @@
         "PERFORMANCE_COACH": "表現教練",
         "STREAMER": "主播",
         "STAFF": "工作人員",
-        "MANAGER": "經理"
+        "MANAGER": "經理",
+        "GENERAL_MANAGER": "總經理",
+        "ANALYST": "分析師"
     },
     "subRole": {
         "ALL": "所有子職責",

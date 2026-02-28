@@ -63,7 +63,9 @@
         "PERFORMANCE_COACH": "表现教练",
         "STREAMER": "主播",
         "STAFF": "工作人员",
-        "MANAGER": "经理"
+        "MANAGER": "经理",
+        "GENERAL_MANAGER": "总经理",
+        "ANALYST": "分析师"
     },
     "subRole": {
         "ALL": "所有子职责",

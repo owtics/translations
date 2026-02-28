@@ -63,7 +63,9 @@
         "PERFORMANCE_COACH": "퍼포먼스 코치",
         "STREAMER": "스트리머",
         "STAFF": "스태프",
-        "MANAGER": "매니저"
+        "MANAGER": "매니저",
+        "GENERAL_MANAGER": "단장",
+        "ANALYST": "분석관"
     },
     "subRole": {
         "ALL": "모든 세부 역할",
