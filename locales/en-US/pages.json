@@ -206,11 +206,17 @@
             "today": "Today",
             "tomorrow": "Tomorrow",
             "tabs": {
+                "overview": "Overview",
                 "schedule": "Schedule",
+                "bracket": "Bracket",
                 "teams": "Teams",
                 "stats": "Stats",
                 "players": "Players",
                 "staff": "Staff"
+            },
+            "bracket": {
+                "coming-soon-title": "Bracket view coming soon",
+                "coming-soon-description": "Tournament bracket visualization is under development."
             },
             "expand-all": "Expand all",
             "collapse-all": "Collapse all",
@@ -218,6 +224,9 @@
             "not-found": "Competition not found",
             "empty-schedule": "No matches found",
             "empty-teams": "No teams found",
+            "overview": {
+                "participating-teams": "Participating Teams"
+            },
             "statistics": {
                 "empty": "No statistics available",
                 "empty-description": "Statistics data for this competition has not been collected yet.",

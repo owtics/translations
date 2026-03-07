@@ -206,11 +206,17 @@
             "today": "今日",
             "tomorrow": "明日",
             "tabs": {
+                "overview": "概要",
                 "schedule": "スケジュール",
+                "bracket": "トーナメント表",
                 "teams": "参加チーム",
                 "stats": "統計",
                 "players": "選手",
                 "staff": "スタッフ"
+            },
+            "bracket": {
+                "coming-soon-title": "トーナメント表は近日公開",
+                "coming-soon-description": "トーナメント表の可視化は開発中です。"
             },
             "expand-all": "すべて展開",
             "collapse-all": "すべて折りたたむ",
@@ -218,6 +224,9 @@
             "not-found": "大会が見つかりません",
             "empty-schedule": "試合が見つかりません",
             "empty-teams": "チームが見つかりません",
+            "overview": {
+                "participating-teams": "参加チーム"
+            },
             "statistics": {
                 "empty": "統計データがありません",
                 "empty-description": "この大会の統計データはまだ収集されていません。",

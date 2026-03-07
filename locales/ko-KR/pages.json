@@ -206,11 +206,17 @@
             "today": "오늘",
             "tomorrow": "내일",
             "tabs": {
+                "overview": "개요",
                 "schedule": "일정",
+                "bracket": "브라켓",
                 "teams": "참가팀",
                 "stats": "통계",
                 "players": "선수",
                 "staff": "스태프"
+            },
+            "bracket": {
+                "coming-soon-title": "브라켓 뷰 준비 중",
+                "coming-soon-description": "토너먼트 브라켓 시각화를 개발 중입니다."
             },
             "expand-all": "모두 펼치기",
             "collapse-all": "모두 접기",
@@ -218,6 +224,9 @@
             "not-found": "대회를 찾을 수 없습니다",
             "empty-schedule": "경기를 찾을 수 없습니다",
             "empty-teams": "팀을 찾을 수 없습니다",
+            "overview": {
+                "participating-teams": "참가 팀"
+            },
             "statistics": {
                 "empty": "통계 데이터가 없습니다",
                 "empty-description": "이 대회의 통계 데이터가 아직 수집되지 않았습니다.",

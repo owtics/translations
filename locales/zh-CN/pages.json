@@ -206,11 +206,17 @@
             "today": "今天",
             "tomorrow": "明天",
             "tabs": {
+                "overview": "概览",
                 "schedule": "赛程",
+                "bracket": "对阵图",
                 "teams": "参赛队伍",
                 "stats": "数据",
                 "players": "选手",
                 "staff": "工作人员"
+            },
+            "bracket": {
+                "coming-soon-title": "对阵图即将推出",
+                "coming-soon-description": "赛事对阵图可视化功能正在开发中。"
             },
             "expand-all": "全部展开",
             "collapse-all": "全部收起",
@@ -218,6 +224,9 @@
             "not-found": "未找到赛事",
             "empty-schedule": "未找到比赛",
             "empty-teams": "未找到队伍",
+            "overview": {
+                "participating-teams": "参赛队伍"
+            },
             "statistics": {
                 "empty": "暂无统计数据",
                 "empty-description": "该赛事的统计数据尚未收集。",
