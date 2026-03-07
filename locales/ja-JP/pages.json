@@ -203,6 +203,8 @@
             }
         },
         "tournament-detail": {
+            "today": "今日",
+            "tomorrow": "明日",
             "tabs": {
                 "schedule": "スケジュール",
                 "teams": "参加チーム",

@@ -203,6 +203,8 @@
             }
         },
         "tournament-detail": {
+            "today": "今天",
+            "tomorrow": "明天",
             "tabs": {
                 "schedule": "赛程",
                 "teams": "参赛队伍",

@@ -203,6 +203,8 @@
             }
         },
         "tournament-detail": {
+            "today": "Today",
+            "tomorrow": "Tomorrow",
             "tabs": {
                 "schedule": "Schedule",
                 "teams": "Teams",

@@ -203,6 +203,8 @@
             }
         },
         "tournament-detail": {
+            "today": "오늘",
+            "tomorrow": "내일",
             "tabs": {
                 "schedule": "일정",
                 "teams": "참가팀",
