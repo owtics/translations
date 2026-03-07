@@ -218,6 +218,9 @@
                 "coming-soon-title": "對陣圖即將推出",
                 "coming-soon-description": "賽事對陣圖視覺化功能正在開發中。"
             },
+            "standings": {
+                "empty": "比賽開始後將更新排名"
+            },
             "expand-all": "全部展開",
             "collapse-all": "全部收起",
             "organized-by": "由{organizer}主辦",
@@ -225,6 +228,8 @@
             "empty-schedule": "未找到比賽",
             "empty-teams": "未找到隊伍",
             "overview": {
+                "standings": "排名",
+                "map-pool": "地圖池",
                 "participating-teams": "參賽隊伍"
             },
             "statistics": {

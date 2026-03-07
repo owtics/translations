@@ -218,6 +218,9 @@
                 "coming-soon-title": "Bracket view coming soon",
                 "coming-soon-description": "Tournament bracket visualization is under development."
             },
+            "standings": {
+                "empty": "Standings will be updated once matches begin"
+            },
             "expand-all": "Expand all",
             "collapse-all": "Collapse all",
             "organized-by": "Organized by {organizer}",
@@ -225,6 +228,8 @@
             "empty-schedule": "No matches found",
             "empty-teams": "No teams found",
             "overview": {
+                "standings": "Standings",
+                "map-pool": "Map Pool",
                 "participating-teams": "Participating Teams"
             },
             "statistics": {

@@ -218,6 +218,9 @@
                 "coming-soon-title": "トーナメント表は近日公開",
                 "coming-soon-description": "トーナメント表の可視化は開発中です。"
             },
+            "standings": {
+                "empty": "試合開始後に順位が更新されます"
+            },
             "expand-all": "すべて展開",
             "collapse-all": "すべて折りたたむ",
             "organized-by": "{organizer} 主催",
@@ -225,6 +228,8 @@
             "empty-schedule": "試合が見つかりません",
             "empty-teams": "チームが見つかりません",
             "overview": {
+                "standings": "順位",
+                "map-pool": "マッププール",
                 "participating-teams": "参加チーム"
             },
             "statistics": {

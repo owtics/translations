@@ -218,6 +218,9 @@
                 "coming-soon-title": "브라켓 뷰 준비 중",
                 "coming-soon-description": "토너먼트 브라켓 시각화를 개발 중입니다."
             },
+            "standings": {
+                "empty": "경기가 시작되면 순위가 업데이트됩니다"
+            },
             "expand-all": "모두 펼치기",
             "collapse-all": "모두 접기",
             "organized-by": "{organizer} 주최",
@@ -225,6 +228,8 @@
             "empty-schedule": "경기를 찾을 수 없습니다",
             "empty-teams": "팀을 찾을 수 없습니다",
             "overview": {
+                "standings": "순위",
+                "map-pool": "맵 풀",
                 "participating-teams": "참가 팀"
             },
             "statistics": {
