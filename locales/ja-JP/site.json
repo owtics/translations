@@ -76,6 +76,10 @@
       "PLAYOFFS_PLAYIN": "プレイオフ (プレイイン)",
       "PLAYOFFS_SD_FINAL": "プレイオフ (シード決定戦 ファイナル)"
     },
+    "bracket": {
+      "no-data": "トーナメント表データがありません",
+      "scroll-hint": "\u2190 スクロールしてトーナメント表全体を表示 \u2192"
+    },
     "standings": {
       "rank": "#",
       "team": "チーム",

@@ -87,6 +87,10 @@
       "week": "Week",
       "round": "Round"
     },
+    "bracket": {
+      "no-data": "No bracket data available",
+      "scroll-hint": "\u2190 Scroll to see full bracket \u2192"
+    },
     "format": {
       "FT2": "First to 2",
       "FT3": "First to 3",

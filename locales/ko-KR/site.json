@@ -76,6 +76,10 @@
       "PLAYOFFS_PLAYIN": "플레이오프 (플레이인)",
       "PLAYOFFS_SD_FINAL": "플레이오프 (시드 결정전 파이널)"
     },
+    "bracket": {
+      "no-data": "브라켓 데이터가 없습니다",
+      "scroll-hint": "\u2190 스크롤하여 전체 브라켓 보기 \u2192"
+    },
     "standings": {
       "rank": "#",
       "team": "팀",
