@@ -215,8 +215,25 @@
                 "staff": "Staff"
             },
             "bracket": {
-                "coming-soon-title": "Bracket view coming soon",
-                "coming-soon-description": "Tournament bracket visualization is under development."
+                "coming-soon-title": "No bracket available",
+                "coming-soon-description": "The bracket for this phase has not been set up yet.",
+                "no-data": "No bracket data available",
+                "scroll-hint": "\u2190 Scroll to see full bracket \u2192",
+                "winners-bracket": "Winners Bracket",
+                "losers-bracket": "Losers Bracket",
+                "grand-final": "Grand Final",
+                "round-final": "Final",
+                "round-semifinals": "Semifinals",
+                "round-quarterfinals": "Quarterfinals",
+                "round-n": "Round {number}",
+                "wb-round-n": "WB Round {number}",
+                "wb-semifinals": "WB Semifinals",
+                "wb-final": "WB Final",
+                "lb-final": "LB Final",
+                "lb-round-n": "LB Round {number}",
+                "match-n": "Match {number}",
+                "tbd": "TBD",
+                "seed-n": "Seed #{number}"
             },
             "standings": {
                 "empty": "Standings will be updated once matches begin"

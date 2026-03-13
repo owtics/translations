@@ -215,8 +215,25 @@
                 "staff": "工作人員"
             },
             "bracket": {
-                "coming-soon-title": "對陣圖即將推出",
-                "coming-soon-description": "賽事對陣圖視覺化功能正在開發中。"
+                "coming-soon-title": "暫無對陣圖",
+                "coming-soon-description": "該階段的對陣圖尚未設定。",
+                "no-data": "暫無對陣圖資料",
+                "scroll-hint": "\u2190 滑動查看完整對陣圖 \u2192",
+                "winners-bracket": "勝者組",
+                "losers-bracket": "敗者組",
+                "grand-final": "總決賽",
+                "round-final": "決賽",
+                "round-semifinals": "準決賽",
+                "round-quarterfinals": "八強賽",
+                "round-n": "第{number}輪",
+                "wb-round-n": "勝者組第{number}輪",
+                "wb-semifinals": "勝者組準決賽",
+                "wb-final": "勝者組決賽",
+                "lb-final": "敗者組決賽",
+                "lb-round-n": "敗者組第{number}輪",
+                "match-n": "比賽 {number}",
+                "tbd": "待定",
+                "seed-n": "種子 #{number}"
             },
             "standings": {
                 "empty": "比賽開始後將更新排名"

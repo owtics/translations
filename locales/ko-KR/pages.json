@@ -215,8 +215,25 @@
                 "staff": "스태프"
             },
             "bracket": {
-                "coming-soon-title": "브라켓 뷰 준비 중",
-                "coming-soon-description": "토너먼트 브라켓 시각화를 개발 중입니다."
+                "coming-soon-title": "브라켓 없음",
+                "coming-soon-description": "이 페이즈의 브라켓이 아직 설정되지 않았습니다.",
+                "no-data": "브라켓 데이터가 없습니다",
+                "scroll-hint": "\u2190 스크롤하여 전체 브라켓 보기 \u2192",
+                "winners-bracket": "승자조",
+                "losers-bracket": "패자조",
+                "grand-final": "그랜드 파이널",
+                "round-final": "결승",
+                "round-semifinals": "준결승",
+                "round-quarterfinals": "8강",
+                "round-n": "라운드 {number}",
+                "wb-round-n": "승자조 라운드 {number}",
+                "wb-semifinals": "승자조 준결승",
+                "wb-final": "승자조 결승",
+                "lb-final": "패자조 결승",
+                "lb-round-n": "패자조 라운드 {number}",
+                "match-n": "매치 {number}",
+                "tbd": "미정",
+                "seed-n": "시드 #{number}"
             },
             "standings": {
                 "empty": "경기가 시작되면 순위가 업데이트됩니다"

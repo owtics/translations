@@ -215,8 +215,25 @@
                 "staff": "スタッフ"
             },
             "bracket": {
-                "coming-soon-title": "トーナメント表は近日公開",
-                "coming-soon-description": "トーナメント表の可視化は開発中です。"
+                "coming-soon-title": "トーナメント表なし",
+                "coming-soon-description": "このフェーズのトーナメント表はまだ設定されていません。",
+                "no-data": "トーナメント表データがありません",
+                "scroll-hint": "\u2190 スクロールしてトーナメント表全体を表示 \u2192",
+                "winners-bracket": "勝者側",
+                "losers-bracket": "敗者側",
+                "grand-final": "グランドファイナル",
+                "round-final": "決勝",
+                "round-semifinals": "準決勝",
+                "round-quarterfinals": "準々決勝",
+                "round-n": "ラウンド {number}",
+                "wb-round-n": "勝者側ラウンド {number}",
+                "wb-semifinals": "勝者側準決勝",
+                "wb-final": "勝者側決勝",
+                "lb-final": "敗者側決勝",
+                "lb-round-n": "敗者側ラウンド {number}",
+                "match-n": "試合 {number}",
+                "tbd": "未定",
+                "seed-n": "シード #{number}"
             },
             "standings": {
                 "empty": "試合開始後に順位が更新されます"
