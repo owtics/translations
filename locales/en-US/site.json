@@ -82,6 +82,7 @@
       "wins": "W",
       "losses": "L",
       "draws": "D",
+      "record": "W-L",
       "diff": "+/−",
       "maps": "Maps",
       "week": "Week",
