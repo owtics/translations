@@ -74,7 +74,8 @@
       "PLAYOFFS_SD": "Playoffs (Seeding Decider)",
       "LCQ": "LCQ",
       "PLAYOFFS_PLAYIN": "Playoffs (Play-In)",
-      "PLAYOFFS_SD_FINAL": "Playoffs (Seeding Decider Final)"
+      "PLAYOFFS_SD_FINAL": "Playoffs (Seeding Decider Final)",
+      "ROUND_ROBIN_STAGE": "Round Robin Stage"
     },
     "standings": {
       "rank": "#",

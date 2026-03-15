@@ -74,7 +74,8 @@
       "PLAYOFFS_SD": "플레이오프 (시드 결정전)",
       "LCQ": "LCQ",
       "PLAYOFFS_PLAYIN": "플레이오프 (플레이인)",
-      "PLAYOFFS_SD_FINAL": "플레이오프 (시드 결정전 파이널)"
+      "PLAYOFFS_SD_FINAL": "플레이오프 (시드 결정전 파이널)",
+      "ROUND_ROBIN_STAGE": "라운드 로빈 스테이지"
     },
     "bracket": {
       "no-data": "브라켓 데이터가 없습니다",

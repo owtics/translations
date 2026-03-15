@@ -74,7 +74,8 @@
       "PLAYOFFS_SD": "プレイオフ (シード決定戦)",
       "LCQ": "LCQ",
       "PLAYOFFS_PLAYIN": "プレイオフ (プレイイン)",
-      "PLAYOFFS_SD_FINAL": "プレイオフ (シード決定戦 ファイナル)"
+      "PLAYOFFS_SD_FINAL": "プレイオフ (シード決定戦 ファイナル)",
+      "ROUND_ROBIN_STAGE": "ラウンドロビンステージ"
     },
     "bracket": {
       "no-data": "トーナメント表データがありません",

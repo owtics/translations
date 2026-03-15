@@ -74,7 +74,8 @@
       "PLAYOFFS_SD": "季後賽（種子排位賽）",
       "LCQ": "LCQ",
       "PLAYOFFS_PLAYIN": "季後賽（附加賽）",
-      "PLAYOFFS_SD_FINAL": "季後賽（種子排位賽決賽）"
+      "PLAYOFFS_SD_FINAL": "季後賽（種子排位賽決賽）",
+      "ROUND_ROBIN_STAGE": "循環賽階段"
     },
     "bracket": {
       "no-data": "暫無對陣圖資料",

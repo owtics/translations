@@ -74,7 +74,8 @@
       "PLAYOFFS_SD": "季后赛（种子排位赛）",
       "LCQ": "LCQ",
       "PLAYOFFS_PLAYIN": "季后赛（附加赛）",
-      "PLAYOFFS_SD_FINAL": "季后赛（种子排位赛决赛）"
+      "PLAYOFFS_SD_FINAL": "季后赛（种子排位赛决赛）",
+      "ROUND_ROBIN_STAGE": "循环赛阶段"
     },
     "bracket": {
       "no-data": "暂无对阵图数据",
