@@ -130,6 +130,8 @@
       "A": "A-Tier",
       "QUALIFIER": "Qualifier"
     },
+    "upcoming-matches": "即将进行的比赛",
+    "view-full-schedule": "查看完整赛程",
     "view-results": "查看赛果",
     "record": {
       "recent": "近期",

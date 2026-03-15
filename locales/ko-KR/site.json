@@ -130,6 +130,8 @@
       "A": "A-Tier",
       "QUALIFIER": "Qualifier"
     },
+    "upcoming-matches": "예정된 경기",
+    "view-full-schedule": "전체 일정 보기",
     "view-results": "결과 보기",
     "record": {
       "recent": "최근",

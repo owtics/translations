@@ -130,6 +130,8 @@
       "A": "A-Tier",
       "QUALIFIER": "Qualifier"
     },
+    "upcoming-matches": "Upcoming Matches",
+    "view-full-schedule": "View full schedule",
     "view-results": "View Results",
     "record": {
       "recent": "Recent",
