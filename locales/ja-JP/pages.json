@@ -242,6 +242,9 @@
             "collapse-all": "すべて折りたたむ",
             "organized-by": "{organizer} 主催",
             "not-found": "大会が見つかりません",
+            "schedule": {
+                "filter-by-team": "チームで絞り込み"
+            },
             "empty-schedule": "試合が見つかりません",
             "empty-teams": "チームが見つかりません",
             "overview": {

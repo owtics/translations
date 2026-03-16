@@ -242,6 +242,9 @@
             "collapse-all": "全部收起",
             "organized-by": "由{organizer}主办",
             "not-found": "未找到赛事",
+            "schedule": {
+                "filter-by-team": "按战队筛选"
+            },
             "empty-schedule": "未找到比赛",
             "empty-teams": "未找到队伍",
             "overview": {

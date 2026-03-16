@@ -242,6 +242,9 @@
             "collapse-all": "Collapse all",
             "organized-by": "Organized by {organizer}",
             "not-found": "Competition not found",
+            "schedule": {
+                "filter-by-team": "Filter by team"
+            },
             "empty-schedule": "No matches found",
             "empty-teams": "No teams found",
             "overview": {

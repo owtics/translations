@@ -242,6 +242,9 @@
             "collapse-all": "모두 접기",
             "organized-by": "{organizer} 주최",
             "not-found": "대회를 찾을 수 없습니다",
+            "schedule": {
+                "filter-by-team": "팀별 필터"
+            },
             "empty-schedule": "경기를 찾을 수 없습니다",
             "empty-teams": "팀을 찾을 수 없습니다",
             "overview": {
