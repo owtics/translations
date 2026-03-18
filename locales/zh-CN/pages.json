@@ -160,7 +160,7 @@
     },
     "esports": {
         "name": "E-Sports",
-        "esports-hub-title": "E-Sports",
+        "ongoing-tournaments": "进行中的赛事",
         "recent-tournaments": "近期赛事",
         "upcoming-tournaments": "即将开始",
         "view-all": "查看全部",

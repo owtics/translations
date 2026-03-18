@@ -160,7 +160,7 @@
     },
     "esports": {
         "name": "E-Sports",
-        "esports-hub-title": "E-Sports",
+        "ongoing-tournaments": "진행 중인 대회",
         "recent-tournaments": "최근 대회",
         "upcoming-tournaments": "예정 대회",
         "view-all": "전체보기",
