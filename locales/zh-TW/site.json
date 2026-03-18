@@ -66,7 +66,7 @@
       "UPCOMING": "即將開始",
       "ONGOING": "進行中",
       "COMPLETED": "已結束",
-      "PENDING": "待定"
+      "LIVE": "LIVE"
     },
     "phase": {
       "REGULAR_SEASON": "常規賽",

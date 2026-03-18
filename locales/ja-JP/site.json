@@ -66,7 +66,7 @@
       "UPCOMING": "予定",
       "ONGOING": "進行中",
       "COMPLETED": "終了",
-      "PENDING": "結果待ち"
+      "LIVE": "LIVE"
     },
     "phase": {
       "REGULAR_SEASON": "レギュラーシーズン",

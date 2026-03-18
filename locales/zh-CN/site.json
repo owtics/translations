@@ -66,7 +66,7 @@
       "UPCOMING": "即将开始",
       "ONGOING": "进行中",
       "COMPLETED": "已结束",
-      "PENDING": "待定"
+      "LIVE": "LIVE"
     },
     "phase": {
       "REGULAR_SEASON": "常规赛",
