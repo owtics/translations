@@ -166,6 +166,7 @@
         "tournaments": "대회",
         "section-ongoing": "진행 중",
         "section-upcoming": "예정",
+        "team-count": "{count}개 팀",
         "view-all": "전체보기",
         "view-results": "결과 보기",
         "progress": "진행률",

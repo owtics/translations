@@ -166,6 +166,7 @@
         "tournaments": "Tournaments",
         "section-ongoing": "Ongoing",
         "section-upcoming": "Upcoming",
+        "team-count": "{count, plural, one {# team} other {# teams}}",
         "view-all": "View All",
         "view-results": "View Results",
         "progress": "Progress",
