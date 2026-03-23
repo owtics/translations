@@ -87,7 +87,8 @@
       "diff": "+/−",
       "maps": "Maps",
       "week": "Week",
-      "round": "Round"
+      "round": "Round",
+      "matchday": "Matchday"
     },
     "bracket": {
       "no-data": "No bracket data available",

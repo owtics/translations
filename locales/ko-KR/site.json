@@ -91,7 +91,8 @@
       "diff": "+/−",
       "maps": "맵",
       "week": "주차",
-      "round": "라운드"
+      "round": "라운드",
+      "matchday": "매치데이"
     },
     "format": {
       "FT2": "2선승",

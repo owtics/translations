@@ -91,7 +91,8 @@
       "diff": "+/−",
       "maps": "地圖",
       "week": "週",
-      "round": "輪次"
+      "round": "輪次",
+      "matchday": "比賽日"
     },
     "format": {
       "FT2": "先勝2局",
