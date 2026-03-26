@@ -65,7 +65,10 @@
         "STAFF": "스태프",
         "MANAGER": "매니저",
         "GENERAL_MANAGER": "단장",
-        "ANALYST": "분석관"
+        "ANALYST": "분석관",
+        "PLAYING_COACH": "플레잉 코치",
+        "PLAYING_MANAGER": "플레잉 매니저",
+        "HEAD_OF_APAC": "APAC 총괄"
     },
     "subRole": {
         "ALL": "모든 세부 역할",

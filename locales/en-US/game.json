@@ -65,7 +65,10 @@
         "STAFF": "Staff",
         "MANAGER": "Manager",
         "GENERAL_MANAGER": "General Manager",
-        "ANALYST": "Analyst"
+        "ANALYST": "Analyst",
+        "PLAYING_COACH": "Playing Coach",
+        "PLAYING_MANAGER": "Playing Manager",
+        "HEAD_OF_APAC": "Head of APAC"
     },
     "subRole": {
         "ALL": "All Sub-Roles",

@@ -65,7 +65,10 @@
         "STAFF": "スタッフ",
         "MANAGER": "マネージャー",
         "GENERAL_MANAGER": "ゼネラルマネージャー",
-        "ANALYST": "アナリスト"
+        "ANALYST": "アナリスト",
+        "PLAYING_COACH": "プレイングコーチ",
+        "PLAYING_MANAGER": "プレイングマネージャー",
+        "HEAD_OF_APAC": "APAC統括"
     },
     "subRole": {
         "ALL": "すべてのサブロール",

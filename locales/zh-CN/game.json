@@ -65,7 +65,10 @@
         "STAFF": "工作人员",
         "MANAGER": "经理",
         "GENERAL_MANAGER": "总经理",
-        "ANALYST": "分析师"
+        "ANALYST": "分析师",
+        "PLAYING_COACH": "球员教练",
+        "PLAYING_MANAGER": "球员经理",
+        "HEAD_OF_APAC": "亚太区负责人"
     },
     "subRole": {
         "ALL": "所有子职责",
