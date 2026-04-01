@@ -373,7 +373,11 @@
             "broadcasts": {
                 "watch-live": "라이브 시청",
                 "watch-replay": "다시 보기",
+                "where-to-watch": "시청 채널",
                 "live-stream": "라이브 방송",
+                "streams": "스트림",
+                "broadcasts-label": "방송",
+                "replays": "다시 보기",
                 "player-pov": "선수 시점 ({count})",
                 "role-other": "기타"
             },

@@ -373,7 +373,11 @@
             "broadcasts": {
                 "watch-live": "ライブ視聴",
                 "watch-replay": "リプレイを見る",
+                "where-to-watch": "視聴チャンネル",
                 "live-stream": "ライブ配信",
+                "streams": "ストリーム",
+                "broadcasts-label": "配信",
+                "replays": "リプレイ",
                 "player-pov": "選手視点 ({count})",
                 "role-other": "その他"
             },

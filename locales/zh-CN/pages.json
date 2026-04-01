@@ -373,7 +373,11 @@
             "broadcasts": {
                 "watch-live": "观看直播",
                 "watch-replay": "观看回放",
+                "where-to-watch": "观看渠道",
                 "live-stream": "直播",
+                "streams": "直播流",
+                "broadcasts-label": "转播",
+                "replays": "回放",
                 "player-pov": "选手视角 ({count})",
                 "role-other": "其他"
             },

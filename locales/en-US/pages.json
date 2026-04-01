@@ -373,7 +373,11 @@
             "broadcasts": {
                 "watch-live": "Watch Live",
                 "watch-replay": "Watch Replay",
+                "where-to-watch": "Where to Watch",
                 "live-stream": "Live Stream",
+                "streams": "Streams",
+                "broadcasts-label": "Broadcasts",
+                "replays": "Replays",
                 "player-pov": "Player POV ({count})",
                 "role-other": "Other"
             },
