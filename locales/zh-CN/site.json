@@ -144,6 +144,18 @@
       "win-rate-short": "{rate}% 胜率"
     }
   },
+  "auth": {
+    "sign-in": "登录",
+    "sign-in-discord": "使用 Discord 登录",
+    "sign-out": "退出登录",
+    "processing": "正在验证...",
+    "invalid-callback": "无效的认证回调。",
+    "return-home": "返回首页",
+    "error-account-forbidden": "此账号无法使用 Discord 登录。",
+    "error-invalid-state": "认证会话已过期，请重试。",
+    "error-oauth-failed": "Discord 认证失败，请重试。",
+    "error-no-access": "您没有管理员权限，请联系管理员授权。"
+  },
   "search": {
     "placeholder": "搜索英雄、选手、战队...",
     "no-results": "未找到搜索结果",

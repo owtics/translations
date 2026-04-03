@@ -144,6 +144,18 @@
       "win-rate-short": "{rate}% 승률"
     }
   },
+  "auth": {
+    "sign-in": "로그인",
+    "sign-in-discord": "Discord로 로그인",
+    "sign-out": "로그아웃",
+    "processing": "인증 처리 중...",
+    "invalid-callback": "유효하지 않은 인증 콜백입니다.",
+    "return-home": "홈으로 돌아가기",
+    "error-account-forbidden": "이 계정은 Discord 로그인을 사용할 수 없습니다.",
+    "error-invalid-state": "인증 세션이 만료되었습니다. 다시 시도해 주세요.",
+    "error-oauth-failed": "Discord 인증에 실패했습니다. 다시 시도해 주세요.",
+    "error-no-access": "관리자 권한이 없습니다. 관리자에게 권한 부여를 요청하세요."
+  },
   "search": {
     "placeholder": "영웅, 선수, 팀 검색...",
     "no-results": "검색 결과가 없습니다",

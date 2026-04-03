@@ -144,6 +144,18 @@
       "win-rate-short": "{rate}% WR"
     }
   },
+  "auth": {
+    "sign-in": "Sign in",
+    "sign-in-discord": "Sign in with Discord",
+    "sign-out": "Sign out",
+    "processing": "Authenticating...",
+    "invalid-callback": "Invalid authentication callback.",
+    "return-home": "Return to home page",
+    "error-account-forbidden": "This account cannot use Discord login.",
+    "error-invalid-state": "Authentication session expired. Please try again.",
+    "error-oauth-failed": "Discord authentication failed. Please try again.",
+    "error-no-access": "You do not have admin access. Contact an administrator."
+  },
   "search": {
     "placeholder": "Search heroes, players, teams...",
     "no-results": "No results found",

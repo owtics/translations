@@ -144,6 +144,18 @@
       "win-rate-short": "{rate}% 勝率"
     }
   },
+  "auth": {
+    "sign-in": "ログイン",
+    "sign-in-discord": "Discordでログイン",
+    "sign-out": "ログアウト",
+    "processing": "認証処理中...",
+    "invalid-callback": "無効な認証コールバックです。",
+    "return-home": "ホームに戻る",
+    "error-account-forbidden": "このアカウントではDiscordログインを使用できません。",
+    "error-invalid-state": "認証セッションが期限切れです。もう一度お試しください。",
+    "error-oauth-failed": "Discord認証に失敗しました。もう一度お試しください。",
+    "error-no-access": "管理者権限がありません。管理者に権限の付与を依頼してください。"
+  },
   "search": {
     "placeholder": "ヒーロー、選手、チームを検索...",
     "no-results": "検索結果がありません",

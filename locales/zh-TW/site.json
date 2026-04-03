@@ -144,6 +144,18 @@
       "win-rate-short": "{rate}% 勝率"
     }
   },
+  "auth": {
+    "sign-in": "登入",
+    "sign-in-discord": "使用 Discord 登入",
+    "sign-out": "登出",
+    "processing": "正在驗證...",
+    "invalid-callback": "無效的認證回調。",
+    "return-home": "返回首頁",
+    "error-account-forbidden": "此帳號無法使用 Discord 登入。",
+    "error-invalid-state": "認證工作階段已過期，請重試。",
+    "error-oauth-failed": "Discord 認證失敗，請重試。",
+    "error-no-access": "您沒有管理員權限，請聯繫管理員授權。"
+  },
   "search": {
     "placeholder": "搜尋英雄、選手、戰隊...",
     "no-results": "未找到搜尋結果",
