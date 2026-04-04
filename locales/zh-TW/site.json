@@ -60,6 +60,9 @@
     "expand": "更多",
     "collapse": "收起"
   },
+  "filter-sheet": {
+    "title": "篩選"
+  },
   "esports": {
     "broadcast": {
       "live": "直播中",

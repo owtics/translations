@@ -60,6 +60,9 @@
     "expand": "詳細",
     "collapse": "閉じる"
   },
+  "filter-sheet": {
+    "title": "フィルター"
+  },
   "esports": {
     "broadcast": {
       "live": "LIVE",
