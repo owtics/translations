@@ -46,7 +46,7 @@ See [TRANSLATION_GUIDE.md](TRANSLATION_GUIDE.md) for detailed namespace descript
 {
     "nav": {
         "hero-statistics": "영웅 통계",  // ← edit this value
-        "esports": "E-Sports"            // ← or this one
+        "esports": "Esports"            // ← or this one
     }
 }
 ```
