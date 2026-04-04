@@ -1,5 +1,8 @@
 {
   "nav": {
+    "home": "首頁",
+    "heroes": "英雄",
+    "me": "我的",
     "hero-statistics": "英雄數據",
     "hero-stats": "英雄數據",
     "esports": "電競賽事",
@@ -155,6 +158,12 @@
     "error-invalid-state": "認證工作階段已過期，請重試。",
     "error-oauth-failed": "Discord 認證失敗，請重試。",
     "error-no-access": "您沒有管理員權限，請聯繫管理員授權。"
+  },
+  "me": {
+    "login-prompt": "登入後即可使用個人資料和個人化功能。",
+    "language": "語言",
+    "theme": "主題",
+    "discord-community": "Discord 社群"
   },
   "search": {
     "placeholder": "搜尋英雄、選手、戰隊...",

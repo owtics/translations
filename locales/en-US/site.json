@@ -1,5 +1,8 @@
 {
   "nav": {
+    "home": "Home",
+    "heroes": "Heroes",
+    "me": "Me",
     "hero-statistics": "Hero Statistics",
     "hero-stats": "Hero Stats",
     "esports": "E-Sports",
@@ -155,6 +158,12 @@
     "error-invalid-state": "Authentication session expired. Please try again.",
     "error-oauth-failed": "Discord authentication failed. Please try again.",
     "error-no-access": "You do not have admin access. Contact an administrator."
+  },
+  "me": {
+    "login-prompt": "Sign in to access your profile and personalized features.",
+    "language": "Language",
+    "theme": "Theme",
+    "discord-community": "Discord Community"
   },
   "search": {
     "placeholder": "Search heroes, players, teams...",

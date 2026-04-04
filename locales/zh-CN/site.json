@@ -1,5 +1,8 @@
 {
   "nav": {
+    "home": "首页",
+    "heroes": "英雄",
+    "me": "我的",
     "hero-statistics": "英雄数据",
     "hero-stats": "英雄数据",
     "esports": "电竞赛事",
@@ -155,6 +158,12 @@
     "error-invalid-state": "认证会话已过期，请重试。",
     "error-oauth-failed": "Discord 认证失败，请重试。",
     "error-no-access": "您没有管理员权限，请联系管理员授权。"
+  },
+  "me": {
+    "login-prompt": "登录后即可使用个人资料和个性化功能。",
+    "language": "语言",
+    "theme": "主题",
+    "discord-community": "Discord 社区"
   },
   "search": {
     "placeholder": "搜索英雄、选手、战队...",

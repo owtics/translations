@@ -1,5 +1,8 @@
 {
   "nav": {
+    "home": "ホーム",
+    "heroes": "ヒーロー",
+    "me": "マイページ",
     "hero-statistics": "ヒーロー統計",
     "hero-stats": "ヒーローステータス",
     "esports": "E-Sports",
@@ -155,6 +158,12 @@
     "error-invalid-state": "認証セッションが期限切れです。もう一度お試しください。",
     "error-oauth-failed": "Discord認証に失敗しました。もう一度お試しください。",
     "error-no-access": "管理者権限がありません。管理者に権限の付与を依頼してください。"
+  },
+  "me": {
+    "login-prompt": "ログインしてプロフィールやカスタマイズ機能をご利用ください。",
+    "language": "言語",
+    "theme": "テーマ",
+    "discord-community": "Discordコミュニティ"
   },
   "search": {
     "placeholder": "ヒーロー、選手、チームを検索...",
