@@ -166,7 +166,8 @@
     "login-prompt": "Sign in to access your profile and personalized features.",
     "language": "Language",
     "theme": "Theme",
-    "discord-community": "Discord Community"
+    "discord-community": "Discord Community",
+    "contributors": "Contributors"
   },
   "search": {
     "placeholder": "Search heroes, players, teams...",

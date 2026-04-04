@@ -166,7 +166,8 @@
     "login-prompt": "ログインしてプロフィールやカスタマイズ機能をご利用ください。",
     "language": "言語",
     "theme": "テーマ",
-    "discord-community": "Discordコミュニティ"
+    "discord-community": "Discordコミュニティ",
+    "contributors": "コントリビューター"
   },
   "search": {
     "placeholder": "ヒーロー、選手、チームを検索...",

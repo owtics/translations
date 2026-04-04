@@ -166,7 +166,8 @@
     "login-prompt": "登录后即可使用个人资料和个性化功能。",
     "language": "语言",
     "theme": "主题",
-    "discord-community": "Discord 社区"
+    "discord-community": "Discord 社区",
+    "contributors": "贡献者"
   },
   "search": {
     "placeholder": "搜索英雄、选手、战队...",
