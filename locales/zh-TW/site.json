@@ -85,7 +85,7 @@
     },
     "bracket": {
       "no-data": "暫無對陣圖資料",
-      "scroll-hint": "\u2190 滑動查看完整對陣圖 \u2192"
+      "scroll-hint": "← 滑動查看完整對陣圖 →"
     },
     "standings": {
       "rank": "#",
@@ -149,7 +149,8 @@
       "losses-short": "{count}負",
       "draws-short": "{count}平",
       "win-rate-short": "{rate}% 勝率"
-    }
+    },
+    "competition-format": "賽制"
   },
   "auth": {
     "sign-in": "登入",

@@ -99,7 +99,7 @@
     },
     "bracket": {
       "no-data": "No bracket data available",
-      "scroll-hint": "\u2190 Scroll to see full bracket \u2192"
+      "scroll-hint": "← Scroll to see full bracket →"
     },
     "format": {
       "FT2": "First to 2",
@@ -149,7 +149,8 @@
       "losses-short": "{count}L",
       "draws-short": "{count}D",
       "win-rate-short": "{rate}% WR"
-    }
+    },
+    "competition-format": "Format"
   },
   "auth": {
     "sign-in": "Sign in",

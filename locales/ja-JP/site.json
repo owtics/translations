@@ -85,7 +85,7 @@
     },
     "bracket": {
       "no-data": "トーナメント表データがありません",
-      "scroll-hint": "\u2190 スクロールしてトーナメント表全体を表示 \u2192"
+      "scroll-hint": "← スクロールしてトーナメント表全体を表示 →"
     },
     "standings": {
       "rank": "#",
@@ -149,7 +149,8 @@
       "losses-short": "{count}敗",
       "draws-short": "{count}分",
       "win-rate-short": "{rate}% 勝率"
-    }
+    },
+    "competition-format": "フォーマット"
   },
   "auth": {
     "sign-in": "ログイン",

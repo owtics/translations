@@ -85,7 +85,7 @@
     },
     "bracket": {
       "no-data": "브라켓 데이터가 없습니다",
-      "scroll-hint": "\u2190 스크롤하여 전체 브라켓 보기 \u2192"
+      "scroll-hint": "← 스크롤하여 전체 브라켓 보기 →"
     },
     "standings": {
       "rank": "#",
@@ -149,7 +149,8 @@
       "losses-short": "{count}패",
       "draws-short": "{count}무",
       "win-rate-short": "{rate}% 승률"
-    }
+    },
+    "competition-format": "포맷"
   },
   "auth": {
     "sign-in": "로그인",
