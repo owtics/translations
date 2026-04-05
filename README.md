@@ -1,6 +1,6 @@
 # OWTICS.GG Translations
 
-Community translations for [OWTICS.GG](https://owtics.gg) — Overwatch 2 statistics, analytics, and esports platform.
+Community translations for [OWTICS.GG](https://owtics.gg) — Overwatch statistics, analytics, and esports platform.
 
 ## Translation Status
 
