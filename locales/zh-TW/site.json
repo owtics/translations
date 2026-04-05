@@ -83,6 +83,18 @@
       "PLAYOFFS_SD_FINAL": "季後賽（種子排位賽決賽）",
       "ROUND_ROBIN_STAGE": "循環賽階段"
     },
+    "phase-format": {
+      "ROUND_ROBIN": "循環賽",
+      "SWISS": "瑞士制",
+      "SINGLE_ELIMINATION": "單敗淘汰賽",
+      "DOUBLE_ELIMINATION": "雙敗淘汰賽"
+    },
+    "outcome": {
+      "advance-top": "<team>前{count}名</team>晉級<dest>{destination}</dest>",
+      "advance-next": "<team>接下來{count}名</team>晉級<dest>{destination}</dest>",
+      "qualify": "<team>前{count}名</team>晉級",
+      "eliminate": "<team>後{count}名</team>淘汰"
+    },
     "bracket": {
       "no-data": "暫無對陣圖資料",
       "scroll-hint": "← 滑動查看完整對陣圖 →"

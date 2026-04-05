@@ -83,6 +83,18 @@
       "PLAYOFFS_SD_FINAL": "季后赛（种子排位赛决赛）",
       "ROUND_ROBIN_STAGE": "循环赛阶段"
     },
+    "phase-format": {
+      "ROUND_ROBIN": "循环赛",
+      "SWISS": "瑞士轮",
+      "SINGLE_ELIMINATION": "单败淘汰赛",
+      "DOUBLE_ELIMINATION": "双败淘汰赛"
+    },
+    "outcome": {
+      "advance-top": "<team>前{count}名</team>晋级<dest>{destination}</dest>",
+      "advance-next": "<team>接下来{count}名</team>晋级<dest>{destination}</dest>",
+      "qualify": "<team>前{count}名</team>晋级",
+      "eliminate": "<team>后{count}名</team>淘汰"
+    },
     "bracket": {
       "no-data": "暂无对阵图数据",
       "scroll-hint": "← 滑动查看完整对阵图 →"

@@ -83,6 +83,18 @@
       "PLAYOFFS_SD_FINAL": "プレイオフ (シード決定戦 ファイナル)",
       "ROUND_ROBIN_STAGE": "ラウンドロビンステージ"
     },
+    "phase-format": {
+      "ROUND_ROBIN": "ラウンドロビン",
+      "SWISS": "スイス式",
+      "SINGLE_ELIMINATION": "シングルエリミネーション",
+      "DOUBLE_ELIMINATION": "ダブルエリミネーション"
+    },
+    "outcome": {
+      "advance-top": "<team>上位{count}チーム</team> <dest>{destination}</dest>に進出",
+      "advance-next": "<team>次の{count}チーム</team> <dest>{destination}</dest>に進出",
+      "qualify": "<team>上位{count}チーム</team>が進出",
+      "eliminate": "<team>下位{count}チーム</team>が敗退"
+    },
     "bracket": {
       "no-data": "トーナメント表データがありません",
       "scroll-hint": "← スクロールしてトーナメント表全体を表示 →"

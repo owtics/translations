@@ -83,6 +83,18 @@
       "PLAYOFFS_SD_FINAL": "Playoffs (Seeding Decider Final)",
       "ROUND_ROBIN_STAGE": "Round Robin Stage"
     },
+    "phase-format": {
+      "ROUND_ROBIN": "Round Robin",
+      "SWISS": "Swiss",
+      "SINGLE_ELIMINATION": "Single Elimination",
+      "DOUBLE_ELIMINATION": "Double Elimination"
+    },
+    "outcome": {
+      "advance-top": "{count, plural, one {<team>Top # team</team> advances to <dest>{destination}</dest>} other {<team>Top # teams</team> advance to <dest>{destination}</dest>}}",
+      "advance-next": "{count, plural, one {<team>Next # team</team> advances to <dest>{destination}</dest>} other {<team>Next # teams</team> advance to <dest>{destination}</dest>}}",
+      "qualify": "{count, plural, one {<team>Top # team</team> qualifies} other {<team>Top # teams</team> qualify}}",
+      "eliminate": "{count, plural, one {<team>Bottom # team</team> is eliminated} other {<team>Bottom # teams</team> are eliminated}}"
+    },
     "standings": {
       "rank": "#",
       "team": "Team",
