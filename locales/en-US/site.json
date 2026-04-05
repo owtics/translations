@@ -94,7 +94,8 @@
       "maps": "Maps",
       "week": "Week",
       "round": "Round",
-      "matchday": "Matchday"
+      "matchday": "Matchday",
+      "provisional": "Standings may change as matches are played"
     },
     "bracket": {
       "no-data": "No bracket data available",

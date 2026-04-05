@@ -98,7 +98,8 @@
       "maps": "맵",
       "week": "주차",
       "round": "라운드",
-      "matchday": "매치데이"
+      "matchday": "매치데이",
+      "provisional": "경기가 진행됨에 따라 순위가 변동될 수 있습니다"
     },
     "format": {
       "FT2": "2선승",

@@ -98,7 +98,8 @@
       "maps": "地圖",
       "week": "週",
       "round": "輪次",
-      "matchday": "比賽日"
+      "matchday": "比賽日",
+      "provisional": "隨著比賽進行，排名可能會變動"
     },
     "format": {
       "FT2": "先勝2局",
