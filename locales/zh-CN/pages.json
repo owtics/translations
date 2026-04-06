@@ -424,8 +424,8 @@
                 "loading": "正在加载战队数据..."
             },
             "meta": {
-                "title": "{team1} vs {team2} | OWtics.GG - 守望先锋电竞",
-                "description": "{team1} vs {team2}比赛结果。逐图比分、英雄禁用、本场最佳选手与回放代码。守望先锋电竞比赛详细分析。",
+                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
+                "description": "{competition} {team1} vs {team2}比赛结果。逐图比分、英雄禁用、本场最佳选手与回放代码。在OWtics.GG查看守望先锋电竞比赛详细分析。",
                 "keywords": "守望先锋电竞, {team1}, {team2}, 比赛详情"
             }
         }

@@ -424,8 +424,8 @@
                 "loading": "正在載入戰隊數據..."
             },
             "meta": {
-                "title": "{team1} vs {team2} | OWtics.GG - 鬥陣特攻電競",
-                "description": "{team1} vs {team2}比賽結果。逐圖比分、英雄禁用、本場最佳選手與重播代碼。鬥陣特攻電競比賽詳細分析。",
+                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
+                "description": "{competition} {team1} vs {team2}比賽結果。逐圖比分、英雄禁用、本場最佳選手與重播代碼。在OWtics.GG查看鬥陣特攻電競比賽詳細分析。",
                 "keywords": "鬥陣特攻電競, {team1}, {team2}, 比賽詳情"
             }
         }

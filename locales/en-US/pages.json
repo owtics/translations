@@ -424,8 +424,8 @@
                 "loading": "Loading team data..."
             },
             "meta": {
-                "title": "{team1} vs {team2} | OWtics.GG - Overwatch Esports",
-                "description": "{team1} vs {team2} match result. Map-by-map scores, hero bans, Player of the Match, and replay codes. Full Overwatch esports match breakdown.",
+                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
+                "description": "{team1} vs {team2} in {competition}. Map-by-map scores, hero bans, Player of the Match, and replay codes. Full Overwatch esports match breakdown on OWtics.GG.",
                 "keywords": "Overwatch Esports, {team1}, {team2}, Match Details"
             }
         }

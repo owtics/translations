@@ -424,8 +424,8 @@
                 "loading": "팀 데이터 로딩 중..."
             },
             "meta": {
-                "title": "{team1} vs {team2} | OWtics.GG - 오버워치 e스포츠",
-                "description": "{team1} vs {team2} 경기 결과. 맵별 스코어, 영웅 밴, POTM, 리플레이 코드. 오버워치 e스포츠 경기 상세 분석.",
+                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
+                "description": "{competition} {team1} vs {team2} 경기 결과. 맵별 스코어, 영웅 밴, POTM, 리플레이 코드. OWtics.GG에서 오버워치 e스포츠 경기 상세 분석.",
                 "keywords": "오버워치 e스포츠, {team1}, {team2}, 경기 상세"
             }
         }

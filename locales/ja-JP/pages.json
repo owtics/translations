@@ -424,8 +424,8 @@
                 "loading": "チームデータを読み込み中..."
             },
             "meta": {
-                "title": "{team1} vs {team2} | OWtics.GG - オーバーウォッチ2 eスポーツ",
-                "description": "{team1} vs {team2} 試合結果。マップ別スコア、ヒーローBAN、POTM、リプレイコード。オーバーウォッチ2 eスポーツ試合詳細分析。",
+                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
+                "description": "{competition}の{team1} vs {team2}試合結果。マップ別スコア、ヒーローBAN、POTM、リプレイコード。OWtics.GGでオーバーウォッチ2 eスポーツ試合詳細分析。",
                 "keywords": "オーバーウォッチ2 eスポーツ, {team1}, {team2}, 試合詳細"
             }
         }
