@@ -63,6 +63,27 @@
   "filter-sheet": {
     "title": "필터"
   },
+  "pickem": {
+    "card": {
+      "match-number": "{n}경기",
+      "tbd": "미정",
+      "locked": "마감",
+      "open": "팀 선택",
+      "picked": "선택됨"
+    },
+    "score": {
+      "increment": "{team} 스코어 증가",
+      "decrement": "{team} 스코어 감소"
+    },
+    "community": {
+      "no-picks": "아직 예측이 없습니다",
+      "team-a-percentage": "왼쪽 팀 {pct}%",
+      "team-b-percentage": "오른쪽 팀 {pct}%"
+    },
+    "toast": {
+      "submit-error": "예측을 저장하지 못했습니다. 다시 시도해 주세요."
+    }
+  },
   "esports": {
     "broadcast": {
       "live": "LIVE",

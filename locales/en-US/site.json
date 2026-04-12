@@ -63,6 +63,27 @@
   "filter-sheet": {
     "title": "Filter"
   },
+  "pickem": {
+    "card": {
+      "match-number": "Match {n}",
+      "tbd": "TBD",
+      "locked": "Locked",
+      "open": "Tap to pick",
+      "picked": "Picked"
+    },
+    "score": {
+      "increment": "Increment {team} score",
+      "decrement": "Decrement {team} score"
+    },
+    "community": {
+      "no-picks": "No picks yet",
+      "team-a-percentage": "{pct}% for left team",
+      "team-b-percentage": "{pct}% for right team"
+    },
+    "toast": {
+      "submit-error": "Could not save your pick. Please try again."
+    }
+  },
   "esports": {
     "broadcast": {
       "live": "LIVE",

@@ -215,8 +215,38 @@
                 "bracket": "Bracket",
                 "teams": "Teams",
                 "stats": "Stats",
+                "pickem": "Pick'ems",
                 "players": "Players",
                 "staff": "Staff"
+            },
+            "pickem": {
+                "no-active-event": "No active Pick'ems for this tournament yet.",
+                "bracket-not-ready": "The bracket for this phase is not ready for predictions yet.",
+                "state": {
+                    "open": "Open",
+                    "locked": "Locked",
+                    "settled": "Settled"
+                },
+                "countdown": "Locks in {d, plural, =0 {} other {{d}d }}{h}h {m}m",
+                "participants": "{count, plural, one {# player} other {# players}}",
+                "anon": {
+                    "title": "Predict the bracket",
+                    "subtitle": "Sign in with Discord to submit your picks and climb the leaderboard.",
+                    "cta": "Sign in with Discord"
+                },
+                "how": {
+                    "title": "How it works",
+                    "step-1": "Pick the winner of each match in the bracket.",
+                    "step-2": "Optionally predict the exact map score.",
+                    "step-3": "Earn points as real results come in.",
+                    "points": {
+                        "winner": "Winner only",
+                        "matchup": "Correct matchup",
+                        "perfect": "Perfect (exact score)",
+                        "gf": "Grand Final"
+                    },
+                    "lock-note": "All picks lock at the deadline shown above. You can change your picks freely until then."
+                }
             },
             "bracket": {
                 "coming-soon-title": "No bracket available",

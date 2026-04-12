@@ -215,8 +215,38 @@
                 "bracket": "브라켓",
                 "teams": "참가팀",
                 "stats": "통계",
+                "pickem": "픽엠",
                 "players": "선수",
                 "staff": "스태프"
+            },
+            "pickem": {
+                "no-active-event": "이 대회의 픽엠 이벤트가 아직 없습니다.",
+                "bracket-not-ready": "해당 단계의 브라켓이 아직 준비되지 않았습니다.",
+                "state": {
+                    "open": "예측 가능",
+                    "locked": "마감",
+                    "settled": "결과 집계"
+                },
+                "countdown": "{d, plural, =0 {} other {{d}일 }}{h}시간 {m}분 후 마감",
+                "participants": "{count, plural, other {참가자 #명}}",
+                "anon": {
+                    "title": "브라켓을 예측해 보세요",
+                    "subtitle": "디스코드로 로그인하고 예측을 제출해 리더보드에 도전하세요.",
+                    "cta": "디스코드로 로그인"
+                },
+                "how": {
+                    "title": "게임 방법",
+                    "step-1": "각 경기의 승자를 선택합니다.",
+                    "step-2": "정확한 맵 스코어를 추가로 예측할 수 있습니다.",
+                    "step-3": "실제 결과가 나오면 점수가 확정됩니다.",
+                    "points": {
+                        "winner": "승자 적중",
+                        "matchup": "대진 일치",
+                        "perfect": "퍼펙트 (정확 스코어)",
+                        "gf": "그랜드 파이널"
+                    },
+                    "lock-note": "표시된 마감 시각까지 예측을 자유롭게 변경할 수 있습니다."
+                }
             },
             "bracket": {
                 "coming-soon-title": "브라켓 없음",
