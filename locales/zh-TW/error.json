@@ -4,6 +4,11 @@
         "description": "您尋找的英雄頁面不存在。請檢查網址或瀏覽完整的英雄列表。",
         "backToList": "查看所有英雄"
     },
+    "mapNotFound": {
+        "title": "未找到地圖",
+        "description": "您尋找的地圖頁面不存在。請檢查網址或瀏覽完整的地圖列表。",
+        "backToList": "查看所有地圖"
+    },
     "general": {
         "title": "發生了一些問題",
         "description": "載入此頁面時發生錯誤，請稍後重試。",

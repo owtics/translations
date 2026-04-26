@@ -27,10 +27,42 @@
     },
     "hero-statistics": {
         "name": "Hero Statistics",
+        "page-title": "Heroes",
+        "season": "Season {n}",
+        "cold-start-chip": "Cold start",
         "meta": {
             "title": "Hero Statistics | OWtics.GG - Overwatch Statistics, Analytics and Esports",
             "description": "Compare all 45+ Overwatch heroes: win rate, pick rate, ban rate, and KDA. Filter by tier (Bronze-Champion), region, and season. Interactive treemap visualization. Updated daily.",
             "keywords": "Overwatch, OWtics, OWtics.GG, Overwatch Hero Tier List, Overwatch Esports, Overwatch Statistics, Overwatch Statistics"
+        }
+    },
+    "hero-insights": {
+        "section-label": "Insights",
+        "trending": {
+            "title": "Trending",
+            "subtitle": "vs {season}",
+            "subtitle-cold-start": "vs {season} midseason patch",
+            "meta-pick": "Pick Rate",
+            "footer": "New heroes excluded · Top 4 rising / falling",
+            "cold-start-notice": "The season is young, so we're showing the impact of the last midseason patch (S{n} → S{n} midseason) instead.",
+            "empty": "Not enough data yet. Check back in a few days."
+        },
+        "map-meta": {
+            "title": "Map Meta",
+            "subtitle": "Top 7 by pick variance",
+            "meta-chip": "vs average",
+            "footer-link": "View all maps",
+            "footer-explanation": "× = pick rate vs average · right column = pick rate",
+            "empty": "Not enough per-map data for this filter yet.",
+            "slot-aria": "{hero}: {pick}% pick rate, {lift}× average"
+        },
+        "role-meta": {
+            "title": "Role Meta",
+            "subtitle": "Top 3 by win rate · min pick {pct}%",
+            "meta-win": "Win Rate",
+            "count": "Qualified {eligible} / Total {total}",
+            "footer": "Win rate · 50% baseline · min pick {pct}%",
+            "empty": "Not enough role-level data for this filter yet."
         }
     },
     "hero-details": {
@@ -38,6 +70,44 @@
             "title": "{hero} Statistics | OWtics.GG - Overwatch Statistics, Analytics and Esports",
             "description": "{hero} ({role}) win rate, pick rate, ban rate, and KDA in Overwatch. Statistics by tier (Bronze to Champion) and region. Best/worst maps for {hero}. ICHI Rating trend chart. Updated daily.",
             "keywords": "Overwatch, {hero}, {role}, OWtics, OWtics.GG, Overwatch Hero Tier List, Overwatch Esports, Overwatch Statistics, Overwatch Statistics"
+        }
+    },
+    "map-list": {
+        "meta": {
+            "title": "Map Stats | OWtics.GG",
+            "description": "Hero win rates and pick rates per map. Every Overwatch map, grouped by mode.",
+            "keywords": "Overwatch, map stats, maps, OWtics, OWtics.GG, Overwatch map, Overwatch map pool"
+        },
+        "title": "Map Stats",
+        "description": "Hero win rates and pick rates per map. Every Overwatch map, grouped by mode.",
+        "toggle-variants": {
+            "show": "Show seasonal variants",
+            "hide": "Show base maps only"
+        }
+    },
+    "map-details": {
+        "meta": {
+            "title": "{map} — Hero Stats | OWtics.GG",
+            "description": "Hero win rates and pick rates on {map}. Filter by tier and region. Data from Grandmaster competitive matches, updated daily."
+        },
+        "hero-stats": {
+            "title": "Hero Stats on {map}",
+            "description": "Official Overwatch data · Sorted by win rate within each role"
+        },
+        "related": {
+            "title": "Other {mode} Maps"
+        },
+        "variant-notice": {
+            "aria-label": "Seasonal variant notice",
+            "body": "Seasonal variant of {baseName}. Stats reflect the base map.",
+            "cta": "Open {baseName}"
+        },
+        "retired-notice": {
+            "aria-label": "Retired map notice",
+            "body": "This map is no longer part of the competitive map pool."
+        },
+        "seasonal-variants": {
+            "title": "Seasonal Variants"
         }
     },
     "matches": {
@@ -49,6 +119,10 @@
         "view-full": "View full history",
         "mobile-note": "Use a desktop for interactive features like brush zoom and tooltips.",
         "reset-zoom": "Reset zoom",
+        "archived-notice": {
+            "title": "ICHI Rating has not been updated since Overwatch 2 Season 20 (December 2025).",
+            "description": "The Challenger scoring system introduced in Season 20 changed how the top-500 competitive leaderboard is ranked, so ratings are no longer directly comparable to prior seasons. The chart below preserves data through Season 19 as an archive."
+        },
         "selector": {
             "selected": "{count} of {total} selected",
             "clear": "Clear",
@@ -96,8 +170,15 @@
     "hero-stats-table": {
         "title": "Hero Statistics",
         "description": "Official Overwatch data · Updated daily",
+        "tier-spread-aria": "Pick rate distribution across tiers",
+        "tier-spread-win-aria": "Win rate distribution across tiers",
+        "tier-legend-label": "Tiers",
+        "tier-legend-aria": "Tier color legend",
+        "tier-legend-gmc": "GM+Champion",
         "columns": {
-            "hero": "Hero"
+            "hero": "Hero",
+            "tier-spread": "Pick by Tier",
+            "tier-spread-win": "Win by Tier"
         },
         "summary": {
             "title": "Top {role, select, Tank {Tank} Damage {Damage} Support {Support} other {}} Heroes",
@@ -105,6 +186,7 @@
         },
         "toolbar": {
             "hero-count": "{count} heroes",
+            "hero-count-of-total": "(of {total})",
             "top-pick": "Top Pick",
             "top-wr": "Top WR",
             "top-ban": "Top Ban",
@@ -127,6 +209,22 @@
             "game-mode": "Game Mode",
             "skill-tier": "Skill Tier"
         },
+        "chart": {
+            "title": "Pick & Win Rate Distribution",
+            "aria-label": "Combo chart of per-tier pick rate bars and win rate markers on a dual axis",
+            "axis-pick": "Pick Rate",
+            "axis-win": "Win Rate",
+            "tier-datum-label": "{tier}: pick {pick}%, win {win}%"
+        },
+        "table": {
+            "title": "Per-Tier Breakdown",
+            "column": {
+                "tier": "Tier",
+                "pick": "Pick rate",
+                "kda": "KDA",
+                "ban": "Ban rate"
+            }
+        },
         "error": {
             "no-data": "There is no data available for the selected filters.\nPlease try changing the filters or check back later."
         }
@@ -141,10 +239,17 @@
     },
     "hero-map-stats": {
         "title": "{hero} Map Stats",
-        "description": "GM+ match data · Sample size grows over season",
+        "description": "Match data for the selected tier · Sample size grows over season",
+        "description-cold-start-previous": "Day {days} of the new season · Showing last season's data until the sample builds up.",
+        "description-cold-start-current": "Day {days} of the new season · Current-season sample is still small.",
+        "cta-current-season": "View current season",
+        "cta-previous-season": "View last season",
         "best-maps": "Best Maps",
         "worst-maps": "Worst Maps",
         "mode": "Mode",
+        "filters": {
+            "tier": "Tier"
+        },
         "table": {
             "expand": "+{count} more maps",
             "collapse": "Show less"
@@ -156,6 +261,10 @@
             "sensitivity-high": "High variance across maps (σ {sigma}%)",
             "sensitivity-low": "Consistent across maps (σ {sigma}%)",
             "win-rate-by-mode": "Win Rate by Mode"
+        },
+        "empty": {
+            "title": "New hero — stats are still coming in.",
+            "description": "Pick rate and win rate will appear as more players play {hero}. Check back in a few days."
         }
     },
     "esports": {

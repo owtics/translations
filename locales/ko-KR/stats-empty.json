@@ -1,0 +1,24 @@
+{
+  "reason": {
+    "HERO_NOT_RELEASED": {
+      "title": "{hero}은(는) 아직 출시되지 않았습니다",
+      "description": "이 영웅이 출시되고 충분한 데이터가 수집되면 통계를 확인할 수 있습니다."
+    },
+    "RECENTLY_RELEASED": {
+      "title": "{hero}은(는) 최근 출시되었습니다",
+      "description": "아직 데이터를 수집 중입니다. 더 많은 경기가 진행되면 곧 통계가 제공됩니다."
+    },
+    "REGION_NOT_SUPPORTED": {
+      "title": "이 지역에서는 통계를 제공하지 않습니다",
+      "description": "선택한 지역에서는 {hero}의 통계가 수집되지 않습니다."
+    },
+    "FILTER_EXCLUDES_ALL_DATA": {
+      "title": "해당 필터에 데이터가 없습니다",
+      "description": "현재 필터 조합으로는 {hero}의 데이터가 없습니다. 필터를 조정해 보세요."
+    },
+    "ETL_PIPELINE_HALTED": {
+      "title": "데이터 파이프라인 일시 중지",
+      "description": "이 통계의 데이터 파이프라인이 현재 중단되었습니다. 복구 작업 중입니다."
+    }
+  }
+}

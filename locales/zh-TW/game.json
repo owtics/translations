@@ -99,6 +99,19 @@
         "ARCADE": "街機先鋒",
         "CUSTOM": "自訂"
     },
+    "mapMode": {
+        "ASSAULT": "攻擊",
+        "CONTROL": "佔領",
+        "ESCORT": "護送",
+        "HYBRID": "攻擊/護送",
+        "PUSH": "推車",
+        "FLASHPOINT": "閃點",
+        "CLASH": "衝突",
+        "STADIUM": "競技場"
+    },
+    "mapVariant": {
+        "seasonal": "限時版本"
+    },
     "tier": {
         "ALL": "{type, select, short {全部} long {所有段位} other {所有段位}}",
         "BRONZE": "{type, select, short {銅} long {青銅} other {青銅}}",

@@ -27,10 +27,42 @@
     },
     "hero-statistics": {
         "name": "ヒーロー統計",
+        "page-title": "ヒーロー",
+        "season": "シーズン{n}",
+        "cold-start-chip": "シーズン序盤",
         "meta": {
             "title": "ヒーロー統計 | OWtics.GG - オーバーウォッチ2統計",
             "description": "オーバーウォッチ2全45+ヒーロー比較：勝率、ピック率、バン率、KDA。ティア別（ブロンズ〜チャンピオン）、リージョン別、シーズン別フィルター。ツリーマップ可視化。毎日更新。",
             "keywords": "オーバーウォッチ2, OWtics, OWtics.GG, オーバーウォッチ2 ヒーローティアリスト, オーバーウォッチ2 eスポーツ, オーバーウォッチ 統計, オーバーウォッチ2 統計"
+        }
+    },
+    "hero-insights": {
+        "section-label": "インサイト",
+        "trending": {
+            "title": "Trending",
+            "subtitle": "vs {season}",
+            "subtitle-cold-start": "vs {season} ミッドシーズンパッチ",
+            "meta-pick": "ピック率",
+            "footer": "新ヒーロー除外 · 上昇 / 下降 Top 4",
+            "cold-start-notice": "シーズン序盤は変化が小さいので、前回のミッドシーズンパッチ（S{n} → S{n} ミッドシーズン）の影響を代わりに表示しています。",
+            "empty": "まだデータが不足しています。数日後に再度ご確認ください。"
+        },
+        "map-meta": {
+            "title": "Map Meta",
+            "subtitle": "ピック率の偏差 Top 7 マップ",
+            "meta-chip": "平均比",
+            "footer-link": "マップ一覧",
+            "footer-explanation": "× = 平均比ピック率 · 右列は絶対ピック率",
+            "empty": "この条件のマップデータがまだ不足しています。",
+            "slot-aria": "{hero}: ピック率 {pick}%、平均比 {lift}倍"
+        },
+        "role-meta": {
+            "title": "Role Meta",
+            "subtitle": "勝率 Top 3 · 最小ピック率 {pct}%",
+            "meta-win": "勝率",
+            "count": "対象 {eligible} / 全体 {total}",
+            "footer": "勝率基準 · 50%ベースライン · 最小ピック率 {pct}%",
+            "empty": "この条件のロール別データがまだ不足しています。"
         }
     },
     "hero-details": {
@@ -38,6 +70,44 @@
             "title": "{hero}統計 | OWtics.GG - オーバーウォッチ2統計",
             "description": "{hero}（{role}）オーバーウォッチ2勝率、ピック率、バン率、KDA。ティア別（ブロンズ〜チャンピオン）、リージョン別統計。{hero}のベスト/ワーストマップ。ICHIインデックス推移チャート。毎日更新。",
             "keywords": "オーバーウォッチ2, {hero}, {role}, OWtics, OWtics.GG, オーバーウォッチ2 ヒーローティアリスト, オーバーウォッチ2 eスポーツ, オーバーウォッチ 統計, オーバーウォッチ2 統計"
+        }
+    },
+    "map-list": {
+        "meta": {
+            "title": "マップ統計 | OWtics.GG",
+            "description": "マップ別のヒーロー勝率・ピック率。全てのオーバーウォッチマップをモード別に整理。",
+            "keywords": "オーバーウォッチ, マップ統計, マップ, OWtics, OWtics.GG, オーバーウォッチ マップ, オーバーウォッチ マッププール"
+        },
+        "title": "マップ統計",
+        "description": "マップ別のヒーロー勝率・ピック率。全てのオーバーウォッチマップをモード別に整理。",
+        "toggle-variants": {
+            "show": "シーズン限定マップを表示",
+            "hide": "通常マップのみ表示"
+        }
+    },
+    "map-details": {
+        "meta": {
+            "title": "{map} — ヒーロー統計 | OWtics.GG",
+            "description": "{map}におけるヒーローの勝率とピック率。ティア・リージョンでフィルタリング可能。グランドマスターのコンペティティブデータに基づき、毎日更新されます。"
+        },
+        "hero-stats": {
+            "title": "{map}のヒーロー統計",
+            "description": "公式オーバーウォッチデータ · 各ロール内で勝率の高い順に並び替え"
+        },
+        "related": {
+            "title": "他の{mode}マップ"
+        },
+        "variant-notice": {
+            "aria-label": "シーズン限定マップのお知らせ",
+            "body": "{baseName}のシーズン限定バリアントです。統計はベースマップのデータを表示しています。",
+            "cta": "{baseName}を開く"
+        },
+        "retired-notice": {
+            "aria-label": "引退マップのお知らせ",
+            "body": "このマップは現在のコンペティティブのマップローテーションには含まれていません。"
+        },
+        "seasonal-variants": {
+            "title": "シーズン限定バリアント"
         }
     },
     "matches": {
@@ -49,6 +119,10 @@
         "view-full": "全期間を表示",
         "mobile-note": "ブラシズーム、ツールチップなどのインタラクティブ機能はデスクトップをご利用ください。",
         "reset-zoom": "ズームリセット",
+        "archived-notice": {
+            "title": "ICHI Ratingはオーバーウォッチ2 シーズン20（2025年12月）以降更新されていません。",
+            "description": "シーズン20で導入されたチャレンジャースコア（Challenger）により競技モードTop 500リーダーボードの順位基準が変わり、過去シーズンと同じ基準で比較することが難しくなりました。以下のチャートはシーズン19までの記録をアーカイブとして保存したものです。"
+        },
         "selector": {
             "selected": "{total}件中{count}件選択",
             "clear": "クリア",
@@ -96,8 +170,15 @@
     "hero-stats-table": {
         "title": "ヒーロー統計",
         "description": "オーバーウォッチ公式データ · 毎日更新",
+        "tier-spread-aria": "ティア別ピック率分布",
+        "tier-spread-win-aria": "ティア別勝率分布",
+        "tier-legend-label": "ティア",
+        "tier-legend-aria": "ティアカラー凡例",
+        "tier-legend-gmc": "GM+チャンピオン",
         "columns": {
-            "hero": "ヒーロー"
+            "hero": "ヒーロー",
+            "tier-spread": "ティア別ピック率",
+            "tier-spread-win": "ティア別勝率"
         },
         "summary": {
             "title": "{role, select, Tank {タンク} Damage {ダメージ} Support {サポート} other {}} トップヒーロー",
@@ -105,6 +186,7 @@
         },
         "toolbar": {
             "hero-count": "ヒーロー{count}体",
+            "hero-count-of-total": "（全{total}体中）",
             "top-pick": "最高ピック率",
             "top-wr": "最高勝率",
             "top-ban": "最高BAN率",
@@ -127,6 +209,22 @@
             "game-mode": "ゲームモード",
             "skill-tier": "スキルティア"
         },
+        "chart": {
+            "title": "ピック率・勝率の分布",
+            "aria-label": "ティアごとのピック率の棒と勝率マーカーをデュアル軸で表示したコンボチャート",
+            "axis-pick": "ピック率",
+            "axis-win": "勝率",
+            "tier-datum-label": "{tier}: ピック率 {pick}%, 勝率 {win}%"
+        },
+        "table": {
+            "title": "ティア別の数値",
+            "column": {
+                "tier": "ティア",
+                "pick": "ピック率",
+                "kda": "KDA",
+                "ban": "バン率"
+            }
+        },
         "error": {
             "no-data": "選択したフィルターに対応するデータがありません。\nフィルターを変更するか、後でもう一度お試しください。"
         }
@@ -141,10 +239,17 @@
     },
     "hero-map-stats": {
         "title": "{hero} マップ別統計",
-        "description": "グランドマスター+試合データ · シーズン進行に伴い標本増加",
+        "description": "選択中のランク帯の試合データ · シーズン進行に伴い標本増加",
+        "description-cold-start-previous": "シーズン{days}日目 · 標本が十分になるまで前シーズンのデータを表示しています。",
+        "description-cold-start-current": "シーズン{days}日目 · 今シーズンの標本はまだ少なめです。",
+        "cta-current-season": "今シーズンを表示",
+        "cta-previous-season": "前シーズンを表示",
         "best-maps": "得意マップ",
         "worst-maps": "苦手マップ",
         "mode": "モード",
+        "filters": {
+            "tier": "ランク帯"
+        },
         "table": {
             "expand": "+{count}マップを表示",
             "collapse": "折りたたむ"
@@ -156,6 +261,10 @@
             "sensitivity-high": "マップによる差が大きい (σ {sigma}%)",
             "sensitivity-low": "マップに関係なく安定 (σ {sigma}%)",
             "win-rate-by-mode": "モード別勝率"
+        },
+        "empty": {
+            "title": "新ヒーロー — データ収集中。",
+            "description": "{hero} のプレイが増えると、ピック率と勝率が表示されます。数日後に再度ご確認ください。"
         }
     },
     "esports": {

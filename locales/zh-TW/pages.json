@@ -27,10 +27,42 @@
     },
     "hero-statistics": {
         "name": "英雄數據",
+        "page-title": "英雄",
+        "season": "賽季{n}",
+        "cold-start-chip": "賽季初期",
         "meta": {
             "title": "英雄數據 | OWtics.GG - 鬥陣特攻數據分析與電競",
             "description": "比較鬥陣特攻全部45+英雄：勝率、選取率、禁用率、KDA。按段位（青銅至冠軍）、地區、賽季篩選。互動式樹狀圖視覺化。每日更新。",
             "keywords": "鬥陣特攻, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
+        }
+    },
+    "hero-insights": {
+        "section-label": "數據洞察",
+        "trending": {
+            "title": "Trending",
+            "subtitle": "對比 {season}",
+            "subtitle-cold-start": "對比 {season} 賽季中補丁",
+            "meta-pick": "選取率",
+            "footer": "不含新英雄 · 上升 / 下降 前 4",
+            "cold-start-notice": "賽季初期變化較少，先為你展示上次賽季中補丁（S{n} → S{n} 賽季中）的影響。",
+            "empty": "資料累積中，請過幾天再來查看。"
+        },
+        "map-meta": {
+            "title": "Map Meta",
+            "subtitle": "選取率差異 前 7 張地圖",
+            "meta-chip": "相對平均",
+            "footer-link": "查看全部地圖",
+            "footer-explanation": "× = 選取率相對平均值 · 右列為絕對選取率",
+            "empty": "此條件下的地圖資料尚不充足。",
+            "slot-aria": "{hero}:選取率 {pick}%,平均的 {lift} 倍"
+        },
+        "role-meta": {
+            "title": "Role Meta",
+            "subtitle": "勝率前 3 · 最低選取率 {pct}%",
+            "meta-win": "勝率",
+            "count": "符合 {eligible} / 全部 {total}",
+            "footer": "依勝率 · 50% 基線 · 最低選取率 {pct}%",
+            "empty": "此條件下的分路資料尚不充足。"
         }
     },
     "hero-details": {
@@ -38,6 +70,44 @@
             "title": "{hero}數據 | OWtics.GG - 鬥陣特攻數據分析與電競",
             "description": "{hero}（{role}）鬥陣特攻勝率、選取率、禁用率、KDA。按段位（青銅至冠軍）與地區統計。{hero}最佳/最差地圖。ICHI指數趨勢圖。每日更新。",
             "keywords": "鬥陣特攻, {hero}, {role}, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
+        }
+    },
+    "map-list": {
+        "meta": {
+            "title": "地圖統計 | OWtics.GG",
+            "description": "每張地圖的英雄勝率與選用率。所有鬥陣特攻地圖依模式分組。",
+            "keywords": "鬥陣特攻, 地圖統計, 地圖, OWtics, OWtics.GG, 鬥陣特攻地圖, 鬥陣特攻地圖池"
+        },
+        "title": "地圖統計",
+        "description": "每張地圖的英雄勝率與選用率。所有鬥陣特攻地圖依模式分組。",
+        "toggle-variants": {
+            "show": "顯示限時版本",
+            "hide": "僅顯示基礎地圖"
+        }
+    },
+    "map-details": {
+        "meta": {
+            "title": "{map} — 英雄數據 | OWtics.GG",
+            "description": "{map}上的英雄勝率與選取率。支援依段位和地區篩選。基於宗師競技模式數據，每日更新。"
+        },
+        "hero-stats": {
+            "title": "{map}英雄數據",
+            "description": "官方鬥陣特攻數據 · 同職責內依勝率降序排序"
+        },
+        "related": {
+            "title": "其他{mode}地圖"
+        },
+        "variant-notice": {
+            "aria-label": "限時版本提示",
+            "body": "本地圖是{baseName}的限時版本。統計資料來自基礎地圖。",
+            "cta": "前往{baseName}"
+        },
+        "retired-notice": {
+            "aria-label": "退役地圖提示",
+            "body": "此地圖已不在競技模式地圖池中。"
+        },
+        "seasonal-variants": {
+            "title": "限時版本"
         }
     },
     "matches": {
@@ -49,6 +119,10 @@
         "view-full": "查看完整歷史",
         "mobile-note": "如需使用框選縮放、懸浮提示等互動功能，請在桌面端瀏覽。",
         "reset-zoom": "重設縮放",
+        "archived-notice": {
+            "title": "ICHI Rating 自《鬥陣特攻 2》第 20 賽季（2025 年 12 月）起不再更新。",
+            "description": "第 20 賽季引入的挑戰者分數（Challenger）改變了競技模式 Top 500 排行榜的排名規則，無法再與此前賽季以相同標準進行比較。下方圖表保留了第 19 賽季之前的紀錄作為歸檔。"
+        },
         "selector": {
             "selected": "已選擇{count}/{total}",
             "clear": "清除",
@@ -96,8 +170,15 @@
     "hero-stats-table": {
         "title": "英雄數據",
         "description": "鬥陣特攻官方數據 · 每日更新",
+        "tier-spread-aria": "段位選取率分布",
+        "tier-spread-win-aria": "段位勝率分布",
+        "tier-legend-label": "段位",
+        "tier-legend-aria": "段位顏色圖例",
+        "tier-legend-gmc": "宗師+冠軍",
         "columns": {
-            "hero": "英雄"
+            "hero": "英雄",
+            "tier-spread": "段位選取率",
+            "tier-spread-win": "段位勝率"
         },
         "summary": {
             "title": "{role, select, Tank {重裝} Damage {輸出} Support {輔助} other {}}熱門英雄",
@@ -105,6 +186,7 @@
         },
         "toolbar": {
             "hero-count": "{count}位英雄",
+            "hero-count-of-total": "（共{total}位）",
             "top-pick": "最高選取率",
             "top-wr": "最高勝率",
             "top-ban": "最高禁用率",
@@ -127,6 +209,22 @@
             "game-mode": "遊戲模式",
             "skill-tier": "段位"
         },
+        "chart": {
+            "title": "選用率與勝率分佈",
+            "aria-label": "依段位顯示選用率長條與勝率標記的雙軸組合圖",
+            "axis-pick": "選用率",
+            "axis-win": "勝率",
+            "tier-datum-label": "{tier}: 選用率 {pick}%, 勝率 {win}%"
+        },
+        "table": {
+            "title": "各段位數值",
+            "column": {
+                "tier": "段位",
+                "pick": "選用率",
+                "kda": "KDA",
+                "ban": "禁用率"
+            }
+        },
         "error": {
             "no-data": "所選篩選條件下暫無數據。\n請嘗試更改篩選條件或稍後再來查看。"
         }
@@ -141,10 +239,17 @@
     },
     "hero-map-stats": {
         "title": "{hero}地圖數據",
-        "description": "宗師+段位比賽數據 · 樣本量隨賽季增長",
+        "description": "所選段位比賽數據 · 樣本量隨賽季增長",
+        "description-cold-start-previous": "新賽季第{days}天 · 樣本量充足前,先顯示上賽季資料。",
+        "description-cold-start-current": "新賽季第{days}天 · 本賽季樣本量仍然較少。",
+        "cta-current-season": "查看本賽季",
+        "cta-previous-season": "查看上賽季",
         "best-maps": "優勢地圖",
         "worst-maps": "劣勢地圖",
         "mode": "模式",
+        "filters": {
+            "tier": "段位"
+        },
         "table": {
             "expand": "還有{count}張地圖",
             "collapse": "收起"
@@ -156,6 +261,10 @@
             "sensitivity-high": "不同地圖間差異較大 (σ {sigma}%)",
             "sensitivity-low": "各地圖表現穩定 (σ {sigma}%)",
             "win-rate-by-mode": "分模式勝率"
+        },
+        "empty": {
+            "title": "新英雄 — 資料收集中。",
+            "description": "隨著更多玩家使用 {hero},選取率和勝率將會顯示。請幾天後再查看。"
         }
     },
     "esports": {

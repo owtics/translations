@@ -1,0 +1,24 @@
+{
+  "reason": {
+    "HERO_NOT_RELEASED": {
+      "title": "{hero}尚未發布",
+      "description": "該英雄發布並收集到足夠數據後，統計資訊將可用。"
+    },
+    "RECENTLY_RELEASED": {
+      "title": "{hero}最近發布",
+      "description": "資料仍在收集中。隨著更多比賽的進行，統計數據即將可用。"
+    },
+    "REGION_NOT_SUPPORTED": {
+      "title": "該地區不提供統計數據",
+      "description": "所選地區不收集{hero}的統計數據。"
+    },
+    "FILTER_EXCLUDES_ALL_DATA": {
+      "title": "該篩選條件無資料",
+      "description": "目前篩選條件組合沒有{hero}的匹配資料。請嘗試調整篩選條件。"
+    },
+    "ETL_PIPELINE_HALTED": {
+      "title": "資料管道已暫停",
+      "description": "該統計的資料管道目前已暫停。我們正在努力恢復。"
+    }
+  }
+}

@@ -27,10 +27,42 @@
     },
     "hero-statistics": {
         "name": "英雄数据",
+        "page-title": "英雄",
+        "season": "赛季{n}",
+        "cold-start-chip": "赛季初期",
         "meta": {
             "title": "英雄数据 | OWtics.GG - 守望先锋数据分析与电竞",
             "description": "比较守望先锋全部45+英雄：胜率、选取率、禁用率、KDA。按段位（青铜至冠军）、地区、赛季筛选。交互式树图可视化。每日更新。",
             "keywords": "守望先锋, OWtics, OWtics.GG, 守望先锋英雄梯队, 守望先锋电竞, 守望先锋数据, 守望先锋统计"
+        }
+    },
+    "hero-insights": {
+        "section-label": "数据洞察",
+        "trending": {
+            "title": "Trending",
+            "subtitle": "对比 {season}",
+            "subtitle-cold-start": "对比 {season} 赛季中补丁",
+            "meta-pick": "选取率",
+            "footer": "不含新英雄 · 上升 / 下降 前 4",
+            "cold-start-notice": "赛季初期变化较少，先为您展示上次赛季中补丁（S{n} → S{n} 赛季中）的影响。",
+            "empty": "数据积累中，请过几天再来查看。"
+        },
+        "map-meta": {
+            "title": "Map Meta",
+            "subtitle": "选取率差异 前 7 张地图",
+            "meta-chip": "相对平均",
+            "footer-link": "查看全部地图",
+            "footer-explanation": "× = 选取率相对平均值 · 右列为绝对选取率",
+            "empty": "该条件下的地图数据尚不充足。",
+            "slot-aria": "{hero}:选取率 {pick}%,平均的 {lift} 倍"
+        },
+        "role-meta": {
+            "title": "Role Meta",
+            "subtitle": "胜率前 3 · 最低选取率 {pct}%",
+            "meta-win": "胜率",
+            "count": "符合 {eligible} / 全部 {total}",
+            "footer": "按胜率 · 50% 基线 · 最低选取率 {pct}%",
+            "empty": "该条件下的分路数据尚不充足。"
         }
     },
     "hero-details": {
@@ -38,6 +70,44 @@
             "title": "{hero}数据 | OWtics.GG - 守望先锋数据分析与电竞",
             "description": "{hero}（{role}）守望先锋胜率、选取率、禁用率、KDA。按段位（青铜至冠军）与地区统计。{hero}最佳/最差地图。ICHI指数趋势图。每日更新。",
             "keywords": "守望先锋, {hero}, {role}, OWtics, OWtics.GG, 守望先锋英雄梯队, 守望先锋电竞, 守望先锋数据, 守望先锋统计"
+        }
+    },
+    "map-list": {
+        "meta": {
+            "title": "地图统计 | OWtics.GG",
+            "description": "每张地图的英雄胜率与选用率。所有守望先锋地图按模式分组。",
+            "keywords": "守望先锋, 地图统计, 地图, OWtics, OWtics.GG, 守望先锋地图, 守望先锋地图池"
+        },
+        "title": "地图统计",
+        "description": "每张地图的英雄胜率与选用率。所有守望先锋地图按模式分组。",
+        "toggle-variants": {
+            "show": "显示限时版本",
+            "hide": "仅显示基础地图"
+        }
+    },
+    "map-details": {
+        "meta": {
+            "title": "{map} — 英雄数据 | OWtics.GG",
+            "description": "{map}上的英雄胜率和选取率。支持按段位和地区筛选。基于宗师竞技模式数据,每日更新。"
+        },
+        "hero-stats": {
+            "title": "{map}英雄数据",
+            "description": "官方守望先锋数据 · 同职责内按胜率降序排序"
+        },
+        "related": {
+            "title": "其他{mode}地图"
+        },
+        "variant-notice": {
+            "aria-label": "限时版本提示",
+            "body": "本地图是{baseName}的限时版本。统计数据展示自基础地图。",
+            "cta": "前往{baseName}"
+        },
+        "retired-notice": {
+            "aria-label": "退役地图提示",
+            "body": "此地图已不在竞技模式地图池中。"
+        },
+        "seasonal-variants": {
+            "title": "限时版本"
         }
     },
     "matches": {
@@ -49,6 +119,10 @@
         "view-full": "查看完整历史",
         "mobile-note": "如需使用框选缩放、悬浮提示等交互功能，请在桌面端访问。",
         "reset-zoom": "重置缩放",
+        "archived-notice": {
+            "title": "ICHI Rating 自《守望先锋 2》第 20 赛季（2025 年 12 月）起不再更新。",
+            "description": "第 20 赛季引入的挑战者分数（Challenger）改变了竞技模式 Top 500 排行榜的排名规则，无法再与此前赛季以相同口径进行比较。下方图表保留了第 19 赛季之前的数据作为归档。"
+        },
         "selector": {
             "selected": "已选择{count}/{total}",
             "clear": "清除",
@@ -96,8 +170,15 @@
     "hero-stats-table": {
         "title": "英雄数据",
         "description": "守望先锋官方数据 · 每日更新",
+        "tier-spread-aria": "段位选取率分布",
+        "tier-spread-win-aria": "段位胜率分布",
+        "tier-legend-label": "段位",
+        "tier-legend-aria": "段位颜色图例",
+        "tier-legend-gmc": "宗师+冠军",
         "columns": {
-            "hero": "英雄"
+            "hero": "英雄",
+            "tier-spread": "段位选取率",
+            "tier-spread-win": "段位胜率"
         },
         "summary": {
             "title": "{role, select, Tank {重装} Damage {输出} Support {辅助} other {}}热门英雄",
@@ -105,6 +186,7 @@
         },
         "toolbar": {
             "hero-count": "{count}位英雄",
+            "hero-count-of-total": "（共{total}位）",
             "top-pick": "最高选取率",
             "top-wr": "最高胜率",
             "top-ban": "最高禁用率",
@@ -127,6 +209,22 @@
             "game-mode": "游戏模式",
             "skill-tier": "段位"
         },
+        "chart": {
+            "title": "选用率与胜率分布",
+            "aria-label": "按段位展示选用率柱状图与胜率标记的双轴组合图",
+            "axis-pick": "选用率",
+            "axis-win": "胜率",
+            "tier-datum-label": "{tier}: 选用率 {pick}%, 胜率 {win}%"
+        },
+        "table": {
+            "title": "各段位数值",
+            "column": {
+                "tier": "段位",
+                "pick": "选用率",
+                "kda": "KDA",
+                "ban": "禁用率"
+            }
+        },
         "error": {
             "no-data": "所选筛选条件下暂无数据。\n请尝试更改筛选条件或稍后再来查看。"
         }
@@ -141,10 +239,17 @@
     },
     "hero-map-stats": {
         "title": "{hero}地图数据",
-        "description": "宗师+段位比赛数据 · 样本量随赛季增长",
+        "description": "所选段位比赛数据 · 样本量随赛季增长",
+        "description-cold-start-previous": "新赛季第{days}天 · 样本量充足前,先展示上赛季数据。",
+        "description-cold-start-current": "新赛季第{days}天 · 本赛季样本量仍然较少。",
+        "cta-current-season": "查看本赛季",
+        "cta-previous-season": "查看上赛季",
         "best-maps": "优势地图",
         "worst-maps": "劣势地图",
         "mode": "模式",
+        "filters": {
+            "tier": "段位"
+        },
         "table": {
             "expand": "还有{count}张地图",
             "collapse": "收起"
@@ -156,6 +261,10 @@
             "sensitivity-high": "不同地图间差异较大 (σ {sigma}%)",
             "sensitivity-low": "各地图表现稳定 (σ {sigma}%)",
             "win-rate-by-mode": "分模式胜率"
+        },
+        "empty": {
+            "title": "新英雄 — 数据收集中。",
+            "description": "随着更多玩家使用 {hero},选取率和胜率将会显示。请几天后再查看。"
         }
     },
     "esports": {

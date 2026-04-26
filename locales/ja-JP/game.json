@@ -99,6 +99,19 @@
         "ARCADE": "アーケード",
         "CUSTOM": "カスタム"
     },
+    "mapMode": {
+        "ASSAULT": "アサルト",
+        "CONTROL": "コントロール",
+        "ESCORT": "エスコート",
+        "HYBRID": "ハイブリッド",
+        "PUSH": "プッシュ",
+        "FLASHPOINT": "フラッシュポイント",
+        "CLASH": "クラッシュ",
+        "STADIUM": "スタジアム"
+    },
+    "mapVariant": {
+        "seasonal": "シーズン限定"
+    },
     "tier": {
         "ALL": "{type, select, short {全} long {全ティア} other {全ティア}}",
         "BRONZE": "{type, select, short {B} long {ブロンズ} other {ブロンズ}}",

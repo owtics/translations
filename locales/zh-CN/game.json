@@ -99,6 +99,19 @@
         "ARCADE": "街机先锋",
         "CUSTOM": "自定义"
     },
+    "mapMode": {
+        "ASSAULT": "攻击",
+        "CONTROL": "占领",
+        "ESCORT": "护送",
+        "HYBRID": "攻击/护送",
+        "PUSH": "推车",
+        "FLASHPOINT": "闪点",
+        "CLASH": "冲突",
+        "STADIUM": "竞技场"
+    },
+    "mapVariant": {
+        "seasonal": "限时版本"
+    },
     "tier": {
         "ALL": "{type, select, short {全部} long {所有段位} other {所有段位}}",
         "BRONZE": "{type, select, short {铜} long {青铜} other {青铜}}",

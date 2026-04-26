@@ -4,6 +4,11 @@
         "description": "The hero page you're looking for doesn't exist. Please check the URL or browse the full hero list.",
         "backToList": "View All Heroes"
     },
+    "mapNotFound": {
+        "title": "Map Not Found",
+        "description": "The map page you're looking for doesn't exist. Please check the URL or browse the full map list.",
+        "backToList": "View All Maps"
+    },
     "general": {
         "title": "Something Went Wrong",
         "description": "An error occurred while loading this page. Please try again in a moment.",

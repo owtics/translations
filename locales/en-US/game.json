@@ -99,6 +99,19 @@
         "ARCADE": "Arcade",
         "CUSTOM": "Custom"
     },
+    "mapMode": {
+        "ASSAULT": "Assault",
+        "CONTROL": "Control",
+        "ESCORT": "Escort",
+        "HYBRID": "Hybrid",
+        "PUSH": "Push",
+        "FLASHPOINT": "Flashpoint",
+        "CLASH": "Clash",
+        "STADIUM": "Stadium"
+    },
+    "mapVariant": {
+        "seasonal": "Seasonal"
+    },
     "tier": {
         "ALL": "{type, select, short {All} long {All Tiers} other {All Tiers}}",
         "BRONZE": "{type, select, short {B} long {Bronze} other {Bronze}}",

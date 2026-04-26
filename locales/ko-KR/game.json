@@ -99,6 +99,19 @@
         "ARCADE": "아케이드",
         "CUSTOM": "커스텀"
     },
+    "mapMode": {
+        "ASSAULT": "점령",
+        "CONTROL": "쟁탈",
+        "ESCORT": "호위",
+        "HYBRID": "혼합",
+        "PUSH": "밀기",
+        "FLASHPOINT": "점화",
+        "CLASH": "격돌",
+        "STADIUM": "스타디움"
+    },
+    "mapVariant": {
+        "seasonal": "계절 한정"
+    },
     "tier": {
         "ALL": "{type, select, short {전체} long {모든 티어} other {모든 티어}}",
         "BRONZE": "{type, select, short {브} long {브론즈} other {브론즈}}",

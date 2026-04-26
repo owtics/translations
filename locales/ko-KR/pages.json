@@ -27,10 +27,42 @@
     },
     "hero-statistics": {
         "name": "영웅 통계",
+        "page-title": "영웅",
+        "season": "시즌 {n}",
+        "cold-start-chip": "시즌 초반",
         "meta": {
             "title": "영웅 통계 | OWtics.GG - 오버워치 분석, 통계, 이스포츠",
             "description": "오버워치 전체 45+ 영웅 비교: 승률, 픽률, 밴률, KDA. 티어별(브론즈~챔피언), 지역별, 시즌별 필터. 트리맵 시각화 제공. 매일 업데이트.",
             "keywords": "오버워치, OWtics, OWtics.GG, 오버워치 영웅 티어 리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+        }
+    },
+    "hero-insights": {
+        "section-label": "인사이트",
+        "trending": {
+            "title": "Trending",
+            "subtitle": "vs {season}",
+            "subtitle-cold-start": "vs {season} 미드시즌 패치",
+            "meta-pick": "픽률",
+            "footer": "신규 영웅 제외 · Top 4 상승 / 하락",
+            "cold-start-notice": "시즌 초반엔 변화가 적어서, 지난 미드시즌 패치(S{n} → S{n} 미드시즌)의 영향을 대신 보여드려요.",
+            "empty": "표본이 쌓이는 중입니다. 며칠 뒤에 다시 확인해주세요."
+        },
+        "map-meta": {
+            "title": "Map Meta",
+            "subtitle": "픽률 편차 Top 7 맵",
+            "meta-chip": "평균 대비",
+            "footer-link": "맵 전체 보기",
+            "footer-explanation": "× = 평균 대비 픽률 배율 · 우측은 절대 픽률",
+            "empty": "해당 조건의 맵 데이터가 아직 부족합니다.",
+            "slot-aria": "{hero}: 픽률 {pick}%, 평균 대비 {lift}배"
+        },
+        "role-meta": {
+            "title": "Role Meta",
+            "subtitle": "승률 Top 3 · 최소 픽률 {pct}%",
+            "meta-win": "승률",
+            "count": "적격 {eligible} / 전체 {total}",
+            "footer": "승률 기준 · 50% 기준선 · 최소 픽률 {pct}%",
+            "empty": "해당 조건의 역할별 데이터가 아직 부족합니다."
         }
     },
     "hero-details": {
@@ -38,6 +70,44 @@
             "title": "오버워치 {hero} 공식 통계 | OWtics.GG - 오버워치 분석, 통계, 이스포츠",
             "description": "{hero}({role}) 오버워치 승률, 픽률, 밴률, KDA. 티어별(브론즈~챔피언), 지역별 통계. {hero} 최고/최악 맵. 아이치 레이팅 추이 차트. 매일 업데이트.",
             "keywords": "오버워치, {hero}, {role}, OWtics, OWtics.GG, 오버워치 영웅 티어 리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+        }
+    },
+    "map-list": {
+        "meta": {
+            "title": "맵 통계 | OWtics.GG",
+            "description": "맵별 영웅 승률과 픽률. 오버워치 모든 맵을 모드별로 정리.",
+            "keywords": "오버워치, 맵 통계, 맵, OWtics, OWtics.GG, 오버워치 맵, 오버워치 맵풀"
+        },
+        "title": "맵 통계",
+        "description": "맵별 영웅 승률과 픽률. 오버워치 모든 맵을 모드별로 정리.",
+        "toggle-variants": {
+            "show": "계절 변형 보기",
+            "hide": "기본 맵만 보기"
+        }
+    },
+    "map-details": {
+        "meta": {
+            "title": "{map} — 영웅 통계 | OWtics.GG",
+            "description": "{map}에서의 영웅 승률과 픽률. 티어와 지역으로 필터링해 확인할 수 있습니다. 그랜드마스터 경쟁전 데이터 기반, 매일 업데이트됩니다."
+        },
+        "hero-stats": {
+            "title": "{map}의 영웅 통계",
+            "description": "공식 오버워치 데이터 · 역할군 내 승률 내림차순 정렬"
+        },
+        "related": {
+            "title": "다른 {mode} 맵"
+        },
+        "variant-notice": {
+            "aria-label": "계절 변형 안내",
+            "body": "{baseName}의 계절 한정 변형입니다. 통계는 기본 맵 데이터로 표시됩니다.",
+            "cta": "{baseName} 페이지로 이동"
+        },
+        "retired-notice": {
+            "aria-label": "은퇴 맵 안내",
+            "body": "이 맵은 더 이상 경쟁전 로테이션에 포함되지 않습니다."
+        },
+        "seasonal-variants": {
+            "title": "계절 변형"
         }
     },
     "matches": {
@@ -49,6 +119,10 @@
         "view-full": "전체 기록 보기",
         "mobile-note": "브러시 줌, 툴팁 등의 인터랙티브 기능은 데스크톱에서 사용해 주세요.",
         "reset-zoom": "줌 초기화",
+        "archived-notice": {
+            "title": "아이치 레이팅은 오버워치 2 시즌 20(2025년 12월) 이후 업데이트되지 않습니다.",
+            "description": "시즌 20에 도입된 도전자 점수(Challenger)로 경쟁전 상위 500위 리더보드의 순위 기준이 바뀌면서 이전 시즌과 동일한 맥락으로 비교하기 어려워졌습니다. 아래 차트는 시즌 19까지의 기록을 아카이브로 보존한 것입니다."
+        },
         "selector": {
             "selected": "{total}개 중 {count}개 선택",
             "clear": "초기화",
@@ -96,8 +170,15 @@
     "hero-stats-table": {
         "title": "영웅 통계",
         "description": "공식 오버워치 데이터 기반 · 매일 갱신",
+        "tier-spread-aria": "티어별 픽률 분포",
+        "tier-spread-win-aria": "티어별 승률 분포",
+        "tier-legend-label": "티어",
+        "tier-legend-aria": "티어 색상 범례",
+        "tier-legend-gmc": "그마+챔피언",
         "columns": {
-            "hero": "영웅"
+            "hero": "영웅",
+            "tier-spread": "티어별 픽률",
+            "tier-spread-win": "티어별 승률"
         },
         "summary": {
             "title": "{role, select, Tank {돌격군} Damage {공격군} Support {지원군} other {}} 상위 영웅들",
@@ -105,6 +186,7 @@
         },
         "toolbar": {
             "hero-count": "영웅 {count}명",
+            "hero-count-of-total": "(전체 {total}명 중)",
             "top-pick": "최고 픽률",
             "top-wr": "최고 승률",
             "top-ban": "최고 밴률",
@@ -127,6 +209,22 @@
             "game-mode": "모드",
             "skill-tier": "티어"
         },
+        "chart": {
+            "title": "픽률 · 승률 분포",
+            "aria-label": "티어별 픽률 막대와 승률 마커를 이중 축으로 표시한 콤보 차트",
+            "axis-pick": "픽률",
+            "axis-win": "승률",
+            "tier-datum-label": "{tier}: 픽률 {pick}%, 승률 {win}%"
+        },
+        "table": {
+            "title": "티어별 수치",
+            "column": {
+                "tier": "티어",
+                "pick": "픽률",
+                "kda": "KDA",
+                "ban": "밴률"
+            }
+        },
         "error": {
             "no-data": "선택한 필터에 대한 데이터가 없습니다.\n필터를 변경하거나 나중에 다시 확인해 주세요."
         }
@@ -141,10 +239,17 @@
     },
     "hero-map-stats": {
         "title": "{hero} 맵별 통계",
-        "description": "그랜드마스터+ 경기 데이터 · 시즌 진행에 따라 표본 증가",
+        "description": "선택한 티어의 경기 데이터 · 시즌 진행에 따라 표본 증가",
+        "description-cold-start-previous": "시즌 {days}일차 · 표본이 충분해질 때까지 지난 시즌 데이터를 보여드려요.",
+        "description-cold-start-current": "시즌 {days}일차 · 현재 시즌 표본이 아직 적습니다.",
+        "cta-current-season": "이번 시즌 보기",
+        "cta-previous-season": "지난 시즌 보기",
         "best-maps": "강한 맵",
         "worst-maps": "약한 맵",
         "mode": "모드",
+        "filters": {
+            "tier": "티어"
+        },
         "table": {
             "expand": "+{count}개 맵 더 보기",
             "collapse": "접기"
@@ -156,6 +261,10 @@
             "sensitivity-high": "맵에 따라 성능 편차가 큼 (σ {sigma}%)",
             "sensitivity-low": "맵에 상관없이 안정적 (σ {sigma}%)",
             "win-rate-by-mode": "모드별 승률"
+        },
+        "empty": {
+            "title": "신규 영웅 — 데이터 수집 중.",
+            "description": "{hero}의 플레이 데이터가 쌓이면 픽률과 승률이 표시됩니다. 며칠 뒤에 다시 확인해주세요."
         }
     },
     "esports": {

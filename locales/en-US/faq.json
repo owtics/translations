@@ -12,7 +12,7 @@
             },
             {
                 "q": "When is the data updated?",
-                "a": "ICHI Rating data is collected and updated daily. Each data point on the chart represents one day's snapshot of the Top 500 leaderboard."
+                "a": "ICHI Rating has not been updated since Overwatch 2 Season 20 (December 2025). The Challenger scoring system introduced in Season 20 changed how the leaderboard is ranked, so values can no longer be aggregated on the same basis as prior seasons. It was previously collected and refreshed daily, and the chart below preserves data through Season 19 as an archive."
             },
             {
                 "q": "How should I interpret the chart?",

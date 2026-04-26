@@ -1,0 +1,24 @@
+{
+  "reason": {
+    "HERO_NOT_RELEASED": {
+      "title": "{hero}はまだリリースされていません",
+      "description": "このヒーローがリリースされ、データが収集されると統計が利用可能になります。"
+    },
+    "RECENTLY_RELEASED": {
+      "title": "{hero}は最近リリースされました",
+      "description": "まだデータを収集中です。より多くの試合が行われると、まもなく統計が提供されます。"
+    },
+    "REGION_NOT_SUPPORTED": {
+      "title": "この地域では統計を提供していません",
+      "description": "選択した地域では{hero}の統計が収集されていません。"
+    },
+    "FILTER_EXCLUDES_ALL_DATA": {
+      "title": "このフィルターにデータがありません",
+      "description": "現在のフィルター組み合わせでは{hero}のデータがありません。フィルターを調整してください。"
+    },
+    "ETL_PIPELINE_HALTED": {
+      "title": "データパイプライン一時停止中",
+      "description": "この統計のデータパイプラインが現在停止しています。復旧作業中です。"
+    }
+  }
+}

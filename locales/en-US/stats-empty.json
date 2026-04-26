@@ -1,0 +1,24 @@
+{
+  "reason": {
+    "HERO_NOT_RELEASED": {
+      "title": "{hero} is not yet released",
+      "description": "Statistics will be available once this hero is released and players have had time to collect data."
+    },
+    "RECENTLY_RELEASED": {
+      "title": "{hero} was recently released",
+      "description": "We're still collecting data for this hero. Stats will be available soon as more matches are played."
+    },
+    "REGION_NOT_SUPPORTED": {
+      "title": "Stats unavailable for this region",
+      "description": "Statistics for {hero} are not collected in the selected region."
+    },
+    "FILTER_EXCLUDES_ALL_DATA": {
+      "title": "No data for this filter",
+      "description": "The current filter combination has no matching data for {hero}. Try adjusting your filters."
+    },
+    "ETL_PIPELINE_HALTED": {
+      "title": "Data pipeline paused",
+      "description": "The data pipeline for this statistic is currently halted. We're working on restoring it."
+    }
+  }
+}
