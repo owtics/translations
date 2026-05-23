@@ -31,7 +31,7 @@ jobs:
       - name: Run validation
         id: validate
         continue-on-error: true
-        run: bun run validate 2>&1 | tee /tmp/validate-output.txt
+        run: bun run --silent validate 2>&1 | tee /tmp/validate-output.txt
 
       - name: Package PR comment payload
         if: github.event_name == 'pull_request'
