@@ -1,0 +1,99 @@
+name: Comment Validation Result
+
+# Runs in the base-repo context (default-branch workflow definition) with full token
+# permissions, so it can comment on PRs opened from forks — where the original
+# `pull_request`-triggered workflow has a read-only token by GitHub's design.
+#
+# Security model:
+#   - Triggering workflow runs untrusted PR code with read-only token + no secrets.
+#   - This workflow does NOT check out the PR; it only reads artifact files as text
+#     and posts a comment. Untrusted artifact contents are wrapped in a markdown code
+#     fence, and the PR number is integer-parsed before being used in any API call.
+#
+# Refs:
+#   https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/
+#   https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_run
+
+on:
+  workflow_run:
+    workflows: ["Validate Translations"]
+    types: [completed]
+
+permissions:
+  actions: read
+  pull-requests: write
+
+jobs:
+  comment:
+    # Only PR-triggered runs produce the comment payload artifact.
+    if: github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download PR comment payload
+        uses: actions/download-artifact@v8
+        with:
+          name: pr-comment-payload
+          path: ./payload
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Post or update PR comment
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const prNumberRaw = fs.readFileSync(path.join('payload', 'pr-number'), 'utf-8').trim();
+            const prNumber = Number.parseInt(prNumberRaw, 10);
+            if (!Number.isInteger(prNumber) || prNumber <= 0) {
+              core.setFailed(`Invalid PR number in artifact: ${JSON.stringify(prNumberRaw)}`);
+              return;
+            }
+
+            const outcomeRaw = fs.readFileSync(path.join('payload', 'outcome'), 'utf-8').trim();
+            const passed = outcomeRaw === 'success';
+            const emoji = passed ? '✅' : '❌';
+            const label = passed ? 'passed' : 'failed';
+
+            // Validation output is untrusted text from the PR's workflow run.
+            // We render it inside a fenced code block so any markdown / HTML is inert.
+            // Also guard against an inner ``` breaking out of the fence.
+            let output = fs.readFileSync(path.join('payload', 'validate-output.txt'), 'utf-8').trim();
+            output = output.replace(/```/g, '``​`');
+
+            const body = [
+              `## ${emoji} Translation Validation (${label})`,
+              '',
+              '```',
+              output,
+              '```',
+              '',
+              '<sub>Updated by CI</sub>',
+            ].join('\n');
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            const existing = comments.find(c =>
+              c.user?.type === 'Bot' && c.body?.includes('Translation Validation')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body,
+              });
+            }

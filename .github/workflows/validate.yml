@@ -9,9 +9,11 @@ on:
     paths:
       - "locales/**"
 
+# Fork PR triggers downgrade GITHUB_TOKEN to read-only regardless of what we declare here.
+# `contents: write` is honored only on `push` to main (README auto-update commit).
+# PR commenting moved to validate-comment.yml (workflow_run) — see that workflow for why.
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   validate:
@@ -32,47 +34,25 @@ jobs:
         continue-on-error: true
         run: bun run validate 2>&1 | tee /tmp/validate-output.txt
 
-      - name: Comment coverage on PR
+      - name: Package PR comment payload
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          VALIDATE_OUTCOME: ${{ steps.validate.outcome }}
+        run: |
+          mkdir -p /tmp/pr-comment
+          cp /tmp/validate-output.txt /tmp/pr-comment/validate-output.txt
+          printf '%s' "$PR_NUMBER" > /tmp/pr-comment/pr-number
+          printf '%s' "$VALIDATE_OUTCOME" > /tmp/pr-comment/outcome
+
+      - name: Upload PR comment payload
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v7
         with:
-          script: |
-            const fs = require('fs');
-            const output = fs.readFileSync('/tmp/validate-output.txt', 'utf-8').trim();
-            const status = '${{ steps.validate.outcome }}';
-            const emoji = status === 'success' ? '✅' : '❌';
-            const label = status === 'success' ? 'passed' : 'failed';
-
-            const body = [
-              `## ${emoji} Translation Validation (${label})`,
-              '',
-              '```',
-              output,
-              '```',
-              '',
-              '<sub>Updated by CI</sub>',
-            ].join('\n');
-
-            const { data: comments } = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-            });
-            const existing = comments.find(c =>
-              c.user?.type === 'Bot' && c.body?.includes('Translation Validation')
-            );
-
-            const params = {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body,
-            };
-
-            if (existing) {
-              await github.rest.issues.updateComment({ ...params, comment_id: existing.id });
-            } else {
-              await github.rest.issues.createComment({ ...params, issue_number: context.issue.number });
-            }
+          name: pr-comment-payload
+          path: /tmp/pr-comment/
+          retention-days: 1
+          if-no-files-found: error
 
       - name: Update README status table
         if: github.event_name == 'push' && steps.validate.outcome == 'success'
