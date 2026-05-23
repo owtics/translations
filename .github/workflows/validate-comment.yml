@@ -50,6 +50,7 @@ jobs:
             let output = fs.readFileSync(path.join('payload', 'validate-output.txt'), 'utf-8').trim();
             output = output.replace(/```/g, '``​`');
 
+            const runUrl = context.payload.workflow_run.html_url;
             const body = [
               `## ${emoji} Translation Validation (${label})`,
               '',
@@ -57,7 +58,7 @@ jobs:
               output,
               '```',
               '',
-              '<sub>Updated by CI</sub>',
+              `<sub>Updated by CI · <a href="${runUrl}">View full output</a></sub>`,
             ].join('\n');
 
             const { data: comments } = await github.rest.issues.listComments({
