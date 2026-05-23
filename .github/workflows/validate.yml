@@ -9,9 +9,8 @@ on:
     paths:
       - "locales/**"
 
-# Fork PR triggers downgrade GITHUB_TOKEN to read-only regardless of what we declare here.
-# `contents: write` is honored only on `push` to main (README auto-update commit).
-# PR commenting moved to validate-comment.yml (workflow_run) — see that workflow for why.
+# `contents: write` is used by the push-event README auto-commit.
+# PR commenting lives in validate-comment.yml (workflow_run) so it works for fork PRs.
 permissions:
   contents: write
 
