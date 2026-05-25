@@ -1,8 +1,8 @@
 {
     "home": {
         "meta": {
-            "title": "Home | OWtics.GG - Overwatch Statistics",
-            "description": "Overwatch hero statistics: win rates, pick rates, and meta analysis. Data for all tiers (Bronze to Champion) and regions (Asia, Europe, Americas). Updated daily. ICHI Rating tracks Top 500 player preferences.",
+            "title": "Overwatch Hero Stats, Tier List & Esports",
+            "description": "Overwatch hero win, pick, and ban rates across every rank and region, updated daily — plus per-map stats, esports schedules, results, teams, and players.",
             "keywords": "Overwatch, OWtics, OWtics.GG, Overwatch Hero Tier List, Overwatch Esports, Overwatch Statistics, Overwatch Statistics"
         },
         "match-center": {
@@ -31,8 +31,8 @@
         "season": "Season {n}",
         "cold-start-chip": "Cold start",
         "meta": {
-            "title": "Hero Statistics | OWtics.GG - Overwatch Statistics, Analytics and Esports",
-            "description": "Compare all 45+ Overwatch heroes: win rate, pick rate, ban rate, and KDA. Filter by tier (Bronze-Champion), region, and season. Interactive treemap visualization. Updated daily.",
+            "title": "Overwatch Hero Statistics",
+            "description": "Compare every Overwatch hero by win rate, pick rate, ban rate, and KDA. Filter by rank, region, and season, updated daily.",
             "keywords": "Overwatch, OWtics, OWtics.GG, Overwatch Hero Tier List, Overwatch Esports, Overwatch Statistics, Overwatch Statistics"
         }
     },
@@ -67,15 +67,15 @@
     },
     "hero-details": {
         "meta": {
-            "title": "{hero} Statistics | OWtics.GG - Overwatch Statistics, Analytics and Esports",
-            "description": "{hero} ({role}) win rate, pick rate, ban rate, and KDA in Overwatch. Statistics by tier (Bronze to Champion) and region. Best/worst maps for {hero}. ICHI Rating trend chart. Updated daily.",
+            "title": "{hero} Overwatch Stats",
+            "description": "{hero} win rate, pick rate, ban rate, and KDA in Overwatch — the {role} hero broken down by rank and region, with Minor and Major perks, best and worst maps.",
             "keywords": "Overwatch, {hero}, {role}, OWtics, OWtics.GG, Overwatch Hero Tier List, Overwatch Esports, Overwatch Statistics, Overwatch Statistics"
         }
     },
     "map-list": {
         "meta": {
-            "title": "Map Stats | OWtics.GG",
-            "description": "Hero win rates and pick rates per map. Every Overwatch map, grouped by mode.",
+            "title": "Overwatch Map Stats",
+            "description": "Hero win rates and pick rates on every Overwatch map, grouped by game mode. See which heroes dominate each map across the competitive pool.",
             "keywords": "Overwatch, map stats, maps, OWtics, OWtics.GG, Overwatch map, Overwatch map pool"
         },
         "title": "Map Stats",
@@ -83,8 +83,8 @@
     },
     "map-details": {
         "meta": {
-            "title": "{map} — Hero Stats | OWtics.GG",
-            "description": "Hero win rates and pick rates on {map}. Filter by tier and region. Data from Grandmaster competitive matches, updated daily."
+            "title": "{map} — Overwatch Hero Stats",
+            "description": "Hero win rates and pick rates on {map} in Overwatch. See which heroes perform best on this map, filtered by rank and region and updated daily."
         },
         "hero-stats": {
             "title": "Hero Stats on {map}",
@@ -122,8 +122,8 @@
             "empty-chart": "Select heroes to compare ICHI Rating trends"
         },
         "meta": {
-            "title": "ICHI Rating | OWtics.GG - Overwatch Statistics, Analytics and Esports",
-            "description": "ICHI Rating: Overwatch meta analysis based on Top 500 leaderboard data. See which heroes elite players pick most. Interactive time-series chart with region filters. Track meta shifts across seasons. Exclusive to OWtics.GG.",
+            "title": "ICHI Rating — Overwatch Meta Analysis",
+            "description": "ICHI Rating reveals which Overwatch heroes Top 500 players pick most. Track meta shifts across seasons in an interactive time-series chart by region.",
             "keywords": "Overwatch, ICHI Rating, OWtics, OWtics.GG, Overwatch Hero Statistics, Overwatch Esports"
         }
     },
@@ -131,8 +131,8 @@
         "title": "Contributors",
         "subtitle": "Meet the people who manage <brand/> esports data",
         "meta": {
-            "title": "Contributors | OWtics.GG",
-            "description": "Meet the contributors who curate esports data for OWTICS."
+            "title": "Contributors",
+            "description": "Meet the volunteer contributors who curate and maintain Overwatch esports data on OWTICS.GG — match results, rosters, brackets, and more."
         },
         "join": {
             "title": "Become a Contributor",
@@ -295,9 +295,9 @@
             "ongoing": "Ongoing Tournaments",
             "empty": "No tournaments found",
             "meta": {
-                "title": "Overwatch Esports Tournaments | OWtics.GG",
-                "description": "Overwatch esports tournaments: OWCS, OWL, and more. Live schedules, match results, team standings, and hero ban statistics. Covers Asia, EMEA, and North America regions.",
-                "keywords": "Overwatch Esports, OWL, Overwatch Champions Series, OWCS, Overwatch Tournaments"
+                "title": "Overwatch Esports Tournaments",
+                "description": "Browse Overwatch esports tournaments like the Overwatch Champions Series (OWCS) and the Overwatch World Cup (OWWC). Live schedules, match results, team standings, and hero ban stats across every region.",
+                "keywords": "Overwatch Esports, Overwatch Champions Series, OWCS, Overwatch World Cup, OWWC, Overwatch Tournaments"
             }
         },
         "calendar": {
@@ -312,8 +312,8 @@
                 "all-competitions": "All Competitions"
             },
             "meta": {
-                "title": "Match Calendar | OWtics.GG - Overwatch Esports",
-                "description": "Monthly calendar view of Overwatch esports matches. Browse schedules across all tournaments and regions.",
+                "title": "Overwatch Esports Match Calendar",
+                "description": "A monthly calendar of Overwatch esports matches. Browse upcoming schedules and recent results across every tournament and region in one view.",
                 "keywords": "Overwatch Esports, Match Schedule, Calendar"
             }
         },
@@ -448,8 +448,8 @@
                 }
             },
             "meta": {
-                "title": "{tournament} | OWtics.GG - Overwatch Esports",
-                "description": "{tournament} - Overwatch esports tournament. Match schedule, results, team standings, hero ban stats, and POTM awards. Full bracket and map statistics.",
+                "title": "{tournament} — Overwatch Esports",
+                "description": "{status, select, UPCOMING {{tournament}: {teamCount, plural, =0 {an upcoming competition} one {# team competing} other {# teams competing}} in this Overwatch event. Preview the schedule, bracket, and participating rosters.} ONGOING {{tournament} is live: {teamCount, plural, =0 {follow this Overwatch tournament} one {# team battling} other {# teams battling}} for the title. Track standings, results, and hero bans in real time.} other {{tournament} results: {teamCount, plural, =0 {full Overwatch tournament recap} one {# team} other {# teams}}, final standings, bracket, hero ban stats, and POTM awards.}}",
                 "keywords": "Overwatch Esports, {tournament}, Overwatch Tournament"
             }
         },
@@ -463,9 +463,9 @@
             "all-teams": "All",
             "empty": "No teams found",
             "meta": {
-                "title": "Overwatch Esports Teams | OWtics.GG",
-                "description": "Overwatch pro teams database. Current rosters, player roles, win/loss records, and recent roster changes. Filter by region: Asia, EMEA, North America, Pacific.",
-                "keywords": "Overwatch Esports Teams, OWL Teams, OWCS Teams"
+                "title": "Overwatch Esports Teams",
+                "description": "Explore Overwatch pro teams with current rosters, player roles, win-loss records, and recent transfers. Filter by region: Asia, EMEA, North America.",
+                "keywords": "Overwatch Esports Teams, OWCS Teams"
             }
         },
         "team-detail": {
@@ -505,8 +505,8 @@
             "most-banned-against": "Most Banned Against",
             "ban-count": "{count, plural, one {# ban} other {# bans}}",
             "meta": {
-                "title": "{team} | OWtics.GG - Overwatch Esports",
-                "description": "{team} - Overwatch esports team. Current roster with player roles, overall win rate, recent match results, upcoming matches, and tournament history.",
+                "title": "{team} — Overwatch Esports Team",
+                "description": "{active, select, false {{team} is a disbanded Overwatch esports team. Review their {played, plural, =0 {match history} other {# matches played ({wins}W-{losses}L)}}, former roster, and tournament results.} other {{team} Overwatch esports team: {played, plural, =0 {match schedule and results} other {{wins}W-{losses}L across # matches}}, current roster by role, upcoming games, and tournament history.}}",
                 "keywords": "Overwatch Esports, {team}, Overwatch Team"
             }
         },
@@ -531,8 +531,8 @@
             "present": "Present",
             "tenure": "Tenure",
             "meta": {
-                "title": "{player} | OWtics.GG - Overwatch Esports",
-                "description": "{player} - Overwatch esports player profile. Career stats, team history, POTM awards, and POV broadcasts."
+                "title": "{player} — Overwatch Esports Player",
+                "description": "{active, select, false {{player} is a retired Overwatch esports {role}. Look back on their career: team history, {potm, plural, =0 {match record} one {# Player of the Match award} other {# Player of the Match awards}}, and POV broadcasts.} other {{player}, Overwatch esports {role}. Career stats, full team history, {potm, plural, =0 {and player POV streams} one {# POTM award, and player POV streams} other {# POTM awards, and player POV streams}}.}}"
             }
         },
         "match-detail": {
@@ -590,8 +590,8 @@
                 "loading": "Loading team data..."
             },
             "meta": {
-                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
-                "description": "{team1} vs {team2} in {competition}. Map-by-map scores, hero bans, Player of the Match, and replay codes. Full Overwatch esports match breakdown on OWtics.GG.",
+                "title": "{team1} vs {team2} — {competition}",
+                "description": "{status, select, UPCOMING {{team1} vs {team2} in {competition}. Preview rosters, head-to-head form, and where to watch this upcoming Overwatch esports match.} LIVE {{team1} vs {team2} is live in {competition}. Follow the map-by-map score, hero bans, and live streams for this Overwatch esports match.} other {{team1} {scoreA}-{scoreB} {team2} in {competition}. Full map scores, hero bans, Player of the Match, and replay codes for this Overwatch esports match.}}",
                 "keywords": "Overwatch Esports, {team1}, {team2}, Match Details"
             }
         }

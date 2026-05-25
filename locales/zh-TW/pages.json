@@ -1,8 +1,8 @@
 {
     "home": {
         "meta": {
-            "title": "首頁 | OWtics.GG - 鬥陣特攻數據分析與電競",
-            "description": "鬥陣特攻英雄數據：勝率、選取率與版本分析。涵蓋全段位（青銅至冠軍）與全地區（亞洲、歐洲、美洲）。每日更新。ICHI指數追蹤Top 500玩家英雄偏好。",
+            "title": "鬥陣特攻英雄數據、梯隊榜與電競",
+            "description": "鬥陣特攻英雄勝率、選取率與禁用率，涵蓋全段位、全地區並每日更新。還有逐圖數據，以及電競賽程、賽果、戰隊與選手資訊，盡在一處。",
             "keywords": "鬥陣特攻, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
         },
         "match-center": {
@@ -31,8 +31,8 @@
         "season": "賽季{n}",
         "cold-start-chip": "賽季初期",
         "meta": {
-            "title": "英雄數據 | OWtics.GG - 鬥陣特攻數據分析與電競",
-            "description": "比較鬥陣特攻全部45+英雄：勝率、選取率、禁用率、KDA。按段位（青銅至冠軍）、地區、賽季篩選。互動式樹狀圖視覺化。每日更新。",
+            "title": "鬥陣特攻英雄數據",
+            "description": "比較鬥陣特攻每位英雄的勝率、選取率、禁用率與KDA。可依段位、地區、賽季篩選，每日更新。",
             "keywords": "鬥陣特攻, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
         }
     },
@@ -67,15 +67,15 @@
     },
     "hero-details": {
         "meta": {
-            "title": "{hero}數據 | OWtics.GG - 鬥陣特攻數據分析與電競",
-            "description": "{hero}（{role}）鬥陣特攻勝率、選取率、禁用率、KDA。按段位（青銅至冠軍）與地區統計。{hero}最佳/最差地圖。ICHI指數趨勢圖。每日更新。",
+            "title": "{hero}鬥陣特攻數據",
+            "description": "鬥陣特攻{role}英雄{hero}的勝率、選取率、禁用率與KDA。按段位和地區統計，附次要/主要特殊能力與最佳/最差地圖。",
             "keywords": "鬥陣特攻, {hero}, {role}, OWtics, OWtics.GG, 鬥陣特攻英雄梯隊, 鬥陣特攻電競, 鬥陣特攻數據, 鬥陣特攻統計"
         }
     },
     "map-list": {
         "meta": {
-            "title": "地圖統計 | OWtics.GG",
-            "description": "每張地圖的英雄勝率與選用率。所有鬥陣特攻地圖依模式分組。",
+            "title": "鬥陣特攻地圖統計",
+            "description": "鬥陣特攻每張地圖的英雄勝率與選取率，依遊戲模式分組。查看各地圖最強英雄，並比較整個競技地圖池的選取情況。",
             "keywords": "鬥陣特攻, 地圖統計, 地圖, OWtics, OWtics.GG, 鬥陣特攻地圖, 鬥陣特攻地圖池"
         },
         "title": "地圖統計",
@@ -83,8 +83,8 @@
     },
     "map-details": {
         "meta": {
-            "title": "{map} — 英雄數據 | OWtics.GG",
-            "description": "{map}上的英雄勝率與選取率。支援依段位和地區篩選。基於宗師競技模式數據，每日更新。"
+            "title": "{map} — 鬥陣特攻英雄數據",
+            "description": "鬥陣特攻{map}上的英雄勝率與選取率。查看哪些英雄在此地圖表現最佳，支援依段位和地區篩選，每日更新。"
         },
         "hero-stats": {
             "title": "{map}英雄數據",
@@ -107,32 +107,32 @@
         "name": "比賽分析"
     },
     "ichi-rating": {
-        "name": "ICHI Rating",
-        "page-title": "ICHI Rating 時間序列",
+        "name": "ICHI 評分",
+        "page-title": "ICHI 評分 時間序列",
         "view-full": "查看完整歷史",
         "mobile-note": "如需使用框選縮放、懸浮提示等互動功能，請在桌面端瀏覽。",
         "reset-zoom": "重設縮放",
         "archived-notice": {
-            "title": "ICHI Rating 自《鬥陣特攻 2》第 20 賽季（2025 年 12 月）起不再更新。",
+            "title": "ICHI 評分 自《鬥陣特攻 2》第 20 賽季（2025 年 12 月）起不再更新。",
             "description": "第 20 賽季引入的挑戰者分數（Challenger）改變了競技模式 Top 500 排行榜的排名規則，無法再與此前賽季以相同標準進行比較。下方圖表保留了第 19 賽季之前的紀錄作為歸檔。"
         },
         "selector": {
             "selected": "已選擇{count}/{total}",
             "clear": "清除",
-            "empty-chart": "選擇英雄以比較ICHI Rating趨勢"
+            "empty-chart": "選擇英雄以比較ICHI 評分趨勢"
         },
         "meta": {
-            "title": "ICHI Rating | OWtics.GG - 鬥陣特攻數據分析與電競",
-            "description": "ICHI Rating：基於Top 500排行榜數據的鬥陣特攻版本分析。查看頂尖玩家最常選取的英雄。支援地區篩選的互動式時間序列圖表。追蹤跨賽季版本變化。OWtics.GG獨家。",
-            "keywords": "鬥陣特攻, ICHI Rating, OWtics, OWtics.GG, 鬥陣特攻英雄數據, 鬥陣特攻電競"
+            "title": "ICHI 評分 — 鬥陣特攻版本分析",
+            "description": "ICHI 評分揭示Top 500玩家最常選取的鬥陣特攻英雄。透過支援地區篩選的互動式時間序列圖表，追蹤跨賽季的版本變化。",
+            "keywords": "鬥陣特攻, ICHI 評分, OWtics, OWtics.GG, 鬥陣特攻英雄數據, 鬥陣特攻電競"
         }
     },
     "contributors": {
         "title": "貢獻者",
         "subtitle": "認識為<brand/>管理電競數據的貢獻者們",
         "meta": {
-            "title": "貢獻者 | OWtics.GG",
-            "description": "認識為OWTICS策劃電競數據的貢獻者們。"
+            "title": "貢獻者",
+            "description": "認識在OWTICS.GG策劃與維護鬥陣特攻電競數據——比賽結果、陣容、對陣圖等——的志願貢獻者們。"
         },
         "join": {
             "title": "成為貢獻者",
@@ -152,7 +152,7 @@
         }
     },
     "hero-treemap": {
-        "title": "最新版本ICHI Rating變化"
+        "title": "最新版本ICHI 評分變化"
     },
     "all-heroes-list": {
         "title": "英雄列表",
@@ -232,7 +232,7 @@
         }
     },
     "ichi-rating-single-hero": {
-        "title": "{hero} ICHI Rating歷史",
+        "title": "{hero} ICHI 評分歷史",
         "view-full": "查看完整歷史"
     },
     "hero-summary": {
@@ -295,9 +295,9 @@
             "ongoing": "進行中的賽事",
             "empty": "未找到賽事",
             "meta": {
-                "title": "鬥陣特攻電競賽事 | OWtics.GG",
-                "description": "鬥陣特攻電競賽事：OWCS、OWL等。即時賽程、比賽結果、戰隊排名與英雄禁用統計。涵蓋亞洲、EMEA與北美賽區。",
-                "keywords": "鬥陣特攻電競, OWL, 鬥陣特攻冠軍系列賽, OWCS, 鬥陣特攻賽事"
+                "title": "鬥陣特攻電競賽事",
+                "description": "瀏覽鬥陣特攻冠軍系列賽(OWCS)與鬥陣特攻世界盃(OWWC)等鬥陣特攻電競賽事。涵蓋亞洲、EMEA與北美賽區的即時賽程、比賽結果、戰隊排名與英雄禁用統計。",
+                "keywords": "鬥陣特攻電競, 鬥陣特攻冠軍系列賽, OWCS, 鬥陣特攻世界盃, OWWC, 鬥陣特攻賽事"
             }
         },
         "calendar": {
@@ -312,8 +312,8 @@
                 "all-competitions": "全部賽事"
             },
             "meta": {
-                "title": "賽程日曆 | OWtics.GG - 鬥陣特攻電競",
-                "description": "鬥陣特攻電競比賽月曆檢視。瀏覽所有賽事與賽區的賽程安排。",
+                "title": "鬥陣特攻電競賽程日曆",
+                "description": "以月曆查看鬥陣特攻電競比賽。一覽所有賽事與賽區的預定賽程與近期賽果。",
                 "keywords": "鬥陣特攻電競, 賽程安排, 日曆"
             }
         },
@@ -418,8 +418,8 @@
                 }
             },
             "meta": {
-                "title": "{tournament} | OWtics.GG - 鬥陣特攻電競",
-                "description": "{tournament} - 鬥陣特攻電競賽事。賽程安排、比賽結果、戰隊排名、英雄禁用統計與POTM獲獎資訊。完整對戰表與地圖統計。",
+                "title": "{tournament} — 鬥陣特攻電競",
+                "description": "{status, select, UPCOMING {{tournament}：{teamCount, plural, =0 {即將開始} other {#支隊伍參賽}}的鬥陣特攻電競賽事。提前查看賽程、對陣圖與參賽陣容。} ONGOING {{tournament}進行中：{teamCount, plural, =0 {關注這項鬥陣特攻賽事，} other {#支隊伍正在爭奪冠軍。}}即時追蹤排名、賽果與英雄禁用。} other {{tournament}賽果：{teamCount, plural, =0 {鬥陣特攻賽事完整回顧} other {#支隊伍的最終排名}}、對陣圖、英雄禁用統計與POTM獲獎資訊。}}",
                 "keywords": "鬥陣特攻電競, {tournament}, 鬥陣特攻賽事"
             }
         },
@@ -433,9 +433,9 @@
             "all-teams": "全部",
             "empty": "未找到戰隊",
             "meta": {
-                "title": "鬥陣特攻電競戰隊 | OWtics.GG",
-                "description": "鬥陣特攻職業戰隊資料庫。目前陣容、選手位置、勝負紀錄與近期陣容變動。按賽區篩選：亞洲、EMEA、北美、太平洋。",
-                "keywords": "鬥陣特攻電競戰隊, OWL戰隊, OWCS戰隊"
+                "title": "鬥陣特攻電競戰隊",
+                "description": "探索鬥陣特攻職業戰隊的目前陣容、選手位置、勝負紀錄與近期轉會。可依亞洲、EMEA、北美等賽區篩選。",
+                "keywords": "鬥陣特攻電競戰隊, OWCS戰隊"
             }
         },
         "team-detail": {
@@ -475,8 +475,8 @@
             "most-banned-against": "最常被針對禁用",
             "ban-count": "{count}次禁用",
             "meta": {
-                "title": "{team} | OWtics.GG - 鬥陣特攻電競",
-                "description": "{team} - 鬥陣特攻電競戰隊。目前陣容與選手位置、總勝率、近期比賽結果、即將到來的比賽與賽事歷史。",
+                "title": "{team} — 鬥陣特攻電競戰隊",
+                "description": "{active, select, false {{team}是一支已解散的鬥陣特攻電競戰隊。回顧其{played, plural, =0 {比賽歷史} other {#場比賽戰績（{wins}勝{losses}負）}}、昔日陣容與賽事成績。} other {{team}鬥陣特攻電競戰隊：{played, plural, =0 {賽程與賽果} other {#場比賽{wins}勝{losses}負}}、依位置排列的目前陣容、即將到來的比賽與賽事歷史。}}",
                 "keywords": "鬥陣特攻電競, {team}, 鬥陣特攻戰隊"
             }
         },
@@ -501,8 +501,8 @@
             "present": "至今",
             "tenure": "效力時間",
             "meta": {
-                "title": "{player} | OWtics.GG - 鬥陣特攻電競",
-                "description": "{player} - 鬥陣特攻電競選手檔案。生涯數據、戰隊經歷、POTM獲獎與選手視角直播。"
+                "title": "{player} — 鬥陣特攻電競選手",
+                "description": "{active, select, false {{player}是一位退役的鬥陣特攻電競{role}。透過戰隊經歷、{potm, plural, =0 {比賽戰績} other {#次POTM獲獎}}與選手視角直播回顧其生涯。} other {{player}，鬥陣特攻電競{role}。生涯數據、完整戰隊經歷、{potm, plural, =0 {以及選手視角直播串流} other {#次POTM獲獎、以及選手視角直播串流}}。}}"
             }
         },
         "match-detail": {
@@ -560,8 +560,8 @@
                 "loading": "正在載入戰隊數據..."
             },
             "meta": {
-                "title": "{team1} vs {team2} — {competition} | OWtics.GG",
-                "description": "{competition} {team1} vs {team2}比賽結果。逐圖比分、英雄禁用、本場最佳選手與重播代碼。在OWtics.GG查看鬥陣特攻電競比賽詳細分析。",
+                "title": "{team1} vs {team2} — {competition}",
+                "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}。提前查看這場即將開始的鬥陣特攻電競比賽的陣容、交鋒戰績與觀看頻道。} LIVE {{competition} {team1} vs {team2}進行中。查看這場鬥陣特攻電競比賽的逐圖比分、英雄禁用與直播。} other {{competition} {team1} {scoreA}-{scoreB} {team2}。這場鬥陣特攻電競比賽的完整逐圖比分、英雄禁用、本場最佳選手與重播代碼。}}",
                 "keywords": "鬥陣特攻電競, {team1}, {team2}, 比賽詳情"
             }
         }
