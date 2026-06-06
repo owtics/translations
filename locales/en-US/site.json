@@ -114,7 +114,15 @@
       "advance-top": "{count, plural, one {<team>Top # team</team> advances to <dest>{destination}</dest>} other {<team>Top # teams</team> advance to <dest>{destination}</dest>}}",
       "advance-next": "{count, plural, one {<team>Next # team</team> advances to <dest>{destination}</dest>} other {<team>Next # teams</team> advance to <dest>{destination}</dest>}}",
       "qualify": "{count, plural, one {<team>Top # team</team> qualifies} other {<team>Top # teams</team> qualify}}",
-      "eliminate": "{count, plural, one {<team>Bottom # team</team> is eliminated} other {<team>Bottom # teams</team> are eliminated}}"
+      "eliminate": "{count, plural, one {<team>Bottom # team</team> is eliminated} other {<team>Bottom # teams</team> are eliminated}}",
+      "advance-top-grouped": "{count, plural, one {<team>Top # team</team> per group advances to <dest>{destination}</dest> ({total} total)} other {<team>Top # teams</team> per group advance to <dest>{destination}</dest> ({total} total)}}",
+      "advance-next-grouped": "{count, plural, one {<team>Next # team</team> per group advances to <dest>{destination}</dest> ({total} total)} other {<team>Next # teams</team> per group advance to <dest>{destination}</dest> ({total} total)}}",
+      "qualify-grouped": "{count, plural, one {<team>Top # team</team> per group qualifies ({total} total)} other {<team>Top # teams</team> per group qualify ({total} total)}}",
+      "eliminate-grouped": "{count, plural, one {<team>Bottom # team</team> per group is eliminated ({total} total)} other {<team>Bottom # teams</team> per group are eliminated ({total} total)}}"
+    },
+    "phase-groups": {
+      "count": "{count, plural, one {# group} other {# groups}}",
+      "per-group-teams": "{count, plural, one {# team per group} other {# teams per group}}"
     },
     "standings": {
       "rank": "#",
@@ -128,7 +136,8 @@
       "week": "Week",
       "round": "Round",
       "matchday": "Matchday",
-      "provisional": "Standings may change as matches are played"
+      "provisional": "Standings may change as matches are played",
+      "final": "Final standings"
     },
     "bracket": {
       "no-data": "No bracket data available",

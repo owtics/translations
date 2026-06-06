@@ -93,7 +93,15 @@
       "advance-top": "<team>上位{count}チーム</team> <dest>{destination}</dest>に進出",
       "advance-next": "<team>次の{count}チーム</team> <dest>{destination}</dest>に進出",
       "qualify": "<team>上位{count}チーム</team>が進出",
-      "eliminate": "<team>下位{count}チーム</team>が敗退"
+      "eliminate": "<team>下位{count}チーム</team>が敗退",
+      "advance-top-grouped": "グループごとに<team>上位{count}チーム</team>が<dest>{destination}</dest>に進出 (合計{total})",
+      "advance-next-grouped": "グループごとに<team>次の{count}チーム</team>が<dest>{destination}</dest>に進出 (合計{total})",
+      "qualify-grouped": "グループごとに<team>上位{count}チーム</team>が進出 (合計{total})",
+      "eliminate-grouped": "グループごとに<team>下位{count}チーム</team>が敗退 (合計{total})"
+    },
+    "phase-groups": {
+      "count": "{count}グループ",
+      "per-group-teams": "1グループ{count}チーム"
     },
     "bracket": {
       "no-data": "トーナメント表データがありません",
@@ -111,7 +119,8 @@
       "week": "ウィーク",
       "round": "ラウンド",
       "matchday": "マッチデー",
-      "provisional": "試合の進行に伴い順位が変動する場合があります"
+      "provisional": "試合の進行に伴い順位が変動する場合があります",
+      "final": "最終順位"
     },
     "format": {
       "FT2": "2本先取",

@@ -93,7 +93,15 @@
       "advance-top": "<team>前{count}名</team>晋级<dest>{destination}</dest>",
       "advance-next": "<team>接下来{count}名</team>晋级<dest>{destination}</dest>",
       "qualify": "<team>前{count}名</team>晋级",
-      "eliminate": "<team>后{count}名</team>淘汰"
+      "eliminate": "<team>后{count}名</team>淘汰",
+      "advance-top-grouped": "每组<team>前{count}名</team>晋级<dest>{destination}</dest> (共{total})",
+      "advance-next-grouped": "每组<team>接下来{count}名</team>晋级<dest>{destination}</dest> (共{total})",
+      "qualify-grouped": "每组<team>前{count}名</team>晋级 (共{total})",
+      "eliminate-grouped": "每组<team>后{count}名</team>淘汰 (共{total})"
+    },
+    "phase-groups": {
+      "count": "{count}个小组",
+      "per-group-teams": "每组{count}支战队"
     },
     "bracket": {
       "no-data": "暂无对阵图数据",
@@ -111,7 +119,8 @@
       "week": "周",
       "round": "轮次",
       "matchday": "比赛日",
-      "provisional": "随着比赛进行，排名可能发生变化"
+      "provisional": "随着比赛进行，排名可能发生变化",
+      "final": "最终排名"
     },
     "format": {
       "FT2": "先胜2局",

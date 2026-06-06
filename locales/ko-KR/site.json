@@ -114,7 +114,15 @@
       "advance-top": "<team>상위 {count}팀</team> <dest>{destination}</dest> 진출",
       "advance-next": "<team>다음 {count}팀</team> <dest>{destination}</dest> 진출",
       "qualify": "<team>상위 {count}팀</team> 진출",
-      "eliminate": "<team>하위 {count}팀</team> 탈락"
+      "eliminate": "<team>하위 {count}팀</team> 탈락",
+      "advance-top-grouped": "그룹별 <team>상위 {count}팀</team> <dest>{destination}</dest> 진출 (총 {total})",
+      "advance-next-grouped": "그룹별 <team>다음 {count}팀</team> <dest>{destination}</dest> 진출 (총 {total})",
+      "qualify-grouped": "그룹별 <team>상위 {count}팀</team> 진출 (총 {total})",
+      "eliminate-grouped": "그룹별 <team>하위 {count}팀</team> 탈락 (총 {total})"
+    },
+    "phase-groups": {
+      "count": "{count}개 조",
+      "per-group-teams": "조당 {count}팀"
     },
     "bracket": {
       "no-data": "브라켓 데이터가 없습니다",
@@ -132,7 +140,8 @@
       "week": "주차",
       "round": "라운드",
       "matchday": "매치데이",
-      "provisional": "경기가 진행됨에 따라 순위가 변동될 수 있습니다"
+      "provisional": "경기가 진행됨에 따라 순위가 변동될 수 있습니다",
+      "final": "최종 순위"
     },
     "format": {
       "FT2": "2선승",
