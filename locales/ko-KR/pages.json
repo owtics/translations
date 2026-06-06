@@ -2,8 +2,7 @@
     "home": {
         "meta": {
             "title": "오버워치 영웅 통계, 티어표, e스포츠",
-            "description": "오버워치 영웅 승률·픽률·밴률을 전 티어, 전 지역에서 매일 업데이트. 맵별 통계와 e스포츠 일정·결과·팀·선수 정보까지 한곳에서 확인하세요.",
-            "keywords": "옵틱스, 옵틱스지지, 오버워치, OWtics, OWtics.GG, 아이치, 오버워치 영웅 티어리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+            "description": "오버워치 영웅 승률·픽률·밴률을 전 티어, 전 지역에서 매일 업데이트. 맵별 통계와 e스포츠 일정·결과·팀·선수 정보까지 한곳에서 확인하세요."
         },
         "match-center": {
             "title": "매치 센터",
@@ -32,8 +31,7 @@
         "cold-start-chip": "시즌 초반",
         "meta": {
             "title": "오버워치 영웅 통계",
-            "description": "오버워치 모든 영웅을 승률, 픽률, 밴률, KDA로 비교하세요. 티어, 지역, 시즌별로 필터링하며 매일 업데이트됩니다.",
-            "keywords": "오버워치, OWtics, OWtics.GG, 오버워치 영웅 티어 리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+            "description": "오버워치 모든 영웅을 승률, 픽률, 밴률, KDA로 비교하세요. 티어, 지역, 시즌별로 필터링하며 매일 업데이트됩니다."
         }
     },
     "hero-insights": {
@@ -68,15 +66,13 @@
     "hero-details": {
         "meta": {
             "title": "오버워치 {hero} 통계",
-            "description": "오버워치 {role} 영웅 {hero}의 승률, 픽률, 밴률, KDA. 티어별·지역별 통계와 마이너·메이저 특전, 강한 맵·약한 맵까지 확인하세요.",
-            "keywords": "오버워치, {hero}, {role}, OWtics, OWtics.GG, 오버워치 영웅 티어 리스트, 오버워치 e스포츠, 오버워치 통계, 오버워치 통계"
+            "description": "오버워치 {role} 영웅 {hero}의 승률, 픽률, 밴률, KDA. 티어별·지역별 통계와 마이너·메이저 특전, 강한 맵·약한 맵까지 확인하세요."
         }
     },
     "map-list": {
         "meta": {
             "title": "오버워치 맵 통계",
-            "description": "오버워치 모든 맵의 영웅 승률과 픽률을 모드별로 정리했습니다. 어떤 영웅이 각 맵에서 강한지 확인하고 경쟁전 맵 풀 전반의 픽을 비교하세요.",
-            "keywords": "오버워치, 맵 통계, 맵, OWtics, OWtics.GG, 오버워치 맵, 오버워치 맵풀"
+            "description": "오버워치 모든 맵의 영웅 승률과 픽률을 모드별로 정리했습니다. 어떤 영웅이 각 맵에서 강한지 확인하고 경쟁전 맵 풀 전반의 픽을 비교하세요."
         },
         "title": "맵 통계",
         "description": "맵별 영웅 승률과 픽률. 오버워치 모든 맵을 모드별로 정리."
@@ -123,8 +119,7 @@
         },
         "meta": {
             "title": "아이치 레이팅 — 오버워치 메타 분석",
-            "description": "아이치 레이팅으로 Top 500 플레이어가 가장 많이 픽하는 오버워치 영웅을 확인하세요. 지역 필터를 지원하는 시계열 차트로 시즌별 메타 변화를 추적합니다.",
-            "keywords": "오버워치, 아이치 레이팅, OWtics, OWtics.GG, 오버워치 영웅 통계, 오버워치 e스포츠"
+            "description": "아이치 레이팅으로 Top 500 플레이어가 가장 많이 픽하는 오버워치 영웅을 확인하세요. 지역 필터를 지원하는 시계열 차트로 시즌별 메타 변화를 추적합니다."
         }
     },
     "contributors": {
@@ -296,8 +291,7 @@
             "empty": "대회를 찾을 수 없습니다",
             "meta": {
                 "title": "오버워치 e스포츠 대회",
-                "description": "오버워치 챔피언스 시리즈(OWCS)와 오버워치 월드컵(OWWC) 등 오버워치 e스포츠 대회를 둘러보세요. 아시아, EMEA, 북미 전역의 실시간 일정, 경기 결과, 팀 순위, 영웅 밴 통계를 제공합니다.",
-                "keywords": "오버워치 e스포츠, 오버워치 챔피언스 시리즈, OWCS, 오버워치 월드컵, OWWC, 오버워치 대회"
+                "description": "오버워치 챔피언스 시리즈(OWCS)와 오버워치 월드컵(OWWC) 등 오버워치 e스포츠 대회를 둘러보세요. 아시아, EMEA, 북미 전역의 실시간 일정, 경기 결과, 팀 순위, 영웅 밴 통계를 제공합니다."
             }
         },
         "calendar": {
@@ -313,8 +307,7 @@
             },
             "meta": {
                 "title": "오버워치 e스포츠 경기 캘린더",
-                "description": "오버워치 e스포츠 경기를 월간 캘린더로 확인하세요. 모든 대회와 지역의 예정 일정과 최근 결과를 한눈에 볼 수 있습니다.",
-                "keywords": "오버워치 e스포츠, 경기 일정, 캘린더"
+                "description": "오버워치 e스포츠 경기를 월간 캘린더로 확인하세요. 모든 대회와 지역의 예정 일정과 최근 결과를 한눈에 볼 수 있습니다."
             }
         },
         "tournament-detail": {
@@ -449,8 +442,7 @@
             },
             "meta": {
                 "title": "{tournament} — 오버워치 e스포츠",
-                "description": "{status, select, UPCOMING {{tournament}: {teamCount, plural, =0 {곧 열리는} other {#개 팀이 참가하는}} 오버워치 e스포츠 대회입니다. 일정, 대진표, 참가 로스터를 미리 확인하세요.} ONGOING {{tournament} 진행 중: {teamCount, plural, =0 {오버워치 대회를 팔로우하고} other {#개 팀이 우승을 향해 경쟁 중입니다.}} 순위, 결과, 영웅 밴을 실시간으로 확인하세요.} other {{tournament} 결과: {teamCount, plural, =0 {오버워치 대회 전체 리캡} other {#개 팀의 최종 순위}}, 대진표, 영웅 밴 통계, POTM 수상 내역까지.}}",
-                "keywords": "오버워치 e스포츠, {tournament}, 오버워치 대회"
+                "description": "{status, select, UPCOMING {{tournament}: {teamCount, plural, =0 {곧 열리는} other {#개 팀이 참가하는}} 오버워치 e스포츠 대회입니다. 일정, 대진표, 참가 로스터를 미리 확인하세요.} ONGOING {{tournament} 진행 중: {teamCount, plural, =0 {오버워치 대회를 팔로우하고} other {#개 팀이 우승을 향해 경쟁 중입니다.}} 순위, 결과, 영웅 밴을 실시간으로 확인하세요.} other {{tournament} 결과: {teamCount, plural, =0 {오버워치 대회 전체 리캡} other {#개 팀의 최종 순위}}, 대진표, 영웅 밴 통계, POTM 수상 내역까지.}}"
             }
         },
         "team-list": {
@@ -464,8 +456,7 @@
             "empty": "팀을 찾을 수 없습니다",
             "meta": {
                 "title": "오버워치 e스포츠 팀",
-                "description": "오버워치 프로팀의 현재 로스터, 선수 역할, 승패 기록, 최근 이적을 살펴보세요. 아시아, EMEA, 북미 등 지역별로 필터링할 수 있습니다.",
-                "keywords": "오버워치 e스포츠 팀, OWCS 팀"
+                "description": "오버워치 프로팀의 현재 로스터, 선수 역할, 승패 기록, 최근 이적을 살펴보세요. 아시아, EMEA, 북미 등 지역별로 필터링할 수 있습니다."
             }
         },
         "team-detail": {
@@ -506,8 +497,7 @@
             "ban-count": "{count, plural, one {# ban} other {# bans}}",
             "meta": {
                 "title": "{team} — 오버워치 e스포츠 팀",
-                "description": "{active, select, false {{team}은(는) 해체된 오버워치 e스포츠 팀입니다. {played, plural, =0 {경기 이력} other {통산 #경기 {wins}승 {losses}패}}, 과거 로스터, 대회 성적을 확인하세요.} other {{team} 오버워치 e스포츠 팀: {played, plural, =0 {경기 일정과 결과} other {통산 #경기 {wins}승 {losses}패}}, 역할별 현재 로스터, 예정 경기, 대회 참가 이력.}}",
-                "keywords": "오버워치 e스포츠, {team}, 오버워치 팀"
+                "description": "{active, select, false {{team}은(는) 해체된 오버워치 e스포츠 팀입니다. {played, plural, =0 {경기 이력} other {통산 #경기 {wins}승 {losses}패}}, 과거 로스터, 대회 성적을 확인하세요.} other {{team} 오버워치 e스포츠 팀: {played, plural, =0 {경기 일정과 결과} other {통산 #경기 {wins}승 {losses}패}}, 역할별 현재 로스터, 예정 경기, 대회 참가 이력.}}"
             }
         },
         "player-detail": {
@@ -591,8 +581,7 @@
             },
             "meta": {
                 "title": "{team1} vs {team2} — {competition}",
-                "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}. 곧 열리는 이 오버워치 e스포츠 경기의 로스터, 상대 전적, 시청 채널을 미리 확인하세요.} LIVE {{competition} {team1} vs {team2} 진행 중. 이 오버워치 e스포츠 경기의 맵별 스코어, 영웅 밴, 라이브 방송을 확인하세요.} other {{competition} {team1} {scoreA}-{scoreB} {team2}. 이 오버워치 e스포츠 경기의 맵별 스코어, 영웅 밴, POTM, 리플레이 코드까지.}}",
-                "keywords": "오버워치 e스포츠, {team1}, {team2}, 경기 상세"
+                "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}. 곧 열리는 이 오버워치 e스포츠 경기의 로스터, 상대 전적, 시청 채널을 미리 확인하세요.} LIVE {{competition} {team1} vs {team2} 진행 중. 이 오버워치 e스포츠 경기의 맵별 스코어, 영웅 밴, 라이브 방송을 확인하세요.} other {{competition} {team1} {scoreA}-{scoreB} {team2}. 이 오버워치 e스포츠 경기의 맵별 스코어, 영웅 밴, POTM, 리플레이 코드까지.}}"
             }
         }
     }
