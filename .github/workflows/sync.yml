@@ -1,4 +1,4 @@
-name: Sync to Frontend
+name: Sync to Web
 
 on:
   push:
@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   sync:
-    name: Sync translations to frontend
+    name: Sync translations to web
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +30,7 @@ jobs:
         run: |
           for locale_dir in locales/*/; do
             locale=$(basename "$locale_dir")
-            target="_owtics/frontend/src/shared/i18n/locales/$locale"
+            target="_owtics/web/src/shared/i18n/locales/$locale"
             mkdir -p "$target"
             cp "$locale_dir"*.json "$target/"
           done
@@ -51,7 +51,7 @@ jobs:
           fi
 
           NEW_LOCALES=""
-          for dir in frontend/src/shared/i18n/locales/*/; do
+          for dir in web/src/shared/i18n/locales/*/; do
             locale=$(basename "$dir")
             if [ -f "$dir/game.json" ] && [ ! -f "$dir/index.ts" ]; then
               NEW_LOCALES="$NEW_LOCALES \`$locale\`"
@@ -86,17 +86,17 @@ jobs:
               echo ""
               echo "Manual steps required before merging:"
               echo ""
-              echo "**Frontend (\`frontend/\`):**"
-              echo "1. Create \`index.ts\` barrel file for each new locale under \`frontend/src/shared/i18n/locales/\`"
-              echo "2. Add import to \`frontend/src/shared/i18n/locales/index.ts\`"
-              echo "3. Update \`frontend/src/shared/i18n/config.ts\` with locale metadata (label, flag, alias)"
+              echo "**Web (\`web/\`):**"
+              echo "1. Create \`index.ts\` barrel file for each new locale under \`web/src/shared/i18n/locales/\`"
+              echo "2. Add import to \`web/src/shared/i18n/locales/index.ts\`"
+              echo "3. Update \`web/src/shared/i18n/config.ts\` with locale metadata (label, flag, alias)"
               echo ""
               echo "**Backend (\`api-server/\`):**"
               echo "4. Add to \`LanguageTag\` enum in \`api-server/src/shared/language-tags.ts\`"
               echo ""
               echo "**Codegen:**"
               echo "5. Run \`bun --cwd api-server run codegen\`"
-              echo "6. Run \`bun --cwd frontend run codegen\` (requires api-server running on :4000)"
+              echo "6. Run \`bun --cwd web run codegen\` (requires api-server running on :4000)"
             fi
           } > /tmp/pr-body.md
 
