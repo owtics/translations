@@ -388,6 +388,10 @@
             "overview": {
                 "standings": "순위",
                 "map-pool": "맵 풀",
+                "map-pool-varies": "일부 페이즈는 대회 기본 맵 풀과 다른 맵 풀을 사용합니다.",
+                "map-pool-scope-default": "기본",
+                "map-pool-scope-custom": "커스텀 맵 풀",
+                "map-pool-only-here": "이 페이즈에만",
                 "participating-teams": "참가 팀"
             },
             "statistics": {
@@ -532,6 +536,7 @@
                 "where-to-watch": "시청 채널",
                 "live-stream": "라이브 방송",
                 "streams": "스트림",
+                "now-playing": "위에서 재생 중",
                 "broadcasts-label": "방송",
                 "replays": "다시 보기",
                 "player-pov": "선수 시점 ({count})",
@@ -546,6 +551,7 @@
             "not-found": "경기를 찾을 수 없습니다",
             "copy-replay-code": "리플레이 코드 복사",
             "potm": "Player of the Match",
+            "rosters": "로스터",
             "preview": {
                 "countdown": "경기 시작까지",
                 "countdown-started": "경기 진행 중",
@@ -553,7 +559,6 @@
                 "countdown-hours": "시간",
                 "countdown-minutes": "분",
                 "countdown-seconds": "초",
-                "rosters": "로스터",
                 "rosters-empty": "로스터 정보를 찾을 수 없습니다",
                 "stats": "통산 전적",
                 "stats-disclaimer": "각 팀의 모든 대회 통산 전적이며, 상대 전적이 아닙니다.",

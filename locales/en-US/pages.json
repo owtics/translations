@@ -388,6 +388,10 @@
             "overview": {
                 "standings": "Standings",
                 "map-pool": "Map Pool",
+                "map-pool-varies": "Some phases use a different map pool than the competition default.",
+                "map-pool-scope-default": "Default",
+                "map-pool-scope-custom": "Custom map pool",
+                "map-pool-only-here": "Only in this phase",
                 "participating-teams": "Participating Teams"
             },
             "statistics": {
@@ -532,6 +536,7 @@
                 "where-to-watch": "Where to Watch",
                 "live-stream": "Live Stream",
                 "streams": "Streams",
+                "now-playing": "Playing above",
                 "broadcasts-label": "Broadcasts",
                 "replays": "Replays",
                 "player-pov": "Player POV ({count})",
@@ -546,6 +551,7 @@
             "not-found": "Match not found",
             "copy-replay-code": "Copy replay code",
             "potm": "Player of the Match",
+            "rosters": "Rosters",
             "preview": {
                 "countdown": "Match Starts In",
                 "countdown-started": "Match Underway",
@@ -553,7 +559,6 @@
                 "countdown-hours": "H",
                 "countdown-minutes": "M",
                 "countdown-seconds": "S",
-                "rosters": "Rosters",
                 "rosters-empty": "Roster information not available",
                 "stats": "Overall Record",
                 "stats-disclaimer": "Based on each team's record across all competitions, not head-to-head.",

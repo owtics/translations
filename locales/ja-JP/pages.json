@@ -358,6 +358,10 @@
             "overview": {
                 "standings": "順位",
                 "map-pool": "マッププール",
+                "map-pool-varies": "一部のフェーズでは、大会の基本マッププールとは異なるマッププールが使用されます。",
+                "map-pool-scope-default": "基本",
+                "map-pool-scope-custom": "カスタムマッププール",
+                "map-pool-only-here": "このフェーズのみ",
                 "participating-teams": "参加チーム"
             },
             "statistics": {
@@ -502,6 +506,7 @@
                 "where-to-watch": "視聴チャンネル",
                 "live-stream": "ライブ配信",
                 "streams": "ストリーム",
+                "now-playing": "上で再生中",
                 "broadcasts-label": "配信",
                 "replays": "リプレイ",
                 "player-pov": "選手視点 ({count})",
@@ -516,6 +521,7 @@
             "not-found": "試合が見つかりません",
             "copy-replay-code": "リプレイコードをコピー",
             "potm": "Player of the Match",
+            "rosters": "ロスター",
             "preview": {
                 "countdown": "試合開始まで",
                 "countdown-started": "試合進行中",
@@ -523,7 +529,6 @@
                 "countdown-hours": "時",
                 "countdown-minutes": "分",
                 "countdown-seconds": "秒",
-                "rosters": "ロスター",
                 "rosters-empty": "ロスター情報がありません",
                 "stats": "通算成績",
                 "stats-disclaimer": "各チームの全大会通算成績です。直接対決の成績ではありません。",

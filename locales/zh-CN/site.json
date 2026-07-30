@@ -30,7 +30,7 @@
   "pagination": {
     "previous": "上一页",
     "next": "下一页",
-    "page": "第 {page} 页",
+    "page-of": "第 {page}/{total} 页",
     "nav-label": "分页导航"
   },
   "empty": {
