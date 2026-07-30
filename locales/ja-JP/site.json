@@ -30,7 +30,7 @@
   "pagination": {
     "previous": "前へ",
     "next": "次へ",
-    "page": "{page} ページ",
+    "page-of": "{total}ページ中 {page}ページ",
     "nav-label": "ページネーション"
   },
   "empty": {

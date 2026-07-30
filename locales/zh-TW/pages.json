@@ -358,6 +358,10 @@
             "overview": {
                 "standings": "排名",
                 "map-pool": "地圖池",
+                "map-pool-varies": "部分階段使用與賽事預設地圖池不同的地圖池。",
+                "map-pool-scope-default": "預設",
+                "map-pool-scope-custom": "自訂地圖池",
+                "map-pool-only-here": "僅此階段",
                 "participating-teams": "參賽隊伍"
             },
             "statistics": {
@@ -502,6 +506,7 @@
                 "where-to-watch": "觀看頻道",
                 "live-stream": "直播",
                 "streams": "直播串流",
+                "now-playing": "上方播放中",
                 "broadcasts-label": "轉播",
                 "replays": "重播",
                 "player-pov": "選手視角 ({count})",
@@ -516,6 +521,7 @@
             "not-found": "未找到比賽",
             "copy-replay-code": "複製重播代碼",
             "potm": "本場最佳選手",
+            "rosters": "陣容",
             "preview": {
                 "countdown": "距比賽開始",
                 "countdown-started": "比賽進行中",
@@ -523,7 +529,6 @@
                 "countdown-hours": "時",
                 "countdown-minutes": "分",
                 "countdown-seconds": "秒",
-                "rosters": "陣容",
                 "rosters-empty": "暫無陣容資訊",
                 "stats": "總戰績",
                 "stats-disclaimer": "基於各隊所有賽事的總戰績，非交鋒記錄。",

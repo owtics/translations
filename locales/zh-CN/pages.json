@@ -358,6 +358,10 @@
             "overview": {
                 "standings": "排名",
                 "map-pool": "地图池",
+                "map-pool-varies": "部分阶段使用与赛事默认地图池不同的地图池。",
+                "map-pool-scope-default": "默认",
+                "map-pool-scope-custom": "自定义地图池",
+                "map-pool-only-here": "仅此阶段",
                 "participating-teams": "参赛队伍"
             },
             "statistics": {
@@ -502,6 +506,7 @@
                 "where-to-watch": "观看渠道",
                 "live-stream": "直播",
                 "streams": "直播流",
+                "now-playing": "上方播放中",
                 "broadcasts-label": "转播",
                 "replays": "回放",
                 "player-pov": "选手视角 ({count})",
@@ -516,6 +521,7 @@
             "not-found": "未找到比赛",
             "copy-replay-code": "复制回放代码",
             "potm": "本场最佳选手",
+            "rosters": "阵容",
             "preview": {
                 "countdown": "距比赛开始",
                 "countdown-started": "比赛进行中",
@@ -523,7 +529,6 @@
                 "countdown-hours": "时",
                 "countdown-minutes": "分",
                 "countdown-seconds": "秒",
-                "rosters": "阵容",
                 "rosters-empty": "暂无阵容信息",
                 "stats": "总战绩",
                 "stats-disclaimer": "基于各队所有赛事的总战绩，非交锋记录。",

@@ -30,7 +30,7 @@
   "pagination": {
     "previous": "Previous",
     "next": "Next",
-    "page": "Page {page}",
+    "page-of": "Page {page} of {total}",
     "nav-label": "Pagination"
   },
   "empty": {
