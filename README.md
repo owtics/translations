@@ -8,10 +8,10 @@ Community translations for [OWTICS.GG](https://owtics.gg) — Overwatch statisti
 | Locale | Language | Coverage |
 |--------|----------|----------|
 | `en-US` | English | Source |
-| `ja-JP` | 日本語 | 729/802 (91%) |
-| `ko-KR` | 한국어 | 802/802 (100%) |
-| `zh-CN` | 简体中文 | 771/802 (96%) |
-| `zh-TW` | 繁體中文 | 729/802 (91%) |
+| `ja-JP` | 日本語 | 727/800 (91%) |
+| `ko-KR` | 한국어 | 800/800 (100%) |
+| `zh-CN` | 简体中文 | 769/800 (96%) |
+| `zh-TW` | 繁體中文 | 727/800 (91%) |
 | | [Add your language!](CONTRIBUTING.md#adding-a-new-locale) | |
 <!-- TRANSLATION_STATUS:END -->
 
