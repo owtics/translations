@@ -558,6 +558,71 @@
                 "title": "{team1} vs {team2} — {competition}",
                 "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}。提前查看這場即將開始的鬥陣特攻電競比賽的陣容、交鋒戰績與觀看頻道。} LIVE {{competition} {team1} vs {team2}進行中。查看這場鬥陣特攻電競比賽的逐圖比分、英雄禁用與直播。} other {{competition} {team1} {scoreA}-{scoreB} {team2}。這場鬥陣特攻電競比賽的完整逐圖比分、英雄禁用、本場最佳選手與重播代碼。}}"
             }
+        },
+        "transfers-entry": "轉會動態",
+        "transfers": {
+            "title": "轉會動態",
+            "description": "彙整選手的加入、離隊以及正在尋找戰隊的消息。每則消息都經過審核後才會發佈，通過的消息也會寫入選手的戰隊經歷。",
+            "submit-cta": "提交線索",
+            "source": "來源",
+            "type-badge": {
+                "JOIN": "加入",
+                "TRANSFER": "轉會",
+                "LEAVE": "離隊",
+                "LFT": "LFT"
+            },
+            "empty": {
+                "title": "目前還沒有動態",
+                "description": "如果你知道新的轉會消息，歡迎提交。"
+            },
+            "submit": {
+                "title": "提交轉會線索",
+                "login-required": "提交線索需要先登入。",
+                "type": "類型",
+                "type-option": {
+                    "JOIN": "加入",
+                    "LEAVE": "離隊",
+                    "LFT": "LFT"
+                },
+                "type-hint": {
+                    "JOIN": "請填寫選手加入的戰隊。原屬戰隊會在審核時確認。",
+                    "LEAVE": "請填寫選手離開的戰隊。",
+                    "LFT": "這是選手正在找隊的消息，不需要填寫戰隊。"
+                },
+                "player": "選手",
+                "player-placeholder": "搜尋選手",
+                "team": {
+                    "JOIN": "加入的戰隊",
+                    "LEAVE": "離開的戰隊"
+                },
+                "team-placeholder": "搜尋戰隊",
+                "effective-date": "生效日期",
+                "source-url": "來源連結",
+                "source-url-hint": "請填寫 X（原 Twitter）貼文或官方公告的網址。",
+                "note": "備註",
+                "review-notice": "提交的內容不會立即發佈，審核通過後才會公開。",
+                "received": "已收到你的提交，審核通過後會公開。",
+                "cancel": "取消",
+                "submit": "提交",
+                "submitting": "提交中...",
+                "clear": "清除",
+                "error": {
+                    "player-required": "請選擇選手。",
+                    "team-required": "請選擇戰隊。",
+                    "failed": "提交失敗。",
+                    "source-url-required": "請填寫來源連結。"
+                },
+                "searching": "搜尋中…",
+                "no-results": "沒有符合的結果。"
+            },
+            "meta": {
+                "title": "鬥陣特攻電競轉會動態",
+                "description": "集中查看鬥陣特攻電競的選手加入、離隊與自由選手消息。"
+            },
+            "direction": {
+                "JOIN": "加入",
+                "LEAVE": "離隊"
+            }
         }
     }
 }

@@ -588,6 +588,71 @@
                 "title": "{team1} vs {team2} — {competition}",
                 "description": "{status, select, UPCOMING {{team1} vs {team2} in {competition}. Preview rosters, head-to-head form, and where to watch this upcoming Overwatch esports match.} LIVE {{team1} vs {team2} is live in {competition}. Follow the map-by-map score, hero bans, and live streams for this Overwatch esports match.} other {{team1} {scoreA}-{scoreB} {team2} in {competition}. Full map scores, hero bans, Player of the Match, and replay codes for this Overwatch esports match.}}"
             }
+        },
+        "transfers-entry": "Roster moves",
+        "transfers": {
+            "title": "Roster Moves",
+            "description": "Signings, releases, and players looking for a team. Every item is reviewed before it appears, and an approved one is written into the player's roster history too.",
+            "submit-cta": "Submit news",
+            "source": "Source",
+            "type-badge": {
+                "JOIN": "Signed",
+                "TRANSFER": "Transferred",
+                "LEAVE": "Left",
+                "LFT": "LFT"
+            },
+            "empty": {
+                "title": "No roster moves yet",
+                "description": "Know about a move that is missing? Send it in."
+            },
+            "submit": {
+                "title": "Submit roster news",
+                "login-required": "Sign in to submit roster news.",
+                "type": "Type",
+                "type-option": {
+                    "JOIN": "Signed",
+                    "LEAVE": "Left",
+                    "LFT": "LFT"
+                },
+                "type-hint": {
+                    "JOIN": "Name the team the player joined. Where they came from is worked out during review.",
+                    "LEAVE": "Name the team the player left.",
+                    "LFT": "The player is looking for a team, so no team is needed."
+                },
+                "player": "Player",
+                "player-placeholder": "Search for a player",
+                "team": {
+                    "JOIN": "Team joined",
+                    "LEAVE": "Team left"
+                },
+                "team-placeholder": "Search for a team",
+                "effective-date": "Effective date",
+                "source-url": "Source link",
+                "source-url-hint": "Link the X post or official announcement you read it in.",
+                "note": "Note",
+                "review-notice": "Submissions are published after review, not right away.",
+                "received": "Submission received. It will appear once reviewed.",
+                "cancel": "Cancel",
+                "submit": "Submit",
+                "submitting": "Sending...",
+                "clear": "Clear",
+                "error": {
+                    "player-required": "Pick a player.",
+                    "team-required": "Pick a team.",
+                    "failed": "Could not send the submission.",
+                    "source-url-required": "A source link is required."
+                },
+                "searching": "Searching…",
+                "no-results": "No matches."
+            },
+            "meta": {
+                "title": "Overwatch Esports Roster Moves",
+                "description": "Overwatch esports signings, releases, and free agents, all in one feed."
+            },
+            "direction": {
+                "JOIN": "Joined",
+                "LEAVE": "Left"
+            }
         }
     }
 }
