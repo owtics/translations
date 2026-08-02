@@ -564,7 +564,6 @@
             "title": "转会动态",
             "description": "汇总选手的加入、离队以及正在寻找战队的消息。每条消息都经过审核后才会发布，通过的消息也会写入选手的战队履历。",
             "submit-cta": "提交线索",
-            "source": "来源",
             "type-badge": {
                 "JOIN": "加入",
                 "TRANSFER": "转会",
@@ -598,7 +597,7 @@
                 "team-placeholder": "搜索战队",
                 "effective-date": "生效日期",
                 "source-url": "来源链接",
-                "source-url-hint": "请填写 X（原 Twitter）帖子或官方公告的网址。",
+                "source-url-hint": "仅支持 X（原 Twitter）和 YouTube 链接。填写公告帖后，预览会一并展示。",
                 "note": "备注",
                 "review-notice": "提交的内容不会立即发布，审核通过后才会公开。",
                 "received": "已收到你的提交，审核通过后会公开。",
@@ -610,7 +609,8 @@
                     "player-required": "请选择选手。",
                     "team-required": "请选择战队。",
                     "failed": "提交失败。",
-                    "source-url-required": "请填写来源链接。"
+                    "source-url-required": "请填写来源链接。",
+                    "source-url-unsupported": "仅支持提交 X（原 Twitter）和 YouTube 链接。"
                 },
                 "searching": "搜索中…",
                 "no-results": "没有匹配结果。"
@@ -618,10 +618,6 @@
             "meta": {
                 "title": "守望先锋电竞转会动态",
                 "description": "集中查看守望先锋电竞的选手加入、离队与自由选手消息。"
-            },
-            "direction": {
-                "JOIN": "加入",
-                "LEAVE": "离队"
             }
         }
     }

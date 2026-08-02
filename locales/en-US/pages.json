@@ -594,7 +594,6 @@
             "title": "Roster Moves",
             "description": "Signings, releases, and players looking for a team. Every item is reviewed before it appears, and an approved one is written into the player's roster history too.",
             "submit-cta": "Submit news",
-            "source": "Source",
             "type-badge": {
                 "JOIN": "Signed",
                 "TRANSFER": "Transferred",
@@ -628,7 +627,7 @@
                 "team-placeholder": "Search for a team",
                 "effective-date": "Effective date",
                 "source-url": "Source link",
-                "source-url-hint": "Link the X post or official announcement you read it in.",
+                "source-url-hint": "X and YouTube links only. The announcement post goes up with the news as a preview.",
                 "note": "Note",
                 "review-notice": "Submissions are published after review, not right away.",
                 "received": "Submission received. It will appear once reviewed.",
@@ -640,7 +639,8 @@
                     "player-required": "Pick a player.",
                     "team-required": "Pick a team.",
                     "failed": "Could not send the submission.",
-                    "source-url-required": "A source link is required."
+                    "source-url-required": "A source link is required.",
+                    "source-url-unsupported": "Only X and YouTube links can be submitted."
                 },
                 "searching": "Searching…",
                 "no-results": "No matches."
@@ -648,10 +648,6 @@
             "meta": {
                 "title": "Overwatch Esports Roster Moves",
                 "description": "Overwatch esports signings, releases, and free agents, all in one feed."
-            },
-            "direction": {
-                "JOIN": "Joined",
-                "LEAVE": "Left"
             }
         }
     }

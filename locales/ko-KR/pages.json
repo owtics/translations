@@ -594,7 +594,6 @@
             "title": "이적 소식",
             "description": "선수 영입과 방출, 팀을 찾는 선수 소식을 모았습니다. 검토를 거친 소식만 올라오며, 승인된 소식은 선수 이력에도 함께 반영됩니다.",
             "submit-cta": "제보하기",
-            "source": "출처",
             "type-badge": {
                 "JOIN": "영입",
                 "TRANSFER": "이적",
@@ -628,7 +627,7 @@
                 "team-placeholder": "팀 이름 검색",
                 "effective-date": "효력일",
                 "source-url": "출처 링크",
-                "source-url-hint": "출처 X(옛 트위터) 게시물이나 공식 발표 주소를 넣어주세요.",
+                "source-url-hint": "X(옛 트위터)와 YouTube 링크만 받습니다. 발표 게시물을 넣으면 미리보기가 함께 올라갑니다.",
                 "note": "메모",
                 "review-notice": "제보는 바로 올라가지 않고, 확인을 거친 뒤 공개됩니다.",
                 "received": "제보를 접수했습니다. 확인 후 공개됩니다.",
@@ -640,7 +639,8 @@
                     "player-required": "선수를 선택하세요.",
                     "team-required": "팀을 선택하세요.",
                     "failed": "제보를 보내지 못했습니다.",
-                    "source-url-required": "출처 링크를 입력해주세요."
+                    "source-url-required": "출처 링크를 입력해주세요.",
+                    "source-url-unsupported": "X(옛 트위터)와 YouTube 링크만 제보할 수 있습니다."
                 },
                 "searching": "검색 중…",
                 "no-results": "검색 결과가 없습니다."
@@ -648,10 +648,6 @@
             "meta": {
                 "title": "오버워치 e스포츠 이적 소식",
                 "description": "오버워치 e스포츠 선수 영입과 방출, 팀을 찾는 선수 소식을 한곳에서 확인하세요."
-            },
-            "direction": {
-                "JOIN": "합류",
-                "LEAVE": "방출"
             }
         }
     }

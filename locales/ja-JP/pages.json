@@ -564,7 +564,6 @@
             "title": "移籍情報",
             "description": "選手の加入・放出と、チームを探している選手の情報をまとめています。確認を経たものだけが掲載され、承認された情報は選手の在籍履歴にも反映されます。",
             "submit-cta": "情報を送る",
-            "source": "出典",
             "type-badge": {
                 "JOIN": "加入",
                 "TRANSFER": "移籍",
@@ -598,7 +597,7 @@
                 "team-placeholder": "チーム名で検索",
                 "effective-date": "発効日",
                 "source-url": "出典リンク",
-                "source-url-hint": "X（旧Twitter）の投稿や公式発表のURLを入れてください。",
+                "source-url-hint": "X（旧Twitter）とYouTubeのURLのみ受け付けます。発表の投稿を入れるとプレビューも一緒に掲載されます。",
                 "note": "メモ",
                 "review-notice": "送られた情報はすぐには掲載されず、確認のうえ公開されます。",
                 "received": "情報を受け付けました。確認のうえ公開されます。",
@@ -610,7 +609,8 @@
                     "player-required": "選手を選んでください。",
                     "team-required": "チームを選んでください。",
                     "failed": "情報を送れませんでした。",
-                    "source-url-required": "出典リンクを入力してください。"
+                    "source-url-required": "出典リンクを入力してください。",
+                    "source-url-unsupported": "X（旧Twitter）とYouTubeのURLのみ受け付けています。"
                 },
                 "searching": "検索中…",
                 "no-results": "該当なし。"
@@ -618,10 +618,6 @@
             "meta": {
                 "title": "オーバーウォッチ eスポーツ 移籍情報",
                 "description": "オーバーウォッチ eスポーツの加入・退団・無所属選手の情報をまとめて確認できます。"
-            },
-            "direction": {
-                "JOIN": "加入",
-                "LEAVE": "退団"
             }
         }
     }
