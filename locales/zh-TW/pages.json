@@ -124,14 +124,14 @@
     },
     "contributors": {
         "title": "貢獻者",
-        "subtitle": "認識為<brand/>管理電競數據的貢獻者們",
+        "subtitle": "認識與我們一起打造<brand/>的夥伴們",
         "meta": {
             "title": "貢獻者",
-            "description": "認識在OWTICS.GG策劃與維護鬥陣特攻電競數據——比賽結果、陣容、對陣圖等——的志願貢獻者們。"
+            "description": "認識一起打造OWTICS.GG的志願貢獻者們：從鬥陣特攻電競數據的整理到網站設計，處處都有他們的付出。"
         },
         "join": {
             "title": "成為貢獻者",
-            "description": "有興趣幫助管理鬥陣特攻電競數據嗎？請透過Discord聯繫我們！",
+            "description": "無論是電競數據還是設計，想一起打造OWTICS.GG就請透過Discord聯繫我們！",
             "button": "加入Discord"
         },
         "banner": {
@@ -594,6 +594,7 @@
                     "JOIN": "加入的戰隊",
                     "LEAVE": "離開的戰隊"
                 },
+                "team-current": "目前所屬戰隊（列表中沒有請在下方搜尋）",
                 "team-placeholder": "搜尋戰隊",
                 "effective-date": "生效日期",
                 "source-url": "來源連結",

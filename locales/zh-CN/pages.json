@@ -124,14 +124,14 @@
     },
     "contributors": {
         "title": "贡献者",
-        "subtitle": "认识为<brand/>管理电竞数据的贡献者们",
+        "subtitle": "认识与我们一起打造<brand/>的伙伴们",
         "meta": {
             "title": "贡献者",
-            "description": "认识在OWTICS.GG策划与维护守望先锋电竞数据——比赛结果、阵容、对阵图等——的志愿贡献者们。"
+            "description": "认识一起打造OWTICS.GG的志愿贡献者们：从守望先锋电竞数据的整理到网站设计，处处都有他们的付出。"
         },
         "join": {
             "title": "成为贡献者",
-            "description": "有兴趣帮助管理守望先锋电竞数据吗？请通过Discord联系我们！",
+            "description": "无论是电竞数据还是设计，想一起打造OWTICS.GG就请通过Discord联系我们！",
             "button": "加入Discord"
         },
         "banner": {
@@ -594,6 +594,7 @@
                     "JOIN": "加入的战队",
                     "LEAVE": "离开的战队"
                 },
+                "team-current": "当前所属战队（列表中没有请在下方搜索）",
                 "team-placeholder": "搜索战队",
                 "effective-date": "生效日期",
                 "source-url": "来源链接",

@@ -124,14 +124,14 @@
     },
     "contributors": {
         "title": "Contributors",
-        "subtitle": "<brand/> e스포츠 데이터를 관리해주시는 분들입니다",
+        "subtitle": "<brand/>를 함께 만들어가는 분들입니다",
         "meta": {
             "title": "Contributors",
-            "description": "OWTICS.GG의 오버워치 e스포츠 데이터 — 경기 결과, 로스터, 브라켓 등을 직접 관리하고 큐레이션하는 컨트리뷰터를 소개합니다."
+            "description": "OWTICS.GG를 함께 만들어가는 컨트리뷰터를 소개합니다. 오버워치 e스포츠 데이터 큐레이션부터 디자인까지, 사이트 곳곳에 이분들의 손길이 있습니다."
         },
         "join": {
             "title": "Contributor 모집",
-            "description": "오버워치 e스포츠 데이터 관리에 관심이 있으시다면 디스코드로 연락해주세요!",
+            "description": "e스포츠 데이터든 디자인이든, OWTICS.GG를 함께 만들어가고 싶으시다면 디스코드로 연락해주세요!",
             "button": "디스코드 참여하기"
         },
         "banner": {
@@ -624,6 +624,7 @@
                     "JOIN": "합류한 팀",
                     "LEAVE": "떠난 팀"
                 },
+                "team-current": "현재 소속 팀 (목록에 없으면 아래에서 검색)",
                 "team-placeholder": "팀 이름 검색",
                 "effective-date": "효력일",
                 "source-url": "출처 링크",

@@ -124,14 +124,14 @@
     },
     "contributors": {
         "title": "Contributors",
-        "subtitle": "Meet the people who manage <brand/> esports data",
+        "subtitle": "Meet the people who build <brand/> with us",
         "meta": {
             "title": "Contributors",
-            "description": "Meet the volunteer contributors who curate and maintain Overwatch esports data on OWTICS.GG — match results, rosters, brackets, and more."
+            "description": "Meet the volunteer contributors behind OWTICS.GG — curating Overwatch esports data, shaping the design, and making the site what it is."
         },
         "join": {
             "title": "Become a Contributor",
-            "description": "Interested in helping manage Overwatch esports data? Reach out on Discord!",
+            "description": "Want to help build OWTICS.GG? Esports data, design, or anything else — reach out on Discord!",
             "button": "Join Discord"
         },
         "banner": {
@@ -624,6 +624,7 @@
                     "JOIN": "Team joined",
                     "LEAVE": "Team left"
                 },
+                "team-current": "Current teams (search below if not listed)",
                 "team-placeholder": "Search for a team",
                 "effective-date": "Effective date",
                 "source-url": "Source link",
