@@ -3,7 +3,7 @@
     "home": "홈",
     "heroes": "영웅",
     "me": "내 정보",
-    "statistics": "통계",
+    "competitive": "경쟁전",
     "maps": "맵",
     "esports": "Esports",
     "tournaments": "대회",
@@ -11,11 +11,9 @@
     "teams": "팀",
     "transfers": "이적",
     "ichi-rating": "아이치 레이팅",
-    "meta-analysis": "메타 분석",
-    "soon": "준비중",
-    "archived": "아카이브",
     "close-menu": "메뉴 닫기",
-    "open-menu": "메뉴 열기"
+    "open-menu": "메뉴 열기",
+    "section-switcher": "사이트 섹션"
   },
   "filter": {
     "region": "지역",

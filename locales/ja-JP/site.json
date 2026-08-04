@@ -3,7 +3,7 @@
     "home": "ホーム",
     "heroes": "ヒーロー",
     "me": "マイページ",
-    "statistics": "統計",
+    "competitive": "ライバル・プレイ",
     "maps": "マップ",
     "esports": "Esports",
     "tournaments": "大会",
@@ -11,11 +11,9 @@
     "teams": "チーム",
     "transfers": "移籍",
     "ichi-rating": "ICHI レーティング",
-    "meta-analysis": "メタ分析",
-    "soon": "準備中",
-    "archived": "アーカイブ",
     "close-menu": "メニューを閉じる",
-    "open-menu": "メニューを開く"
+    "open-menu": "メニューを開く",
+    "section-switcher": "サイトセクション"
   },
   "filter": {
     "region": "リージョン",

@@ -3,7 +3,7 @@
     "home": "Home",
     "heroes": "Heroes",
     "me": "Me",
-    "statistics": "Statistics",
+    "competitive": "Competitive",
     "maps": "Maps",
     "esports": "Esports",
     "tournaments": "Tournaments",
@@ -11,11 +11,9 @@
     "teams": "Teams",
     "transfers": "Transfers",
     "ichi-rating": "ICHI Rating",
-    "meta-analysis": "Meta Analysis",
-    "soon": "Soon",
-    "archived": "Archived",
     "close-menu": "Close menu",
-    "open-menu": "Open menu"
+    "open-menu": "Open menu",
+    "section-switcher": "Site section"
   },
   "filter": {
     "region": "Region",

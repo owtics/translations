@@ -3,7 +3,7 @@
     "home": "首页",
     "heroes": "英雄",
     "me": "我的",
-    "statistics": "统计",
+    "competitive": "竞技比赛",
     "maps": "地图",
     "esports": "电竞赛事",
     "tournaments": "赛事",
@@ -11,11 +11,9 @@
     "teams": "战队",
     "transfers": "转会",
     "ichi-rating": "ICHI 评分",
-    "meta-analysis": "版本分析",
-    "soon": "即将上线",
-    "archived": "已归档",
     "close-menu": "关闭菜单",
-    "open-menu": "打开菜单"
+    "open-menu": "打开菜单",
+    "section-switcher": "站点分区"
   },
   "filter": {
     "region": "地区",
