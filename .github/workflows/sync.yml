@@ -30,7 +30,7 @@ jobs:
         run: |
           for locale_dir in locales/*/; do
             locale=$(basename "$locale_dir")
-            target="_owtics/web/src/shared/i18n/locales/$locale"
+            target="_owtics/i18n/locales/$locale"
             mkdir -p "$target"
             cp "$locale_dir"*.json "$target/"
           done
@@ -51,7 +51,7 @@ jobs:
           fi
 
           NEW_LOCALES=""
-          for dir in web/src/shared/i18n/locales/*/; do
+          for dir in i18n/locales/*/; do
             locale=$(basename "$dir")
             if [ -f "$dir/game.json" ] && [ ! -f "$dir/index.ts" ]; then
               NEW_LOCALES="$NEW_LOCALES \`$locale\`"
