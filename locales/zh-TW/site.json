@@ -38,6 +38,7 @@
     "copied": "已複製！"
   },
   "labels": {
+    "loading": "載入中",
     "progress": "進行中",
     "inactive": "已解散",
     "unknown": "未知"
@@ -49,9 +50,6 @@
   },
   "preview": {
     "message": "此頁面正在開發中，部分功能可能尚未完善。"
-  },
-  "data-delay": {
-    "message": "第20賽季排行榜更新中——為確保數據準確性，發布時間有所延遲。"
   },
   "filter-toggle": {
     "expand": "更多",
@@ -168,7 +166,8 @@
       "draws-short": "{count}平",
       "win-rate-short": "{rate}% 勝率"
     },
-    "competition-format": "賽制"
+    "competition-format": "賽制",
+    "competition-progress": "賽事進度"
   },
   "auth": {
     "sign-in": "登入",
@@ -199,6 +198,7 @@
     "hint-navigate": "導航",
     "hint-select": "選擇",
     "hint-close": "關閉",
-    "cancel": "取消"
+    "cancel": "取消",
+    "clear": "清除搜尋"
   }
 }

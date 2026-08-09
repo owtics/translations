@@ -139,13 +139,6 @@
             "link": "認識貢獻者"
         }
     },
-    "notable-heroes": {
-        "title": "{patch}版本焦點英雄",
-        "card": {
-            "notable-point": "關注要點",
-            "navigate-to-detail": "查看詳情"
-        }
-    },
     "hero-treemap": {
         "title": "最新版本ICHI 評分變化"
     },
@@ -569,6 +562,15 @@
                 "TRANSFER": "轉會",
                 "LEAVE": "離隊",
                 "LFT": "LFT"
+            },
+            "type-filter": {
+                "all": "全部"
+            },
+            "announcement": {
+                "more": "查看更多",
+                "open": "查看公告",
+                "view-source": "查看原文",
+                "close": "關閉"
             },
             "empty": {
                 "title": "目前還沒有動態",

@@ -139,13 +139,6 @@
             "link": "コントリビューターを見る"
         }
     },
-    "notable-heroes": {
-        "title": "{patch} 注目ヒーロー",
-        "card": {
-            "notable-point": "注目ポイント",
-            "navigate-to-detail": "ヒーロー詳細"
-        }
-    },
     "hero-treemap": {
         "title": "ICHI レーティングの変化"
     },
@@ -569,6 +562,15 @@
                 "TRANSFER": "移籍",
                 "LEAVE": "退団",
                 "LFT": "LFT"
+            },
+            "type-filter": {
+                "all": "すべて"
+            },
+            "announcement": {
+                "more": "もっと見る",
+                "open": "発表を見る",
+                "view-source": "元の投稿を見る",
+                "close": "閉じる"
             },
             "empty": {
                 "title": "まだ情報がありません",

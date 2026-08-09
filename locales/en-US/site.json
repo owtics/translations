@@ -38,6 +38,7 @@
     "copied": "Copied!"
   },
   "labels": {
+    "loading": "Loading",
     "progress": "Progress",
     "inactive": "Disbanded",
     "unknown": "Unknown"
@@ -49,9 +50,6 @@
   },
   "preview": {
     "message": "This page is currently under development. Some features may be incomplete."
-  },
-  "data-delay": {
-    "message": "Season 20 leaderboard update in progress — Data release delayed to ensure accuracy."
   },
   "filter-toggle": {
     "expand": "More",
@@ -168,7 +166,8 @@
       "draws-short": "{count}D",
       "win-rate-short": "{rate}% WR"
     },
-    "competition-format": "Format"
+    "competition-format": "Format",
+    "competition-progress": "Competition progress"
   },
   "auth": {
     "sign-in": "Sign in",
@@ -199,6 +198,7 @@
     "hint-navigate": "to navigate",
     "hint-select": "to select",
     "hint-close": "to close",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "clear": "Clear search"
   }
 }

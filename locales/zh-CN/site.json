@@ -38,6 +38,7 @@
     "copied": "已复制！"
   },
   "labels": {
+    "loading": "加载中",
     "progress": "进行中",
     "inactive": "已解散",
     "unknown": "未知"
@@ -49,9 +50,6 @@
   },
   "preview": {
     "message": "此页面正在开发中，部分功能可能尚未完善。"
-  },
-  "data-delay": {
-    "message": "第20赛季排行榜更新中——为确保数据准确性，发布时间有所延迟。"
   },
   "filter-toggle": {
     "expand": "更多",
@@ -168,7 +166,8 @@
       "draws-short": "{count}平",
       "win-rate-short": "{rate}% 胜率"
     },
-    "competition-format": "赛制"
+    "competition-format": "赛制",
+    "competition-progress": "赛事进度"
   },
   "auth": {
     "sign-in": "登录",
@@ -199,6 +198,7 @@
     "hint-navigate": "导航",
     "hint-select": "选择",
     "hint-close": "关闭",
-    "cancel": "取消"
+    "cancel": "取消",
+    "clear": "清除搜索"
   }
 }
