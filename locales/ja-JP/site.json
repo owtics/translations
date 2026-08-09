@@ -38,6 +38,7 @@
     "copied": "コピーしました！"
   },
   "labels": {
+    "loading": "読み込み中",
     "progress": "進行状況",
     "inactive": "解散済",
     "unknown": "不明"
@@ -49,9 +50,6 @@
   },
   "preview": {
     "message": "このページは現在開発中です。一部の機能が不完全な場合があります。"
-  },
-  "data-delay": {
-    "message": "シーズン20リーダーボード更新中 — データ精度向上のため公開を延期しています。"
   },
   "filter-toggle": {
     "expand": "詳細",
@@ -168,7 +166,8 @@
       "draws-short": "{count}分",
       "win-rate-short": "{rate}% 勝率"
     },
-    "competition-format": "フォーマット"
+    "competition-format": "フォーマット",
+    "competition-progress": "大会の進行状況"
   },
   "auth": {
     "sign-in": "ログイン",
@@ -199,6 +198,7 @@
     "hint-navigate": "移動",
     "hint-select": "選択",
     "hint-close": "閉じる",
-    "cancel": "キャンセル"
+    "cancel": "キャンセル",
+    "clear": "検索をクリア"
   }
 }

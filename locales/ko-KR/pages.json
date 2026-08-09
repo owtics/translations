@@ -139,13 +139,6 @@
             "link": "Contributors 보기"
         }
     },
-    "notable-heroes": {
-        "title": "{patch} 주목해야 할 영웅",
-        "card": {
-            "notable-point": "주요 포인트",
-            "navigate-to-detail": "영웅 상세정보"
-        }
-    },
     "hero-treemap": {
         "title": "최근 밸런스 패치 아이치 레이팅 변화"
     },
@@ -569,6 +562,15 @@
                 "TRANSFER": "이적",
                 "LEAVE": "방출",
                 "LFT": "LFT"
+            },
+            "type-filter": {
+                "all": "전체"
+            },
+            "announcement": {
+                "more": "더 보기",
+                "open": "발표 내용 보기",
+                "view-source": "원본 보기",
+                "close": "닫기"
             },
             "empty": {
                 "title": "아직 올라온 소식이 없습니다",

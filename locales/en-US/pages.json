@@ -139,13 +139,6 @@
             "link": "Meet the Contributors"
         }
     },
-    "notable-heroes": {
-        "title": "Notable Heroes on {patch}",
-        "card": {
-            "notable-point": "Notable Point",
-            "navigate-to-detail": "Details"
-        }
-    },
     "hero-treemap": {
         "title": "ICHI Rating Changes By The Latest Patch"
     },
@@ -569,6 +562,15 @@
                 "TRANSFER": "Transferred",
                 "LEAVE": "Left",
                 "LFT": "LFT"
+            },
+            "type-filter": {
+                "all": "All"
+            },
+            "announcement": {
+                "more": "Show more",
+                "open": "View announcement",
+                "view-source": "View source",
+                "close": "Close"
             },
             "empty": {
                 "title": "No roster moves yet",
