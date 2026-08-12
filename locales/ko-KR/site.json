@@ -51,12 +51,10 @@
   "preview": {
     "message": "이 페이지는 현재 개발 중입니다. 일부 기능이 불완전할 수 있습니다."
   },
-  "filter-toggle": {
-    "expand": "상세",
-    "collapse": "접기"
-  },
   "filter-sheet": {
-    "title": "필터"
+    "title": "필터",
+    "clear": "{value} 필터 해제",
+    "change": "{value} 필터 변경"
   },
   "esports": {
     "broadcast": {

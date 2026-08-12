@@ -51,12 +51,10 @@
   "preview": {
     "message": "此頁面正在開發中，部分功能可能尚未完善。"
   },
-  "filter-toggle": {
-    "expand": "更多",
-    "collapse": "收起"
-  },
   "filter-sheet": {
-    "title": "篩選"
+    "title": "篩選",
+    "clear": "移除{value}篩選",
+    "change": "變更{value}篩選"
   },
   "esports": {
     "broadcast": {

@@ -51,12 +51,10 @@
   "preview": {
     "message": "This page is currently under development. Some features may be incomplete."
   },
-  "filter-toggle": {
-    "expand": "More",
-    "collapse": "Less"
-  },
   "filter-sheet": {
-    "title": "Filter"
+    "title": "Filter",
+    "clear": "Remove {value} filter",
+    "change": "Change {value} filter"
   },
   "esports": {
     "broadcast": {
