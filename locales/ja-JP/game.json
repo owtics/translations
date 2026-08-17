@@ -91,7 +91,8 @@
         "AMER": "アメリカ",
         "NA": "北米",
         "CN": "中国",
-        "CHINA": "中国"
+        "CHINA": "中国",
+        "KOREA": "韓国"
     },
     "mode": {
         "COMPETITIVE": "ライバル・プレイ",
@@ -116,6 +117,7 @@
         "SILVER": "{type, select, short {S} long {シルバー} other {シルバー}}",
         "GOLD": "{type, select, short {G} long {ゴールド} other {ゴールド}}",
         "PLATINUM": "{type, select, short {PL} long {プラチナ} other {プラチナ}}",
+        "EMERALD": "{type, select, short {EM} long {エメラルド} other {エメラルド}}",
         "DIAMOND": "{type, select, short {D} long {ダイヤモンド} other {ダイヤモンド}}",
         "MASTER": "{type, select, short {M} long {マスター} other {マスター}}",
         "GRANDMASTER": "{type, select, short {GM} long {グランドマスター} other {グランドマスター}}",

@@ -1,13 +1,23 @@
 {
     "home": {
         "meta": {
-            "title": "オーバーウォッチ ヒーロー統計・ティアリスト・eスポーツ",
-            "description": "オーバーウォッチのヒーロー勝率・ピック率・バン率を全ランク・全リージョンで毎日更新。マップ別統計やeスポーツの日程・結果・チーム・選手情報も一括で。"
+            "title": "オーバーウォッチ ヒーロー統計・ティアリスト",
+            "description": "オーバーウォッチのヒーロー勝率・ピック率・バン率を全ランク・全リージョンで毎日更新。マップ別統計と、ランクごとに変わるヒーローの立ち位置も一括で。"
+        },
+        "featured-tournament": {
+            "label": "注目の大会",
+            "matches-played": "{completed} / {total} 試合",
+            "days": "日",
+            "hours": "時間",
+            "minutes": "分",
+            "seconds": "秒"
         },
         "match-center": {
             "title": "マッチセンター",
             "results": "結果",
             "schedule": "日程",
+            "next-match": "次の試合",
+            "latest-result": "最新の結果",
             "today": "今日",
             "tomorrow": "明日",
             "empty-results": "最近の試合結果はありません",
@@ -16,12 +26,7 @@
             "go-schedule": "日程{count}件を見る",
             "pulse-today": "今日",
             "view-all": "カレンダー",
-            "show-more": "あと{count}試合を表示"
-        },
-        "notable-heroes-strip": {
-            "title": "{season} 注目ヒーロー",
-            "view-detail": "全ヒーロー統計",
-            "see-all": "全ヒーロー統計を見る"
+            "beyond-horizon": "以降の試合{count}件"
         }
     },
     "hero-statistics": {
@@ -259,10 +264,9 @@
     },
     "esports": {
         "name": "Esports",
-        "ongoing-tournaments": "進行中の大会",
-        "recent-tournaments": "最近の大会",
-        "upcoming-tournaments": "予定の大会",
         "tournaments": "大会",
+        "tab-upcoming": "予定",
+        "tab-completed": "終了",
         "section-ongoing": "進行中",
         "section-upcoming": "予定",
         "team-count": "{count}チーム",
@@ -274,10 +278,17 @@
         "more-tournaments": "その他の大会",
         "also-coming": "予定の大会",
         "no-recent-tournaments": "最近の大会情報がありません",
+        "no-upcoming-tournaments": "予定の大会がありません",
         "browse-all-tournaments": "すべての大会を見る",
         "featured-teams": "注目チーム",
         "no-featured-teams": "注目チームがありません",
         "browse-all-teams": "すべてのチームを見る",
+        "home": {
+            "meta": {
+                "title": "オーバーウォッチ eスポーツ 日程・結果・チーム",
+                "description": "オーバーウォッチ eスポーツを一括でフォロー。本日の試合日程と最新の結果、開催中の大会、注目のプロチーム、最新の移籍情報まで毎日更新。"
+            }
+        },
         "tournament-list": {
             "title": "大会",
             "ongoing": "進行中の大会",
@@ -552,7 +563,6 @@
                 "description": "{status, select, UPCOMING {{competition}の{team1} vs {team2}。まもなく開催されるこのオーバーウォッチ eスポーツ試合のロスター、対戦成績、視聴チャンネルを事前にチェック。} LIVE {{competition}の{team1} vs {team2}が進行中。このオーバーウォッチ eスポーツ試合のマップ別スコア、ヒーローBAN、ライブ配信を確認。} other {{competition}の{team1} {scoreA}-{scoreB} {team2}。このオーバーウォッチ eスポーツ試合のマップ別スコア、ヒーローBAN、POTM、リプレイコードまで。}}"
             }
         },
-        "transfers-entry": "移籍情報",
         "transfers": {
             "title": "移籍情報",
             "description": "選手の加入・放出と、チームを探している選手の情報をまとめています。確認を経たものだけが掲載され、承認された情報は選手の在籍履歴にも反映されます。",
@@ -622,6 +632,31 @@
                 "title": "オーバーウォッチ eスポーツ 移籍情報",
                 "description": "オーバーウォッチ eスポーツの加入・退団・無所属選手の情報をまとめて確認できます。"
             }
+        }
+    },
+    "competitive-home": {
+        "moved-notice": {
+            "text": "日程と結果は eスポーツ に移動しました",
+            "cta": "eスポーツ ホーム",
+            "dismiss": "お知らせを閉じる"
+        },
+        "page-title": "コンペティティブ メタ",
+        "season": "シーズン {n}",
+        "season-midseason": "シーズン {n} ミッドシーズン",
+        "started-on": "{date} 開始",
+        "day-n": "{n}日目",
+        "cold-start": "サンプル蓄積中",
+        "meta": {
+            "title": "現在のメタ",
+            "subtitle": "ロール別ピック率 Top {n}",
+            "all-heroes": "ヒーロー統計をすべて見る",
+            "new-hero": "NEW"
+        },
+        "bans": {
+            "title": "ピック順位が隠すもの",
+            "subtitle": "BAN率 Top {n}",
+            "pick-rank": "ピック率 {pick}% · {role} {rank}位",
+            "footer": "BAN率が高くてもピック率が低いヒーローは、ピック順のリストには現れません"
         }
     }
 }

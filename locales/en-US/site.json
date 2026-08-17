@@ -15,6 +15,7 @@
   },
   "filter": {
     "region": "Region",
+    "country": "Country",
     "mode": "Mode",
     "season": "Season",
     "series": "Series",
@@ -140,6 +141,7 @@
     },
     "filter": {
       "all-regions": "All Regions",
+      "all-countries": "All countries",
       "all-tiers": "All Tiers",
       "all-series": "All Series",
       "all-statuses": "All",

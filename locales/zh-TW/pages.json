@@ -1,13 +1,23 @@
 {
     "home": {
         "meta": {
-            "title": "鬥陣特攻英雄數據、梯隊榜與電競",
-            "description": "鬥陣特攻英雄勝率、選取率與禁用率，涵蓋全段位、全地區並每日更新。還有逐圖數據，以及電競賽程、賽果、戰隊與選手資訊，盡在一處。"
+            "title": "鬥陣特攻英雄數據與梯隊榜",
+            "description": "鬥陣特攻英雄勝率、選取率與禁用率，涵蓋全段位、全地區並每日更新。還有逐圖數據，以及各段位之間英雄格局的差異，盡在一處。"
+        },
+        "featured-tournament": {
+            "label": "焦點賽事",
+            "matches-played": "{completed} / {total} 場比賽",
+            "days": "天",
+            "hours": "時",
+            "minutes": "分",
+            "seconds": "秒"
         },
         "match-center": {
             "title": "賽事中心",
             "results": "賽果",
             "schedule": "賽程",
+            "next-match": "下一場比賽",
+            "latest-result": "最新賽果",
             "today": "今天",
             "tomorrow": "明天",
             "empty-results": "暫無近期賽果",
@@ -16,12 +26,7 @@
             "go-schedule": "查看{count}場預定比賽",
             "pulse-today": "今天",
             "view-all": "日曆",
-            "show-more": "還有{count}場比賽"
-        },
-        "notable-heroes-strip": {
-            "title": "{season}賽季焦點英雄",
-            "view-detail": "全部英雄數據",
-            "see-all": "查看全部英雄數據"
+            "beyond-horizon": "之後還有{count}場"
         }
     },
     "hero-statistics": {
@@ -259,10 +264,9 @@
     },
     "esports": {
         "name": "Esports",
-        "ongoing-tournaments": "進行中的賽事",
-        "recent-tournaments": "近期賽事",
-        "upcoming-tournaments": "即將開始",
         "tournaments": "賽事",
+        "tab-upcoming": "即將開始",
+        "tab-completed": "已結束",
         "section-ongoing": "進行中",
         "section-upcoming": "即將開始",
         "team-count": "{count}支隊伍",
@@ -274,10 +278,17 @@
         "more-tournaments": "更多賽事",
         "also-coming": "其他預定賽事",
         "no-recent-tournaments": "暫無近期賽事",
+        "no-upcoming-tournaments": "暫無即將開始的賽事",
         "browse-all-tournaments": "瀏覽全部賽事",
         "featured-teams": "焦點戰隊",
         "no-featured-teams": "暫無焦點戰隊",
         "browse-all-teams": "瀏覽全部戰隊",
+        "home": {
+            "meta": {
+                "title": "鬥陣特攻電競賽程、賽果與戰隊",
+                "description": "一站式關注鬥陣特攻電競：今日賽程與最新賽果、進行中的賽事、焦點職業戰隊，以及最新轉會動態，每日更新。"
+            }
+        },
         "tournament-list": {
             "title": "賽事",
             "ongoing": "進行中的賽事",
@@ -552,7 +563,6 @@
                 "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}。提前查看這場即將開始的鬥陣特攻電競比賽的陣容、交鋒戰績與觀看頻道。} LIVE {{competition} {team1} vs {team2}進行中。查看這場鬥陣特攻電競比賽的逐圖比分、英雄禁用與直播。} other {{competition} {team1} {scoreA}-{scoreB} {team2}。這場鬥陣特攻電競比賽的完整逐圖比分、英雄禁用、本場最佳選手與重播代碼。}}"
             }
         },
-        "transfers-entry": "轉會動態",
         "transfers": {
             "title": "轉會動態",
             "description": "彙整選手的加入、離隊以及正在尋找戰隊的消息。每則消息都經過審核後才會發佈，通過的消息也會寫入選手的戰隊經歷。",
@@ -622,6 +632,31 @@
                 "title": "鬥陣特攻電競轉會動態",
                 "description": "集中查看鬥陣特攻電競的選手加入、離隊與自由選手消息。"
             }
+        }
+    },
+    "competitive-home": {
+        "moved-notice": {
+            "text": "賽程與賽果已移至電競",
+            "cta": "電競首頁",
+            "dismiss": "關閉提示"
+        },
+        "page-title": "競技比賽 Meta",
+        "season": "第 {n} 賽季",
+        "season-midseason": "第 {n} 賽季中期",
+        "started-on": "{date} 開始",
+        "day-n": "第 {n} 天",
+        "cold-start": "樣本累積中",
+        "meta": {
+            "title": "目前 Meta",
+            "subtitle": "各定位選取率前 {n} 名",
+            "all-heroes": "全部英雄統計",
+            "new-hero": "新"
+        },
+        "bans": {
+            "title": "選取排名看不到的",
+            "subtitle": "禁用率前 {n} 名",
+            "pick-rank": "選取率 {pick}% · {role}第 {rank} 名",
+            "footer": "禁用率高但選取率低的英雄，不會出現在依選取率排序的清單中"
         }
     }
 }

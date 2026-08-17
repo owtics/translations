@@ -91,7 +91,8 @@
         "AMER": "Americas",
         "NA": "North America",
         "CN": "China",
-        "CHINA": "China"
+        "CHINA": "China",
+        "KOREA": "Korea"
     },
     "mode": {
         "COMPETITIVE": "Competitive",
@@ -160,6 +161,7 @@
         "SILVER": "{type, select, short {S} long {Silver} other {Silver}}",
         "GOLD": "{type, select, short {G} long {Gold} other {Gold}}",
         "PLATINUM": "{type, select, short {PL} long {Platinum} other {Platinum}}",
+        "EMERALD": "{type, select, short {EM} long {Emerald} other {Emerald}}",
         "DIAMOND": "{type, select, short {D} long {Diamond} other {Diamond}}",
         "MASTER": "{type, select, short {M} long {Master} other {Master}}",
         "GRANDMASTER": "{type, select, short {GM} long {Grandmaster} other {Grandmaster}}",

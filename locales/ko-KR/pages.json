@@ -1,13 +1,23 @@
 {
     "home": {
         "meta": {
-            "title": "오버워치 영웅 통계, 티어표, e스포츠",
-            "description": "오버워치 영웅 승률·픽률·밴률을 전 티어, 전 지역에서 매일 업데이트. 맵별 통계와 e스포츠 일정·결과·팀·선수 정보까지 한곳에서 확인하세요."
+            "title": "오버워치 영웅 통계, 티어표",
+            "description": "오버워치 영웅 승률·픽률·밴률을 전 티어, 전 지역에서 매일 업데이트. 맵별 통계와 티어마다 달라지는 영웅의 입지까지 한곳에서 확인하세요."
+        },
+        "featured-tournament": {
+            "label": "주요 대회",
+            "matches-played": "{completed} / {total} 경기",
+            "days": "일",
+            "hours": "시간",
+            "minutes": "분",
+            "seconds": "초"
         },
         "match-center": {
             "title": "매치 센터",
             "results": "결과",
             "schedule": "일정",
+            "next-match": "다음 경기",
+            "latest-result": "최근 결과",
             "today": "오늘",
             "tomorrow": "내일",
             "empty-results": "최근 경기 결과가 없습니다",
@@ -16,12 +26,7 @@
             "go-schedule": "일정 {count}건 보기",
             "pulse-today": "오늘",
             "view-all": "캘린더",
-            "show-more": "{count}개 경기 더 보기"
-        },
-        "notable-heroes-strip": {
-            "title": "{season} 주목할 영웅",
-            "view-detail": "전체 영웅 통계",
-            "see-all": "전체 영웅 통계 보기"
+            "beyond-horizon": "이후 일정 {count}경기"
         }
     },
     "hero-statistics": {
@@ -259,10 +264,9 @@
     },
     "esports": {
         "name": "Esports",
-        "ongoing-tournaments": "진행 중인 대회",
-        "recent-tournaments": "최근 대회",
-        "upcoming-tournaments": "예정 대회",
         "tournaments": "대회",
+        "tab-upcoming": "예정",
+        "tab-completed": "종료",
         "section-ongoing": "진행 중",
         "section-upcoming": "예정",
         "team-count": "{count}개 팀",
@@ -274,10 +278,17 @@
         "more-tournaments": "더 많은 대회",
         "also-coming": "예정된 대회",
         "no-recent-tournaments": "최근 대회 정보가 없습니다",
+        "no-upcoming-tournaments": "예정된 대회가 없습니다",
         "browse-all-tournaments": "전체 대회 보기",
         "featured-teams": "주목할 팀",
         "no-featured-teams": "주목할 팀 정보가 없습니다",
         "browse-all-teams": "전체 팀 보기",
+        "home": {
+            "meta": {
+                "title": "오버워치 e스포츠 일정, 결과, 팀",
+                "description": "오버워치 e스포츠를 한곳에서 따라가세요. 오늘의 경기 일정과 최근 결과, 진행 중인 대회, 주요 프로팀, 최신 이적 소식까지 매일 업데이트됩니다."
+            }
+        },
         "tournament-list": {
             "title": "대회",
             "ongoing": "진행 중인 대회",
@@ -552,7 +563,6 @@
                 "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}. 곧 열리는 이 오버워치 e스포츠 경기의 로스터, 상대 전적, 시청 채널을 미리 확인하세요.} LIVE {{competition} {team1} vs {team2} 진행 중. 이 오버워치 e스포츠 경기의 맵별 스코어, 영웅 밴, 라이브 방송을 확인하세요.} other {{competition} {team1} {scoreA}-{scoreB} {team2}. 이 오버워치 e스포츠 경기의 맵별 스코어, 영웅 밴, POTM, 리플레이 코드까지.}}"
             }
         },
-        "transfers-entry": "이적 소식",
         "transfers": {
             "title": "이적 소식",
             "description": "선수 영입과 방출, 팀을 찾는 선수 소식을 모았습니다. 검토를 거친 소식만 올라오며, 승인된 소식은 선수 이력에도 함께 반영됩니다.",
@@ -622,6 +632,31 @@
                 "title": "오버워치 e스포츠 이적 소식",
                 "description": "오버워치 e스포츠 선수 영입과 방출, 팀을 찾는 선수 소식을 한곳에서 확인하세요."
             }
+        }
+    },
+    "competitive-home": {
+        "moved-notice": {
+            "text": "일정·결과는 e스포츠로 옮겼어요",
+            "cta": "e스포츠 홈",
+            "dismiss": "안내 닫기"
+        },
+        "page-title": "경쟁전 메타",
+        "season": "시즌 {n}",
+        "season-midseason": "시즌 {n} 미드시즌",
+        "started-on": "{date} 시작",
+        "day-n": "{n}일째",
+        "cold-start": "표본 축적 중",
+        "meta": {
+            "title": "지금 메타",
+            "subtitle": "역할별 픽률 Top {n}",
+            "all-heroes": "영웅 통계 전체",
+            "new-hero": "신규"
+        },
+        "bans": {
+            "title": "픽 순위가 가리는 것",
+            "subtitle": "밴률 Top {n}",
+            "pick-rank": "픽률 {pick}% · {role} {rank}위",
+            "footer": "밴률이 높아도 픽률이 낮으면 픽 순위에는 보이지 않습니다"
         }
     }
 }

@@ -91,7 +91,8 @@
         "AMER": "美洲",
         "NA": "北美",
         "CN": "中國",
-        "CHINA": "中國"
+        "CHINA": "中國",
+        "KOREA": "韓國"
     },
     "mode": {
         "COMPETITIVE": "競技比賽",
@@ -116,6 +117,7 @@
         "SILVER": "{type, select, short {銀} long {白銀} other {白銀}}",
         "GOLD": "{type, select, short {金} long {黃金} other {黃金}}",
         "PLATINUM": "{type, select, short {鉑} long {白金} other {白金}}",
+        "EMERALD": "{type, select, short {碧} long {碧綠} other {碧綠}}",
         "DIAMOND": "{type, select, short {鑽} long {鑽石} other {鑽石}}",
         "MASTER": "{type, select, short {大} long {大師} other {大師}}",
         "GRANDMASTER": "{type, select, short {宗} long {宗師} other {宗師}}",

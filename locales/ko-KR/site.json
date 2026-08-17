@@ -15,6 +15,7 @@
   },
   "filter": {
     "region": "지역",
+    "country": "국가",
     "mode": "모드",
     "season": "시즌",
     "series": "시리즈",
@@ -140,6 +141,7 @@
     },
     "filter": {
       "all-regions": "전체 지역",
+      "all-countries": "전체 국가",
       "all-tiers": "전체 티어",
       "all-series": "전체 시리즈",
       "all-statuses": "전체",

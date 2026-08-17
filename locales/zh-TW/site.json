@@ -15,6 +15,7 @@
   },
   "filter": {
     "region": "地區",
+    "country": "國家",
     "mode": "模式",
     "season": "賽季",
     "series": "系列賽",
@@ -140,6 +141,7 @@
     },
     "filter": {
       "all-regions": "所有地區",
+      "all-countries": "全部國家",
       "all-tiers": "所有級別",
       "all-series": "所有系列賽",
       "all-statuses": "全部",
