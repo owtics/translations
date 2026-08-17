@@ -15,6 +15,7 @@
   },
   "filter": {
     "region": "リージョン",
+    "country": "国",
     "mode": "モード",
     "season": "シーズン",
     "series": "シリーズ",
@@ -140,6 +141,7 @@
     },
     "filter": {
       "all-regions": "全リージョン",
+      "all-countries": "すべての国",
       "all-tiers": "全ティア",
       "all-series": "全シリーズ",
       "all-statuses": "すべて",

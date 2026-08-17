@@ -1,13 +1,23 @@
 {
     "home": {
         "meta": {
-            "title": "守望先锋英雄数据、梯队榜与电竞",
-            "description": "守望先锋英雄胜率、选取率与禁用率，覆盖全段位、全地区并每日更新。还有逐图数据，以及电竞赛程、赛果、战队与选手信息，尽在一处。"
+            "title": "守望先锋英雄数据与梯队榜",
+            "description": "守望先锋英雄胜率、选取率与禁用率，覆盖全段位、全地区并每日更新。还有逐图数据，以及各段位之间英雄格局的差异，尽在一处。"
+        },
+        "featured-tournament": {
+            "label": "焦点赛事",
+            "matches-played": "{completed} / {total} 场比赛",
+            "days": "天",
+            "hours": "时",
+            "minutes": "分",
+            "seconds": "秒"
         },
         "match-center": {
             "title": "赛事中心",
             "results": "赛果",
             "schedule": "赛程",
+            "next-match": "下一场比赛",
+            "latest-result": "最新赛果",
             "today": "今天",
             "tomorrow": "明天",
             "empty-results": "暂无近期赛果",
@@ -16,12 +26,7 @@
             "go-schedule": "查看{count}场预定比赛",
             "pulse-today": "今天",
             "view-all": "日历",
-            "show-more": "还有{count}场比赛"
-        },
-        "notable-heroes-strip": {
-            "title": "{season}赛季焦点英雄",
-            "view-detail": "全部英雄数据",
-            "see-all": "查看全部英雄数据"
+            "beyond-horizon": "之后还有{count}场"
         }
     },
     "hero-statistics": {
@@ -259,10 +264,9 @@
     },
     "esports": {
         "name": "Esports",
-        "ongoing-tournaments": "进行中的赛事",
-        "recent-tournaments": "近期赛事",
-        "upcoming-tournaments": "即将开始",
         "tournaments": "赛事",
+        "tab-upcoming": "即将开始",
+        "tab-completed": "已结束",
         "section-ongoing": "进行中",
         "section-upcoming": "即将开始",
         "team-count": "{count}支队伍",
@@ -274,10 +278,17 @@
         "more-tournaments": "更多赛事",
         "also-coming": "其他预定赛事",
         "no-recent-tournaments": "暂无近期赛事",
+        "no-upcoming-tournaments": "暂无即将开始的赛事",
         "browse-all-tournaments": "浏览全部赛事",
         "featured-teams": "焦点战队",
         "no-featured-teams": "暂无焦点战队",
         "browse-all-teams": "浏览全部战队",
+        "home": {
+            "meta": {
+                "title": "守望先锋电竞赛程、赛果与战队",
+                "description": "一站式关注守望先锋电竞：今日赛程与最新赛果、进行中的赛事、焦点职业战队，以及最新转会动态，每日更新。"
+            }
+        },
         "tournament-list": {
             "title": "赛事",
             "ongoing": "进行中的赛事",
@@ -552,7 +563,6 @@
                 "description": "{status, select, UPCOMING {{competition} {team1} vs {team2}。提前查看这场即将开始的守望先锋电竞比赛的阵容、交锋战绩与观看渠道。} LIVE {{competition} {team1} vs {team2}进行中。查看这场守望先锋电竞比赛的逐图比分、英雄禁用与直播。} other {{competition} {team1} {scoreA}-{scoreB} {team2}。这场守望先锋电竞比赛的完整逐图比分、英雄禁用、本场最佳选手与回放代码。}}"
             }
         },
-        "transfers-entry": "转会动态",
         "transfers": {
             "title": "转会动态",
             "description": "汇总选手的加入、离队以及正在寻找战队的消息。每条消息都经过审核后才会发布，通过的消息也会写入选手的战队履历。",
@@ -622,6 +632,31 @@
                 "title": "守望先锋电竞转会动态",
                 "description": "集中查看守望先锋电竞的选手加入、离队与自由选手消息。"
             }
+        }
+    },
+    "competitive-home": {
+        "moved-notice": {
+            "text": "赛程与赛果已移至电竞",
+            "cta": "电竞主页",
+            "dismiss": "关闭提示"
+        },
+        "page-title": "竞技比赛 Meta",
+        "season": "第 {n} 赛季",
+        "season-midseason": "第 {n} 赛季中期",
+        "started-on": "{date} 开始",
+        "day-n": "第 {n} 天",
+        "cold-start": "样本积累中",
+        "meta": {
+            "title": "当前 Meta",
+            "subtitle": "各定位选取率前 {n} 名",
+            "all-heroes": "全部英雄统计",
+            "new-hero": "新"
+        },
+        "bans": {
+            "title": "选取排名看不到的",
+            "subtitle": "禁用率前 {n} 名",
+            "pick-rank": "选取率 {pick}% · {role}第 {rank} 名",
+            "footer": "禁用率高但选取率低的英雄，不会出现在按选取率排序的列表里"
         }
     }
 }

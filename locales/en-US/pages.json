@@ -1,13 +1,23 @@
 {
     "home": {
         "meta": {
-            "title": "Overwatch Hero Stats, Tier List & Esports",
-            "description": "Overwatch hero win, pick, and ban rates across every rank and region, updated daily — plus per-map stats, esports schedules, results, teams, and players."
+            "title": "Overwatch Hero Stats & Tier List",
+            "description": "Overwatch hero win, pick, and ban rates across every rank and region, updated daily — plus per-map stats and how each hero's standing shifts from one rank to the next."
+        },
+        "featured-tournament": {
+            "label": "Featured Tournament",
+            "matches-played": "{completed} / {total} matches",
+            "days": "D",
+            "hours": "H",
+            "minutes": "M",
+            "seconds": "S"
         },
         "match-center": {
             "title": "Match Center",
             "results": "Results",
             "schedule": "Schedule",
+            "next-match": "Next match",
+            "latest-result": "Latest result",
             "today": "Today",
             "tomorrow": "Tomorrow",
             "empty-results": "No recent results",
@@ -16,12 +26,7 @@
             "go-schedule": "View {count} scheduled matches",
             "pulse-today": "today",
             "view-all": "Calendar",
-            "show-more": "{count} more matches"
-        },
-        "notable-heroes-strip": {
-            "title": "{season} Notable Heroes",
-            "view-detail": "All Hero Stats",
-            "see-all": "View All Hero Stats"
+            "beyond-horizon": "{count} more later"
         }
     },
     "hero-statistics": {
@@ -259,10 +264,9 @@
     },
     "esports": {
         "name": "Esports",
-        "ongoing-tournaments": "Ongoing Tournaments",
-        "recent-tournaments": "Recent Tournaments",
-        "upcoming-tournaments": "Upcoming Tournaments",
         "tournaments": "Tournaments",
+        "tab-upcoming": "Upcoming",
+        "tab-completed": "Completed",
         "section-ongoing": "Ongoing",
         "section-upcoming": "Upcoming",
         "team-count": "{count, plural, one {# team} other {# teams}}",
@@ -274,10 +278,17 @@
         "more-tournaments": "More Tournaments",
         "also-coming": "Also Coming",
         "no-recent-tournaments": "No recent tournaments",
+        "no-upcoming-tournaments": "No upcoming tournaments",
         "browse-all-tournaments": "Browse all tournaments",
         "featured-teams": "Featured Teams",
         "no-featured-teams": "No featured teams available",
         "browse-all-teams": "Browse all teams",
+        "home": {
+            "meta": {
+                "title": "Overwatch Esports Schedules, Results & Teams",
+                "description": "Follow Overwatch esports in one place: today's match schedule, recent results, ongoing tournaments, featured pro teams, and the latest roster moves."
+            }
+        },
         "tournament-list": {
             "title": "Tournaments",
             "ongoing": "Ongoing Tournaments",
@@ -552,7 +563,6 @@
                 "description": "{status, select, UPCOMING {{team1} vs {team2} in {competition}. Preview rosters, head-to-head form, and where to watch this upcoming Overwatch esports match.} LIVE {{team1} vs {team2} is live in {competition}. Follow the map-by-map score, hero bans, and live streams for this Overwatch esports match.} other {{team1} {scoreA}-{scoreB} {team2} in {competition}. Full map scores, hero bans, Player of the Match, and replay codes for this Overwatch esports match.}}"
             }
         },
-        "transfers-entry": "Roster moves",
         "transfers": {
             "title": "Roster Moves",
             "description": "Signings, releases, and players looking for a team. Every item is reviewed before it appears, and an approved one is written into the player's roster history too.",
@@ -622,6 +632,31 @@
                 "title": "Overwatch Esports Roster Moves",
                 "description": "Overwatch esports signings, releases, and free agents, all in one feed."
             }
+        }
+    },
+    "competitive-home": {
+        "moved-notice": {
+            "text": "Schedules and results moved to Esports",
+            "cta": "Esports home",
+            "dismiss": "Dismiss notice"
+        },
+        "page-title": "Competitive Meta",
+        "season": "Season {n}",
+        "season-midseason": "Season {n} Midseason",
+        "started-on": "Started {date}",
+        "day-n": "Day {n}",
+        "cold-start": "Sample still building",
+        "meta": {
+            "title": "Meta Right Now",
+            "subtitle": "Top {n} by pick rate per role",
+            "all-heroes": "All hero stats",
+            "new-hero": "New"
+        },
+        "bans": {
+            "title": "What Pick Order Hides",
+            "subtitle": "Top {n} by ban rate",
+            "pick-rank": "{pick}% pick · #{rank} in {role}",
+            "footer": "A high ban rate on a rarely picked hero never surfaces in a pick-ordered list"
         }
     }
 }

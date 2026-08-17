@@ -91,7 +91,8 @@
         "AMER": "미국",
         "NA": "북미",
         "CN": "중국",
-        "CHINA": "중국"
+        "CHINA": "중국",
+        "KOREA": "한국"
     },
     "mode": {
         "COMPETITIVE": "경쟁전",
@@ -160,6 +161,7 @@
         "SILVER": "{type, select, short {실} long {실버} other {실버}}",
         "GOLD": "{type, select, short {골} long {골드} other {골드}}",
         "PLATINUM": "{type, select, short {플} long {플래티넘} other {플래티넘}}",
+        "EMERALD": "{type, select, short {에} long {에메랄드} other {에메랄드}}",
         "DIAMOND": "{type, select, short {다} long {다이아몬드} other {다이아몬드}}",
         "MASTER": "{type, select, short {마} long {마스터} other {마스터}}",
         "GRANDMASTER": "{type, select, short {그마} long {그랜드마스터} other {그랜드마스터}}",
