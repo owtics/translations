@@ -602,6 +602,15 @@
                 },
                 "player": "选手",
                 "player-placeholder": "搜索选手",
+                "context": {
+                    "title": "提交前确认",
+                    "prompt": "选择选手后，这里会显示已发布的转会消息和正在审核的线索。",
+                    "pending-none": "这名选手目前没有待审核的线索。",
+                    "pending-some": "待审核的线索 {count} 条",
+                    "pending-hint": "如果不是上面这些，请照常提交。",
+                    "news-title": "已发布的转会消息",
+                    "news-none": "还没有发布过消息。"
+                },
                 "team": {
                     "JOIN": "加入的战队",
                     "LEAVE": "离开的战队"
@@ -648,9 +657,18 @@
         "cold-start": "样本积累中",
         "meta": {
             "title": "当前 Meta",
-            "subtitle": "各定位选取率前 {n} 名",
+            "subtitle": "各定位 Meta 指数前 {n} 名",
             "all-heroes": "全部英雄统计",
-            "new-hero": "新"
+            "new-hero": "新",
+            "more": "查看更多",
+            "more-role": "查看更多{role}英雄",
+            "presence-legend": "禁选率颜色图例",
+            "tier-note": {
+                "label": "为什么是这个段位",
+                "picked": "统计稳定到足以排名的段位中，最高的一个。",
+                "climbing": "更高的段位样本还不够。样本积累之后，会切换到更高段位的统计。",
+                "rollup": "没有段位的统计稳定到足以排名，因此这里是全段位合计的统计。"
+            }
         },
         "bans": {
             "title": "选取排名看不到的",

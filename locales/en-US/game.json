@@ -179,6 +179,8 @@
         "pick-rate": "Pick Rate",
         "win-rate": "Win Rate",
         "ban-rate": "Ban Rate",
+        "meta-index": "Meta Index",
+        "presence": "Presence",
         "kda": "KDA",
         "ichi-rating": "ICHI Rating",
         "top-500-player-count": "Top 500 Players",

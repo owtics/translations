@@ -602,6 +602,15 @@
                 },
                 "player": "선수",
                 "player-placeholder": "선수 이름 검색",
+                "context": {
+                    "title": "제보 전 확인",
+                    "prompt": "선수를 고르면 지난 이적 소식과 검토 대기 중인 제보를 여기에서 확인할 수 있습니다.",
+                    "pending-none": "지금 검토 대기 중인 제보는 없습니다.",
+                    "pending-some": "검토 대기 중인 제보 {count}건",
+                    "pending-hint": "위 목록에 없는 소식이라면 그대로 제보해 주세요.",
+                    "news-title": "지난 이적 소식",
+                    "news-none": "아직 올라온 소식이 없습니다."
+                },
                 "team": {
                     "JOIN": "합류한 팀",
                     "LEAVE": "떠난 팀"
@@ -648,9 +657,18 @@
         "cold-start": "표본 축적 중",
         "meta": {
             "title": "지금 메타",
-            "subtitle": "역할별 픽률 Top {n}",
+            "subtitle": "역할별 메타 지수 Top {n}",
             "all-heroes": "영웅 통계 전체",
-            "new-hero": "신규"
+            "new-hero": "신규",
+            "more": "더 보기",
+            "more-role": "{role} 영웅 더 보기",
+            "presence-legend": "픽밴률 색상 범례",
+            "tier-note": {
+                "label": "이 티어인 이유",
+                "picked": "순위를 매길 만큼 통계가 안정된 티어 중 가장 높은 티어입니다.",
+                "climbing": "이 위 티어는 아직 표본이 모자랍니다. 표본이 쌓이면 더 높은 티어의 통계로 바뀝니다.",
+                "rollup": "순위를 매길 만큼 통계가 안정된 티어가 없어, 모든 티어를 합산한 통계입니다."
+            }
         },
         "bans": {
             "title": "픽 순위가 가리는 것",

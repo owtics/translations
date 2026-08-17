@@ -50,10 +50,6 @@
       "FILTER_EXCLUDES_ALL_DATA": {
         "title": "該篩選條件無資料",
         "description": "目前篩選條件組合沒有{hero}的匹配資料。請嘗試調整篩選條件。"
-      },
-      "ETL_PIPELINE_HALTED": {
-        "title": "資料管道已暫停",
-        "description": "該統計的資料管道目前已暫停。我們正在努力恢復。"
       }
     }
   },

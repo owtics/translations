@@ -50,10 +50,6 @@
       "FILTER_EXCLUDES_ALL_DATA": {
         "title": "해당 필터에 데이터가 없습니다",
         "description": "현재 필터 조합으로는 {hero}의 데이터가 없습니다. 필터를 조정해 보세요."
-      },
-      "ETL_PIPELINE_HALTED": {
-        "title": "데이터 파이프라인 일시 중지",
-        "description": "이 통계의 데이터 파이프라인이 현재 중단되었습니다. 복구 작업 중입니다."
       }
     }
   },

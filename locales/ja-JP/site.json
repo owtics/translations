@@ -50,10 +50,6 @@
       "FILTER_EXCLUDES_ALL_DATA": {
         "title": "このフィルターにデータがありません",
         "description": "現在のフィルター組み合わせでは{hero}のデータがありません。フィルターを調整してください。"
-      },
-      "ETL_PIPELINE_HALTED": {
-        "title": "データパイプライン一時停止中",
-        "description": "この統計のデータパイプラインが現在停止しています。復旧作業中です。"
       }
     }
   },

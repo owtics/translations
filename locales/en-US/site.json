@@ -50,10 +50,6 @@
       "FILTER_EXCLUDES_ALL_DATA": {
         "title": "No data for this filter",
         "description": "The current filter combination has no matching data for {hero}. Try adjusting your filters."
-      },
-      "ETL_PIPELINE_HALTED": {
-        "title": "Data pipeline paused",
-        "description": "The data pipeline for this statistic is currently halted. We're working on restoring it."
       }
     }
   },

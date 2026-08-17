@@ -179,6 +179,8 @@
         "pick-rate": "픽률",
         "win-rate": "승률",
         "ban-rate": "밴률",
+        "meta-index": "메타 지수",
+        "presence": "픽밴률",
         "kda": "KDA",
         "ichi-rating": "아이치 레이팅",
         "top-500-player-count": "상위 500위",

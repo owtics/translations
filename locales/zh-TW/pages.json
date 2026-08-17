@@ -602,6 +602,15 @@
                 },
                 "player": "選手",
                 "player-placeholder": "搜尋選手",
+                "context": {
+                    "title": "提交前確認",
+                    "prompt": "選擇選手後，這裡會顯示已發佈的轉會消息和正在審核的線索。",
+                    "pending-none": "這名選手目前沒有待審核的線索。",
+                    "pending-some": "待審核的線索 {count} 條",
+                    "pending-hint": "如果不是上面這些，請照常提交。",
+                    "news-title": "已發佈的轉會消息",
+                    "news-none": "還沒有發佈過消息。"
+                },
                 "team": {
                     "JOIN": "加入的戰隊",
                     "LEAVE": "離開的戰隊"
@@ -648,9 +657,18 @@
         "cold-start": "樣本累積中",
         "meta": {
             "title": "目前 Meta",
-            "subtitle": "各定位選取率前 {n} 名",
+            "subtitle": "各定位 Meta 指數前 {n} 名",
             "all-heroes": "全部英雄統計",
-            "new-hero": "新"
+            "new-hero": "新",
+            "more": "查看更多",
+            "more-role": "查看更多{role}英雄",
+            "presence-legend": "禁選率顏色圖例",
+            "tier-note": {
+                "label": "為什麼是這個段位",
+                "picked": "統計穩定到足以排名的段位中，最高的一個。",
+                "climbing": "更高的段位樣本還不夠。樣本累積之後，會切換到更高段位的統計。",
+                "rollup": "沒有段位的統計穩定到足以排名，因此這裡是全段位合計的統計。"
+            }
         },
         "bans": {
             "title": "選取排名看不到的",

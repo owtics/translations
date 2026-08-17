@@ -135,6 +135,8 @@
         "pick-rate": "ピック率",
         "win-rate": "勝率",
         "ban-rate": "BAN率",
+        "meta-index": "メタ指数",
+        "presence": "ピックバン率",
         "kda": "KDA",
         "ichi-rating": "ICHI レーティング",
         "top-500-player-count": "トップ500",

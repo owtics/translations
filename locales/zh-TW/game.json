@@ -135,6 +135,8 @@
         "pick-rate": "選取率",
         "win-rate": "勝率",
         "ban-rate": "禁用率",
+        "meta-index": "Meta 指數",
+        "presence": "禁選率",
         "kda": "KDA",
         "ichi-rating": "ICHI 評分",
         "top-500-player-count": "前500名玩家",

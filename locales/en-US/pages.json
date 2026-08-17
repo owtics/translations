@@ -602,6 +602,15 @@
                 },
                 "player": "Player",
                 "player-placeholder": "Search for a player",
+                "context": {
+                    "title": "Before you submit",
+                    "prompt": "Pick a player to see the news already published about them and anything still waiting on review.",
+                    "pending-none": "Nothing about this player is waiting on review.",
+                    "pending-some": "{count, plural, one {# submission} other {# submissions}} waiting on review",
+                    "pending-hint": "Send yours anyway if it is not one of these.",
+                    "news-title": "Published news",
+                    "news-none": "Nothing published yet."
+                },
                 "team": {
                     "JOIN": "Team joined",
                     "LEAVE": "Team left"
@@ -648,9 +657,18 @@
         "cold-start": "Sample still building",
         "meta": {
             "title": "Meta Right Now",
-            "subtitle": "Top {n} by pick rate per role",
+            "subtitle": "Top {n} by meta index per role",
             "all-heroes": "All hero stats",
-            "new-hero": "New"
+            "new-hero": "New",
+            "more": "More",
+            "more-role": "More {role} heroes",
+            "presence-legend": "Presence color legend",
+            "tier-note": {
+                "label": "Why this tier",
+                "picked": "The highest tier whose stats are stable enough to rank on.",
+                "climbing": "The tiers above it do not have enough samples yet. This moves up to a higher tier as they accumulate.",
+                "rollup": "No tier has stats stable enough to rank on, so these are all tiers combined."
+            }
         },
         "bans": {
             "title": "What Pick Order Hides",
