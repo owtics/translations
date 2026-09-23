@@ -10,6 +10,7 @@
     "calendar": "カレンダー",
     "teams": "チーム",
     "transfers": "移籍",
+    "player-pov": "選手視点",
     "ichi-rating": "ICHI レーティング",
     "section-switcher": "サイトセクション"
   },
@@ -23,7 +24,13 @@
     "tier": "ティア",
     "role": "ロール",
     "subRole": "サブロール",
-    "year": "年"
+    "year": "年",
+    "hero": "ヒーロー",
+    "player": "選手",
+    "team": "チーム",
+    "competition": "大会",
+    "search": "検索",
+    "no-results": "該当なし"
   },
   "pagination": {
     "previous": "前へ",
@@ -78,7 +85,8 @@
   "esports": {
     "broadcast": {
       "live": "LIVE",
-      "open-external": "{name} (新しいタブで開く)"
+      "open-external": "{name} (新しいタブで開く)",
+      "pov-title": "{player} 視点"
     },
     "status": {
       "UPCOMING": "予定",
@@ -117,7 +125,11 @@
     },
     "bracket": {
       "no-data": "トーナメント表データがありません",
-      "scroll-hint": "← スクロールしてトーナメント表全体を表示 →"
+      "scroll-hint": "← スクロールしてトーナメント表全体を表示 →",
+      "origin": {
+        "WINNER": "M{sequence} 勝者",
+        "LOSER": "M{sequence} 敗者"
+      }
     },
     "standings": {
       "rank": "#",
@@ -165,7 +177,10 @@
       "all-statuses": "すべて",
       "all-years": "全年",
       "all-phases": "全フェーズ",
-      "all-teams": "全チーム"
+      "all-teams": "全チーム",
+      "all-heroes": "全ヒーロー",
+      "all-players": "全選手",
+      "all-competitions": "全大会"
     },
     "competition-tier": {
       "S": "S-Tier",

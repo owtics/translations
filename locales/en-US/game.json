@@ -51,7 +51,9 @@
         "mizuki": "Mizuki",
         "jetpackcat": "Jetpack Cat",
         "sierra": "Sierra",
-        "shion": "Shion"
+        "shion": "Shion",
+        "dmon": "D.Mon",
+        "doctrine": "Doctrine"
     },
     "role": {
         "ALL": "All Roles",
@@ -174,6 +176,13 @@
         "PRO": "{type, select, short {P} long {Pro} other {Pro}}",
         "ALLSTAR": "{type, select, short {AS} long {AllStar} other {AllStar}}",
         "LEGEND": "{type, select, short {L} long {Legend} other {Legend}}"
+    },
+    "season": {
+        "long": "Season {n}",
+        "long-midseason": "Season {n} Midseason",
+        "compact": "S{n}",
+        "compact-midseason": "S{n} Mid",
+        "with-era": "{era} {season}"
     },
     "stat": {
         "pick-rate": "Pick Rate",

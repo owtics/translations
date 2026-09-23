@@ -10,6 +10,7 @@
     "calendar": "赛程表",
     "teams": "战队",
     "transfers": "转会",
+    "player-pov": "选手视角",
     "ichi-rating": "ICHI 评分",
     "section-switcher": "站点分区"
   },
@@ -23,7 +24,13 @@
     "tier": "段位",
     "role": "定位",
     "subRole": "子定位",
-    "year": "年份"
+    "year": "年份",
+    "hero": "英雄",
+    "player": "选手",
+    "team": "战队",
+    "competition": "赛事",
+    "search": "搜索",
+    "no-results": "没有匹配结果"
   },
   "pagination": {
     "previous": "上一页",
@@ -78,7 +85,8 @@
   "esports": {
     "broadcast": {
       "live": "直播中",
-      "open-external": "{name}（在新标签页中打开）"
+      "open-external": "{name}（在新标签页中打开）",
+      "pov-title": "{player} 视角"
     },
     "status": {
       "UPCOMING": "即将开始",
@@ -117,7 +125,11 @@
     },
     "bracket": {
       "no-data": "暂无对阵图数据",
-      "scroll-hint": "← 滑动查看完整对阵图 →"
+      "scroll-hint": "← 滑动查看完整对阵图 →",
+      "origin": {
+        "WINNER": "M{sequence} 胜者",
+        "LOSER": "M{sequence} 败者"
+      }
     },
     "standings": {
       "rank": "#",
@@ -165,7 +177,10 @@
       "all-statuses": "全部",
       "all-years": "所有年份",
       "all-phases": "所有阶段",
-      "all-teams": "所有战队"
+      "all-teams": "所有战队",
+      "all-heroes": "所有英雄",
+      "all-players": "所有选手",
+      "all-competitions": "所有赛事"
     },
     "competition-tier": {
       "S": "S-Tier",

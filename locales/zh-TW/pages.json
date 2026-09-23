@@ -32,7 +32,6 @@
     "hero-statistics": {
         "name": "英雄數據",
         "page-title": "英雄",
-        "season": "賽季{n}",
         "cold-start-chip": "賽季初期",
         "meta": {
             "title": "鬥陣特攻英雄數據",
@@ -43,26 +42,23 @@
         "section-label": "數據洞察",
         "trending": {
             "title": "Trending",
-            "subtitle": "對比 {season}",
-            "subtitle-cold-start": "對比 {season} 賽季中補丁",
-            "meta-pick": "選取率",
+            "subtitle": "選取率 對比 {season}",
+            "subtitle-cold-start": "選取率 對比 {season} 賽季中補丁",
             "footer": "不含新英雄 · 上升 / 下降 前 4",
-            "cold-start-notice": "賽季初期變化較少，先為你展示上次賽季中補丁（S{n} → S{n} 賽季中）的影響。",
+            "cold-start-notice": "賽季初期變化較少，先為你展示上次賽季中補丁（{from} → {to}）的影響。",
             "empty": "資料累積中，請過幾天再來查看。"
         },
         "map-meta": {
             "title": "Map Meta",
             "subtitle": "選取率差異 前 7 張地圖",
-            "meta-chip": "相對平均",
             "footer-link": "查看全部地圖",
-            "footer-explanation": "× = 選取率相對平均值 · 右列為絕對選取率",
+            "footer-explanation": "× = 選取率相對平均值 · % = 絕對選取率",
             "empty": "此條件下的地圖資料尚不充足。",
             "slot-aria": "{hero}:選取率 {pick}%,平均的 {lift} 倍"
         },
         "role-meta": {
             "title": "Role Meta",
             "subtitle": "勝率前 3 · 最低選取率 {pct}%",
-            "meta-win": "勝率",
             "count": "符合 {eligible} / 全部 {total}",
             "footer": "依勝率 · 50% 基線 · 最低選取率 {pct}%",
             "empty": "此條件下的分路資料尚不充足。"
@@ -159,10 +155,21 @@
         "tier-spread-aria": "段位選取率分布",
         "tier-spread-win-aria": "段位勝率分布",
         "tier-spread-ban-aria": "段位禁用率分布",
+        "tier-score-aria": "段位 Meta 指數分布",
         "tier-legend-label": "段位",
         "tier-legend-aria": "段位顏色圖例",
+        "presence-legend": "禁選率顏色圖例",
+        "new-hero": "新",
+        "meta-index-note": {
+            "label": "關於 Meta 指數",
+            "what": "以勝率加權選取率和禁用率，得出該英雄在本定位 Meta 中所佔的比重。",
+            "within-role": "同一定位內的 Meta 指數合計為 100%，因此定位內的英雄越多，每位英雄所佔的比重就分得越細。"
+        },
+        "meta-index-unavailable": "{tier}的統計不夠穩定，無法用來排名，因此這裡沒有 Meta 指數。其餘各欄不受影響，表格按職責內的禁選率排列。",
+        "tier-score-missing": "{tiers}的統計不夠穩定，無法用來排名，因此沒有 Meta 指數。",
         "columns": {
             "hero": "英雄",
+            "tier-score": "段位 Meta 指數",
             "tier-spread": "段位選取率",
             "tier-spread-win": "段位勝率",
             "tier-spread-ban": "段位禁用率"
@@ -176,21 +183,7 @@
             "hero-count-of-total": "（共{total}位）",
             "top-pick": "最高選取率",
             "top-wr": "最高勝率",
-            "top-ban": "最高禁用率",
-            "scatter": "散佈圖"
-        },
-        "fixedAxis": {
-            "label": "對比",
-            "ariaLabel": "切換對比模式以固定座標軸範圍",
-            "tooltip": "鎖定座標軸範圍，以便在不同篩選條件下對比英雄位置"
-        },
-        "scatter": {
-            "quadrant": {
-                "strong": "強勢",
-                "weak": "弱勢",
-                "niche": "小眾",
-                "popular": "流行"
-            }
+            "top-ban": "最高禁用率"
         },
         "error": {
             "no-data": "所選篩選條件下暫無數據。\n請嘗試更改篩選條件或稍後再來查看。"
@@ -261,6 +254,11 @@
             "title": "新英雄 — 資料收集中。",
             "description": "隨著更多玩家使用 {hero},選取率和勝率將會顯示。請幾天後再查看。"
         }
+    },
+    "hero-player-povs": {
+        "title": "包含{hero}的職業比賽選手視角",
+        "description": "每位選手取最新 1 部，依時間倒序",
+        "all": "查看全部{count, number}個影片"
     },
     "esports": {
         "name": "Esports",
@@ -489,6 +487,7 @@
             "team-history": "戰隊經歷",
             "potm-matches": "POTM比賽",
             "player-povs": "選手視角",
+            "player-povs-all": "查看全部{count, number}個視角影片",
             "not-found": "未找到選手",
             "join": "加入",
             "leave": "離隊",
@@ -498,6 +497,7 @@
             "current-team": "戰隊",
             "present": "至今",
             "tenure": "效力時間",
+            "follow": "追蹤",
             "meta": {
                 "title": "{player} — 鬥陣特攻電競選手",
                 "description": "{active, select, false {{player}是一位退役的鬥陣特攻電競{role}。透過戰隊經歷、{potm, plural, =0 {比賽戰績} other {#次POTM獲獎}}與選手視角直播回顧其生涯。} other {{player}，鬥陣特攻電競{role}。生涯數據、完整戰隊經歷、{potm, plural, =0 {以及選手視角直播串流} other {#次POTM獲獎、以及選手視角直播串流}}。}}"
@@ -514,12 +514,23 @@
                 "broadcasts-label": "轉播",
                 "replays": "重播",
                 "player-pov": "選手視角 ({count})",
+                "player-pov-all": "在選手視角列表中查看",
                 "role-other": "其他"
             },
+            "result": "結果",
             "map-results": "地圖結果",
             "hero-bans": "英雄禁用",
             "vod": "觀看VOD",
             "no-map-results": "暫無地圖結果",
+            "forfeit": {
+                "badge": "棄權",
+                "by-team": "{team} 棄權判負"
+            },
+            "walkover": {
+                "title": "棄權判定的比賽",
+                "description": "{absent} 未出賽，比賽未進行。判定 {winner} 獲勝，比分依賽制得出，而非實際比賽結果。",
+                "description-anonymous": "一方隊伍未出賽，比賽未進行。比分依賽制得出，而非實際比賽結果。"
+            },
             "map-sequence": "第{sequence}張地圖",
             "map-unknown": "未知地圖",
             "not-found": "未找到比賽",
@@ -630,8 +641,10 @@
                 "error": {
                     "player-required": "請選擇選手。",
                     "team-required": "請選擇戰隊。",
+                    "effective-date-invalid": "請填寫完整的生效日期。",
                     "failed": "提交失敗。",
                     "source-url-required": "請填寫來源連結。",
+                    "source-url-invalid": "請填寫包含 https:// 在內的完整連結。",
                     "source-url-unsupported": "僅支援提交 X（原 Twitter）和 YouTube 連結。"
                 },
                 "searching": "搜尋中…",
@@ -641,28 +654,74 @@
                 "title": "鬥陣特攻電競轉會動態",
                 "description": "集中查看鬥陣特攻電競的選手加入、離隊與自由選手消息。"
             }
+        },
+        "pov": {
+            "title": "選手視角",
+            "description": "從選手本人視角記錄的職業比賽影片。可依英雄、選手、戰隊或賽事篩選。",
+            "result-count": "{count, number}個影片",
+            "sort": {
+                "newest": "最新優先"
+            },
+            "empty": {
+                "title": "目前還沒有選手視角影片",
+                "description": "收集到選手視角影片後會顯示在這裡。"
+            },
+            "hero-unknown": {
+                "notice": "2024年的{count, number}個影片尚未記錄英雄資訊，因此沒有出現在此列表中。",
+                "empty": "有{count, number}個2024年的影片符合其他篩選條件，但尚未記錄英雄資訊，無法依英雄篩選。"
+            },
+            "match-chip": "比賽：{match}",
+            "meta": {
+                "title": "鬥陣特攻電競選手視角",
+                "description": "從選手本人視角重溫鬥陣特攻職業比賽。可依英雄、選手、戰隊或賽事篩選。"
+            }
+        },
+        "pov-detail": {
+            "share": {
+                "label": "分享",
+                "close": "關閉",
+                "copy-link": "複製連結",
+                "copied": "已複製",
+                "share-link": "透過其他應用程式分享",
+                "start": "開始位置",
+                "start-time": "開始時間（分:秒）"
+            },
+            "heroes": "這場比賽中使用的英雄",
+            "match": {
+                "player-team": "{player} 所屬戰隊",
+                "reveal-result": "查看結果",
+                "details": "比賽詳情"
+            },
+            "match-povs": {
+                "title": "這場比賽的其他選手視角影片",
+                "now-playing": "播放中",
+                "alone": "這場比賽只有這一個視角影片。"
+            },
+            "unavailable": {
+                "removed": "這部影片已被頻道刪除或設為私人。",
+                "embed-blocked": "該頻道不允許在其平台之外播放影片。",
+                "unknown": "無法播放這部影片，且無法確定原因。"
+            },
+            "credit": "本影片嵌入自<channel>ObsSojourn 頻道</channel>。",
+            "meta": {
+                "title": "{player} 視角重播 - {competition} {team1} vs {team2}",
+                "description": "以 {player} 視角回看 {competition} {team1} vs {team2}。",
+                "description-heroes": "{player} 使用的英雄：{heroes}。"
+            }
         }
     },
     "competitive-home": {
-        "moved-notice": {
-            "text": "賽程與賽果已移至電競",
-            "cta": "電競首頁",
-            "dismiss": "關閉提示"
-        },
         "page-title": "競技比賽 Meta",
-        "season": "第 {n} 賽季",
-        "season-midseason": "第 {n} 賽季中期",
         "started-on": "{date} 開始",
         "day-n": "第 {n} 天",
         "cold-start": "樣本累積中",
         "meta": {
             "title": "目前 Meta",
             "subtitle": "各定位 Meta 指數前 {n} 名",
+            "change-baseline": "變化 對比 {season}",
             "all-heroes": "全部英雄統計",
-            "new-hero": "新",
             "more": "查看更多",
             "more-role": "查看更多{role}英雄",
-            "presence-legend": "禁選率顏色圖例",
             "tier-note": {
                 "label": "為什麼是這個段位",
                 "picked": "統計穩定到足以排名的段位中，最高的一個。",

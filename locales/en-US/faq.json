@@ -4,19 +4,23 @@
         "items": [
             {
                 "q": "What is ICHI Rating?",
-                "a": "ICHI Rating is a hero evaluation index that measures how frequently each hero is played among the top 500 players on the competitive leaderboard. It reflects the most-played heroes of Challenger-tier players in each region."
+                "a": "ICHI Rating is a hero evaluation index that measures how frequently each hero was played by the players who ranked on the Overwatch 2 competitive Top 500 leaderboard. Each region kept its own Top 500 leaderboard, so the index reflects the most-played heroes at the top of the ladder in Asia, Europe, and the Americas."
             },
             {
                 "q": "How is ICHI Rating calculated?",
-                "a": "The system crawls the Top 500 leaderboard and checks each player's three most-played heroes. The 1st most-played hero receives 3 points, the 2nd receives 2 points, and the 3rd receives 1 point. These scores are summed across all Top 500 players in each region to produce the final ICHI Rating."
+                "a": "The system crawled the Top 500 leaderboard once a day and checked each player's three most-played heroes. The 1st most-played hero received 3 points, the 2nd received 2 points, and the 3rd received 1 point. These scores were summed across all Top 500 players in each region to produce that day's ICHI Rating."
             },
             {
                 "q": "When is the data updated?",
-                "a": "ICHI Rating has not been updated since Overwatch 2 Season 20 (December 2025). The Challenger scoring system introduced in Season 20 changed how the leaderboard is ranked, so values can no longer be aggregated on the same basis as prior seasons. It was previously collected and refreshed daily, and the chart below preserves data through Season 19 as an archive."
+                "a": "ICHI Rating has not been updated since Overwatch 2 Season 20 (December 2025). Before that it was collected and refreshed once a day from January 2024 onward, so the chart below is a daily record of Season 19 and earlier, kept as an archive. Nothing new is added to it, and the values already in it do not change."
+            },
+            {
+                "q": "Why is ICHI Rating no longer collected?",
+                "a": "Overwatch 2 Season 20 (December 2025) changed what the leaderboard ranks players by. Through Season 19 the competitive Top 500 leaderboard ranked the best players by competitive rank; from Season 20 the ranking is by Challenger score, which the Challenger system tallies for players at Diamond and above and which builds up as they keep winning. That is a different basis from the one ICHI Rating was built on, so the two cannot be continued as one index, and collection ended with the last snapshot taken before Season 20. The archive that remains covers January 2024 through December 2025, describing Overwatch through Season 19 rather than the current meta."
             },
             {
                 "q": "How should I interpret the chart?",
-                "a": "A higher ICHI Rating means the hero is played more frequently by Challenger-tier players. Sudden spikes often correspond to balance patches or meta shifts. Comparing heroes across regions reveals how the meta differs between Asia, Europe, and the Americas."
+                "a": "A higher ICHI Rating means the hero collected more points from that region's Top 500 players that day, where each player gave 3 points to their most-played hero, 2 points to their second and 1 point to their third. A hero therefore rises both when more players keep it among their three most-played heroes and when it sits higher within them. Sudden spikes often correspond to balance patches or meta shifts. Comparing heroes across regions reveals how the meta differed between Asia, Europe, and the Americas."
             }
         ]
     }

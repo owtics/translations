@@ -2,7 +2,10 @@
     "notFound": {
         "title": "Page Not Found",
         "description": "The page you're looking for doesn't exist or has been moved.",
-        "backHome": "Back to Home"
+        "backHome": "Back to Home",
+        "meta": {
+            "title": "Page Not Found"
+        }
     },
     "generic": {
         "title": "Something Went Wrong",
@@ -11,6 +14,9 @@
         "kbdHint": "Or use the hard-refresh shortcut:",
         "backHome": "Back to Home",
         "supportFooter": "If the problem persists, please <a>let us know on Discord</a>.",
-        "errorRef": "Error ID: {id}"
+        "errorRef": "Error ID: {id}",
+        "meta": {
+            "title": "Something Went Wrong"
+        }
     }
 }

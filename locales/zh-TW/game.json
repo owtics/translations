@@ -31,7 +31,7 @@
         "roadhog": "攔路豬",
         "sigma": "席格馬",
         "sojourn": "索潔恩",
-        "soldier76": "士兵：76",
+        "soldier76": "士兵76",
         "sombra": "駭影",
         "symmetra": "辛梅塔",
         "torbjorn": "托比昂",
@@ -50,8 +50,10 @@
         "emre": "伊默",
         "mizuki": "瑞稀",
         "jetpackcat": "火箭貓",
-        "sierra": "Sierra",
-        "shion": "死怨"
+        "sierra": "席艾拉",
+        "shion": "死怨",
+        "dmon": "D.Mon",
+        "doctrine": "血律"
     },
     "role": {
         "ALL": "所有職責",
@@ -130,6 +132,13 @@
         "PRO": "{type, select, short {職} long {職業} other {職業}}",
         "ALLSTAR": "{type, select, short {星} long {全明星} other {全明星}}",
         "LEGEND": "{type, select, short {傳} long {傳奇} other {傳奇}}"
+    },
+    "season": {
+        "long": "第 {n} 賽季",
+        "long-midseason": "第 {n} 賽季中期",
+        "compact": "S{n}",
+        "compact-midseason": "S{n} 中期",
+        "with-era": "{era} {season}"
     },
     "stat": {
         "pick-rate": "選取率",

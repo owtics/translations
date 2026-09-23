@@ -32,7 +32,6 @@
     "hero-statistics": {
         "name": "英雄数据",
         "page-title": "英雄",
-        "season": "赛季{n}",
         "cold-start-chip": "赛季初期",
         "meta": {
             "title": "守望先锋英雄数据",
@@ -43,26 +42,23 @@
         "section-label": "数据洞察",
         "trending": {
             "title": "Trending",
-            "subtitle": "对比 {season}",
-            "subtitle-cold-start": "对比 {season} 赛季中补丁",
-            "meta-pick": "选取率",
+            "subtitle": "选取率 对比 {season}",
+            "subtitle-cold-start": "选取率 对比 {season} 赛季中补丁",
             "footer": "不含新英雄 · 上升 / 下降 前 4",
-            "cold-start-notice": "赛季初期变化较少，先为您展示上次赛季中补丁（S{n} → S{n} 赛季中）的影响。",
+            "cold-start-notice": "赛季初期变化较少，先为您展示上次赛季中补丁（{from} → {to}）的影响。",
             "empty": "数据积累中，请过几天再来查看。"
         },
         "map-meta": {
             "title": "Map Meta",
             "subtitle": "选取率差异 前 7 张地图",
-            "meta-chip": "相对平均",
             "footer-link": "查看全部地图",
-            "footer-explanation": "× = 选取率相对平均值 · 右列为绝对选取率",
+            "footer-explanation": "× = 选取率相对平均值 · % = 绝对选取率",
             "empty": "该条件下的地图数据尚不充足。",
             "slot-aria": "{hero}:选取率 {pick}%,平均的 {lift} 倍"
         },
         "role-meta": {
             "title": "Role Meta",
             "subtitle": "胜率前 3 · 最低选取率 {pct}%",
-            "meta-win": "胜率",
             "count": "符合 {eligible} / 全部 {total}",
             "footer": "按胜率 · 50% 基线 · 最低选取率 {pct}%",
             "empty": "该条件下的分路数据尚不充足。"
@@ -159,10 +155,21 @@
         "tier-spread-aria": "段位选取率分布",
         "tier-spread-win-aria": "段位胜率分布",
         "tier-spread-ban-aria": "段位禁用率分布",
+        "tier-score-aria": "段位 Meta 指数分布",
         "tier-legend-label": "段位",
         "tier-legend-aria": "段位颜色图例",
+        "presence-legend": "禁选率颜色图例",
+        "new-hero": "新",
+        "meta-index-note": {
+            "label": "关于 Meta 指数",
+            "what": "以胜率加权选取率和禁用率，得出该英雄在本定位 Meta 中所占的比重。",
+            "within-role": "同一定位内的 Meta 指数合计为 100%，因此定位内的英雄越多，每位英雄所占的比重就分得越细。"
+        },
+        "meta-index-unavailable": "{tier}的统计不够稳定，无法用来排名，因此这里没有 Meta 指数。其余各列不受影响，表格按职责内的禁选率排列。",
+        "tier-score-missing": "{tiers}的统计不够稳定，无法用来排名，因此没有 Meta 指数。",
         "columns": {
             "hero": "英雄",
+            "tier-score": "段位 Meta 指数",
             "tier-spread": "段位选取率",
             "tier-spread-win": "段位胜率",
             "tier-spread-ban": "段位禁用率"
@@ -176,21 +183,7 @@
             "hero-count-of-total": "（共{total}位）",
             "top-pick": "最高选取率",
             "top-wr": "最高胜率",
-            "top-ban": "最高禁用率",
-            "scatter": "散点图"
-        },
-        "fixedAxis": {
-            "label": "对比",
-            "ariaLabel": "切换对比模式以固定坐标轴范围",
-            "tooltip": "锁定坐标轴范围，以便在不同筛选条件下对比英雄位置"
-        },
-        "scatter": {
-            "quadrant": {
-                "strong": "强势",
-                "weak": "弱势",
-                "niche": "小众",
-                "popular": "流行"
-            }
+            "top-ban": "最高禁用率"
         },
         "error": {
             "no-data": "所选筛选条件下暂无数据。\n请尝试更改筛选条件或稍后再来查看。"
@@ -261,6 +254,11 @@
             "title": "新英雄 — 数据收集中。",
             "description": "随着更多玩家使用 {hero},选取率和胜率将会显示。请几天后再查看。"
         }
+    },
+    "hero-player-povs": {
+        "title": "包含{hero}的职业比赛选手视角",
+        "description": "每位选手取最新 1 条，按时间倒序",
+        "all": "查看全部{count, number}个视频"
     },
     "esports": {
         "name": "Esports",
@@ -489,6 +487,7 @@
             "team-history": "战队经历",
             "potm-matches": "POTM比赛",
             "player-povs": "选手视角",
+            "player-povs-all": "查看全部{count, number}个视角视频",
             "not-found": "未找到选手",
             "join": "加入",
             "leave": "离队",
@@ -498,6 +497,7 @@
             "current-team": "战队",
             "present": "至今",
             "tenure": "效力时间",
+            "follow": "关注",
             "meta": {
                 "title": "{player} — 守望先锋电竞选手",
                 "description": "{active, select, false {{player}是一位退役的守望先锋电竞{role}。通过战队经历、{potm, plural, =0 {比赛战绩} other {#次POTM获奖}}与选手视角直播回顾其生涯。} other {{player}，守望先锋电竞{role}。生涯数据、完整战队经历、{potm, plural, =0 {以及选手视角直播流} other {#次POTM获奖、以及选手视角直播流}}。}}"
@@ -514,12 +514,23 @@
                 "broadcasts-label": "转播",
                 "replays": "回放",
                 "player-pov": "选手视角 ({count})",
+                "player-pov-all": "在选手视角列表中查看",
                 "role-other": "其他"
             },
+            "result": "结果",
             "map-results": "地图结果",
             "hero-bans": "英雄禁用",
             "vod": "观看VOD",
             "no-map-results": "暂无地图结果",
+            "forfeit": {
+                "badge": "弃权",
+                "by-team": "{team} 弃权判负"
+            },
+            "walkover": {
+                "title": "弃权判定的比赛",
+                "description": "{absent} 未出场，比赛未进行。判定 {winner} 获胜，比分依据赛制得出，而非实际比赛结果。",
+                "description-anonymous": "一方队伍未出场，比赛未进行。比分依据赛制得出，而非实际比赛结果。"
+            },
             "map-sequence": "第{sequence}张地图",
             "map-unknown": "未知地图",
             "not-found": "未找到比赛",
@@ -630,8 +641,10 @@
                 "error": {
                     "player-required": "请选择选手。",
                     "team-required": "请选择战队。",
+                    "effective-date-invalid": "请填写完整的生效日期。",
                     "failed": "提交失败。",
                     "source-url-required": "请填写来源链接。",
+                    "source-url-invalid": "请填写包含 https:// 在内的完整链接。",
                     "source-url-unsupported": "仅支持提交 X（原 Twitter）和 YouTube 链接。"
                 },
                 "searching": "搜索中…",
@@ -641,28 +654,74 @@
                 "title": "守望先锋电竞转会动态",
                 "description": "集中查看守望先锋电竞的选手加入、离队与自由选手消息。"
             }
+        },
+        "pov": {
+            "title": "选手视角",
+            "description": "从选手本人视角记录的职业比赛视频。可按英雄、选手、战队或赛事筛选。",
+            "result-count": "{count, number}个视频",
+            "sort": {
+                "newest": "最新优先"
+            },
+            "empty": {
+                "title": "暂时还没有选手视角视频",
+                "description": "收集到选手视角视频后会显示在这里。"
+            },
+            "hero-unknown": {
+                "notice": "2024年的{count, number}个视频暂未记录英雄信息，因此没有出现在此列表中。",
+                "empty": "有{count, number}个2024年的视频符合其他筛选条件，但暂未记录英雄信息，无法按英雄筛选。"
+            },
+            "match-chip": "比赛：{match}",
+            "meta": {
+                "title": "守望先锋电竞选手视角",
+                "description": "从选手本人视角重温守望先锋职业比赛。可按英雄、选手、战队或赛事筛选。"
+            }
+        },
+        "pov-detail": {
+            "share": {
+                "label": "分享",
+                "close": "关闭",
+                "copy-link": "复制链接",
+                "copied": "已复制",
+                "share-link": "通过其他应用分享",
+                "start": "开始位置",
+                "start-time": "开始时间（分:秒）"
+            },
+            "heroes": "这场比赛中使用的英雄",
+            "match": {
+                "player-team": "{player} 所在战队",
+                "reveal-result": "查看结果",
+                "details": "比赛详情"
+            },
+            "match-povs": {
+                "title": "这场比赛的其他选手视角视频",
+                "now-playing": "正在播放",
+                "alone": "这场比赛只有这一个视角视频。"
+            },
+            "unavailable": {
+                "removed": "该视频已被频道删除或设为私密。",
+                "embed-blocked": "该频道不允许在其平台之外播放视频。",
+                "unknown": "无法播放该视频，且无法确定原因。"
+            },
+            "credit": "本视频嵌入自<channel>ObsSojourn 频道</channel>。",
+            "meta": {
+                "title": "{player} 视角回放 - {competition} {team1} vs {team2}",
+                "description": "以 {player} 视角回看 {competition} {team1} vs {team2}。",
+                "description-heroes": "{player} 使用的英雄：{heroes}。"
+            }
         }
     },
     "competitive-home": {
-        "moved-notice": {
-            "text": "赛程与赛果已移至电竞",
-            "cta": "电竞主页",
-            "dismiss": "关闭提示"
-        },
         "page-title": "竞技比赛 Meta",
-        "season": "第 {n} 赛季",
-        "season-midseason": "第 {n} 赛季中期",
         "started-on": "{date} 开始",
         "day-n": "第 {n} 天",
         "cold-start": "样本积累中",
         "meta": {
             "title": "当前 Meta",
             "subtitle": "各定位 Meta 指数前 {n} 名",
+            "change-baseline": "变化 对比 {season}",
             "all-heroes": "全部英雄统计",
-            "new-hero": "新",
             "more": "查看更多",
             "more-role": "查看更多{role}英雄",
-            "presence-legend": "禁选率颜色图例",
             "tier-note": {
                 "label": "为什么是这个段位",
                 "picked": "统计稳定到足以排名的段位中，最高的一个。",

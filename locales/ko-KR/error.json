@@ -2,7 +2,10 @@
     "notFound": {
         "title": "페이지를 찾을 수 없습니다",
         "description": "요청하신 페이지가 존재하지 않거나 이동되었습니다.",
-        "backHome": "홈으로"
+        "backHome": "홈으로",
+        "meta": {
+            "title": "페이지를 찾을 수 없습니다"
+        }
     },
     "generic": {
         "title": "일시적인 문제가 발생했어요",
@@ -11,6 +14,9 @@
         "kbdHint": "또는 단축키로 강력 새로고침할 수 있어요",
         "backHome": "홈으로",
         "supportFooter": "그래도 지속되면 <a>Discord에서 알려주세요</a>.",
-        "errorRef": "오류 ID: {id}"
+        "errorRef": "오류 ID: {id}",
+        "meta": {
+            "title": "문제가 발생했습니다"
+        }
     }
 }

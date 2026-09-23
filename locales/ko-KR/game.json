@@ -7,7 +7,7 @@
         "brigitte": "브리기테",
         "cassidy": "캐서디",
         "doomfist": "둠피스트",
-        "dva": "디바",
+        "dva": "D.Va",
         "echo": "에코",
         "genji": "겐지",
         "hanzo": "한조",
@@ -51,7 +51,9 @@
         "mizuki": "미즈키",
         "jetpackcat": "제트팩 캣",
         "sierra": "시에라",
-        "shion": "시온"
+        "shion": "시온",
+        "dmon": "D.Mon",
+        "doctrine": "독트린"
     },
     "role": {
         "ALL": "모든 역할군",
@@ -174,6 +176,13 @@
         "PRO": "{type, select, short {프} long {프로} other {프로}}",
         "ALLSTAR": "{type, select, short {올} long {올스타} other {올스타}}",
         "LEGEND": "{type, select, short {레} long {레전드} other {레전드}}"
+    },
+    "season": {
+        "long": "{n}시즌",
+        "long-midseason": "{n}시즌 (미드시즌)",
+        "compact": "{n}시즌",
+        "compact-midseason": "{n}시즌 미드",
+        "with-era": "{era} {season}"
     },
     "stat": {
         "pick-rate": "픽률",

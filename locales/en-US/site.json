@@ -10,6 +10,7 @@
     "calendar": "Calendar",
     "teams": "Teams",
     "transfers": "Transfers",
+    "player-pov": "Player POVs",
     "ichi-rating": "ICHI Rating",
     "section-switcher": "Site section"
   },
@@ -23,7 +24,13 @@
     "tier": "Tier",
     "role": "Role",
     "subRole": "Sub-Role",
-    "year": "Year"
+    "year": "Year",
+    "hero": "Hero",
+    "player": "Player",
+    "team": "Team",
+    "competition": "Tournament",
+    "search": "Search",
+    "no-results": "No matches"
   },
   "pagination": {
     "previous": "Previous",
@@ -78,7 +85,8 @@
   "esports": {
     "broadcast": {
       "live": "LIVE",
-      "open-external": "{name} (opens in new tab)"
+      "open-external": "{name} (opens in new tab)",
+      "pov-title": "{player} POV"
     },
     "status": {
       "UPCOMING": "Upcoming",
@@ -132,7 +140,11 @@
     },
     "bracket": {
       "no-data": "No bracket data available",
-      "scroll-hint": "← Scroll to see full bracket →"
+      "scroll-hint": "← Scroll to see full bracket →",
+      "origin": {
+        "WINNER": "M{sequence} Winner",
+        "LOSER": "M{sequence} Loser"
+      }
     },
     "format": {
       "FT2": "First to 2",
@@ -165,7 +177,10 @@
       "all-statuses": "All",
       "all-years": "All Years",
       "all-phases": "All Phases",
-      "all-teams": "All Teams"
+      "all-teams": "All Teams",
+      "all-heroes": "All Heroes",
+      "all-players": "All Players",
+      "all-competitions": "All Tournaments"
     },
     "competition-tier": {
       "S": "S-Tier",

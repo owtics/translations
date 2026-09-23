@@ -2,7 +2,10 @@
     "notFound": {
         "title": "ページが見つかりません",
         "description": "お探しのページは存在しないか、移動された可能性があります。",
-        "backHome": "ホームへ戻る"
+        "backHome": "ホームへ戻る",
+        "meta": {
+            "title": "ページが見つかりません"
+        }
     },
     "generic": {
         "title": "一時的な問題が発生しました",
@@ -11,6 +14,9 @@
         "kbdHint": "またはショートカットで強制再読み込みできます",
         "backHome": "ホームへ戻る",
         "supportFooter": "それでも解決しない場合は<a>Discordでお知らせください</a>。",
-        "errorRef": "エラーID: {id}"
+        "errorRef": "エラーID: {id}",
+        "meta": {
+            "title": "問題が発生しました"
+        }
     }
 }

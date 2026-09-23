@@ -2,7 +2,10 @@
     "notFound": {
         "title": "未找到页面",
         "description": "您查找的页面不存在或已被移动。",
-        "backHome": "返回首页"
+        "backHome": "返回首页",
+        "meta": {
+            "title": "未找到页面"
+        }
     },
     "generic": {
         "title": "出现暂时性问题",
@@ -11,6 +14,9 @@
         "kbdHint": "或使用快捷键强制刷新：",
         "backHome": "返回首页",
         "supportFooter": "如果问题仍未解决，请<a>在 Discord 上告诉我们</a>。",
-        "errorRef": "错误 ID：{id}"
+        "errorRef": "错误 ID：{id}",
+        "meta": {
+            "title": "出现问题"
+        }
     }
 }

@@ -32,7 +32,6 @@
     "hero-statistics": {
         "name": "영웅 통계",
         "page-title": "영웅",
-        "season": "시즌 {n}",
         "cold-start-chip": "시즌 초반",
         "meta": {
             "title": "오버워치 영웅 통계",
@@ -43,26 +42,23 @@
         "section-label": "인사이트",
         "trending": {
             "title": "Trending",
-            "subtitle": "vs {season}",
-            "subtitle-cold-start": "vs {season} 미드시즌 패치",
-            "meta-pick": "픽률",
+            "subtitle": "픽률 vs {season}",
+            "subtitle-cold-start": "픽률 vs {season} 미드시즌 패치",
             "footer": "신규 영웅 제외 · Top 4 상승 / 하락",
-            "cold-start-notice": "시즌 초반엔 변화가 적어서, 지난 미드시즌 패치(S{n} → S{n} 미드시즌)의 영향을 대신 보여드려요.",
+            "cold-start-notice": "시즌 초반엔 변화가 적어서, 지난 미드시즌 패치({from} → {to})의 영향을 대신 보여드려요.",
             "empty": "표본이 쌓이는 중입니다. 며칠 뒤에 다시 확인해주세요."
         },
         "map-meta": {
             "title": "Map Meta",
             "subtitle": "픽률 편차 Top 7 맵",
-            "meta-chip": "평균 대비",
             "footer-link": "맵 전체 보기",
-            "footer-explanation": "× = 평균 대비 픽률 배율 · 우측은 절대 픽률",
+            "footer-explanation": "× = 평균 대비 픽률 배율 · % = 절대 픽률",
             "empty": "해당 조건의 맵 데이터가 아직 부족합니다.",
             "slot-aria": "{hero}: 픽률 {pick}%, 평균 대비 {lift}배"
         },
         "role-meta": {
             "title": "Role Meta",
             "subtitle": "승률 Top 3 · 최소 픽률 {pct}%",
-            "meta-win": "승률",
             "count": "적격 {eligible} / 전체 {total}",
             "footer": "승률 기준 · 50% 기준선 · 최소 픽률 {pct}%",
             "empty": "해당 조건의 역할별 데이터가 아직 부족합니다."
@@ -115,7 +111,7 @@
         "reset-zoom": "줌 초기화",
         "archived-notice": {
             "title": "아이치 레이팅은 오버워치 2 시즌 20(2025년 12월) 이후 업데이트되지 않습니다.",
-            "description": "시즌 20에 도입된 도전자 점수(Challenger)로 경쟁전 상위 500위 리더보드의 순위 기준이 바뀌면서 이전 시즌과 동일한 맥락으로 비교하기 어려워졌습니다. 아래 차트는 시즌 19까지의 기록을 아카이브로 보존한 것입니다."
+            "description": "시즌 20에 도입된 챌린저 점수(Challenger)로 경쟁전 상위 500위 리더보드의 순위 기준이 바뀌면서 이전 시즌과 동일한 맥락으로 비교하기 어려워졌습니다. 아래 차트는 시즌 19까지의 기록을 아카이브로 보존한 것입니다."
         },
         "selector": {
             "selected": "{total}개 중 {count}개 선택",
@@ -159,10 +155,21 @@
         "tier-spread-aria": "티어별 픽률 분포",
         "tier-spread-win-aria": "티어별 승률 분포",
         "tier-spread-ban-aria": "티어별 밴률 분포",
+        "tier-score-aria": "티어별 메타 지수 분포",
         "tier-legend-label": "티어",
         "tier-legend-aria": "티어 색상 범례",
+        "presence-legend": "픽밴률 색상 범례",
+        "new-hero": "신규",
+        "meta-index-note": {
+            "label": "메타 지수 설명",
+            "what": "픽률과 밴률을 승률로 가중해 낸, 그 영웅이 차지한 역할 메타의 비중입니다.",
+            "within-role": "한 역할 안에서 메타 지수의 합은 100%이므로, 영웅 수가 많은 역할일수록 한 영웅의 몫이 잘게 나뉩니다."
+        },
+        "meta-index-unavailable": "{tier} 티어는 순위를 매길 만큼 통계가 안정적이지 않아 메타 지수를 내지 않습니다. 나머지 열은 그대로이고, 표는 역할군별 픽밴률 순입니다.",
+        "tier-score-missing": "{tiers}는 순위를 매길 만큼 통계가 안정적이지 않아 메타 지수를 내지 않습니다.",
         "columns": {
             "hero": "영웅",
+            "tier-score": "티어별 메타 지수",
             "tier-spread": "티어별 픽률",
             "tier-spread-win": "티어별 승률",
             "tier-spread-ban": "티어별 밴률"
@@ -176,21 +183,7 @@
             "hero-count-of-total": "(전체 {total}명 중)",
             "top-pick": "최고 픽률",
             "top-wr": "최고 승률",
-            "top-ban": "최고 밴률",
-            "scatter": "산점도"
-        },
-        "fixedAxis": {
-            "label": "비교",
-            "ariaLabel": "비교 모드 토글 (축 범위 고정)",
-            "tooltip": "축 범위를 고정하여 필터 변경 시 영웅 위치를 비교할 수 있습니다"
-        },
-        "scatter": {
-            "quadrant": {
-                "strong": "강세",
-                "weak": "약세",
-                "niche": "비주류",
-                "popular": "메타"
-            }
+            "top-ban": "최고 밴률"
         },
         "error": {
             "no-data": "선택한 필터에 대한 데이터가 없습니다.\n필터를 변경하거나 나중에 다시 확인해 주세요."
@@ -261,6 +254,11 @@
             "title": "신규 영웅 — 데이터 수집 중.",
             "description": "{hero}의 플레이 데이터가 쌓이면 픽률과 승률이 표시됩니다. 며칠 뒤에 다시 확인해주세요."
         }
+    },
+    "hero-player-povs": {
+        "title": "{hero} 플레이가 포함된 프로 경기 선수 시점",
+        "description": "선수마다 최근 1건, 최신순",
+        "all": "영상 {count, number}개 전체 보기"
     },
     "esports": {
         "name": "Esports",
@@ -489,6 +487,7 @@
             "team-history": "팀 이력",
             "potm-matches": "POTM 경기",
             "player-povs": "선수 시점",
+            "player-povs-all": "선수 시점 영상 {count, number}개 전체 보기",
             "not-found": "선수를 찾을 수 없습니다",
             "join": "영입",
             "leave": "이적",
@@ -498,6 +497,7 @@
             "current-team": "팀",
             "present": "현재",
             "tenure": "소속 기간",
+            "follow": "팔로우",
             "meta": {
                 "title": "{player} — 오버워치 e스포츠 선수",
                 "description": "{active, select, false {{player}은(는) 은퇴한 오버워치 e스포츠 {role}입니다. 팀 이력, {potm, plural, =0 {경기 전적} other {POTM #회 수상}}, 선수 시점 방송으로 커리어를 돌아보세요.} other {{player}, 오버워치 e스포츠 {role}. 커리어 통계, 전체 팀 이력, {potm, plural, =0 {선수 시점 스트림까지} other {POTM #회 수상, 선수 시점 스트림까지}}.}}"
@@ -514,12 +514,23 @@
                 "broadcasts-label": "방송",
                 "replays": "다시 보기",
                 "player-pov": "선수 시점 ({count})",
+                "player-pov-all": "선수 시점 목록에서 보기",
                 "role-other": "기타"
             },
+            "result": "결과",
             "map-results": "맵 결과",
             "hero-bans": "영웅 밴",
             "vod": "VOD 보기",
             "no-map-results": "맵 결과를 찾을 수 없습니다",
+            "forfeit": {
+                "badge": "몰수",
+                "by-team": "{team} 몰수패"
+            },
+            "walkover": {
+                "title": "워크오버로 처리된 경기",
+                "description": "{absent} 불참으로 경기가 열리지 않았습니다. {winner}의 승리로 처리됐고, 스코어는 치른 결과가 아니라 경기 방식에 맞춰 부여된 값입니다.",
+                "description-anonymous": "한 팀이 나오지 않아 경기가 열리지 않았습니다. 스코어는 치른 결과가 아니라 경기 방식에 맞춰 부여된 값입니다."
+            },
             "map-sequence": "맵 {sequence}",
             "map-unknown": "알 수 없는 맵",
             "not-found": "경기를 찾을 수 없습니다",
@@ -630,8 +641,10 @@
                 "error": {
                     "player-required": "선수를 선택하세요.",
                     "team-required": "팀을 선택하세요.",
+                    "effective-date-invalid": "효력일을 빠짐없이 입력해주세요.",
                     "failed": "제보를 보내지 못했습니다.",
                     "source-url-required": "출처 링크를 입력해주세요.",
+                    "source-url-invalid": "https://까지 포함한 전체 링크를 입력해주세요.",
                     "source-url-unsupported": "X(옛 트위터)와 YouTube 링크만 제보할 수 있습니다."
                 },
                 "searching": "검색 중…",
@@ -641,28 +654,74 @@
                 "title": "오버워치 e스포츠 이적 소식",
                 "description": "오버워치 e스포츠 선수 영입과 방출, 팀을 찾는 선수 소식을 한곳에서 확인하세요."
             }
+        },
+        "pov": {
+            "title": "선수 시점",
+            "description": "프로 경기를 선수 시점 그대로 녹화한 영상입니다. 영웅, 선수, 팀, 대회별로 골라 볼 수 있습니다.",
+            "result-count": "영상 {count, number}개",
+            "sort": {
+                "newest": "최신순"
+            },
+            "empty": {
+                "title": "아직 선수 시점 영상이 없습니다",
+                "description": "선수 시점 영상이 모이면 여기에 표시됩니다."
+            },
+            "hero-unknown": {
+                "notice": "2024년 영상 {count, number}개는 아직 영웅 정보가 없어 이 목록에 나오지 않습니다.",
+                "empty": "다른 조건에 맞는 2024년 영상이 {count, number}개 있지만, 아직 영웅 정보가 없어 영웅으로는 찾을 수 없습니다."
+            },
+            "match-chip": "{match} 경기",
+            "meta": {
+                "title": "오버워치 e스포츠 선수 시점 영상",
+                "description": "오버워치 프로 경기를 선수 시점으로 다시 보세요. 영웅, 선수, 팀, 대회별로 골라 볼 수 있습니다."
+            }
+        },
+        "pov-detail": {
+            "share": {
+                "label": "공유",
+                "close": "닫기",
+                "copy-link": "링크 복사",
+                "copied": "복사됨",
+                "share-link": "다른 앱으로 공유",
+                "start": "시작 위치",
+                "start-time": "시작 시간 (분:초)"
+            },
+            "heroes": "이 경기에서 플레이한 영웅",
+            "match": {
+                "player-team": "{player}의 팀",
+                "reveal-result": "결과 보기",
+                "details": "경기 상세"
+            },
+            "match-povs": {
+                "title": "이 경기의 다른 선수 시점 영상",
+                "now-playing": "재생 중",
+                "alone": "이 경기에는 이 시점 영상 하나뿐입니다."
+            },
+            "unavailable": {
+                "removed": "채널에서 삭제됐거나 비공개로 바뀐 영상입니다.",
+                "embed-blocked": "채널이 자기 플랫폼 밖에서는 재생을 허용하지 않는 영상입니다.",
+                "unknown": "영상을 재생할 수 없습니다. 이유는 알 수 없습니다."
+            },
+            "credit": "<channel>ObsSojourn 채널</channel>에 올라온 영상을 임베드해 재생합니다.",
+            "meta": {
+                "title": "{player} 시점 다시보기 - {competition} {team1} vs {team2}",
+                "description": "{competition} {team1} vs {team2} 경기를 {player} 시점으로 다시 보세요.",
+                "description-heroes": "{player}가 플레이한 영웅은 {heroes}입니다."
+            }
         }
     },
     "competitive-home": {
-        "moved-notice": {
-            "text": "일정·결과는 e스포츠로 옮겼어요",
-            "cta": "e스포츠 홈",
-            "dismiss": "안내 닫기"
-        },
         "page-title": "경쟁전 메타",
-        "season": "시즌 {n}",
-        "season-midseason": "시즌 {n} 미드시즌",
         "started-on": "{date} 시작",
         "day-n": "{n}일째",
         "cold-start": "표본 축적 중",
         "meta": {
             "title": "지금 메타",
             "subtitle": "역할별 메타 지수 Top {n}",
+            "change-baseline": "변화 vs {season}",
             "all-heroes": "영웅 통계 전체",
-            "new-hero": "신규",
             "more": "더 보기",
             "more-role": "{role} 영웅 더 보기",
-            "presence-legend": "픽밴률 색상 범례",
             "tier-note": {
                 "label": "이 티어인 이유",
                 "picked": "순위를 매길 만큼 통계가 안정된 티어 중 가장 높은 티어입니다.",

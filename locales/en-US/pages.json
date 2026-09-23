@@ -32,7 +32,6 @@
     "hero-statistics": {
         "name": "Hero Statistics",
         "page-title": "Heroes",
-        "season": "Season {n}",
         "cold-start-chip": "Cold start",
         "meta": {
             "title": "Overwatch Hero Statistics",
@@ -43,26 +42,23 @@
         "section-label": "Insights",
         "trending": {
             "title": "Trending",
-            "subtitle": "vs {season}",
-            "subtitle-cold-start": "vs {season} midseason patch",
-            "meta-pick": "Pick Rate",
+            "subtitle": "Pick rate vs {season}",
+            "subtitle-cold-start": "Pick rate vs {season} midseason patch",
             "footer": "New heroes excluded · Top 4 rising / falling",
-            "cold-start-notice": "The season is young, so we're showing the impact of the last midseason patch (S{n} → S{n} midseason) instead.",
+            "cold-start-notice": "The season is young, so we're showing the impact of the last midseason patch ({from} → {to}) instead.",
             "empty": "Not enough data yet. Check back in a few days."
         },
         "map-meta": {
             "title": "Map Meta",
             "subtitle": "Top 7 by pick variance",
-            "meta-chip": "vs average",
             "footer-link": "View all maps",
-            "footer-explanation": "× = pick rate vs average · right column = pick rate",
+            "footer-explanation": "× = pick rate vs average · % = absolute pick rate",
             "empty": "Not enough per-map data for this filter yet.",
             "slot-aria": "{hero}: {pick}% pick rate, {lift}× average"
         },
         "role-meta": {
             "title": "Role Meta",
             "subtitle": "Top 3 by win rate · min pick {pct}%",
-            "meta-win": "Win Rate",
             "count": "Qualified {eligible} / Total {total}",
             "footer": "Win rate · 50% baseline · min pick {pct}%",
             "empty": "Not enough role-level data for this filter yet."
@@ -159,10 +155,21 @@
         "tier-spread-aria": "Pick rate distribution across tiers",
         "tier-spread-win-aria": "Win rate distribution across tiers",
         "tier-spread-ban-aria": "Ban rate distribution across tiers",
+        "tier-score-aria": "Meta index distribution across tiers",
         "tier-legend-label": "Tiers",
         "tier-legend-aria": "Tier color legend",
+        "presence-legend": "Presence color legend",
+        "new-hero": "New",
+        "meta-index-note": {
+            "label": "About the meta index",
+            "what": "The share of its role's meta a hero holds, from pick and ban rate weighted by win rate.",
+            "within-role": "Within a role the meta index adds up to 100%, so the more heroes a role has, the more finely it is split among them."
+        },
+        "meta-index-unavailable": "The meta index needs stats stable enough to rank on, and {tier} does not have them. Every other column is unaffected, and the rows are ordered by presence within each role.",
+        "tier-score-missing": "The meta index needs stats stable enough to rank on, and these buckets do not have them: {tiers}.",
         "columns": {
             "hero": "Hero",
+            "tier-score": "Meta by Tier",
             "tier-spread": "Pick by Tier",
             "tier-spread-win": "Win by Tier",
             "tier-spread-ban": "Ban by Tier"
@@ -176,21 +183,7 @@
             "hero-count-of-total": "(of {total})",
             "top-pick": "Top Pick",
             "top-wr": "Top WR",
-            "top-ban": "Top Ban",
-            "scatter": "Scatter"
-        },
-        "fixedAxis": {
-            "label": "Compare",
-            "ariaLabel": "Toggle compare mode for consistent axis scale",
-            "tooltip": "Lock axis scale to compare hero positions across different filters"
-        },
-        "scatter": {
-            "quadrant": {
-                "strong": "Strong",
-                "weak": "Weak",
-                "niche": "Niche",
-                "popular": "Popular"
-            }
+            "top-ban": "Top Ban"
         },
         "error": {
             "no-data": "There is no data available for the selected filters.\nPlease try changing the filters or check back later."
@@ -261,6 +254,11 @@
             "title": "New hero — stats are still coming in.",
             "description": "Pick rate and win rate will appear as more players play {hero}. Check back in a few days."
         }
+    },
+    "hero-player-povs": {
+        "title": "Pro Player POVs Featuring {hero}",
+        "description": "One per player, newest first",
+        "all": "{count, plural, one {View # POV} other {View all # POVs}}"
     },
     "esports": {
         "name": "Esports",
@@ -489,6 +487,7 @@
             "team-history": "Team History",
             "potm-matches": "POTM Matches",
             "player-povs": "Player POVs",
+            "player-povs-all": "{count, plural, one {View # POV} other {View all # POVs}}",
             "not-found": "Player not found",
             "join": "Joined",
             "leave": "Left",
@@ -498,6 +497,7 @@
             "current-team": "Team",
             "present": "Present",
             "tenure": "Tenure",
+            "follow": "Follow",
             "meta": {
                 "title": "{player} — Overwatch Esports Player",
                 "description": "{active, select, false {{player} is a retired Overwatch esports {role}. Look back on their career: team history, {potm, plural, =0 {match record} one {# Player of the Match award} other {# Player of the Match awards}}, and POV broadcasts.} other {{player}, Overwatch esports {role}. Career stats, full team history, {potm, plural, =0 {and player POV streams} one {# POTM award, and player POV streams} other {# POTM awards, and player POV streams}}.}}"
@@ -514,12 +514,23 @@
                 "broadcasts-label": "Broadcasts",
                 "replays": "Replays",
                 "player-pov": "Player POV ({count})",
+                "player-pov-all": "Open in Player POVs",
                 "role-other": "Other"
             },
+            "result": "Result",
             "map-results": "Map Results",
             "hero-bans": "Hero Bans",
             "vod": "Watch VOD",
             "no-map-results": "No map results available",
+            "forfeit": {
+                "badge": "Forfeit",
+                "by-team": "{team} forfeited"
+            },
+            "walkover": {
+                "title": "Settled by walkover",
+                "description": "{absent} did not appear, so the match was never played. The win goes to {winner}, and the score comes from the match format rather than from play.",
+                "description-anonymous": "One team did not appear, so the match was never played. The score comes from the match format rather than from play."
+            },
             "map-sequence": "Map {sequence}",
             "map-unknown": "Unknown Map",
             "not-found": "Match not found",
@@ -630,8 +641,10 @@
                 "error": {
                     "player-required": "Pick a player.",
                     "team-required": "Pick a team.",
+                    "effective-date-invalid": "Enter a complete effective date.",
                     "failed": "Could not send the submission.",
                     "source-url-required": "A source link is required.",
+                    "source-url-invalid": "Enter the full link, including the https:// at the front.",
                     "source-url-unsupported": "Only X and YouTube links can be submitted."
                 },
                 "searching": "Searching…",
@@ -641,28 +654,74 @@
                 "title": "Overwatch Esports Roster Moves",
                 "description": "Overwatch esports signings, releases, and free agents, all in one feed."
             }
+        },
+        "pov": {
+            "title": "Player POVs",
+            "description": "Pro matches recorded from the player's own point of view. Narrow by hero, player, team, or tournament.",
+            "result-count": "{count, plural, one {# video} other {# videos}}",
+            "sort": {
+                "newest": "Newest first"
+            },
+            "empty": {
+                "title": "No player POVs yet",
+                "description": "POV recordings will show up here as they are collected."
+            },
+            "hero-unknown": {
+                "notice": "{count, plural, one {# video from 2024 is missing from this list because its heroes have not been recorded yet.} other {# videos from 2024 are missing from this list because their heroes have not been recorded yet.}}",
+                "empty": "{count, plural, one {# video from 2024 fits your other filters, but its heroes have not been recorded yet.} other {# videos from 2024 fit your other filters, but their heroes have not been recorded yet.}}"
+            },
+            "match-chip": "Match: {match}",
+            "meta": {
+                "title": "Overwatch Esports Player POVs",
+                "description": "Watch pro Overwatch matches from the player's own point of view. Narrow by hero, player, team, or tournament."
+            }
+        },
+        "pov-detail": {
+            "share": {
+                "label": "Share",
+                "close": "Close",
+                "copy-link": "Copy link",
+                "copied": "Copied",
+                "share-link": "Share via app",
+                "start": "Start at",
+                "start-time": "Start time (m:ss)"
+            },
+            "heroes": "Heroes played in this match",
+            "match": {
+                "player-team": "{player}'s team",
+                "reveal-result": "Show result",
+                "details": "Match details"
+            },
+            "match-povs": {
+                "title": "Other POVs of this match",
+                "now-playing": "Now playing",
+                "alone": "This match has only this one POV."
+            },
+            "unavailable": {
+                "removed": "This recording has been removed or set to private by its channel.",
+                "embed-blocked": "This channel does not allow its recordings to play outside its own platform.",
+                "unknown": "This recording will not play here, and we cannot tell why."
+            },
+            "credit": "This video is embedded from the <channel>ObsSojourn channel</channel>.",
+            "meta": {
+                "title": "{player} POV - {competition} {team1} vs {team2}",
+                "description": "Watch {team1} vs {team2} at {competition} from {player}'s own point of view.",
+                "description-heroes": "{player} plays {heroes}."
+            }
         }
     },
     "competitive-home": {
-        "moved-notice": {
-            "text": "Schedules and results moved to Esports",
-            "cta": "Esports home",
-            "dismiss": "Dismiss notice"
-        },
         "page-title": "Competitive Meta",
-        "season": "Season {n}",
-        "season-midseason": "Season {n} Midseason",
         "started-on": "Started {date}",
         "day-n": "Day {n}",
         "cold-start": "Sample still building",
         "meta": {
             "title": "Meta Right Now",
             "subtitle": "Top {n} by meta index per role",
+            "change-baseline": "Change vs {season}",
             "all-heroes": "All hero stats",
-            "new-hero": "New",
             "more": "More",
             "more-role": "More {role} heroes",
-            "presence-legend": "Presence color legend",
             "tier-note": {
                 "label": "Why this tier",
                 "picked": "The highest tier whose stats are stable enough to rank on.",

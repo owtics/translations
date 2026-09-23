@@ -32,7 +32,6 @@
     "hero-statistics": {
         "name": "ヒーロー統計",
         "page-title": "ヒーロー",
-        "season": "シーズン{n}",
         "cold-start-chip": "シーズン序盤",
         "meta": {
             "title": "ヒーロー統計",
@@ -43,26 +42,23 @@
         "section-label": "インサイト",
         "trending": {
             "title": "Trending",
-            "subtitle": "vs {season}",
-            "subtitle-cold-start": "vs {season} ミッドシーズンパッチ",
-            "meta-pick": "ピック率",
+            "subtitle": "ピック率 vs {season}",
+            "subtitle-cold-start": "ピック率 vs {season} ミッドシーズンパッチ",
             "footer": "新ヒーロー除外 · 上昇 / 下降 Top 4",
-            "cold-start-notice": "シーズン序盤は変化が小さいので、前回のミッドシーズンパッチ（S{n} → S{n} ミッドシーズン）の影響を代わりに表示しています。",
+            "cold-start-notice": "シーズン序盤は変化が小さいので、前回のミッドシーズンパッチ（{from} → {to}）の影響を代わりに表示しています。",
             "empty": "まだデータが不足しています。数日後に再度ご確認ください。"
         },
         "map-meta": {
             "title": "Map Meta",
             "subtitle": "ピック率の偏差 Top 7 マップ",
-            "meta-chip": "平均比",
             "footer-link": "マップ一覧",
-            "footer-explanation": "× = 平均比ピック率 · 右列は絶対ピック率",
+            "footer-explanation": "× = 平均比ピック率 · % = 絶対ピック率",
             "empty": "この条件のマップデータがまだ不足しています。",
             "slot-aria": "{hero}: ピック率 {pick}%、平均比 {lift}倍"
         },
         "role-meta": {
             "title": "Role Meta",
             "subtitle": "勝率 Top 3 · 最小ピック率 {pct}%",
-            "meta-win": "勝率",
             "count": "対象 {eligible} / 全体 {total}",
             "footer": "勝率基準 · 50%ベースライン · 最小ピック率 {pct}%",
             "empty": "この条件のロール別データがまだ不足しています。"
@@ -159,10 +155,21 @@
         "tier-spread-aria": "ティア別ピック率分布",
         "tier-spread-win-aria": "ティア別勝率分布",
         "tier-spread-ban-aria": "ティア別バン率分布",
+        "tier-score-aria": "ティア別メタ指数の分布",
         "tier-legend-label": "ティア",
         "tier-legend-aria": "ティアカラー凡例",
+        "presence-legend": "ピックバン率の色凡例",
+        "new-hero": "NEW",
+        "meta-index-note": {
+            "label": "メタ指数について",
+            "what": "ピック率とBAN率を勝率で重み付けした、そのヒーローが占めるロールメタの割合です。",
+            "within-role": "ロール内のメタ指数は合計100%になるため、ヒーローが多いロールほど1人あたりの割合が細かく分かれます。"
+        },
+        "meta-index-unavailable": "{tier}は順位を付けられるほど統計が安定していないため、メタ指数は出していません。他の列はそのままで、表はロールごとのピックバン率順です。",
+        "tier-score-missing": "{tiers}は順位を付けられるほど統計が安定していないため、メタ指数は出していません。",
         "columns": {
             "hero": "ヒーロー",
+            "tier-score": "ティア別メタ指数",
             "tier-spread": "ティア別ピック率",
             "tier-spread-win": "ティア別勝率",
             "tier-spread-ban": "ティア別バン率"
@@ -176,21 +183,7 @@
             "hero-count-of-total": "（全{total}体中）",
             "top-pick": "最高ピック率",
             "top-wr": "最高勝率",
-            "top-ban": "最高BAN率",
-            "scatter": "散布図"
-        },
-        "fixedAxis": {
-            "label": "比較",
-            "ariaLabel": "比較モードの切り替え（軸範囲固定）",
-            "tooltip": "軸範囲を固定してフィルター変更時にヒーローの位置を比較できます"
-        },
-        "scatter": {
-            "quadrant": {
-                "strong": "強い",
-                "weak": "弱い",
-                "niche": "ニッチ",
-                "popular": "人気"
-            }
+            "top-ban": "最高BAN率"
         },
         "error": {
             "no-data": "選択したフィルターに対応するデータがありません。\nフィルターを変更するか、後でもう一度お試しください。"
@@ -261,6 +254,11 @@
             "title": "新ヒーロー — データ収集中。",
             "description": "{hero} のプレイが増えると、ピック率と勝率が表示されます。数日後に再度ご確認ください。"
         }
+    },
+    "hero-player-povs": {
+        "title": "{hero}のプレイを含む公式戦のプロ選手視点",
+        "description": "選手ごとに最新の1本、新しい順",
+        "all": "映像{count, number}本をすべて見る"
     },
     "esports": {
         "name": "Esports",
@@ -489,6 +487,7 @@
             "team-history": "チーム履歴",
             "potm-matches": "POTM試合",
             "player-povs": "選手視点",
+            "player-povs-all": "選手視点の映像{count, number}本をすべて見る",
             "not-found": "選手が見つかりません",
             "join": "加入",
             "leave": "退団",
@@ -498,6 +497,7 @@
             "current-team": "チーム",
             "present": "現在",
             "tenure": "在籍期間",
+            "follow": "フォロー",
             "meta": {
                 "title": "{player}",
                 "description": "{active, select, false {{player}は引退したオーバーウォッチ eスポーツの{role}です。チーム履歴、{potm, plural, =0 {試合成績} other {POTM#回受賞}}、選手視点配信でキャリアを振り返ります。} other {{player}、オーバーウォッチ eスポーツの{role}。キャリア統計、チーム履歴の全記録、{potm, plural, =0 {選手視点ストリームまで} other {POTM#回受賞、選手視点ストリームまで}}。}}"
@@ -514,12 +514,23 @@
                 "broadcasts-label": "配信",
                 "replays": "リプレイ",
                 "player-pov": "選手視点 ({count})",
+                "player-pov-all": "選手視点の一覧で見る",
                 "role-other": "その他"
             },
+            "result": "結果",
             "map-results": "マップ結果",
             "hero-bans": "ヒーローBAN",
             "vod": "VODを見る",
             "no-map-results": "マップ結果がありません",
+            "forfeit": {
+                "badge": "没収",
+                "by-team": "{team}の没収負け"
+            },
+            "walkover": {
+                "title": "不戦勝となった試合",
+                "description": "{absent}が出場せず、試合は行われませんでした。勝利は{winner}に与えられ、スコアは実際の試合ではなく試合形式に基づいて付与された値です。",
+                "description-anonymous": "一方のチームが出場せず、試合は行われませんでした。スコアは実際の試合ではなく試合形式に基づいて付与された値です。"
+            },
             "map-sequence": "マップ {sequence}",
             "map-unknown": "不明なマップ",
             "not-found": "試合が見つかりません",
@@ -630,8 +641,10 @@
                 "error": {
                     "player-required": "選手を選んでください。",
                     "team-required": "チームを選んでください。",
+                    "effective-date-invalid": "発効日を最後まで入力してください。",
                     "failed": "情報を送れませんでした。",
                     "source-url-required": "出典リンクを入力してください。",
+                    "source-url-invalid": "https:// から始まる完全なリンクを入力してください。",
                     "source-url-unsupported": "X（旧Twitter）とYouTubeのURLのみ受け付けています。"
                 },
                 "searching": "検索中…",
@@ -641,28 +654,74 @@
                 "title": "オーバーウォッチ eスポーツ 移籍情報",
                 "description": "オーバーウォッチ eスポーツの加入・退団・無所属選手の情報をまとめて確認できます。"
             }
+        },
+        "pov": {
+            "title": "選手視点",
+            "description": "公式戦を選手本人の視点のまま記録した映像です。ヒーロー、選手、チーム、大会で絞り込めます。",
+            "result-count": "{count, number}本",
+            "sort": {
+                "newest": "新着順"
+            },
+            "empty": {
+                "title": "まだ選手視点の映像がありません",
+                "description": "選手視点の映像が集まるとここに表示されます。"
+            },
+            "hero-unknown": {
+                "notice": "2024年の映像{count, number}本は、ヒーローがまだ記録されていないためこの一覧に出てきません。",
+                "empty": "他の条件に合う2024年の映像が{count, number}本ありますが、ヒーローがまだ記録されていないためヒーローでは絞り込めません。"
+            },
+            "match-chip": "試合: {match}",
+            "meta": {
+                "title": "オーバーウォッチ eスポーツ 選手視点",
+                "description": "オーバーウォッチの公式戦を選手本人の視点で見返せます。ヒーロー、選手、チーム、大会で絞り込んで探せます。"
+            }
+        },
+        "pov-detail": {
+            "share": {
+                "label": "共有",
+                "close": "閉じる",
+                "copy-link": "リンクをコピー",
+                "copied": "コピーしました",
+                "share-link": "他のアプリで共有",
+                "start": "開始位置",
+                "start-time": "開始時間（分:秒）"
+            },
+            "heroes": "この試合でプレイしたヒーロー",
+            "match": {
+                "player-team": "{player}のチーム",
+                "reveal-result": "結果を見る",
+                "details": "試合詳細"
+            },
+            "match-povs": {
+                "title": "この試合の他の選手視点映像",
+                "now-playing": "再生中",
+                "alone": "この試合にはこの視点映像しかありません。"
+            },
+            "unavailable": {
+                "removed": "この映像はチャンネルで削除されたか、非公開に設定されています。",
+                "embed-blocked": "このチャンネルは、自身のプラットフォーム外での再生を許可していません。",
+                "unknown": "この映像を再生できません。理由は分かりません。"
+            },
+            "credit": "<channel>ObsSojourn チャンネル</channel>の動画を埋め込んで再生しています。",
+            "meta": {
+                "title": "{player} 視点リプレイ - {competition} {team1} vs {team2}",
+                "description": "{competition} {team1} vs {team2} の試合を {player} 視点で見る。",
+                "description-heroes": "{player} が使ったヒーローは {heroes}。"
+            }
         }
     },
     "competitive-home": {
-        "moved-notice": {
-            "text": "日程と結果は eスポーツ に移動しました",
-            "cta": "eスポーツ ホーム",
-            "dismiss": "お知らせを閉じる"
-        },
         "page-title": "コンペティティブ メタ",
-        "season": "シーズン {n}",
-        "season-midseason": "シーズン {n} ミッドシーズン",
         "started-on": "{date} 開始",
         "day-n": "{n}日目",
         "cold-start": "サンプル蓄積中",
         "meta": {
             "title": "現在のメタ",
             "subtitle": "ロール別メタ指数 Top {n}",
+            "change-baseline": "変化 vs {season}",
             "all-heroes": "ヒーロー統計をすべて見る",
-            "new-hero": "NEW",
             "more": "もっと見る",
             "more-role": "{role}のヒーローをもっと見る",
-            "presence-legend": "ピックバン率の色凡例",
             "tier-note": {
                 "label": "このティアである理由",
                 "picked": "順位を付けられるほど統計が安定しているティアのうち、最も高いティアです。",
