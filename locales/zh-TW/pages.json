@@ -85,10 +85,11 @@
         },
         "hero-stats": {
             "title": "{map}英雄數據",
-            "description": "官方鬥陣特攻數據 · 同職責內依勝率降序排序"
+            "description": "官方鬥陣特攻數據"
         },
         "related": {
-            "title": "其他{mode}地圖"
+            "title": "{mode}地圖",
+            "view-all": "查看全部地圖"
         },
         "variant-notice": {
             "aria-label": "限時版本提示",
@@ -138,6 +139,19 @@
         "banner": {
             "text": "由貢獻者團隊維護",
             "link": "認識貢獻者"
+        }
+    },
+    "search": {
+        "meta": {
+            "description": "搜尋鬥陣特攻英雄以及電競選手、戰隊與賽事。"
+        },
+        "browse": "瀏覽",
+        "recent": "最近搜尋",
+        "clear-recent": "清除"
+    },
+    "more": {
+        "meta": {
+            "description": "加入 Discord 與 X 社群，認識貢獻者，並查看隱私權政策與服務條款。"
         }
     },
     "hero-treemap": {
@@ -198,19 +212,16 @@
             "skill-tier": "段位"
         },
         "chart": {
-            "title": "選用率與勝率分佈",
-            "aria-label": "依段位顯示選用率長條與勝率標記的雙軸組合圖",
-            "axis-pick": "選用率",
+            "title": "選取率與勝率分佈",
+            "aria-label": "依段位顯示選取率長條與勝率標記的雙軸組合圖",
+            "axis-pick": "選取率",
             "axis-win": "勝率",
-            "tier-datum-label": "{tier}: 選用率 {pick}%, 勝率 {win}%"
+            "tier-datum-label": "{tier}: 選取率 {pick}%, 勝率 {win}%"
         },
         "table": {
             "title": "各段位數值",
             "column": {
-                "tier": "段位",
-                "pick": "選用率",
-                "kda": "KDA",
-                "ban": "禁用率"
+                "tier": "段位"
             }
         },
         "error": {
@@ -239,6 +250,7 @@
             "tier": "段位"
         },
         "table": {
+            "map": "地圖",
             "expand": "還有{count}張地圖",
             "collapse": "收起"
         },
@@ -281,6 +293,7 @@
         "featured-teams": "焦點戰隊",
         "no-featured-teams": "暫無焦點戰隊",
         "browse-all-teams": "瀏覽全部戰隊",
+        "no-roster-data": "此賽事無陣容資料。",
         "home": {
             "meta": {
                 "title": "鬥陣特攻電競賽程、賽果與戰隊",
@@ -304,6 +317,8 @@
             "more": "還有{count}場",
             "match-count": "{count}場比賽",
             "close": "關閉",
+            "previous-month": "上個月",
+            "next-month": "下個月",
             "filter": {
                 "all-competitions": "全部賽事"
             },
@@ -318,32 +333,12 @@
             "tabs": {
                 "overview": "概覽",
                 "schedule": "賽程",
-                "bracket": "對陣圖",
-                "teams": "參賽隊伍",
                 "stats": "數據",
                 "players": "選手",
                 "staff": "工作人員"
             },
             "bracket": {
-                "coming-soon-title": "暫無對陣圖",
-                "coming-soon-description": "該階段的對陣圖尚未設定。",
-                "no-data": "暫無對陣圖資料",
-                "scroll-hint": "← 滑動查看完整對陣圖 →",
-                "winners-bracket": "勝者組",
-                "losers-bracket": "敗者組",
-                "grand-final": "總決賽",
-                "round-final": "決賽",
-                "round-semifinals": "準決賽",
-                "round-quarterfinals": "八強賽",
-                "round-n": "第{number}輪",
-                "wb-round-n": "勝者組第{number}輪",
-                "wb-semifinals": "勝者組準決賽",
-                "wb-final": "勝者組決賽",
-                "lb-final": "敗者組決賽",
-                "lb-round-n": "敗者組第{number}輪",
-                "match-n": "比賽 {number}",
-                "tbd": "待定",
-                "seed-n": "種子 #{number}"
+                "coming-soon-title": "暫無對陣圖"
             },
             "standings": {
                 "empty": "比賽開始後將更新排名"
@@ -353,12 +348,16 @@
             "organized-by": "由{organizer}主辦",
             "not-found": "未找到賽事",
             "schedule": {
-                "filter-by-team": "依戰隊篩選"
+                "filter-by-team": "依戰隊篩選",
+                "empty-weeks": "{range} · 暫無比賽",
+                "all-tournament-schedules": "查看所有賽事賽程"
             },
             "empty-schedule": "未找到比賽",
             "empty-teams": "未找到隊伍",
             "overview": {
                 "standings": "排名",
+                "final-placements": "最終排名",
+                "final-placements-expand": "查看第{range}名",
                 "map-pool": "地圖池",
                 "map-pool-varies": "部分階段使用與賽事預設地圖池不同的地圖池。",
                 "map-pool-scope-default": "預設",
@@ -369,51 +368,31 @@
             "statistics": {
                 "empty": "暫無統計數據",
                 "empty-description": "該賽事的統計數據尚未收集。",
+                "match-fraction": "{count}/{total}場",
                 "potm": {
                     "title": "POTM統計",
-                    "by-role": "按位置統計POTM",
+                    "by-role": "按位置",
                     "by-player": "按選手統計POTM",
                     "total": "共{count}次獲獎",
-                    "total-label": "POTM總計"
+                    "team-share-legend": "豎線：陣容位置佔比（{composition}）"
                 },
                 "hero-bans": {
                     "title": "英雄禁用統計",
-                    "by-role": "按位置統計禁用",
                     "by-hero": "按英雄統計禁用",
-                    "total": "共{count}次禁用",
-                    "total-label": "禁用總計"
+                    "description": "{count}場比賽中該英雄被禁用的比例",
+                    "show-rest": "顯示其餘{count}位英雄",
+                    "show-less": "收起"
                 },
                 "maps": {
                     "title": "地圖統計",
-                    "by-mode": "按模式統計",
                     "by-map": "按地圖統計",
-                    "total": "共{count}場比賽",
-                    "total-label": "比賽總計"
-                },
-                "view": {
-                    "visual": "視覺化",
-                    "table": "表格"
-                },
-                "visual": {
-                    "potm-empty-title": "尚未統計POTM",
-                    "potm-empty-description": "比賽進行後將自動顯示",
-                    "hero-bans-empty-title": "暫無英雄禁用記錄",
-                    "hero-bans-empty-description": "比賽開始後顯示",
-                    "maps-empty-title": "尚未遊玩任何地圖",
-                    "maps-empty-description": "首場比賽後顯示",
-                    "mode-empty-title": "暫無記錄的遊戲模式",
-                    "maps-total-suffix": "場比賽"
+                    "description": "{count}場比賽中該地圖出場的比例"
                 },
                 "table": {
-                    "player": "選手",
                     "hero": "英雄",
                     "map": "地圖",
-                    "role": "角色",
-                    "mode": "模式",
-                    "potm": "POTM",
-                    "bans": "禁用",
-                    "plays": "場次",
-                    "percentage": "%"
+                    "rate": "比例",
+                    "matches": "場次"
                 }
             },
             "meta": {
@@ -440,7 +419,7 @@
             "statistics": "數據",
             "recent-matches": "近期比賽",
             "upcoming-matches": "即將比賽",
-            "competitions": "參賽經歷",
+            "competition-results": "賽事成績",
             "founded": "成立時間",
             "location": "所在地",
             "overall-record": "總戰績",
@@ -452,7 +431,6 @@
             "inactive": "已解散",
             "not-found": "未找到戰隊",
             "current-roster": "目前陣容",
-            "no-roster-data": "該時期無陣容資料。",
             "roster-changes": "近期陣容變動",
             "join": "加入",
             "leave": "離隊",
@@ -485,6 +463,7 @@
             "retired": "退役",
             "free-agent": "自由選手",
             "team-history": "戰隊經歷",
+            "competition-results": "賽事成績",
             "potm-matches": "POTM比賽",
             "player-povs": "選手視角",
             "player-povs-all": "查看全部{count, number}個視角影片",

@@ -3,6 +3,8 @@
     "home": "首页",
     "heroes": "英雄",
     "me": "我的",
+    "search": "搜索",
+    "more": "更多",
     "competitive": "竞技比赛",
     "maps": "地图",
     "esports": "电竞赛事",
@@ -144,7 +146,15 @@
       "round": "轮次",
       "matchday": "比赛日",
       "provisional": "随着比赛进行，排名可能发生变化",
-      "final": "最终排名"
+      "final": "排名已确定"
+    },
+    "placement": {
+      "place": "名次",
+      "competition": "赛事",
+      "prize": "奖金",
+      "tbd": "待定",
+      "show-more": "查看其余{count}项",
+      "show-less": "收起"
     },
     "format": {
       "FT2": "先胜2局",
@@ -203,21 +213,24 @@
     "competition-progress": "赛事进度"
   },
   "auth": {
+    "login-title": "登录 OWTICS",
+    "login-heading": "登录 <brand/>",
+    "login-description": "选择一个账号以继续。",
+    "privacy-policy": "隐私政策",
+    "terms-of-service": "服务条款",
     "sign-in": "登录",
     "sign-in-discord": "使用 Discord 登录",
+    "sign-in-google": "使用 Google 登录",
     "sign-out": "退出登录",
     "processing": "正在验证...",
     "invalid-callback": "无效的认证回调。",
     "return-home": "返回首页",
-    "error-account-forbidden": "此账号无法使用 Discord 登录。",
+    "error-account-forbidden": "此账号无法登录。",
     "error-invalid-state": "认证会话已过期，请重试。",
-    "error-oauth-failed": "Discord 认证失败，请重试。",
+    "error-oauth-failed": "认证失败，请重试。",
     "error-no-access": "您没有管理员权限，请联系管理员授权。"
   },
-  "me": {
-    "login-prompt": "登录后即可使用个人资料和个性化功能。",
-    "language": "语言",
-    "theme": "主题",
+  "more": {
     "discord-community": "Discord 社区",
     "contributors": "贡献者"
   },

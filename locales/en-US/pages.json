@@ -85,10 +85,11 @@
         },
         "hero-stats": {
             "title": "Hero Stats on {map}",
-            "description": "Official Overwatch data · Sorted by win rate within each role"
+            "description": "Official Overwatch data"
         },
         "related": {
-            "title": "Other {mode} Maps"
+            "title": "{mode} Maps",
+            "view-all": "View all maps"
         },
         "variant-notice": {
             "aria-label": "Seasonal variant notice",
@@ -138,6 +139,19 @@
         "banner": {
             "text": "Managed by our contributors",
             "link": "Meet the Contributors"
+        }
+    },
+    "search": {
+        "meta": {
+            "description": "Search Overwatch heroes, esports players, teams and tournaments."
+        },
+        "browse": "Browse",
+        "recent": "Recent searches",
+        "clear-recent": "Clear"
+    },
+    "more": {
+        "meta": {
+            "description": "Join the community on Discord and X, meet the contributors, and read the privacy policy and terms of service."
         }
     },
     "hero-treemap": {
@@ -207,10 +221,7 @@
         "table": {
             "title": "Per-Tier Breakdown",
             "column": {
-                "tier": "Tier",
-                "pick": "Pick rate",
-                "kda": "KDA",
-                "ban": "Ban rate"
+                "tier": "Tier"
             }
         },
         "error": {
@@ -239,6 +250,7 @@
             "tier": "Tier"
         },
         "table": {
+            "map": "Map",
             "expand": "+{count} more maps",
             "collapse": "Show less"
         },
@@ -281,6 +293,7 @@
         "featured-teams": "Featured Teams",
         "no-featured-teams": "No featured teams available",
         "browse-all-teams": "Browse all teams",
+        "no-roster-data": "No roster data available for this competition.",
         "home": {
             "meta": {
                 "title": "Overwatch Esports Schedules, Results & Teams",
@@ -304,6 +317,8 @@
             "more": "+{count} more",
             "match-count": "{count, plural, one {# match} other {# matches}}",
             "close": "Close",
+            "previous-month": "Previous month",
+            "next-month": "Next month",
             "filter": {
                 "all-competitions": "All Competitions"
             },
@@ -318,32 +333,12 @@
             "tabs": {
                 "overview": "Overview",
                 "schedule": "Schedule",
-                "bracket": "Bracket",
-                "teams": "Teams",
                 "stats": "Stats",
                 "players": "Players",
                 "staff": "Staff"
             },
             "bracket": {
-                "coming-soon-title": "No bracket available",
-                "coming-soon-description": "The bracket for this phase has not been set up yet.",
-                "no-data": "No bracket data available",
-                "scroll-hint": "← Scroll to see full bracket →",
-                "winners-bracket": "Winners Bracket",
-                "losers-bracket": "Losers Bracket",
-                "grand-final": "Grand Final",
-                "round-final": "Final",
-                "round-semifinals": "Semifinals",
-                "round-quarterfinals": "Quarterfinals",
-                "round-n": "Round {number}",
-                "wb-round-n": "WB Round {number}",
-                "wb-semifinals": "WB Semifinals",
-                "wb-final": "WB Final",
-                "lb-final": "LB Final",
-                "lb-round-n": "LB Round {number}",
-                "match-n": "Match {number}",
-                "tbd": "TBD",
-                "seed-n": "Seed #{number}"
+                "coming-soon-title": "No bracket available"
             },
             "standings": {
                 "empty": "Standings will be updated once matches begin"
@@ -353,12 +348,16 @@
             "organized-by": "Organized by {organizer}",
             "not-found": "Competition not found",
             "schedule": {
-                "filter-by-team": "Filter by team"
+                "filter-by-team": "Filter by team",
+                "empty-weeks": "{range} · No matches",
+                "all-tournament-schedules": "View all tournament schedules"
             },
             "empty-schedule": "No matches found",
             "empty-teams": "No teams found",
             "overview": {
                 "standings": "Standings",
+                "final-placements": "Final Standings",
+                "final-placements-expand": "Show places {range}",
                 "map-pool": "Map Pool",
                 "map-pool-varies": "Some phases use a different map pool than the competition default.",
                 "map-pool-scope-default": "Default",
@@ -369,51 +368,31 @@
             "statistics": {
                 "empty": "No statistics available",
                 "empty-description": "Statistics data for this competition has not been collected yet.",
+                "match-fraction": "{count}/{total, plural, one {# match} other {# matches}}",
                 "potm": {
                     "title": "POTM Statistics",
-                    "by-role": "POTM by Role",
+                    "by-role": "By Role",
                     "by-player": "POTM by Player",
                     "total": "{count} total awards",
-                    "total-label": "Total POTM"
+                    "team-share-legend": "Line: share of team slots ({composition})"
                 },
                 "hero-bans": {
                     "title": "Hero Ban Statistics",
-                    "by-role": "Bans by Role",
                     "by-hero": "Bans by Hero",
-                    "total": "{count} total bans",
-                    "total-label": "Total Bans"
+                    "description": "Share of {count, plural, one {# match} other {# matches}} with the hero banned",
+                    "show-rest": "Show {count, plural, one {# more hero} other {# more heroes}}",
+                    "show-less": "Show less"
                 },
                 "maps": {
                     "title": "Map Statistics",
-                    "by-mode": "Games by Mode",
                     "by-map": "Games by Map",
-                    "total": "{count} total games",
-                    "total-label": "Total Games"
-                },
-                "view": {
-                    "visual": "Visual",
-                    "table": "Table"
-                },
-                "visual": {
-                    "potm-empty-title": "POTM not yet awarded",
-                    "potm-empty-description": "Awards will appear after matches conclude.",
-                    "hero-bans-empty-title": "No hero bans recorded",
-                    "hero-bans-empty-description": "Ban history will appear once matches begin.",
-                    "maps-empty-title": "No maps played",
-                    "maps-empty-description": "Map statistics will appear after the first match.",
-                    "mode-empty-title": "No game modes recorded",
-                    "maps-total-suffix": "games"
+                    "description": "Share of {count, plural, one {# match} other {# matches}} with the map played"
                 },
                 "table": {
-                    "player": "Player",
                     "hero": "Hero",
                     "map": "Map",
-                    "role": "Role",
-                    "mode": "Mode",
-                    "potm": "POTM",
-                    "bans": "Bans",
-                    "plays": "Plays",
-                    "percentage": "%"
+                    "rate": "Rate",
+                    "matches": "Matches"
                 }
             },
             "meta": {
@@ -440,7 +419,7 @@
             "statistics": "Statistics",
             "recent-matches": "Recent Matches",
             "upcoming-matches": "Upcoming Matches",
-            "competitions": "Competitions",
+            "competition-results": "Tournament Results",
             "founded": "Founded",
             "location": "Location",
             "overall-record": "Overall Record",
@@ -463,7 +442,6 @@
             "recent-changes": "Recent Changes",
             "show-all-changes": "Show all ({count})",
             "current-roster": "Current",
-            "no-roster-data": "No roster data available for this period.",
             "no-changes-in-period": "No roster changes for this competition.",
             "show-less": "Show less",
             "match-record": "Match Record",
@@ -485,6 +463,7 @@
             "retired": "Retired",
             "free-agent": "Free Agent",
             "team-history": "Team History",
+            "competition-results": "Tournament Results",
             "potm-matches": "POTM Matches",
             "player-povs": "Player POVs",
             "player-povs-all": "{count, plural, one {View # POV} other {View all # POVs}}",

@@ -3,6 +3,8 @@
     "home": "Home",
     "heroes": "Heroes",
     "me": "Me",
+    "search": "Search",
+    "more": "More",
     "competitive": "Competitive",
     "maps": "Maps",
     "esports": "Esports",
@@ -136,7 +138,15 @@
       "round": "Round",
       "matchday": "Matchday",
       "provisional": "Standings may change as matches are played",
-      "final": "Final standings"
+      "final": "Standings are final"
+    },
+    "placement": {
+      "place": "Place",
+      "competition": "Tournament",
+      "prize": "Prize",
+      "tbd": "TBD",
+      "show-more": "Show {count} more",
+      "show-less": "Show less"
     },
     "bracket": {
       "no-data": "No bracket data available",
@@ -203,21 +213,24 @@
     "competition-progress": "Competition progress"
   },
   "auth": {
+    "login-title": "Sign in to OWTICS",
+    "login-heading": "Sign in to <brand/>",
+    "login-description": "Choose an account to continue.",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-service": "Terms of Service",
     "sign-in": "Sign in",
     "sign-in-discord": "Sign in with Discord",
+    "sign-in-google": "Sign in with Google",
     "sign-out": "Sign out",
     "processing": "Authenticating...",
     "invalid-callback": "Invalid authentication callback.",
     "return-home": "Return to home page",
-    "error-account-forbidden": "This account cannot use Discord login.",
+    "error-account-forbidden": "This account cannot be used to sign in.",
     "error-invalid-state": "Authentication session expired. Please try again.",
-    "error-oauth-failed": "Discord authentication failed. Please try again.",
+    "error-oauth-failed": "Authentication failed. Please try again.",
     "error-no-access": "You do not have admin access. Contact an administrator."
   },
-  "me": {
-    "login-prompt": "Sign in to access your profile and personalized features.",
-    "language": "Language",
-    "theme": "Theme",
+  "more": {
     "discord-community": "Discord Community",
     "contributors": "Contributors"
   },

@@ -85,10 +85,11 @@
         },
         "hero-stats": {
             "title": "{map}英雄数据",
-            "description": "官方守望先锋数据 · 同职责内按胜率降序排序"
+            "description": "官方守望先锋数据"
         },
         "related": {
-            "title": "其他{mode}地图"
+            "title": "{mode}地图",
+            "view-all": "查看全部地图"
         },
         "variant-notice": {
             "aria-label": "限时版本提示",
@@ -138,6 +139,19 @@
         "banner": {
             "text": "由贡献者团队维护",
             "link": "认识贡献者"
+        }
+    },
+    "search": {
+        "meta": {
+            "description": "搜索守望先锋英雄以及电竞选手、战队和赛事。"
+        },
+        "browse": "浏览",
+        "recent": "最近搜索",
+        "clear-recent": "清除"
+    },
+    "more": {
+        "meta": {
+            "description": "加入 Discord 和 X 社区，认识贡献者，并查看隐私政策与服务条款。"
         }
     },
     "hero-treemap": {
@@ -198,19 +212,16 @@
             "skill-tier": "段位"
         },
         "chart": {
-            "title": "选用率与胜率分布",
-            "aria-label": "按段位展示选用率柱状图与胜率标记的双轴组合图",
-            "axis-pick": "选用率",
+            "title": "选取率与胜率分布",
+            "aria-label": "按段位展示选取率柱状图与胜率标记的双轴组合图",
+            "axis-pick": "选取率",
             "axis-win": "胜率",
-            "tier-datum-label": "{tier}: 选用率 {pick}%, 胜率 {win}%"
+            "tier-datum-label": "{tier}: 选取率 {pick}%, 胜率 {win}%"
         },
         "table": {
             "title": "各段位数值",
             "column": {
-                "tier": "段位",
-                "pick": "选用率",
-                "kda": "KDA",
-                "ban": "禁用率"
+                "tier": "段位"
             }
         },
         "error": {
@@ -239,6 +250,7 @@
             "tier": "段位"
         },
         "table": {
+            "map": "地图",
             "expand": "还有{count}张地图",
             "collapse": "收起"
         },
@@ -281,6 +293,7 @@
         "featured-teams": "焦点战队",
         "no-featured-teams": "暂无焦点战队",
         "browse-all-teams": "浏览全部战队",
+        "no-roster-data": "本次赛事无阵容数据。",
         "home": {
             "meta": {
                 "title": "守望先锋电竞赛程、赛果与战队",
@@ -304,6 +317,8 @@
             "more": "还有{count}场",
             "match-count": "{count}场比赛",
             "close": "关闭",
+            "previous-month": "上个月",
+            "next-month": "下个月",
             "filter": {
                 "all-competitions": "全部赛事"
             },
@@ -318,32 +333,12 @@
             "tabs": {
                 "overview": "概览",
                 "schedule": "赛程",
-                "bracket": "对阵图",
-                "teams": "参赛队伍",
                 "stats": "数据",
                 "players": "选手",
                 "staff": "工作人员"
             },
             "bracket": {
-                "coming-soon-title": "暂无对阵图",
-                "coming-soon-description": "该阶段的对阵图尚未设置。",
-                "no-data": "暂无对阵图数据",
-                "scroll-hint": "← 滑动查看完整对阵图 →",
-                "winners-bracket": "胜者组",
-                "losers-bracket": "败者组",
-                "grand-final": "总决赛",
-                "round-final": "决赛",
-                "round-semifinals": "半决赛",
-                "round-quarterfinals": "四分之一决赛",
-                "round-n": "第{number}轮",
-                "wb-round-n": "胜者组第{number}轮",
-                "wb-semifinals": "胜者组半决赛",
-                "wb-final": "胜者组决赛",
-                "lb-final": "败者组决赛",
-                "lb-round-n": "败者组第{number}轮",
-                "match-n": "比赛 {number}",
-                "tbd": "待定",
-                "seed-n": "种子 #{number}"
+                "coming-soon-title": "暂无对阵图"
             },
             "standings": {
                 "empty": "比赛开始后将更新排名"
@@ -353,12 +348,16 @@
             "organized-by": "由{organizer}主办",
             "not-found": "未找到赛事",
             "schedule": {
-                "filter-by-team": "按战队筛选"
+                "filter-by-team": "按战队筛选",
+                "empty-weeks": "{range} · 暂无比赛",
+                "all-tournament-schedules": "查看所有赛事赛程"
             },
             "empty-schedule": "未找到比赛",
             "empty-teams": "未找到队伍",
             "overview": {
                 "standings": "排名",
+                "final-placements": "最终排名",
+                "final-placements-expand": "查看第{range}名",
                 "map-pool": "地图池",
                 "map-pool-varies": "部分阶段使用与赛事默认地图池不同的地图池。",
                 "map-pool-scope-default": "默认",
@@ -369,51 +368,31 @@
             "statistics": {
                 "empty": "暂无统计数据",
                 "empty-description": "该赛事的统计数据尚未收集。",
+                "match-fraction": "{count}/{total}场",
                 "potm": {
                     "title": "POTM统计",
-                    "by-role": "按位置统计POTM",
+                    "by-role": "按位置",
                     "by-player": "按选手统计POTM",
                     "total": "共{count}次获奖",
-                    "total-label": "POTM总计"
+                    "team-share-legend": "竖线：阵容位置占比（{composition}）"
                 },
                 "hero-bans": {
                     "title": "英雄禁用统计",
-                    "by-role": "按位置统计禁用",
                     "by-hero": "按英雄统计禁用",
-                    "total": "共{count}次禁用",
-                    "total-label": "禁用总计"
+                    "description": "{count}场比赛中该英雄被禁用的比例",
+                    "show-rest": "显示其余{count}位英雄",
+                    "show-less": "收起"
                 },
                 "maps": {
                     "title": "地图统计",
-                    "by-mode": "按模式统计",
                     "by-map": "按地图统计",
-                    "total": "共{count}场比赛",
-                    "total-label": "比赛总计"
-                },
-                "view": {
-                    "visual": "可视化",
-                    "table": "表格"
-                },
-                "visual": {
-                    "potm-empty-title": "尚未统计POTM",
-                    "potm-empty-description": "比赛进行后将自动显示",
-                    "hero-bans-empty-title": "暂无英雄禁用记录",
-                    "hero-bans-empty-description": "比赛开始后显示",
-                    "maps-empty-title": "尚未游玩任何地图",
-                    "maps-empty-description": "首场比赛后显示",
-                    "mode-empty-title": "暂无记录的游戏模式",
-                    "maps-total-suffix": "场比赛"
+                    "description": "{count}场比赛中该地图出场的比例"
                 },
                 "table": {
-                    "player": "选手",
                     "hero": "英雄",
                     "map": "地图",
-                    "role": "角色",
-                    "mode": "模式",
-                    "potm": "POTM",
-                    "bans": "禁用",
-                    "plays": "场次",
-                    "percentage": "%"
+                    "rate": "比例",
+                    "matches": "场次"
                 }
             },
             "meta": {
@@ -440,7 +419,7 @@
             "statistics": "数据",
             "recent-matches": "近期比赛",
             "upcoming-matches": "即将比赛",
-            "competitions": "参赛经历",
+            "competition-results": "赛事成绩",
             "founded": "成立时间",
             "location": "所在地",
             "overall-record": "总战绩",
@@ -463,7 +442,6 @@
             "recent-changes": "近期变动",
             "show-all-changes": "查看全部 ({count})",
             "current-roster": "当前",
-            "no-roster-data": "该时期无阵容数据。",
             "no-changes-in-period": "本次赛事没有相关阵容变动。",
             "show-less": "收起",
             "match-record": "比赛战绩",
@@ -485,6 +463,7 @@
             "retired": "退役",
             "free-agent": "自由人",
             "team-history": "战队经历",
+            "competition-results": "赛事成绩",
             "potm-matches": "POTM比赛",
             "player-povs": "选手视角",
             "player-povs-all": "查看全部{count, number}个视角视频",

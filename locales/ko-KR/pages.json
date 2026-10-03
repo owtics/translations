@@ -85,10 +85,11 @@
         },
         "hero-stats": {
             "title": "{map}의 영웅 통계",
-            "description": "공식 오버워치 데이터 · 역할군 내 승률 내림차순 정렬"
+            "description": "공식 오버워치 데이터"
         },
         "related": {
-            "title": "다른 {mode} 맵"
+            "title": "{mode} 맵",
+            "view-all": "맵 전체 보기"
         },
         "variant-notice": {
             "aria-label": "계절 변형 안내",
@@ -138,6 +139,19 @@
         "banner": {
             "text": "Contributors가 관리합니다",
             "link": "Contributors 보기"
+        }
+    },
+    "search": {
+        "meta": {
+            "description": "오버워치 영웅과 e스포츠 선수, 팀, 대회를 검색하세요."
+        },
+        "browse": "둘러보기",
+        "recent": "최근 검색",
+        "clear-recent": "지우기"
+    },
+    "more": {
+        "meta": {
+            "description": "Discord와 X 커뮤니티에 참여하고, 기여자 소개와 개인정보처리방침, 이용약관을 확인하세요."
         }
     },
     "hero-treemap": {
@@ -207,10 +221,7 @@
         "table": {
             "title": "티어별 수치",
             "column": {
-                "tier": "티어",
-                "pick": "픽률",
-                "kda": "KDA",
-                "ban": "밴률"
+                "tier": "티어"
             }
         },
         "error": {
@@ -239,6 +250,7 @@
             "tier": "티어"
         },
         "table": {
+            "map": "맵",
             "expand": "+{count}개 맵 더 보기",
             "collapse": "접기"
         },
@@ -281,6 +293,7 @@
         "featured-teams": "주목할 팀",
         "no-featured-teams": "주목할 팀 정보가 없습니다",
         "browse-all-teams": "전체 팀 보기",
+        "no-roster-data": "이 대회의 로스터 데이터가 없습니다.",
         "home": {
             "meta": {
                 "title": "오버워치 e스포츠 일정, 결과, 팀",
@@ -304,6 +317,8 @@
             "more": "+{count}개 더보기",
             "match-count": "{count}경기",
             "close": "닫기",
+            "previous-month": "이전 달",
+            "next-month": "다음 달",
             "filter": {
                 "all-competitions": "전체 대회"
             },
@@ -318,32 +333,12 @@
             "tabs": {
                 "overview": "개요",
                 "schedule": "일정",
-                "bracket": "브라켓",
-                "teams": "참가팀",
                 "stats": "통계",
                 "players": "선수",
                 "staff": "스태프"
             },
             "bracket": {
-                "coming-soon-title": "브라켓 없음",
-                "coming-soon-description": "이 페이즈의 브라켓이 아직 설정되지 않았습니다.",
-                "no-data": "브라켓 데이터가 없습니다",
-                "scroll-hint": "← 스크롤하여 전체 브라켓 보기 →",
-                "winners-bracket": "승자조",
-                "losers-bracket": "패자조",
-                "grand-final": "그랜드 파이널",
-                "round-final": "결승",
-                "round-semifinals": "준결승",
-                "round-quarterfinals": "8강",
-                "round-n": "라운드 {number}",
-                "wb-round-n": "승자조 라운드 {number}",
-                "wb-semifinals": "승자조 준결승",
-                "wb-final": "승자조 결승",
-                "lb-final": "패자조 결승",
-                "lb-round-n": "패자조 라운드 {number}",
-                "match-n": "매치 {number}",
-                "tbd": "미정",
-                "seed-n": "시드 #{number}"
+                "coming-soon-title": "브라켓 없음"
             },
             "standings": {
                 "empty": "경기가 시작되면 순위가 업데이트됩니다"
@@ -353,12 +348,16 @@
             "organized-by": "{organizer} 주최",
             "not-found": "대회를 찾을 수 없습니다",
             "schedule": {
-                "filter-by-team": "팀별 필터"
+                "filter-by-team": "팀별 필터",
+                "empty-weeks": "{range} · 경기 없음",
+                "all-tournament-schedules": "모든 대회 일정 보기"
             },
             "empty-schedule": "경기를 찾을 수 없습니다",
             "empty-teams": "팀을 찾을 수 없습니다",
             "overview": {
                 "standings": "순위",
+                "final-placements": "최종 순위",
+                "final-placements-expand": "{range}위 보기",
                 "map-pool": "맵 풀",
                 "map-pool-varies": "일부 페이즈는 대회 기본 맵 풀과 다른 맵 풀을 사용합니다.",
                 "map-pool-scope-default": "기본",
@@ -369,51 +368,31 @@
             "statistics": {
                 "empty": "통계 데이터가 없습니다",
                 "empty-description": "이 대회의 통계 데이터가 아직 수집되지 않았습니다.",
+                "match-fraction": "{count}/{total}경기",
                 "potm": {
                     "title": "POTM 통계",
-                    "by-role": "역할별 POTM",
+                    "by-role": "역할별",
                     "by-player": "선수별 POTM",
                     "total": "총 {count}회 수상",
-                    "total-label": "총 POTM"
+                    "team-share-legend": "세로선: 팀 구성 비율 ({composition})"
                 },
                 "hero-bans": {
                     "title": "영웅 밴 통계",
-                    "by-role": "역할별 밴",
                     "by-hero": "영웅별 밴",
-                    "total": "총 {count}회 밴",
-                    "total-label": "총 밴"
+                    "description": "{count}경기 중 밴된 경기 비율",
+                    "show-rest": "나머지 {count}명 더 보기",
+                    "show-less": "접기"
                 },
                 "maps": {
                     "title": "맵 통계",
-                    "by-mode": "모드별 경기",
                     "by-map": "맵별 경기",
-                    "total": "총 {count}경기",
-                    "total-label": "총 경기"
-                },
-                "view": {
-                    "visual": "비주얼",
-                    "table": "테이블"
-                },
-                "visual": {
-                    "potm-empty-title": "POTM이 아직 집계되지 않았습니다",
-                    "potm-empty-description": "경기가 진행되면 자동으로 표시됩니다",
-                    "hero-bans-empty-title": "영웅 밴 기록이 없습니다",
-                    "hero-bans-empty-description": "경기가 시작되면 표시됩니다",
-                    "maps-empty-title": "플레이된 맵이 없습니다",
-                    "maps-empty-description": "첫 경기 이후 표시됩니다",
-                    "mode-empty-title": "기록된 게임 모드가 없습니다",
-                    "maps-total-suffix": "경기"
+                    "description": "{count}경기 중 플레이된 경기 비율"
                 },
                 "table": {
-                    "player": "선수",
                     "hero": "영웅",
                     "map": "맵",
-                    "role": "역할",
-                    "mode": "모드",
-                    "potm": "POTM",
-                    "bans": "밴",
-                    "plays": "경기",
-                    "percentage": "%"
+                    "rate": "비율",
+                    "matches": "경기"
                 }
             },
             "meta": {
@@ -440,7 +419,7 @@
             "statistics": "통계",
             "recent-matches": "최근 경기",
             "upcoming-matches": "예정 경기",
-            "competitions": "참가 대회",
+            "competition-results": "대회 성적",
             "founded": "창단일",
             "location": "위치",
             "overall-record": "전체 전적",
@@ -463,7 +442,6 @@
             "recent-changes": "최근 변동",
             "show-all-changes": "전체 보기 ({count})",
             "current-roster": "현재",
-            "no-roster-data": "해당 기간의 로스터 데이터가 없습니다.",
             "no-changes-in-period": "이 대회 관련 로스터 변동이 없습니다.",
             "show-less": "접기",
             "match-record": "매치 전적",
@@ -485,6 +463,7 @@
             "retired": "은퇴",
             "free-agent": "FA",
             "team-history": "팀 이력",
+            "competition-results": "대회 성적",
             "potm-matches": "POTM 경기",
             "player-povs": "선수 시점",
             "player-povs-all": "선수 시점 영상 {count, number}개 전체 보기",

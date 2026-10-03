@@ -3,6 +3,8 @@
     "home": "홈",
     "heroes": "영웅",
     "me": "내 정보",
+    "search": "검색",
+    "more": "더보기",
     "competitive": "경쟁전",
     "maps": "맵",
     "esports": "Esports",
@@ -144,7 +146,15 @@
       "round": "라운드",
       "matchday": "매치데이",
       "provisional": "경기가 진행됨에 따라 순위가 변동될 수 있습니다",
-      "final": "최종 순위"
+      "final": "순위가 확정되었습니다"
+    },
+    "placement": {
+      "place": "순위",
+      "competition": "대회",
+      "prize": "상금",
+      "tbd": "미정",
+      "show-more": "{count}개 더 보기",
+      "show-less": "접기"
     },
     "format": {
       "FT2": "2선승",
@@ -203,21 +213,24 @@
     "competition-progress": "대회 진행률"
   },
   "auth": {
+    "login-title": "OWTICS에 로그인",
+    "login-heading": "<brand/>에 로그인",
+    "login-description": "사용할 계정을 선택해 주세요.",
+    "privacy-policy": "개인정보처리방침",
+    "terms-of-service": "이용약관",
     "sign-in": "로그인",
     "sign-in-discord": "Discord로 로그인",
+    "sign-in-google": "Google로 로그인",
     "sign-out": "로그아웃",
     "processing": "인증 처리 중...",
     "invalid-callback": "유효하지 않은 인증 콜백입니다.",
     "return-home": "홈으로 돌아가기",
-    "error-account-forbidden": "이 계정은 Discord 로그인을 사용할 수 없습니다.",
+    "error-account-forbidden": "이 계정으로 로그인할 수 없습니다.",
     "error-invalid-state": "인증 세션이 만료되었습니다. 다시 시도해 주세요.",
-    "error-oauth-failed": "Discord 인증에 실패했습니다. 다시 시도해 주세요.",
+    "error-oauth-failed": "인증에 실패했습니다. 다시 시도해 주세요.",
     "error-no-access": "관리자 권한이 없습니다. 관리자에게 권한 부여를 요청하세요."
   },
-  "me": {
-    "login-prompt": "로그인하여 프로필과 맞춤 기능을 이용하세요.",
-    "language": "언어",
-    "theme": "테마",
+  "more": {
     "discord-community": "Discord 커뮤니티",
     "contributors": "기여자"
   },

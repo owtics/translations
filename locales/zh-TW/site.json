@@ -3,6 +3,8 @@
     "home": "首頁",
     "heroes": "英雄",
     "me": "我的",
+    "search": "搜尋",
+    "more": "更多",
     "competitive": "競技比賽",
     "maps": "地圖",
     "esports": "電競賽事",
@@ -144,7 +146,15 @@
       "round": "輪次",
       "matchday": "比賽日",
       "provisional": "隨著比賽進行，排名可能會變動",
-      "final": "最終排名"
+      "final": "排名已確定"
+    },
+    "placement": {
+      "place": "名次",
+      "competition": "賽事",
+      "prize": "獎金",
+      "tbd": "待定",
+      "show-more": "查看其餘{count}項",
+      "show-less": "收起"
     },
     "format": {
       "FT2": "先勝2局",
@@ -203,21 +213,24 @@
     "competition-progress": "賽事進度"
   },
   "auth": {
+    "login-title": "登入 OWTICS",
+    "login-heading": "登入 <brand/>",
+    "login-description": "選擇要使用的帳戶以繼續。",
+    "privacy-policy": "隱私權政策",
+    "terms-of-service": "服務條款",
     "sign-in": "登入",
     "sign-in-discord": "使用 Discord 登入",
+    "sign-in-google": "使用 Google 登入",
     "sign-out": "登出",
     "processing": "正在驗證...",
     "invalid-callback": "無效的認證回調。",
     "return-home": "返回首頁",
-    "error-account-forbidden": "此帳號無法使用 Discord 登入。",
+    "error-account-forbidden": "此帳號無法登入。",
     "error-invalid-state": "認證工作階段已過期，請重試。",
-    "error-oauth-failed": "Discord 認證失敗，請重試。",
+    "error-oauth-failed": "認證失敗，請重試。",
     "error-no-access": "您沒有管理員權限，請聯繫管理員授權。"
   },
-  "me": {
-    "login-prompt": "登入後即可使用個人資料和個人化功能。",
-    "language": "語言",
-    "theme": "主題",
+  "more": {
     "discord-community": "Discord 社群",
     "contributors": "貢獻者"
   },

@@ -85,10 +85,11 @@
         },
         "hero-stats": {
             "title": "{map}のヒーロー統計",
-            "description": "公式オーバーウォッチデータ · 各ロール内で勝率の高い順に並び替え"
+            "description": "公式オーバーウォッチデータ"
         },
         "related": {
-            "title": "他の{mode}マップ"
+            "title": "{mode}マップ",
+            "view-all": "マップ一覧"
         },
         "variant-notice": {
             "aria-label": "シーズン限定マップのお知らせ",
@@ -138,6 +139,19 @@
         "banner": {
             "text": "コントリビューターが管理",
             "link": "コントリビューターを見る"
+        }
+    },
+    "search": {
+        "meta": {
+            "description": "オーバーウォッチのヒーロー、eスポーツの選手・チーム・大会を検索できます。"
+        },
+        "browse": "ブラウズ",
+        "recent": "最近の検索",
+        "clear-recent": "クリア"
+    },
+    "more": {
+        "meta": {
+            "description": "DiscordとXのコミュニティへの参加、コントリビューターの紹介、プライバシーポリシーと利用規約はこちらから。"
         }
     },
     "hero-treemap": {
@@ -207,10 +221,7 @@
         "table": {
             "title": "ティア別の数値",
             "column": {
-                "tier": "ティア",
-                "pick": "ピック率",
-                "kda": "KDA",
-                "ban": "バン率"
+                "tier": "ティア"
             }
         },
         "error": {
@@ -239,6 +250,7 @@
             "tier": "ランク帯"
         },
         "table": {
+            "map": "マップ",
             "expand": "+{count}マップを表示",
             "collapse": "折りたたむ"
         },
@@ -281,6 +293,7 @@
         "featured-teams": "注目チーム",
         "no-featured-teams": "注目チームがありません",
         "browse-all-teams": "すべてのチームを見る",
+        "no-roster-data": "この大会のロスターデータはありません。",
         "home": {
             "meta": {
                 "title": "オーバーウォッチ eスポーツ 日程・結果・チーム",
@@ -304,6 +317,8 @@
             "more": "+{count}件",
             "match-count": "{count}試合",
             "close": "閉じる",
+            "previous-month": "前の月",
+            "next-month": "次の月",
             "filter": {
                 "all-competitions": "全大会"
             },
@@ -318,32 +333,12 @@
             "tabs": {
                 "overview": "概要",
                 "schedule": "スケジュール",
-                "bracket": "トーナメント表",
-                "teams": "参加チーム",
                 "stats": "統計",
                 "players": "選手",
                 "staff": "スタッフ"
             },
             "bracket": {
-                "coming-soon-title": "トーナメント表なし",
-                "coming-soon-description": "このフェーズのトーナメント表はまだ設定されていません。",
-                "no-data": "トーナメント表データがありません",
-                "scroll-hint": "← スクロールしてトーナメント表全体を表示 →",
-                "winners-bracket": "勝者側",
-                "losers-bracket": "敗者側",
-                "grand-final": "グランドファイナル",
-                "round-final": "決勝",
-                "round-semifinals": "準決勝",
-                "round-quarterfinals": "準々決勝",
-                "round-n": "ラウンド {number}",
-                "wb-round-n": "勝者側ラウンド {number}",
-                "wb-semifinals": "勝者側準決勝",
-                "wb-final": "勝者側決勝",
-                "lb-final": "敗者側決勝",
-                "lb-round-n": "敗者側ラウンド {number}",
-                "match-n": "試合 {number}",
-                "tbd": "未定",
-                "seed-n": "シード #{number}"
+                "coming-soon-title": "トーナメント表なし"
             },
             "standings": {
                 "empty": "試合開始後に順位が更新されます"
@@ -353,12 +348,16 @@
             "organized-by": "{organizer} 主催",
             "not-found": "大会が見つかりません",
             "schedule": {
-                "filter-by-team": "チームで絞り込み"
+                "filter-by-team": "チームで絞り込み",
+                "empty-weeks": "{range} · 試合なし",
+                "all-tournament-schedules": "全大会の日程を見る"
             },
             "empty-schedule": "試合が見つかりません",
             "empty-teams": "チームが見つかりません",
             "overview": {
                 "standings": "順位",
+                "final-placements": "最終順位",
+                "final-placements-expand": "{range}位を表示",
                 "map-pool": "マッププール",
                 "map-pool-varies": "一部のフェーズでは、大会の基本マッププールとは異なるマッププールが使用されます。",
                 "map-pool-scope-default": "基本",
@@ -369,51 +368,31 @@
             "statistics": {
                 "empty": "統計データがありません",
                 "empty-description": "この大会の統計データはまだ収集されていません。",
+                "match-fraction": "{count}/{total}試合",
                 "potm": {
                     "title": "POTM統計",
-                    "by-role": "ロール別POTM",
+                    "by-role": "ロール別",
                     "by-player": "選手別POTM",
                     "total": "合計{count}回受賞",
-                    "total-label": "合計POTM"
+                    "team-share-legend": "縦線：チーム編成の比率（{composition}）"
                 },
                 "hero-bans": {
                     "title": "ヒーローBAN統計",
-                    "by-role": "ロール別BAN",
                     "by-hero": "ヒーロー別BAN",
-                    "total": "合計{count}回BAN",
-                    "total-label": "合計BAN"
+                    "description": "{count}試合中BANされた試合の割合",
+                    "show-rest": "残り{count}件を表示",
+                    "show-less": "閉じる"
                 },
                 "maps": {
                     "title": "マップ統計",
-                    "by-mode": "モード別試合",
                     "by-map": "マップ別試合",
-                    "total": "合計{count}試合",
-                    "total-label": "合計試合"
-                },
-                "view": {
-                    "visual": "ビジュアル",
-                    "table": "テーブル"
-                },
-                "visual": {
-                    "potm-empty-title": "POTMはまだ集計されていません",
-                    "potm-empty-description": "試合が進行すると自動的に表示されます",
-                    "hero-bans-empty-title": "ヒーローBANの記録はありません",
-                    "hero-bans-empty-description": "試合が始まると表示されます",
-                    "maps-empty-title": "プレイされたマップはありません",
-                    "maps-empty-description": "最初の試合後に表示されます",
-                    "mode-empty-title": "記録されたゲームモードはありません",
-                    "maps-total-suffix": "試合"
+                    "description": "{count}試合中プレイされた試合の割合"
                 },
                 "table": {
-                    "player": "選手",
                     "hero": "ヒーロー",
                     "map": "マップ",
-                    "role": "ロール",
-                    "mode": "モード",
-                    "potm": "POTM",
-                    "bans": "BAN",
-                    "plays": "試合",
-                    "percentage": "%"
+                    "rate": "割合",
+                    "matches": "試合"
                 }
             },
             "meta": {
@@ -440,7 +419,7 @@
             "statistics": "統計",
             "recent-matches": "最近の試合",
             "upcoming-matches": "今後の試合",
-            "competitions": "参加大会",
+            "competition-results": "大会成績",
             "founded": "設立",
             "location": "所在地",
             "overall-record": "総合成績",
@@ -463,7 +442,6 @@
             "recent-changes": "最近の変更",
             "show-all-changes": "すべて表示 ({count})",
             "current-roster": "現在",
-            "no-roster-data": "この期間のロスターデータはありません。",
             "no-changes-in-period": "この大会に関連するロスター変動はありません。",
             "show-less": "閉じる",
             "match-record": "マッチ戦績",
@@ -485,6 +463,7 @@
             "retired": "引退",
             "free-agent": "FA",
             "team-history": "チーム履歴",
+            "competition-results": "大会成績",
             "potm-matches": "POTM試合",
             "player-povs": "選手視点",
             "player-povs-all": "選手視点の映像{count, number}本をすべて見る",

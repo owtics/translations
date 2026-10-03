@@ -3,6 +3,8 @@
     "home": "ホーム",
     "heroes": "ヒーロー",
     "me": "マイページ",
+    "search": "検索",
+    "more": "その他",
     "competitive": "ライバル・プレイ",
     "maps": "マップ",
     "esports": "Esports",
@@ -144,7 +146,15 @@
       "round": "ラウンド",
       "matchday": "マッチデー",
       "provisional": "試合の進行に伴い順位が変動する場合があります",
-      "final": "最終順位"
+      "final": "順位が確定しました"
+    },
+    "placement": {
+      "place": "順位",
+      "competition": "大会",
+      "prize": "賞金",
+      "tbd": "未定",
+      "show-more": "さらに{count}件を表示",
+      "show-less": "閉じる"
     },
     "format": {
       "FT2": "2本先取",
@@ -203,21 +213,24 @@
     "competition-progress": "大会の進行状況"
   },
   "auth": {
+    "login-title": "OWTICSにログイン",
+    "login-heading": "<brand/>にログイン",
+    "login-description": "続行するアカウントを選択してください。",
+    "privacy-policy": "プライバシーポリシー",
+    "terms-of-service": "利用規約",
     "sign-in": "ログイン",
     "sign-in-discord": "Discordでログイン",
+    "sign-in-google": "Googleでログイン",
     "sign-out": "ログアウト",
     "processing": "認証処理中...",
     "invalid-callback": "無効な認証コールバックです。",
     "return-home": "ホームに戻る",
-    "error-account-forbidden": "このアカウントではDiscordログインを使用できません。",
+    "error-account-forbidden": "このアカウントではログインできません。",
     "error-invalid-state": "認証セッションが期限切れです。もう一度お試しください。",
-    "error-oauth-failed": "Discord認証に失敗しました。もう一度お試しください。",
+    "error-oauth-failed": "認証に失敗しました。もう一度お試しください。",
     "error-no-access": "管理者権限がありません。管理者に権限の付与を依頼してください。"
   },
-  "me": {
-    "login-prompt": "ログインしてプロフィールやカスタマイズ機能をご利用ください。",
-    "language": "言語",
-    "theme": "テーマ",
+  "more": {
     "discord-community": "Discordコミュニティ",
     "contributors": "コントリビューター"
   },
