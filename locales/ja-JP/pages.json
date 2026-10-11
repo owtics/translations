@@ -92,8 +92,8 @@
             "view-all": "マップ一覧"
         },
         "variant-notice": {
-            "aria-label": "シーズン限定マップのお知らせ",
-            "body": "{baseName}のシーズン限定バリアントです。統計はベースマップのデータを表示しています。",
+            "aria-label": "イベントマップのお知らせ",
+            "body": "{baseName}のイベントバリアントです。統計はベースマップのデータを表示しています。",
             "cta": "{baseName}を開く"
         },
         "retired-notice": {
@@ -152,6 +152,19 @@
     "more": {
         "meta": {
             "description": "DiscordとXのコミュニティへの参加、コントリビューターの紹介、プライバシーポリシーと利用規約はこちらから。"
+        }
+    },
+    "me": {
+        "display-name": {
+            "label": "表示名",
+            "save": "保存",
+            "saving": "保存中...",
+            "error": {
+                "required": "表示名を入力してください。",
+                "too-long": "表示名は{max}文字以内で入力してください。",
+                "control-character": "表示名にタブなどの制御文字は使えません。",
+                "failed": "表示名を保存できませんでした。もう一度お試しください。"
+            }
         }
     },
     "hero-treemap": {
@@ -327,6 +340,12 @@
                 "description": "オーバーウォッチ eスポーツの試合を月間カレンダーで確認。全大会・全リージョンの予定日程と最近の結果を一目で把握できます。"
             }
         },
+        "calendar-subscription": {
+            "meta": {
+                "title": "{name}の試合日程をカレンダーに追加",
+                "description": "{name}のオーバーウォッチeスポーツの試合日程を、AppleカレンダーやGoogleカレンダーなどICS購読に対応したアプリで購読できます。"
+            }
+        },
         "tournament-detail": {
             "today": "今日",
             "tomorrow": "明日",
@@ -363,7 +382,8 @@
                 "map-pool-scope-default": "基本",
                 "map-pool-scope-custom": "カスタムマッププール",
                 "map-pool-only-here": "このフェーズのみ",
-                "participating-teams": "参加チーム"
+                "participating-teams": "参加チーム",
+                "participating-teams-by-placement": "最終順位順"
             },
             "statistics": {
                 "empty": "統計データがありません",
@@ -439,11 +459,7 @@
             "to-fa": "FA",
             "role-change": "ロール",
             "retired": "引退",
-            "recent-changes": "最近の変更",
-            "show-all-changes": "すべて表示 ({count})",
             "current-roster": "現在",
-            "no-changes-in-period": "この大会に関連するロスター変動はありません。",
-            "show-less": "閉じる",
             "match-record": "マッチ戦績",
             "map-record": "マップ戦績",
             "top-banned-heroes": "最多バン英雄",

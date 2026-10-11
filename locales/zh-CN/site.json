@@ -69,15 +69,14 @@
     "loading": "加载中",
     "progress": "进行中",
     "inactive": "已解散",
-    "unknown": "未知"
+    "unknown": "未知",
+    "show-more": "查看其余{count}项",
+    "show-less": "收起"
   },
   "units": {
     "teams": "{count}支战队",
     "matches": "{count}场比赛",
     "maps": "{count}张地图"
-  },
-  "preview": {
-    "message": "此页面正在开发中，部分功能可能尚未完善。"
   },
   "filter-sheet": {
     "title": "筛选",
@@ -111,15 +110,15 @@
       "SINGLE_ELIMINATION": "单败淘汰赛",
       "DOUBLE_ELIMINATION": "双败淘汰赛"
     },
-    "outcome": {
-      "advance-top": "<team>前{count}名</team>晋级<dest>{destination}</dest>",
-      "advance-next": "<team>接下来{count}名</team>晋级<dest>{destination}</dest>",
-      "qualify": "<team>前{count}名</team>晋级",
-      "eliminate": "<team>后{count}名</team>淘汰",
-      "advance-top-grouped": "每组<team>前{count}名</team>晋级<dest>{destination}</dest> (共{total})",
-      "advance-next-grouped": "每组<team>接下来{count}名</team>晋级<dest>{destination}</dest> (共{total})",
-      "qualify-grouped": "每组<team>前{count}名</team>晋级 (共{total})",
-      "eliminate-grouped": "每组<team>后{count}名</team>淘汰 (共{total})"
+    "phase-outcome": {
+      "place": "第{place}名",
+      "place-range": "第{start}–{end}名",
+      "advance-to": "{count, plural, other {<range>{range}</range>晋级<dest>{destination}</dest>}}",
+      "advance": "{count, plural, other {<range>{range}</range>晋级}}",
+      "eliminate": "{count, plural, other {<range>{range}</range>淘汰}}",
+      "advance-to-grouped": "{count, plural, other {每组<range>{range}</range>晋级<dest>{destination}</dest>}}<total>（共{teams}）</total>",
+      "advance-grouped": "{count, plural, other {每组<range>{range}</range>晋级}}<total>（共{teams}）</total>",
+      "eliminate-grouped": "{count, plural, other {每组<range>{range}</range>淘汰}}<total>（共{teams}）</total>"
     },
     "phase-groups": {
       "count": "{count}个小组",
@@ -152,14 +151,16 @@
       "place": "名次",
       "competition": "赛事",
       "prize": "奖金",
-      "tbd": "待定",
-      "show-more": "查看其余{count}项",
-      "show-less": "收起"
+      "tbd": "待定"
     },
     "format": {
       "FT2": "先胜2局",
       "FT3": "先胜3局",
       "FT4": "先胜4局"
+    },
+    "match-formats": {
+      "separator": "、",
+      "with-final": "{formats}（决赛{final}）"
     },
     "series": {
       "OWCS": "OWCS",
@@ -210,7 +211,31 @@
       "win-rate-short": "{rate}% 胜率"
     },
     "competition-format": "赛制",
-    "competition-progress": "赛事进度"
+    "competition-progress": "赛事进度",
+    "calendar-subscription": {
+      "title": "添加到日历",
+      "og-title": "将 <name/> 的比赛日程添加到你的日历",
+      "description": "将 {name} 的比赛日程同步到你常用的日历应用。",
+      "subscribe-hint": "将比赛日程同步到你常用的日历应用。",
+      "ics": "ICS 文件",
+      "ics-download": "下载",
+      "url-label": "日历订阅网址",
+      "url-hint": "在其他日历应用中，请使用此网址订阅。",
+      "copy-url": "复制网址",
+      "copied": "已复制",
+      "existing-subscription": "订阅后如需更改，请在日历应用中删除现有订阅，然后重新订阅。",
+      "illustration": "显示已订阅比赛的 iPhone 与 Android 日历示例",
+      "apps-label": "日历应用",
+      "other-methods": "通过其他方式添加",
+      "google-fallback": "Google 日历只能在电脑的网页浏览器中订阅。如果按钮无法打开，请在“其他日历”>“通过网址添加”中粘贴下方的网址。",
+      "ics-file-note": "导入 ICS 文件只会添加一次当前日程，不会自动更新。",
+      "subscription-updates": "新比赛和变更会在日历应用刷新订阅时显示，时间因应用而异。",
+      "scores": {
+        "label": "已结束比赛的比分",
+        "hide": "隐藏",
+        "show": "显示"
+      }
+    }
   },
   "auth": {
     "login-title": "登录 OWTICS",

@@ -92,8 +92,8 @@
             "view-all": "查看全部地图"
         },
         "variant-notice": {
-            "aria-label": "限时版本提示",
-            "body": "本地图是{baseName}的限时版本。统计数据展示自基础地图。",
+            "aria-label": "活动版本提示",
+            "body": "本地图是{baseName}的活动版本。统计数据展示自基础地图。",
             "cta": "前往{baseName}"
         },
         "retired-notice": {
@@ -152,6 +152,19 @@
     "more": {
         "meta": {
             "description": "加入 Discord 和 X 社区，认识贡献者，并查看隐私政策与服务条款。"
+        }
+    },
+    "me": {
+        "display-name": {
+            "label": "显示名称",
+            "save": "保存",
+            "saving": "保存中...",
+            "error": {
+                "required": "请输入显示名称。",
+                "too-long": "显示名称最多{max}个字符。",
+                "control-character": "显示名称不能包含制表符等控制字符。",
+                "failed": "显示名称保存失败，请重试。"
+            }
         }
     },
     "hero-treemap": {
@@ -327,6 +340,12 @@
                 "description": "以月历查看守望先锋电竞比赛。一览所有赛事与赛区的预定赛程与近期赛果。"
             }
         },
+        "calendar-subscription": {
+            "meta": {
+                "title": "将 {name} 的比赛添加到日历",
+                "description": "在 Apple 日历、Google 日历或其他支持 ICS 订阅的应用中订阅 {name} 的守望先锋电竞赛程。"
+            }
+        },
         "tournament-detail": {
             "today": "今天",
             "tomorrow": "明天",
@@ -363,7 +382,8 @@
                 "map-pool-scope-default": "默认",
                 "map-pool-scope-custom": "自定义地图池",
                 "map-pool-only-here": "仅此阶段",
-                "participating-teams": "参赛队伍"
+                "participating-teams": "参赛队伍",
+                "participating-teams-by-placement": "按最终排名"
             },
             "statistics": {
                 "empty": "暂无统计数据",
@@ -380,7 +400,7 @@
                     "title": "英雄禁用统计",
                     "by-hero": "按英雄统计禁用",
                     "description": "{count}场比赛中该英雄被禁用的比例",
-                    "show-rest": "显示其余{count}位英雄",
+                    "show-rest": "显示其余{count}项",
                     "show-less": "收起"
                 },
                 "maps": {
@@ -439,11 +459,7 @@
             "to-fa": "FA",
             "role-change": "位置",
             "retired": "退役",
-            "recent-changes": "近期变动",
-            "show-all-changes": "查看全部 ({count})",
             "current-roster": "当前",
-            "no-changes-in-period": "本次赛事没有相关阵容变动。",
-            "show-less": "收起",
             "match-record": "比赛战绩",
             "map-record": "地图战绩",
             "top-banned-heroes": "最常禁用英雄",

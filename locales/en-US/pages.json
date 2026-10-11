@@ -92,8 +92,8 @@
             "view-all": "View all maps"
         },
         "variant-notice": {
-            "aria-label": "Seasonal variant notice",
-            "body": "Seasonal variant of {baseName}. Stats reflect the base map.",
+            "aria-label": "Event variant notice",
+            "body": "Event variant of {baseName}. Stats reflect the base map.",
             "cta": "Open {baseName}"
         },
         "retired-notice": {
@@ -152,6 +152,19 @@
     "more": {
         "meta": {
             "description": "Join the community on Discord and X, meet the contributors, and read the privacy policy and terms of service."
+        }
+    },
+    "me": {
+        "display-name": {
+            "label": "Display name",
+            "save": "Save",
+            "saving": "Saving...",
+            "error": {
+                "required": "Enter a display name.",
+                "too-long": "Use {max} characters or fewer.",
+                "control-character": "A display name cannot contain control characters such as tabs.",
+                "failed": "Could not save the display name. Please try again."
+            }
         }
     },
     "hero-treemap": {
@@ -327,6 +340,12 @@
                 "description": "A monthly calendar of Overwatch esports matches. Browse upcoming schedules and recent results across every tournament and region in one view."
             }
         },
+        "calendar-subscription": {
+            "meta": {
+                "title": "Add {name} matches to your calendar",
+                "description": "Subscribe to {name}'s Overwatch esports match schedule in Apple Calendar, Google Calendar, or another app that supports ICS feeds."
+            }
+        },
         "tournament-detail": {
             "today": "Today",
             "tomorrow": "Tomorrow",
@@ -363,7 +382,8 @@
                 "map-pool-scope-default": "Default",
                 "map-pool-scope-custom": "Custom map pool",
                 "map-pool-only-here": "Only in this phase",
-                "participating-teams": "Participating Teams"
+                "participating-teams": "Participating Teams",
+                "participating-teams-by-placement": "By final standings"
             },
             "statistics": {
                 "empty": "No statistics available",
@@ -380,7 +400,7 @@
                     "title": "Hero Ban Statistics",
                     "by-hero": "Bans by Hero",
                     "description": "Share of {count, plural, one {# match} other {# matches}} with the hero banned",
-                    "show-rest": "Show {count, plural, one {# more hero} other {# more heroes}}",
+                    "show-rest": "Show {count} more",
                     "show-less": "Show less"
                 },
                 "maps": {
@@ -439,11 +459,7 @@
             "to-fa": "FA",
             "role-change": "Role",
             "retired": "Retired",
-            "recent-changes": "Recent Changes",
-            "show-all-changes": "Show all ({count})",
             "current-roster": "Current",
-            "no-changes-in-period": "No roster changes for this competition.",
-            "show-less": "Show less",
             "match-record": "Match Record",
             "map-record": "Map Record",
             "top-banned-heroes": "Top Banned Heroes",

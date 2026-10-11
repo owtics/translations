@@ -92,8 +92,8 @@
             "view-all": "맵 전체 보기"
         },
         "variant-notice": {
-            "aria-label": "계절 변형 안내",
-            "body": "{baseName}의 계절 한정 변형입니다. 통계는 기본 맵 데이터로 표시됩니다.",
+            "aria-label": "이벤트 변형 안내",
+            "body": "{baseName}의 이벤트 변형입니다. 통계는 기반 맵 데이터로 표시됩니다.",
             "cta": "{baseName} 페이지로 이동"
         },
         "retired-notice": {
@@ -152,6 +152,19 @@
     "more": {
         "meta": {
             "description": "Discord와 X 커뮤니티에 참여하고, 기여자 소개와 개인정보처리방침, 이용약관을 확인하세요."
+        }
+    },
+    "me": {
+        "display-name": {
+            "label": "표시 이름",
+            "save": "저장",
+            "saving": "저장 중...",
+            "error": {
+                "required": "표시 이름을 입력해 주세요.",
+                "too-long": "표시 이름은 {max}자 이하로 입력해 주세요.",
+                "control-character": "표시 이름에 탭 같은 제어 문자는 쓸 수 없습니다.",
+                "failed": "표시 이름을 저장하지 못했습니다. 다시 시도해 주세요."
+            }
         }
     },
     "hero-treemap": {
@@ -327,6 +340,12 @@
                 "description": "오버워치 e스포츠 경기를 월간 캘린더로 확인하세요. 모든 대회와 지역의 예정 일정과 최근 결과를 한눈에 볼 수 있습니다."
             }
         },
+        "calendar-subscription": {
+            "meta": {
+                "title": "{name} 경기 일정 캘린더에 추가",
+                "description": "{name} 오버워치 e스포츠 경기 일정을 Apple 캘린더, Google 캘린더 등 ICS 구독을 지원하는 앱에서 구독하세요."
+            }
+        },
         "tournament-detail": {
             "today": "오늘",
             "tomorrow": "내일",
@@ -363,7 +382,8 @@
                 "map-pool-scope-default": "기본",
                 "map-pool-scope-custom": "커스텀 맵 풀",
                 "map-pool-only-here": "이 페이즈에만",
-                "participating-teams": "참가 팀"
+                "participating-teams": "참가 팀",
+                "participating-teams-by-placement": "최종 순위 순"
             },
             "statistics": {
                 "empty": "통계 데이터가 없습니다",
@@ -380,7 +400,7 @@
                     "title": "영웅 밴 통계",
                     "by-hero": "영웅별 밴",
                     "description": "{count}경기 중 밴된 경기 비율",
-                    "show-rest": "나머지 {count}명 더 보기",
+                    "show-rest": "나머지 {count}개 더 보기",
                     "show-less": "접기"
                 },
                 "maps": {
@@ -439,11 +459,7 @@
             "to-fa": "FA",
             "role-change": "역할",
             "retired": "은퇴",
-            "recent-changes": "최근 변동",
-            "show-all-changes": "전체 보기 ({count})",
             "current-roster": "현재",
-            "no-changes-in-period": "이 대회 관련 로스터 변동이 없습니다.",
-            "show-less": "접기",
             "match-record": "매치 전적",
             "map-record": "맵 전적",
             "top-banned-heroes": "가장 많이 밴한 영웅",

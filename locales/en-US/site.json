@@ -69,15 +69,14 @@
     "loading": "Loading",
     "progress": "Progress",
     "inactive": "Disbanded",
-    "unknown": "Unknown"
+    "unknown": "Unknown",
+    "show-more": "Show {count} more",
+    "show-less": "Show less"
   },
   "units": {
     "teams": "{count, plural, one {# team} other {# teams}}",
     "matches": "{count, plural, one {# match} other {# matches}}",
     "maps": "{count, plural, one {# map} other {# maps}}"
-  },
-  "preview": {
-    "message": "This page is currently under development. Some features may be incomplete."
   },
   "filter-sheet": {
     "title": "Filter",
@@ -111,15 +110,15 @@
       "SINGLE_ELIMINATION": "Single Elimination",
       "DOUBLE_ELIMINATION": "Double Elimination"
     },
-    "outcome": {
-      "advance-top": "{count, plural, one {<team>Top # team</team> advances to <dest>{destination}</dest>} other {<team>Top # teams</team> advance to <dest>{destination}</dest>}}",
-      "advance-next": "{count, plural, one {<team>Next # team</team> advances to <dest>{destination}</dest>} other {<team>Next # teams</team> advance to <dest>{destination}</dest>}}",
-      "qualify": "{count, plural, one {<team>Top # team</team> qualifies} other {<team>Top # teams</team> qualify}}",
-      "eliminate": "{count, plural, one {<team>Bottom # team</team> is eliminated} other {<team>Bottom # teams</team> are eliminated}}",
-      "advance-top-grouped": "{count, plural, one {<team>Top # team</team> per group advances to <dest>{destination}</dest> ({total} total)} other {<team>Top # teams</team> per group advance to <dest>{destination}</dest> ({total} total)}}",
-      "advance-next-grouped": "{count, plural, one {<team>Next # team</team> per group advances to <dest>{destination}</dest> ({total} total)} other {<team>Next # teams</team> per group advance to <dest>{destination}</dest> ({total} total)}}",
-      "qualify-grouped": "{count, plural, one {<team>Top # team</team> per group qualifies ({total} total)} other {<team>Top # teams</team> per group qualify ({total} total)}}",
-      "eliminate-grouped": "{count, plural, one {<team>Bottom # team</team> per group is eliminated ({total} total)} other {<team>Bottom # teams</team> per group are eliminated ({total} total)}}"
+    "phase-outcome": {
+      "place": "{place, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
+      "place-range": "{start, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}–{end, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
+      "advance-to": "{count, plural, one {<range>{range}</range> advances to <dest>{destination}</dest>} other {<range>{range}</range> advance to <dest>{destination}</dest>}}",
+      "advance": "{count, plural, one {<range>{range}</range> advances} other {<range>{range}</range> advance}}",
+      "eliminate": "{count, plural, one {<range>{range}</range> is eliminated} other {<range>{range}</range> are eliminated}}",
+      "advance-to-grouped": "{count, plural, one {<range>{range}</range> in each group advances to <dest>{destination}</dest>} other {<range>{range}</range> in each group advance to <dest>{destination}</dest>}} <total>({teams} total)</total>",
+      "advance-grouped": "{count, plural, one {<range>{range}</range> in each group advances} other {<range>{range}</range> in each group advance}} <total>({teams} total)</total>",
+      "eliminate-grouped": "{count, plural, one {<range>{range}</range> in each group is eliminated} other {<range>{range}</range> in each group are eliminated}} <total>({teams} total)</total>"
     },
     "phase-groups": {
       "count": "{count, plural, one {# group} other {# groups}}",
@@ -144,9 +143,7 @@
       "place": "Place",
       "competition": "Tournament",
       "prize": "Prize",
-      "tbd": "TBD",
-      "show-more": "Show {count} more",
-      "show-less": "Show less"
+      "tbd": "TBD"
     },
     "bracket": {
       "no-data": "No bracket data available",
@@ -160,6 +157,10 @@
       "FT2": "First to 2",
       "FT3": "First to 3",
       "FT4": "First to 4"
+    },
+    "match-formats": {
+      "separator": ", ",
+      "with-final": "{formats} (final: {final})"
     },
     "series": {
       "OWCS": "OWCS",
@@ -210,7 +211,31 @@
       "win-rate-short": "{rate}% WR"
     },
     "competition-format": "Format",
-    "competition-progress": "Competition progress"
+    "competition-progress": "Competition progress",
+    "calendar-subscription": {
+      "title": "Add to calendar",
+      "og-title": "Add <name/> to your calendar",
+      "description": "Sync {name}'s matches to your favorite calendar app.",
+      "subscribe-hint": "Sync matches to your favorite calendar app.",
+      "ics": "ICS file",
+      "ics-download": "Download",
+      "url-label": "Calendar subscription URL",
+      "url-hint": "In other calendar apps, subscribe with this URL.",
+      "copy-url": "Copy URL",
+      "copied": "Copied",
+      "existing-subscription": "To change this after subscribing, remove the existing subscription from your calendar app and subscribe again.",
+      "illustration": "Example of iPhone and Android calendars showing a subscribed match",
+      "apps-label": "Calendar app",
+      "other-methods": "Other ways to add",
+      "google-fallback": "Google Calendar can only subscribe from a web browser on a computer. If the button doesn't open it, paste the URL below into Other calendars > From URL.",
+      "ics-file-note": "Importing an ICS file adds the schedule once; it won't update automatically.",
+      "subscription-updates": "New matches and changes appear when your calendar app refreshes the subscription; timing varies by app.",
+      "scores": {
+        "label": "Completed scores",
+        "hide": "Hide",
+        "show": "Show"
+      }
+    }
   },
   "auth": {
     "login-title": "Sign in to OWTICS",

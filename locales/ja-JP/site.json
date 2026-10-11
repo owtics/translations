@@ -69,15 +69,14 @@
     "loading": "読み込み中",
     "progress": "進行状況",
     "inactive": "解散済",
-    "unknown": "不明"
+    "unknown": "不明",
+    "show-more": "さらに{count}件を表示",
+    "show-less": "閉じる"
   },
   "units": {
     "teams": "{count}チーム",
     "matches": "{count}試合",
     "maps": "{count}マップ"
-  },
-  "preview": {
-    "message": "このページは現在開発中です。一部の機能が不完全な場合があります。"
   },
   "filter-sheet": {
     "title": "フィルター",
@@ -111,15 +110,15 @@
       "SINGLE_ELIMINATION": "シングルエリミネーション",
       "DOUBLE_ELIMINATION": "ダブルエリミネーション"
     },
-    "outcome": {
-      "advance-top": "<team>上位{count}チーム</team> <dest>{destination}</dest>に進出",
-      "advance-next": "<team>次の{count}チーム</team> <dest>{destination}</dest>に進出",
-      "qualify": "<team>上位{count}チーム</team>が進出",
-      "eliminate": "<team>下位{count}チーム</team>が敗退",
-      "advance-top-grouped": "グループごとに<team>上位{count}チーム</team>が<dest>{destination}</dest>に進出 (合計{total})",
-      "advance-next-grouped": "グループごとに<team>次の{count}チーム</team>が<dest>{destination}</dest>に進出 (合計{total})",
-      "qualify-grouped": "グループごとに<team>上位{count}チーム</team>が進出 (合計{total})",
-      "eliminate-grouped": "グループごとに<team>下位{count}チーム</team>が敗退 (合計{total})"
+    "phase-outcome": {
+      "place": "{place}位",
+      "place-range": "{start}–{end}位",
+      "advance-to": "{count, plural, other {<range>{range}</range>が<dest>{destination}</dest>に進出}}",
+      "advance": "{count, plural, other {<range>{range}</range>が進出}}",
+      "eliminate": "{count, plural, other {<range>{range}</range>が敗退}}",
+      "advance-to-grouped": "{count, plural, other {各グループ<range>{range}</range>が<dest>{destination}</dest>に進出}} <total>(合計{teams})</total>",
+      "advance-grouped": "{count, plural, other {各グループ<range>{range}</range>が進出}} <total>(合計{teams})</total>",
+      "eliminate-grouped": "{count, plural, other {各グループ<range>{range}</range>が敗退}} <total>(合計{teams})</total>"
     },
     "phase-groups": {
       "count": "{count}グループ",
@@ -152,14 +151,16 @@
       "place": "順位",
       "competition": "大会",
       "prize": "賞金",
-      "tbd": "未定",
-      "show-more": "さらに{count}件を表示",
-      "show-less": "閉じる"
+      "tbd": "未定"
     },
     "format": {
       "FT2": "2本先取",
       "FT3": "3本先取",
       "FT4": "4本先取"
+    },
+    "match-formats": {
+      "separator": "、",
+      "with-final": "{formats} (決勝 {final})"
     },
     "series": {
       "OWCS": "OWCS",
@@ -210,7 +211,31 @@
       "win-rate-short": "{rate}% 勝率"
     },
     "competition-format": "フォーマット",
-    "competition-progress": "大会の進行状況"
+    "competition-progress": "大会の進行状況",
+    "calendar-subscription": {
+      "title": "カレンダーに追加",
+      "og-title": "<name/>の試合日程をカレンダーに追加",
+      "description": "{name}の試合日程をお使いのカレンダーアプリに同期しましょう。",
+      "subscribe-hint": "試合日程をお使いのカレンダーアプリに同期しましょう。",
+      "ics": "ICSファイル",
+      "ics-download": "ダウンロード",
+      "url-label": "カレンダーの購読URL",
+      "url-hint": "他のカレンダーアプリでは、このURLで購読してください。",
+      "copy-url": "URLをコピー",
+      "copied": "コピーしました",
+      "existing-subscription": "購読後に変更するには、カレンダーアプリで今の購読を削除してから、もう一度購読してください。",
+      "illustration": "購読した試合が表示された iPhone と Android のカレンダーの例",
+      "apps-label": "カレンダーアプリ",
+      "other-methods": "その他の方法で追加",
+      "google-fallback": "Google カレンダーはパソコンのウェブブラウザでのみ購読できます。ボタンで開かない場合は、「他のカレンダー」>「URL で追加」に下のURLを貼り付けてください。",
+      "ics-file-note": "ICSファイルのインポートは一度だけです。以降、自動では更新されません。",
+      "subscription-updates": "新しい試合や変更は、カレンダーアプリが購読を更新したときに反映されます。タイミングはアプリによって異なります。",
+      "scores": {
+        "label": "終了した試合のスコア",
+        "hide": "非表示",
+        "show": "表示"
+      }
+    }
   },
   "auth": {
     "login-title": "OWTICSにログイン",

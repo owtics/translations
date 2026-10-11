@@ -69,15 +69,14 @@
     "loading": "불러오는 중",
     "progress": "진행률",
     "inactive": "해체됨",
-    "unknown": "알 수 없음"
+    "unknown": "알 수 없음",
+    "show-more": "{count}개 더 보기",
+    "show-less": "접기"
   },
   "units": {
     "teams": "{count}개 팀",
     "matches": "{count}개 경기",
     "maps": "{count}개 맵"
-  },
-  "preview": {
-    "message": "이 페이지는 현재 개발 중입니다. 일부 기능이 불완전할 수 있습니다."
   },
   "filter-sheet": {
     "title": "필터",
@@ -111,15 +110,15 @@
       "SINGLE_ELIMINATION": "싱글 엘리미네이션",
       "DOUBLE_ELIMINATION": "더블 엘리미네이션"
     },
-    "outcome": {
-      "advance-top": "<team>상위 {count}팀</team> <dest>{destination}</dest> 진출",
-      "advance-next": "<team>다음 {count}팀</team> <dest>{destination}</dest> 진출",
-      "qualify": "<team>상위 {count}팀</team> 진출",
-      "eliminate": "<team>하위 {count}팀</team> 탈락",
-      "advance-top-grouped": "그룹별 <team>상위 {count}팀</team> <dest>{destination}</dest> 진출 (총 {total})",
-      "advance-next-grouped": "그룹별 <team>다음 {count}팀</team> <dest>{destination}</dest> 진출 (총 {total})",
-      "qualify-grouped": "그룹별 <team>상위 {count}팀</team> 진출 (총 {total})",
-      "eliminate-grouped": "그룹별 <team>하위 {count}팀</team> 탈락 (총 {total})"
+    "phase-outcome": {
+      "place": "{place}위",
+      "place-range": "{start}–{end}위",
+      "advance-to": "{count, plural, other {<range>{range}</range> <dest>{destination}</dest> 진출}}",
+      "advance": "{count, plural, other {<range>{range}</range> 진출}}",
+      "eliminate": "{count, plural, other {<range>{range}</range> 탈락}}",
+      "advance-to-grouped": "{count, plural, other {조 <range>{range}</range> <dest>{destination}</dest> 진출}} <total>(총 {teams})</total>",
+      "advance-grouped": "{count, plural, other {조 <range>{range}</range> 진출}} <total>(총 {teams})</total>",
+      "eliminate-grouped": "{count, plural, other {조 <range>{range}</range> 탈락}} <total>(총 {teams})</total>"
     },
     "phase-groups": {
       "count": "{count}개 조",
@@ -152,14 +151,16 @@
       "place": "순위",
       "competition": "대회",
       "prize": "상금",
-      "tbd": "미정",
-      "show-more": "{count}개 더 보기",
-      "show-less": "접기"
+      "tbd": "미정"
     },
     "format": {
       "FT2": "2선승",
       "FT3": "3선승",
       "FT4": "4선승"
+    },
+    "match-formats": {
+      "separator": ", ",
+      "with-final": "{formats} (결승 {final})"
     },
     "series": {
       "OWCS": "OWCS",
@@ -210,7 +211,31 @@
       "win-rate-short": "{rate}% 승률"
     },
     "competition-format": "포맷",
-    "competition-progress": "대회 진행률"
+    "competition-progress": "대회 진행률",
+    "calendar-subscription": {
+      "title": "캘린더에 추가",
+      "og-title": "<name/> 경기 일정을 내 캘린더에 추가",
+      "description": "{name} 경기 일정을 자주 쓰는 캘린더 앱에 동기화하세요.",
+      "subscribe-hint": "경기 일정을 자주 쓰는 캘린더 앱에 동기화하세요.",
+      "ics": "ICS 파일",
+      "ics-download": "다운로드",
+      "url-label": "캘린더 구독 URL",
+      "url-hint": "다른 캘린더 앱에서는 이 URL로 구독하세요.",
+      "copy-url": "URL 복사",
+      "copied": "복사됨",
+      "existing-subscription": "구독한 뒤에 바꾸려면 캘린더 앱에서 기존 구독을 지우고 다시 구독하세요.",
+      "illustration": "구독한 경기가 표시된 iPhone과 Android 캘린더 예시",
+      "apps-label": "캘린더 앱",
+      "other-methods": "다른 방법으로 추가",
+      "google-fallback": "Google 캘린더는 컴퓨터의 웹 브라우저에서만 구독할 수 있습니다. 버튼으로 열리지 않으면 다른 캘린더 > URL로 추가에 아래 URL을 붙여넣으세요.",
+      "ics-file-note": "ICS 파일은 일정을 한 번 가져오며 이후 자동으로 업데이트되지 않습니다.",
+      "subscription-updates": "새 경기와 변경 사항은 캘린더 앱이 구독을 새로고침할 때 반영되며, 시점은 앱마다 다릅니다.",
+      "scores": {
+        "label": "종료된 경기 점수",
+        "hide": "숨기기",
+        "show": "표시하기"
+      }
+    }
   },
   "auth": {
     "login-title": "OWTICS에 로그인",

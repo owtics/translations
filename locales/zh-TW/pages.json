@@ -92,8 +92,8 @@
             "view-all": "查看全部地圖"
         },
         "variant-notice": {
-            "aria-label": "限時版本提示",
-            "body": "本地圖是{baseName}的限時版本。統計資料來自基礎地圖。",
+            "aria-label": "活動版本提示",
+            "body": "本地圖是{baseName}的活動版本。統計資料來自基礎地圖。",
             "cta": "前往{baseName}"
         },
         "retired-notice": {
@@ -152,6 +152,19 @@
     "more": {
         "meta": {
             "description": "加入 Discord 與 X 社群，認識貢獻者，並查看隱私權政策與服務條款。"
+        }
+    },
+    "me": {
+        "display-name": {
+            "label": "顯示名稱",
+            "save": "儲存",
+            "saving": "儲存中...",
+            "error": {
+                "required": "請輸入顯示名稱。",
+                "too-long": "顯示名稱最多{max}個字元。",
+                "control-character": "顯示名稱不能包含定位字元等控制字元。",
+                "failed": "顯示名稱儲存失敗，請重試。"
+            }
         }
     },
     "hero-treemap": {
@@ -327,6 +340,12 @@
                 "description": "以月曆查看鬥陣特攻電競比賽。一覽所有賽事與賽區的預定賽程與近期賽果。"
             }
         },
+        "calendar-subscription": {
+            "meta": {
+                "title": "將 {name} 的比賽加入行事曆",
+                "description": "在 Apple 行事曆、Google 日曆或其他支援 ICS 訂閱的 App 中訂閱 {name} 的鬥陣特攻電競賽程。"
+            }
+        },
         "tournament-detail": {
             "today": "今天",
             "tomorrow": "明天",
@@ -363,7 +382,8 @@
                 "map-pool-scope-default": "預設",
                 "map-pool-scope-custom": "自訂地圖池",
                 "map-pool-only-here": "僅此階段",
-                "participating-teams": "參賽隊伍"
+                "participating-teams": "參賽隊伍",
+                "participating-teams-by-placement": "依最終排名"
             },
             "statistics": {
                 "empty": "暫無統計數據",
@@ -380,7 +400,7 @@
                     "title": "英雄禁用統計",
                     "by-hero": "按英雄統計禁用",
                     "description": "{count}場比賽中該英雄被禁用的比例",
-                    "show-rest": "顯示其餘{count}位英雄",
+                    "show-rest": "顯示其餘{count}項",
                     "show-less": "收起"
                 },
                 "maps": {
@@ -440,10 +460,6 @@
             "to-fa": "FA",
             "role-change": "位置",
             "retired": "退役",
-            "recent-changes": "近期變動",
-            "show-all-changes": "查看全部 ({count})",
-            "no-changes-in-period": "此賽事沒有相關陣容變動。",
-            "show-less": "收起",
             "match-record": "比賽戰績",
             "map-record": "地圖戰績",
             "top-banned-heroes": "最常禁用英雄",
