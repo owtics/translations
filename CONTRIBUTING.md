@@ -24,7 +24,7 @@ All translations are stored as JSON files. Each locale has 5 files (namespaces):
 
 | File | Content |
 |------|---------|
-| `game.json` | Overwatch game terms — hero names, roles, tiers, stats |
+| `game.json` | Overwatch game terms — roles, tiers, stats |
 | `site.json` | Shared UI — navigation, filters, pagination, esports enums |
 | `pages.json` | Page-specific — titles, descriptions, SEO metadata |
 | `error.json` | Error pages — 404s, general errors |
@@ -57,7 +57,7 @@ See [TRANSLATION_GUIDE.md](TRANSLATION_GUIDE.md) for detailed namespace descript
 - **Never change JSON keys** — only translate the values
 - **Keep ICU placeholders intact** — `{count}`, `{hero}`, `{type, select, ...}` must remain as-is
 - **Match the tone** — OWTICS uses a clean, informative tone (not overly casual)
-- **Use official Overwatch terminology** — hero names, role names, and tier names should match the game's official localization
+- **Use official Overwatch terminology** — role names and tier names should match the game's official localization
 
 ## Adding a New Locale
 
@@ -78,7 +78,7 @@ Examples: `zh-CN`, `zh-TW`, `fr-FR`, `de-DE`, `es-ES`, `pt-BR`, `th-TH`
 
 You don't need to translate everything at once. Start with the most visible files:
 
-1. `game.json` — hero names and roles (players see these everywhere)
+1. `game.json` — roles and tiers (players see these everywhere)
 2. `site.json` — navigation and filters
 3. `pages.json` — page titles and descriptions
 4. `error.json` and `faq.json` — lower priority

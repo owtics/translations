@@ -34,7 +34,7 @@ See the **[Translation Guide](TRANSLATION_GUIDE.md)** for syntax reference.
 ```
 locales/
 ├── en-US/          ← Source of truth (do not modify unless you're a maintainer)
-│   ├── game.json       Overwatch game terms (heroes, roles, tiers)
+│   ├── game.json       Overwatch game terms (roles, tiers, stats)
 │   ├── site.json       Site-wide UI text (nav, filters, pagination)
 │   ├── pages.json      Page-specific content (titles, descriptions, SEO)
 │   ├── error.json      Error pages

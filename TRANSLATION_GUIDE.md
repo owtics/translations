@@ -19,10 +19,10 @@ locales/{locale}/
 
 Game-originated proper nouns and terminology. Used across many pages.
 
+Hero names, map names and hero perks are not in this repository. OWTICS takes them from the Overwatch client's own text for every language, so there is nothing to translate.
+
 | Key | Description | Example |
 |-----|-------------|---------|
-| `hero.*` | Hero names, keyed by slug | `"kiriko": "키리코"` |
-| `map.*` | Map names, keyed by slug | `"kings-row": "왕의 길"` |
 | `role.*` | Roles (player + team roles) | `"TANK": "Tank"`, `"COACH": "Coach"` |
 | `subRole.*` | Sub-roles | `"FLANKER": "Flanker"` |
 | `region.*` | Leaderboard regions | `"ASIA": "Asia"`, `"CN": "China"` |
@@ -45,19 +45,11 @@ Game-originated proper nouns and terminology. Used across many pages.
 - `stat.pick-rate` — full label: "Pick Rate"
 - `stat.pick-rate-short` — abbreviated: "Pick" (for narrow columns)
 
-### Hero and map keys are slugs
-
-`hero.*` and `map.*` keys are URL slugs, not display names. Most are the lowercased name, but some are not obvious: `soldier76` (Soldier: 76), `dva` (D.Va), `wreckingball` (Wrecking Ball), `kings-row` (King's Row), `watchpoint-gibraltar` (Watchpoint: Gibraltar), `route-66` (Route 66).
-
-Translate the **value**, never the key. Seasonal map re-skins are separate entries: `kings-row-winter`, `hollywood-halloween`, `blizzard-world-winter`, `lijiang-tower-lunar-new-year`.
-
 ### Important: Use official Overwatch localization
 
-Hero names, map names, role names, and game modes should match Blizzard's official localization for your language. Check the in-game text if unsure. A transliteration you invent is worse than leaving the key untranslated, because players will not recognize it.
+Role names, game modes and map modes should match Blizzard's official localization for your language. Check the in-game text if unsure. A transliteration you invent is worse than leaving the key untranslated, because players will not recognize it.
 
 **Some entries are untranslated on purpose.** If Blizzard ships a term in English for your language, leave the key out and let it fall back to English — a missing key is the correct result, not a gap to fill.
-
-The known case is Japanese map names: `ja-JP` translates hero names to katakana but keeps map names in English (`KING'S ROW`, not `キングスロウ`), so `ja-JP/game.json` carries no `map.*` keys at all. `ja-JP` therefore cannot reach 100% in the README coverage table, and pull requests adding katakana map names will be declined.
 
 ---
 
